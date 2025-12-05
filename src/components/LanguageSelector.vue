@@ -55,7 +55,7 @@
   }
 
   function selectLanguage(code: string) {
-    uiStore.setLang(code as "en" | "af" | "zu" | "xh" | "tn");
+    uiStore.setLang(code as "en" | "af" | "zu" | "xh" | "tn" | "st");
     isOpen.value = false;
   }
 </script>

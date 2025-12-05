@@ -1,0 +1,245 @@
+{
+  "app": {
+    "title": "Elekti",
+    "tagline": "Fumana mokga oo o lumellanang le wena"
+  },
+  "nav": {
+    "home": "Lehae",
+    "quiz": "Potso-potso",
+    "results": "Liphetho",
+    "about": "Ka Rona"
+  },
+  "landing": {
+    "title": "Fumana Mokga oo o U Lumellanang",
+    "subtitle": "Araba dipotso ka maikutlo a hao a lipolotiki hore o bone hore na ke mokga ofe wa Afrika Borwa o haufi le ditabatabelo tsa hao.",
+    "startButton": "Qala Potso-potso",
+    "aboutLink": "Bala ka mokhoa wa rona",
+    "privacy": "Dikarabo tsa hao di bolokilwe feela ho sesebediswa sa hao, ha di arolelwane hohle."
+  },
+  "quiz": {
+    "question": "Potso {number} ho tsa {total}",
+    "skip": "Tlohela",
+    "back": "Khutlela",
+    "next": "E latelang",
+    "finish": "Qeta",
+    "progress": "{count} ho {total} di arabilwe"
+  },
+  "results": {
+    "title": "Liphetho tsa Hao",
+    "primaryMatch": "Mokga o haufi le wena ka ho fetisisa",
+    "alternativeMatch": "Mekga e meng e haufi le maikutlo a hao",
+    "confidence": {
+      "high": "Ho tshwaneleha ho tiileng",
+      "medium": "Ho tshwaneleha ho mahareng",
+      "low": "Ho tshwaneleha ho fokolang – sheba kakaretso ya mekga kaofela"
+    },
+    "scoreBreakdown": "Kabo ya Dikarolo",
+    "allParties": "Dikoro tsa Mekga Kaofela",
+    "copyResults": "Kopa Liphetho",
+    "resultsCopied": "Liphetho li kopilwe!",
+    "retakeQuiz": "Pheta Potso-potso",
+    "learnMore": "Ithute ho feta ka {party}"
+  },
+  "about": {
+    "title": "Ka Elekti",
+    "methodology": "Mokgwa",
+    "methodologyText": "Elekti e sebelisa mokhoa o pharalletseng o thehiloeng bopaking ho bapisa maikutlo a hao a lipolotiki le maemo a mekga ya Afrika Borwa...",
+    "howItWorks": "Kamoo e Sebetsang Kateng",
+    "howItWorksText": "O araba dipotso tse 28 tse akaretsang dithuto tsa bophelo bo botle, thuto, moruo, puso le ditaba tsa setjhaba...",
+    "scoring": "Mokgwa wa Dikoro",
+    "scoringText": "Karabo ka nngwe e bapiswa le ditshisinyo tsa mekga ho tswa ditemaneng tsa bona tsa semmuso...",
+    "transparency": "Boitlamo ba Rona ho Poneneng",
+    "transparencyText": "Maemo a mekga le boima ba dikoro di ipapisitse le dipatlisiso tse tiileng...",
+    "dataSources": "Mehloli ya Patlisiso",
+    "dataSourcesText": "Maemo a mekga a bokellwa ditemaneng tsa bona tsa semmuso, litokomane tsa maano...",
+    "privacy": "Lekunutu la Hao",
+    "privacyText": "Re nka maikutlo a lipolotiki e le taba ya poraefete ka ho fetisisa...",
+    "noTracking": "Ha ho Ho Latella",
+    "noTrackingText": "Ha re sebelise dikukisi kapa dipiksele...",
+    "localOnly": "Ho Bolokilwe Sesebediswa Feela",
+    "localOnlyText": "Tsohle di etsahala ho sebatli sa hao...",
+    "sharing": "Kamoo Ho Arolelana ho Sebetsang Kateng",
+    "sharingText": "Ha o arolelana liphetho, karabo tsa hao di kenngwa kahare ho URL...",
+    "analytics": "Tlhatlhobo e Sireletsang Lekunutu",
+    "analyticsText": "Re sebelisa Cloudflare Web Analytics e sa latelleng batho...",
+    "parties": "Mekga e Kenyelletsweng",
+    "partiesText": "Re kenyeletsa mekga e 14 e meholo Afrika Borwa...",
+    "disclaimer": "Tlhokomeliso ya Bohlokwa",
+    "disclaimerText": "Elekti ke sesebediswa sa thuto, eseng sebaka sa ho nka qeto tsa ho qetela...",
+    "viewData": "Sheba Data e Felletseng",
+    "viewDataText": "O ka sheba difaele tsa rona tsa JSON ka botlalo...",
+    "scoringData": "Boima ba Dikoro",
+    "partiesData": "Tlhahisoleseding ka Mekga",
+    "questionsData": "Dintlha tsa Dipotso"
+  },
+  "party": {
+    "anc": {
+      "desc": "ANC ke mokga o busang Afrika Borwa o ikemiseditseng phetoho ya setjhaba..."
+    },
+    "da": {
+      "desc": "DA e matshelong a demokrasi ya tokoloho, moruo o tsamaiswang ke mmaraka..."
+    },
+    "mk": {
+      "desc": "MK Party e buella phetoho ya moruo e matla e tsamaiswang ke puso..."
+    },
+    "eff": {
+      "desc": "EFF ke mokga wa leqele le letshwele o buellang phetoho ya moruo..."
+    },
+    "ifp": {
+      "desc": "IFP e phahamisa setso sa maZulu le puso ya mafapha..."
+    },
+    "pa": {
+      "desc": "Patriotic Alliance e shebane haholo le taba ya ba kenang ka hare ka bosenyi..."
+    },
+    "vfplus": {
+      "desc": "VF Plus e emela dithahasello tsa Maafrikaans..."
+    },
+    "actionsa": {
+      "desc": "ActionSA e shebane le puso e sebetsang hantle le kgolo ya moruo..."
+    },
+    "acdp": {
+      "desc": "ACDP e phahamisa boleng ba Bokreste le maano a setso..."
+    },
+    "ufc": {
+      "desc": "Unite for Change e phahamisa boetapele ba setjhaba..."
+    },
+    "sacp": {
+      "desc": "SACP e buella bonyaka le ditokelo tsa basebetsi..."
+    },
+    "udm": {
+      "desc": "UDM e phahamisa demokrasi ya setjhaba le maano a sebetsang..."
+    },
+    "aljamah": {
+      "desc": "Al Jama ah e emela boleng ba Boislamo..."
+    },
+    "cope": {
+      "desc": "COPE e buella demokrasi ya setjhaba le moruo o leka-lekaneng..."
+    }
+  },
+  "options": {
+    "stronglyAgree": "Ke dumellana haholo",
+    "agree": "Ke dumellana",
+    "neutral": "Ke mahareng",
+    "disagree": "Ha ke dumellane",
+    "stronglyDisagree": "Ha ke dumellane ho hang"
+  },
+  "questions": {
+    "q1": {
+      "text": "NHI kapa tsamaiso ya tlhokomelo ya bophelo e tšehelitsoeng ke puso e lokela ho fana ka tlhokomelo ya bophelo ya motheo mahala ho bohle.",
+      "category": "bophelo"
+    },
+    "q2": {
+      "text": "Thuto e phahameng e lokela ho ba mahala ho bohle, eseng ka thuso ya dithuso tsa dithuto feela.",
+      "category": "thuto"
+    },
+    "q3": {
+      "text": "Puso e lokela ho fana ka motlotlo wa motheo ho bohle, le ha ho ka bolela lekhetho le phahameng kapa ho alima haholo.",
+      "category": "boiketlo ba sechaba"
+    },
+    "q4": {
+      "text": "Puso e lokela ho tsetela ka matla matlo a setjhaba bakeng sa malapa a fokolang.",
+      "category": "bolulo"
+    },
+    "q5": {
+      "text": "Matlo a setjhaba a lokela ho fuwa pele, le ha ho ka bolela ho fokotsa ditshebeletso tse ding tsa setjhaba.",
+      "category": "bolulo"
+    },
+    "q6": {
+      "text": "Puso e lokela ho phahamisa lekhetho ho batho ba ruileng ho tshehetsa mananeo a setjhaba.",
+      "category": "moruo"
+    },
+    "q7": {
+      "text": "Afrika Borwa e lokela ho sireletsa diindasteri tsa lehae le ha ditheko tsa bareki di ka phahama.",
+      "category": "maano a kgwebo"
+    },
+    "q8": {
+      "text": "Tokelo ya thepa le kgwebo e nyane e lokela ho sireletswa ka matla kgahlanong le ho amohuoa kapa melao e boima.",
+      "category": "ditokelo tsa thepa"
+    },
+    "q9": {
+      "text": "Puso e lokela ho theha mananeo a mesebetsi ya setjhaba ho fokotsa ho hloka mosebetsi.",
+      "category": "mesebetsi"
+    },
+    "q10": {
+      "text": "Basebetsi ba lokela ho ba le tokelo e matla ya ho itshengella le ho buisana le dihoho kantle ho ho kenella ha puso.",
+      "category": "ditokelo tsa basebetsi"
+    },
+    "q11": {
+      "text": "BEE le ditokisetso tsa ho lokisa kgethollo di lokela ho sala e le maano a bohareng a puso.",
+      "category": "phetoho"
+    },
+    "q12": {
+      "text": "Puso e lokela ho dumella hore mobu o amohuoe ntle le puseletso ya mmaraka ho potlakisa tokiso ya mobu.",
+      "category": "tokiso ya mobu"
+    },
+    "q13": {
+      "text": "Ntlafatso ya mahaeng le tshehetso ya temo di lokela ho fuwa chelete e ngata haholo.",
+      "category": "temo"
+    },
+    "q14": {
+      "text": "Naha e lokela ho tsetela haholo mehloling ya eneji e ka tswelang pele ho ena le kgase ya mashala.",
+      "category": "eneji"
+    },
+    "q16": {
+      "text": "Molaotheo o lokela ho fetolwa moo ho hlokahalang ho potlakisa phetoho le kabo ya matlotlo.",
+      "category": "puso"
+    },
+    "q17": {
+      "text": "Ho lwantsha bobodu ka matla ho bohlokoa ho feta ho boloka botsitso ba dipolotiki.",
+      "category": "bobodu"
+    },
+    "q18": {
+      "text": "Boipuso ba makhotla le ba baqosuoa bo lokela ho sireletswa le ha ho ka thibela ho tenyetseha ha puso.",
+      "category": "mekgatlo"
+    },
+    "q21": {
+      "text": "Ho fokotsa botlokotsebe, puso e lokela ho thatafatsa dikotlo ho ena le ho shebana haholo le mabaka a jwalo ka bofuma.",
+      "category": "botlokotsebe"
+    },
+    "q22": {
+      "text": "Ba kenang kahare ka bosenyi ba lokela ho lelekwa mme meedi e tiiswe ho sireletsa mesebetsi le mehlodi.",
+      "category": "bohahlaudi"
+    },
+    "q23": {
+      "text": "Puso e lokela ho matlafatsa tshehetso ya molao bakeng sa batho ba LGBTQ+ le ho phahamisa ditokelo tsa bona ka mafolofolo.",
+      "category": "ditokelo tsa sechaba"
+    },
+    "q15": {
+      "text": "Puso e lokela ho lokisa ditsamaiso tsa metsi le bohloeki ka potlako metseng e senyehileng.",
+      "category": "ditheo"
+    },
+    "q19": {
+      "text": "Ho hlokahala dibaka tse matla tsa ho thibela state capture ho kenyeletswa melao e thata ya tshehetso ya mekga le kgwebo mmusong.",
+      "category": "phetolo state capture"
+    },
+    "q20": {
+      "text": "Diporofense le bomasepala ba lokela ho fuwa matla le tjhelete e ngata, le ha ho ka fokotsa matla a puso ya naha.",
+      "category": "karohano ya matla"
+    },
+    "q24": {
+      "text": "Boleng ba bodumedi bo lokela ho ba le karolo e kgolo ho kaho ya melao le maano a puso.",
+      "category": "bodumedi le puso"
+    },
+    "q25": {
+      "text": "Naha e lokela ho amohela le ho tshehetsa puso ya marena le dikgosi e le karolo ya puso.",
+      "category": "boetapele ba setso"
+    },
+    "q26": {
+      "text": "Puso e lokela ho eketsa tshehetso ya dipuo tsa matsoho thutong, mecheng ya phatlalatso le ditshebeletsong tsa setjhaba.",
+      "category": "puo le setso"
+    },
+    "q27": {
+      "text": "Naha e lokela ho shebana haholo le dikamano tsa lefatshe le kgwebo le EU, US le Afrika ho ena le ho itshetleha ka mehlotlo e meng ya dipolotiki.",
+      "category": "maano a kantle"
+    },
+    "q28": {
+      "text": "Puso e lokela ho eketsa matla a ho shebella le ho fumana data bakeng sa puso ya polokeho le tlhabollo ya botlokotsebe, le ha sena se fokotsa lekunutu.",
+      "category": "lekunutu le thekenoloji"
+    }
+  },
+  "footer": {
+    "about": "Ka Rona",
+    "privacy": "Lekunutu",
+    "contact": "Iteanye le Rona"
+  }
+}
