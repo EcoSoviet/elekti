@@ -46,8 +46,6 @@ function mapPartyKey(key: string): string {
     SACP: "sacp",
     UDM: "udm",
     "Al Jama-ah": "aljamah",
-    ATM: "atm",
-    PF: "pf",
     COPE: "cope",
   };
 
