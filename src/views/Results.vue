@@ -144,7 +144,7 @@
     const encoded = quizStore.encodeAnswersToUrl();
     const shareUrl = `${window.location.origin}${window.location.pathname}#/results?r=${encoded}`;
 
-    const text = `My isiVote Results:
+    const text = `My Elekti Results:
 Primary Match: ${result.value.primary.party.name} (${Math.round(result.value.primary.normalizedScore * 100)}%)
 Alternatives: ${result.value.alternatives.map((a: PartyScore) => `${a.party.name} (${Math.round(a.normalizedScore * 100)}%)`).join(", ")}
 

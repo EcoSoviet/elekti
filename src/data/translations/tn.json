@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "isiVote",
+    "title": "Elekti",
     "tagline": "Batla setlhopha sa gago sa dipolotiki"
   },
   "nav": {
@@ -41,9 +41,9 @@
     "learnMore": "Ithute mo go oketsegileng ka {party}"
   },
   "about": {
-    "title": "Ka ga isiVote",
+    "title": "Ka ga Elekti",
     "methodology": "Mokgwa",
-    "methodologyText": "isiVote e dirisa mokgwa wa diphoto go tsamaisa dikakanyo tsa gago tsa dipolotiki le ditlhopha tsa dipolotiki tsa Afrika Borwa.",
+    "methodologyText": "Elekti e dirisa mokgwa wa diphoto go tsamaisa dikakanyo tsa gago tsa dipolotiki le ditlhopha tsa dipolotiki tsa Afrika Borwa.",
     "privacy": "Sephiri",
     "privacyText": "Sepo sa gago se bothata jwa rona. Ga re boloka data ya motho ka noši noma di-quiz responses. Fela language preference ya gago e bolokilwe mo sediring sa gago. Di-quiz answers tsa gago di imetswe mo URL fa o ne o e abelane - ga go kgona go boloka mo serweng, ga go database, ga go lateleledisano. Re dirisa Cloudflare Web Analytics, e leng e tlotlang sephiri e leng e sa diriseng di-cookies, e sa lateleleng batho ka noši, noma e sa kgobokanyeng data ya motho ka noši. Dikakaretso tsa gago ke tsa gago go di abelana kgotsa go di boloka ka sethepo ka thotso go rata sa gago.",
     "parties": "Ditlhopha Tse Di Akaretsitsweng",

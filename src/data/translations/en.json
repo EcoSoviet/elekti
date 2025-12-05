@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "isiVote",
+    "title": "Elekti",
     "tagline": "Find your political match"
   },
   "nav": {
@@ -41,9 +41,9 @@
     "learnMore": "Learn more about {party}"
   },
   "about": {
-    "title": "About isiVote",
+    "title": "About Elekti",
     "methodology": "Methodology",
-    "methodologyText": "isiVote uses a weighted scoring system to match your political views with South African political parties. Each answer contributes to party scores, which are normalized and ranked to find your best matches.",
+    "methodologyText": "Elekti uses a weighted scoring system to match your political views with South African political parties. Each answer contributes to party scores, which are normalized and ranked to find your best matches.",
     "privacy": "Privacy",
     "privacyText": "Your privacy is our priority. We store absolutely no personal data or quiz responses. Only your language preference is saved locally on your device. Your quiz answers are encoded directly into the URL when you share results - no server storage, no databases, no tracking. We use Cloudflare Web Analytics, which is privacy-respecting and does not use cookies, track individuals, or collect personal information. Your results are yours to share or keep private entirely on your terms.",
     "parties": "Parties Included",

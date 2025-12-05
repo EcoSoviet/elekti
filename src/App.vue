@@ -26,7 +26,7 @@
           <router-link to="/about">{{ $t("footer.privacy") }}</router-link>
         </nav>
         <p class="app-footer__copyright">
-          © {{ new Date().getFullYear() }} isiVote
+          © {{ new Date().getFullYear() }} Elekti
         </p>
       </div>
     </footer>

@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "isiVote",
+    "title": "Elekti",
     "tagline": "Fumana iqela lakho lezopolitiko"
   },
   "nav": {
@@ -41,9 +41,9 @@
     "learnMore": "Funda ngakumbi nge-{party}"
   },
   "about": {
-    "title": "Malunga ne-isiVote",
+    "title": "Malunga ne-Elekti",
     "methodology": "Indlela",
-    "methodologyText": "I-isiVote isebenzisa inkqubo yamanqaku ukudibanisa iimbono zakho zezopolitiko namaqela ezopolitiko aseMzantsi Afrika.",
+    "methodologyText": "I-Elekti isebenzisa inkqubo yamanqaku ukudibanisa iimbono zakho zezopolitiko namaqela ezopolitiko aseMzantsi Afrika.",
     "privacy": "Ubumfihlo",
     "privacyText": "Ubumfihlo bakho bubalulekile. Asiqokeleli ulwazi lomntu ka noši noma iimpendulo zemibuzo. Kuphela i-language preference yakho igcinwe kwindawo kwisixhobo sakho. Iimpendulo zemibuzo zakho zikhunyelwe ngqo kwi-URL xa ubantu bagcina - ayikho ibhaliso eserveni, akukho i-database, ayikho ilandelelaniselo. Sisebenzisa iCloudflare Web Analytics, entle-hloniphanispiru e ngatoli-cookies, elathelelaniseli abantu, nangethola ulwazi lomntu. Iziphumo zakho ziyakho ukuzabela okanye ukuzigcina kwicinile ngokupheleleyo kwiigqatso zakho.",
     "parties": "Amaqela Abandakanyiweyo",

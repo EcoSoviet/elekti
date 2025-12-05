@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "isiVote",
+    "title": "Elekti",
     "tagline": "Vind jou politieke passing"
   },
   "nav": {
@@ -41,9 +41,9 @@
     "learnMore": "Leer meer oor {party}"
   },
   "about": {
-    "title": "Oor isiVote",
+    "title": "Oor Elekti",
     "methodology": "Metodologie",
-    "methodologyText": "isiVote gebruik 'n geweegde puntestelsel om jou politieke sienings met Suid-Afrikaanse politieke partye te pas.",
+    "methodologyText": "Elekti gebruik 'n geweegde puntestelsel om jou politieke sienings met Suid-Afrikaanse politieke partye te pas.",
     "privacy": "Privaatheid",
     "privacyText": "Jou privaatheid is ons prioriteit. Ons stoor absoluut geen persoonlike data of vasvraag-antwoorde nie. Slegs jou taalvoorkeur word plaaslik op jou toestel gestoor. Jou vasvraag-antwoorde word direk in die URL enkodeer wanneer jy resultate deel - geen bedienerberging, geen databasisse, geen nagvolging. Ons gebruik Cloudflare Web Analytics, wat privaatheid-respekterend is en nie koekies gebruik, individue volg, of persoonlike inligting versamel nie. Jou resultate is joue om te deel of privaat te hou heeltemal op jou voorwaardes.",
     "parties": "Partye Ingesluit",
