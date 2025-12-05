@@ -14,6 +14,32 @@
       {{ $t(party.descriptionKey) }}
     </p>
 
+    <a
+      v-if="party.website"
+      :href="party.website"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="party-card__website"
+      :style="{ color: party.colour, borderColor: party.colour }"
+    >
+      Visit Website
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+        <polyline points="15 3 21 3 21 9" />
+        <line x1="10" y1="14" x2="21" y2="3" />
+      </svg>
+    </a>
+
     <div v-if="score !== undefined" class="party-card__score">
       <div class="party-card__score-bar">
         <div
@@ -34,6 +60,7 @@
     descriptionKey: string;
     colour: string;
     logo: string;
+    website?: string;
   }
 
   defineProps<{
@@ -54,7 +81,6 @@
 
   .party-card:hover {
     box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
   }
 
   .party-card__header {
@@ -88,6 +114,33 @@
     color: var(--color-text-secondary);
     font-size: var(--font-size-sm);
     line-height: var(--line-height-relaxed);
+  }
+
+  .party-card__website {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-top: var(--space-md);
+    padding: var(--space-xs) var(--space-md);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+    background-color: transparent;
+  }
+
+  .party-card__website:hover {
+    background-color: color-mix(in srgb, currentColor 15%, transparent);
+  }
+
+  .party-card__website svg {
+    transition: opacity var(--transition-fast);
+  }
+
+  .party-card__website:hover svg {
+    opacity: 0.8;
   }
 
   .party-card__score {

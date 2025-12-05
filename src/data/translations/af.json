@@ -45,7 +45,7 @@
     "methodology": "Metodologie",
     "methodologyText": "Elekti gebruik 'n omvattende, bewyse-gebaseerde benadering om jou politieke sienings met Suid-Afrikaanse politieke partye te pas. Ons stelsel is ontwerp om regverdig, deursigtig en nie-partydig te wees.",
     "howItWorks": "Hoe Dit Werk",
-    "howItWorksText": "Jy beantwoord 22 noukeurig saamgestelde vrae wat groot beleidsareas dek, insluitend gesondheidsorg, onderwys, ekonomie, bestuur en sosiale kwessies. Elke vraag is ontwerp om jou politieke voorkeure te openbaar sonder vooroordeel teenoor enige party.",
+    "howItWorksText": "Jy beantwoord 28 noukeurig saamgestelde vrae wat groot beleidsareas dek, insluitend gesondheidsorg, onderwys, ekonomie, bestuur en sosiale kwessies. Elke vraag is ontwerp om jou politieke voorkeure te openbaar sonder vooroordeel teenoor enige party.",
     "scoring": "Puntestelsel",
     "scoringText": "Elke antwoord wat jy gee word gepas teen gedokumenteerde party-posisies uit amptelike manifeste, beleidsdokumente en openbare verklarings. Partye ontvang geweegde punte gebaseer op hoe nou hul verklaarde posisies ooreenstem met jou antwoorde. Hierdie punte word genormaliseer op 'n 0-100 skaal, met jou topvonds en alternatiewe duidelik geïdentifiseer. Ons bied ook 'n vertrouensgradering om jou te help verstaan hoe sterk jou passing is.",
     "transparency": "Ons Verbintenis tot Deursigtigheid",
@@ -63,7 +63,7 @@
     "analytics": "Privaatheid-Bewarende Analise",
     "analyticsText": "Ons gebruik Cloudflare Web Analytics, 'n privaatheid-eerste analise diens wat nie koekies gebruik nie, nie individue oor webwerwe volg nie, en geen persoonlik identifiseerbare inligting versamel nie. Dit verskaf ons basiese saamgestelde statistieke (soos totale bladsyaansigte) om ons te help verstaan of die webwerf gebruik word, sonder om jou privaatheid in gevaar te stel. Cloudflare kan nie jou vasvraag-antwoorde sien of jou persoonlik identifiseer nie.",
     "parties": "Partye Ingesluit",
-    "partiesText": "Ons sluit 16 groot Suid-Afrikaanse politieke partye in wat diverse standpunte oor die politieke spektrum verteenwoordig. Ons keuse is gebaseer op parlementêre verteenwoordiging, verkiesingsbelang en ideologiese diversiteit.",
+    "partiesText": "Ons sluit 14 groot Suid-Afrikaanse politieke partye in wat diverse standpunte oor die politieke spektrum verteenwoordig. Ons keuse is gebaseer op parlementêre verteenwoordiging, verkiesingsbelang en ideologiese diversiteit.",
     "disclaimer": "Belangrike Vrywaring",
     "disclaimerText": "Elekti is 'n opvoedkundige instrument, nie 'n plaasverving vir navorsing nie. Politieke partye is komplekse organisasies met genuanseerde posisies wat met verloop van tyd ontwikkel. Ons moedig jou sterk aan om party-manifeste te lees, openbare forums by te woon, en ons inligting onafhanklik te verifieer. Hierdie instrument toon belyning gebaseer op verklaarde posisies - werklike bestuur kan verskil. Gebruik hierdie resultate as 'n beginpunt vir dieper verkenning, nie as jou finale besluit nie.",
     "viewData": "Bekyk Rou Data",
@@ -112,12 +112,6 @@
     "aljamah": {
       "desc": "Al Jama-ah verteenwoordig Islamitiese waardes en bepleit sosiale geregtigheid, etiese bestuur en die regte van gemarginaliseerde gemeenskappe."
     },
-    "atm": {
-      "desc": "Die African Transformation Movement fokus op anti-korrupsie, etiese leierskap en transformasie van Suid-Afrika deur verantwoordbaarheid."
-    },
-    "pf": {
-      "desc": "Die Patriotic Front bepleit nasionalistiese beleide, ekonomiese soewereiniteit en om Suid-Afrikaanse burgers se belange te prioritiseer."
-    },
     "cope": {
       "desc": "Die Congress of the People bevorder sosiale demokrasie, goeie bestuur en ekonomiese beleide wat groei met sosiale welsyn balanseer."
     }
@@ -143,79 +137,103 @@
       "category": "sosiale welsyn"
     },
     "q4": {
-      "text": "Die regering behoort belasting op die rykes te verhoog om uitgebreide sosiale programme (gesondheid, onderwys en sosiale toelaes) te befonds.",
-      "category": "ekonomie"
-    },
-    "q5": {
       "text": "Die regering moet swaar in openbare behuising vir lae-inkomste gesinne investeer.",
       "category": "behuising"
     },
-    "q6": {
+    "q5": {
       "text": "Openbare behuisingsbelegging moet prioriteit kry, selfs as dit vereis dat ander openbare dienste gesny word.",
       "category": "behuising"
     },
+    "q6": {
+      "text": "Die regering behoort belasting op die rykes te verhoog om uitgebreide sosiale programme (gesondheid, onderwys en sosiale toelaes) te befonds.",
+      "category": "ekonomie"
+    },
     "q7": {
-      "text": "Landelike ontwikkeling en landbousteun (insluitend subsidies en infrastruktuur vir klein boere) behoort aansienlik meer regeringsbefondsing te ontvang.",
-      "category": "landbou"
-    },
-    "q8": {
-      "text": "Werkers behoort sterker regte te hê om te staak en direk met werkgewers te onderhandel sonder regeringsinminging.",
-      "category": "arbeidsregte"
-    },
-    "q9": {
-      "text": "BEE en regstellende aksie behoort sentrale regeringsprioriteite te bly om historiese rasse- en ekonomiese ongelykheid aan te spreek.",
-      "category": "transformasie"
-    },
-    "q10": {
-      "text": "Onteiening van privaat grond sonder markwaarde-vergoeding moet onder die wet toegelaat word om grondhervorming te versnel.",
-      "category": "grondhervorming"
-    },
-    "q11": {
-      "text": "Die Grondwet moet gewysig word waar nodig om transformasie te versnel en meer progressiewe herverdeling moontlik te maak.",
-      "category": "bestuur"
-    },
-    "q12": {
       "text": "Suid-Afrika behoort handelsooreenskomste wat plaaslike nywerhede beskerm te prioritiseer, selfs as dit hoër verbruikerspryse beteken.",
       "category": "handelsbeleid"
     },
-    "q13": {
-      "text": "Die land behoort belegging in hernubare energie (sonkrag, wind) te prioritiseer bo die uitbreiding van steenkoolkrag.",
-      "category": "energie"
-    },
-    "q14": {
-      "text": "Sterk optrede teen korrupsie (selfs as dit huidige leiers ontwrig) is belangriker as die behoud van politieke stabiliteit.",
-      "category": "korrupsie"
-    },
-    "q15": {
-      "text": "Om misdaad te verminder, moet die regering meer op harder strawwe fokus eerder as om sosiale oorsake soos armoede aan te spreek.",
-      "category": "misdaad"
-    },
-    "q16": {
-      "text": "Onwettige immigrante moet gedeporteer word en streng grenskontrole afgedwing word om plaaslike werk en hulpbronne te beskerm.",
-      "category": "immigrasie"
-    },
-    "q17": {
-      "text": "Die regering moet groot openbare werke en werkwaarborg-programme skep om werkloosheid te verminder.",
-      "category": "indiensneming"
-    },
-    "q18": {
+    "q8": {
       "text": "Privaat eiendom en kleinsakeregte moet sterk beskerm word teen onteiening en swaar regulasie.",
       "category": "eiendomsregte"
     },
-    "q19": {
-      "text": "Die regering moet regsbeskermings vir LGBTQ+ mense versterk en aktief gelyke burgerregte bevorder.",
-      "category": "burgerregte"
+    "q9": {
+      "text": "Die regering moet groot openbare werke en werkwaarborg-programme skep om werkloosheid te verminder.",
+      "category": "indiensneming"
     },
-    "q20": {
+    "q10": {
+      "text": "Werkers behoort sterker regte te hê om te staak en direk met werkgewers te onderhandel sonder regeringsinminging.",
+      "category": "arbeidsregte"
+    },
+    "q11": {
+      "text": "BEE en regstellende aksie behoort sentrale regeringsprioriteite te bly om historiese rasse- en ekonomiese ongelykheid aan te spreek.",
+      "category": "transformasie"
+    },
+    "q12": {
+      "text": "Onteiening van privaat grond sonder markwaarde-vergoeding moet onder die wet toegelaat word om grondhervorming te versnel.",
+      "category": "grondhervorming"
+    },
+    "q13": {
+      "text": "Landelike ontwikkeling en landbousteun (insluitend subsidies en infrastruktuur vir klein boere) behoort aansienlik meer regeringsbefondsing te ontvang.",
+      "category": "landbou"
+    },
+    "q14": {
+      "text": "Die land behoort belegging in hernubare energie (sonkrag, wind) te prioritiseer bo die uitbreiding van steenkoolkrag.",
+      "category": "energie"
+    },
+    "q16": {
+      "text": "Die Grondwet moet gewysig word waar nodig om transformasie te versnel en meer progressiewe herverdeling moontlik te maak.",
+      "category": "bestuur"
+    },
+    "q17": {
+      "text": "Sterk optrede teen korrupsie (selfs as dit huidige leiers ontwrig) is belangriker as die behoud van politieke stabiliteit.",
+      "category": "korrupsie"
+    },
+    "q18": {
       "text": "Die onafhanklikheid van die regsprekende gesag en vervolgingsowerhede moet streng beskerm word, selfs as dit uitvoerende buigsaamheid beperk.",
       "category": "instellings"
     },
     "q21": {
-      "text": "Suid-Afrika behoort breë multilaterale diplomatieke en handelsbetrokkenheid (met die EU, VSA en Afrika-bure) te prioritiseer bo belyning hoofsaaklik met alternatiewe geopolitieke blokke.",
-      "category": "buitelandse beleid"
+      "text": "Om misdaad te verminder, moet die regering meer op harder strawwe fokus eerder as om sosiale oorsake soos armoede aan te spreek.",
+      "category": "misdaad"
     },
     "q22": {
-      "text": "Die regering moet waarnemings- en datatoegangsmagte vir wetstoepassing uitbrei om misdaad en terrorisme te beveg, selfs as dit privaatheid verminder.",
+      "text": "Onwettige immigrante moet gedeporteer word en streng grenskontrole afgedwing word om plaaslike werk en hulpbronne te beskerm.",
+      "category": "immigrasie"
+    },
+    "q23": {
+      "text": "Die regering moet regsbeskermings vir LGBTQ+ mense versterk en aktief gelyke burgerregte bevorder.",
+      "category": "burgerregte"
+    },
+    "q15": {
+      "text": "Die regering moet dringend belê in die herstel van water- en sanitasie-infrastruktuur (pype, suiweringsaanlegte) in falende munisipaliteite.",
+      "category": "infrastruktuur"
+    },
+    "q19": {
+      "text": "Suid-Afrika het sterker staatskaping-hervormings nodig, insluitend strenger beheer oor politieke party-befondsing en korporatiewe invloed in die regering.",
+      "category": "staatskaping hervorming"
+    },
+    "q20": {
+      "text": "Provinsies en munisipaliteite behoort meer mag en begrotingsbeheer te hê, selfs as dit beteken om nasionale regeringsgesag te verminder.",
+      "category": "desentralisasie"
+    },
+    "q24": {
+      "text": "Godsdienstige waardes en leringe behoort 'n groter invloed te hê in die vorming van wette en regeringsbeleid.",
+      "category": "godsdiens & staat"
+    },
+    "q25": {
+      "text": "Suid-Afrika moet tradisionele leierskapstrukture (hoofmanne en konings) formeel erken en befonds as deel van regering.",
+      "category": "tradisionele leierskap"
+    },
+    "q26": {
+      "text": "Die regering moet meer befondsing en ondersteuning verskaf vir inheemse tale in onderwys, media en openbare dienste.",
+      "category": "taal & kultuur"
+    },
+    "q27": {
+      "text": "Suid-Afrika moet breë multilaterale diplomatieke en handelsbetrokkenheid (met die EU, VSA en Afrika-bure) prioritiseer bo belyning met alternatiewe geopolitieke blokke.",
+      "category": "buitelandse beleid"
+    },
+    "q28": {
+      "text": "Die regering moet toesig- en data-toegangsmagte vir wetstoepassers uitbrei om misdaad en terrorisme te bekamp, selfs al verminder dit privaatheid.",
       "category": "privaatheid & tegnologie"
     }
   },

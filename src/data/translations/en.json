@@ -45,7 +45,7 @@
     "methodology": "Methodology",
     "methodologyText": "Elekti uses a comprehensive, evidence-based approach to match your political views with South African political parties. Our system is designed to be fair, transparent, and non-partisan.",
     "howItWorks": "How It Works",
-    "howItWorksText": "You answer 22 carefully crafted questions covering major policy areas including healthcare, education, economy, governance, and social issues. Each question is designed to reveal your political preferences without bias toward any party.",
+    "howItWorksText": "You answer 28 carefully crafted questions covering major policy areas including healthcare, education, economy, governance, and social issues. Each question is designed to reveal your political preferences without bias toward any party.",
     "scoring": "Scoring System",
     "scoringText": "Each answer you provide is matched against documented party positions from official manifestos, policy documents, and public statements. Parties receive weighted scores based on how closely their stated positions align with your responses. These scores are normalized on a 0-100 scale, with your top match and alternatives clearly identified. We also provide a confidence rating to help you understand how strong your match is.",
     "transparency": "Our Commitment to Transparency",
@@ -63,7 +63,7 @@
     "analytics": "Privacy-Preserving Analytics",
     "analyticsText": "We use Cloudflare Web Analytics, a privacy-first analytics service that does not use cookies, does not track individuals across websites, and does not collect any personally identifiable information. It provides us with basic aggregated statistics (like total page views) to help us understand if the site is being used, without compromising your privacy. Cloudflare cannot see your quiz answers or identify you personally.",
     "parties": "Parties Included",
-    "partiesText": "We include 16 major South African political parties representing diverse viewpoints across the political spectrum. Our selection is based on parliamentary representation, electoral significance, and ideological diversity.",
+    "partiesText": "We include 14 major South African political parties representing diverse viewpoints across the political spectrum. Our selection is based on parliamentary representation, electoral significance, and ideological diversity.",
     "disclaimer": "Important Disclaimer",
     "disclaimerText": "Elekti is an educational tool, not a substitute for research. Political parties are complex organizations with nuanced positions that evolve over time. We strongly encourage you to read party manifestos, attend public forums, and verify our information independently. This tool shows alignment based on stated positions - actual governance may differ. Use these results as a starting point for deeper exploration, not as your final decision.",
     "viewData": "View Raw Data",
@@ -112,12 +112,6 @@
     "aljamah": {
       "desc": "Al Jama-ah represents Islamic values and advocates for social justice, ethical governance, and the rights of marginalized communities."
     },
-    "atm": {
-      "desc": "The African Transformation Movement focuses on anti-corruption, ethical leadership, and transforming South Africa through accountability."
-    },
-    "pf": {
-      "desc": "The Patriotic Front advocates for nationalist policies, economic sovereignty, and prioritizing South African citizens' interests."
-    },
     "cope": {
       "desc": "The Congress of the People promotes social democracy, good governance, and economic policies that balance growth with social welfare."
     }
@@ -143,78 +137,102 @@
       "category": "social welfare"
     },
     "q4": {
-      "text": "The government should raise taxes on the wealthy to fund expanded social programmes (health, education and social grants).",
-      "category": "economy"
-    },
-    "q5": {
       "text": "Government should invest heavily in public housing for low-income families.",
       "category": "housing"
     },
-    "q6": {
+    "q5": {
       "text": "Public housing investment should take priority even if it requires cutting other public services.",
       "category": "housing"
     },
+    "q6": {
+      "text": "The government should raise taxes on the wealthy to fund expanded social programmes (health, education and social grants).",
+      "category": "economy"
+    },
     "q7": {
-      "text": "Rural development and agricultural support (including subsidies and infrastructure for small farmers) should receive significantly more government funding.",
-      "category": "agriculture"
-    },
-    "q8": {
-      "text": "Workers should have stronger rights to strike and negotiate directly with employers without government interference.",
-      "category": "labour rights"
-    },
-    "q9": {
-      "text": "BEE and affirmative action should remain central government priorities to redress historic racial and economic inequality.",
-      "category": "transformation"
-    },
-    "q10": {
-      "text": "Expropriation of private land without market-rate compensation should be permitted under law to accelerate land reform.",
-      "category": "land reform"
-    },
-    "q11": {
-      "text": "The Constitution should be amended where necessary to speed up transformation and enable more progressive redistribution.",
-      "category": "governance"
-    },
-    "q12": {
       "text": "South Africa should prioritise trade agreements that protect local industries, even if it means higher consumer prices.",
       "category": "trade policy"
     },
-    "q13": {
-      "text": "The country should prioritise investment in renewable energy (solar, wind) over expanding coal power.",
-      "category": "energy"
-    },
-    "q14": {
-      "text": "Strong action against corruption (even if it disrupts current leaders) is more important than preserving political stability.",
-      "category": "corruption"
-    },
-    "q15": {
-      "text": "To reduce crime, the government should focus more on harsher punishment rather than addressing social causes like poverty.",
-      "category": "crime"
-    },
-    "q16": {
-      "text": "Illegal immigrants should be deported and strict border control enforced to protect local jobs and resources.",
-      "category": "immigration"
-    },
-    "q17": {
-      "text": "The government should create large public works and job guarantee programmes to reduce unemployment.",
-      "category": "employment"
-    },
-    "q18": {
+    "q8": {
       "text": "Private property and small-business rights should be strongly protected against expropriation and heavy regulation.",
       "category": "property rights"
     },
-    "q19": {
-      "text": "The government should strengthen legal protections for LGBTQ+ people and actively advance equal civil rights.",
-      "category": "civil rights"
+    "q9": {
+      "text": "The government should create large public works and job guarantee programmes to reduce unemployment.",
+      "category": "employment"
     },
-    "q20": {
+    "q10": {
+      "text": "Workers should have stronger rights to strike and negotiate directly with employers without government interference.",
+      "category": "labour rights"
+    },
+    "q11": {
+      "text": "BEE and affirmative action should remain central government priorities to redress historic racial and economic inequality.",
+      "category": "transformation"
+    },
+    "q12": {
+      "text": "Expropriation of private land without market-rate compensation should be permitted under law to accelerate land reform.",
+      "category": "land reform"
+    },
+    "q13": {
+      "text": "Rural development and agricultural support (including subsidies and infrastructure for small farmers) should receive significantly more government funding.",
+      "category": "agriculture"
+    },
+    "q14": {
+      "text": "The country should prioritise investment in renewable energy (solar, wind) over expanding coal power.",
+      "category": "energy"
+    },
+    "q16": {
+      "text": "The Constitution should be amended where necessary to speed up transformation and enable more progressive redistribution.",
+      "category": "governance"
+    },
+    "q17": {
+      "text": "Strong action against corruption (even if it disrupts current leaders) is more important than preserving political stability.",
+      "category": "corruption"
+    },
+    "q18": {
       "text": "The independence of the judiciary and prosecuting authorities must be strictly protected, even if that limits executive flexibility.",
       "category": "institutions"
     },
     "q21": {
+      "text": "To reduce crime, the government should focus more on harsher punishment rather than addressing social causes like poverty.",
+      "category": "crime"
+    },
+    "q22": {
+      "text": "Illegal immigrants should be deported and strict border control enforced to protect local jobs and resources.",
+      "category": "immigration"
+    },
+    "q23": {
+      "text": "The government should strengthen legal protections for LGBTQ+ people and actively advance equal civil rights.",
+      "category": "civil rights"
+    },
+    "q15": {
+      "text": "Government must urgently invest in fixing water and sanitation infrastructure (pipes, treatment plants) in failing municipalities.",
+      "category": "infrastructure"
+    },
+    "q19": {
+      "text": "South Africa needs stronger state capture reforms, including stricter controls on political party funding and corporate influence in government.",
+      "category": "state capture reform"
+    },
+    "q20": {
+      "text": "Provinces and municipalities should have more power and budget control, even if it means reducing national government authority.",
+      "category": "decentralization"
+    },
+    "q24": {
+      "text": "Religious values and teachings should have a greater influence in shaping laws and government policy.",
+      "category": "religion & state"
+    },
+    "q25": {
+      "text": "South Africa should formally recognise and fund traditional leadership structures (chiefs and kings) as part of governance.",
+      "category": "traditional leadership"
+    },
+    "q26": {
+      "text": "Government should provide more funding and support for indigenous languages in education, media and public services.",
+      "category": "language & culture"
+    },
+    "q27": {
       "text": "South Africa should prioritise broad multilateral diplomatic and trade engagement (with the EU, US and African neighbours) over aligning primarily with alternative geopolitical blocs.",
       "category": "foreign policy"
     },
-    "q22": {
+    "q28": {
       "text": "The government should expand surveillance and data-access powers for law enforcement to fight crime and terrorism, even if it reduces some privacy.",
       "category": "privacy & tech"
     }

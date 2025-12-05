@@ -45,7 +45,7 @@
     "methodology": "Mokgwa",
     "methodologyText": "Elekti e dirisa mokgwa wa diphoto go tsamaisa dikakanyo tsa gago tsa dipolotiki le ditlhopha tsa dipolotiki tsa Afrika Borwa.",
     "howItWorks": "Indlela E E Dirang",
-    "howItWorksText": "O araba dipotso di le 22 tse di rulagantsweng ka kelotlhoko tse di akaretsang mafapha a makgolo a pholisi go akaretsa tlhokomelo ya boitekanelo, thuto, ikonomi, taolo le dintlha tsa loago. Potso nngwe le nngwe e dirilwe go senola dikgetho tsa gago tsa dipolotiki ntle le kgatlhanong le setlhopha sepe.",
+    "howItWorksText": "O araba dipotso di le 28 tse di rulagantsweng ka kelotlhoko tse di akaretsang mafapha a makgolo a pholisi go akaretsa tlhokomelo ya boitekanelo, thuto, ikonomi, taolo le dintlha tsa loago. Potso nngwe le nngwe e dirilwe go senola dikgetho tsa gago tsa dipolotiki ntle le kgatlhanong le setlhopha sepe.",
     "scoring": "Thulaganyo Ya Dintlha",
     "scoringText": "Karabo nngwe le nngwe e o e fileng e tsamaisanngwa le maemo a ditlhopha a a kwadilweng a a tswang mo dimaniifesto tsa semolao, dikwalo tsa pholisi le dipolelo tsa setšhaba. Ditlhopha di amogela dintlha tse di lekantsweng go ya ka kamoo maemo a tsona a a buetsweng a tsamaelanang le dikarabo tsa gago. Dintlha tseno di dirilwe tse di tlwaelegileng mo sekaleng sa 0-100, ka tsamaelano ya gago e e kwa godimo le tse dingwe di tlhamilwe sentle. Re go fa gape tlhagiso ya tshepo go go thusa go tlhaloganya gore tsamaelano ya gago e nonofile jang.",
     "transparency": "Boikano Jwa Rona Go Nna Pepeneneng",
@@ -63,7 +63,7 @@
     "analytics": "Di-Analytics Tse Di Bolokang Sephiri",
     "analyticsText": "Re dirisa Cloudflare Web Analytics, tirelo ya analytics e e tlotlang sephiri e e sa diriseng di-cookies, e e sa lateleleng batho ka noši mo dikgaolong tsa web, mme e e sa kgobokanyeng tshedimosetso epe e e ka lemogiwang ka botho. E re fa dipalopalo tse di kopantsweng tse di motheo (jaaka dipono tsa tsebe tse di tletseng) go re thusa go tlhaloganya fa webosaete e dirisiwa, ntle le go senya sephiri sa gago. Cloudflare ga e kgone go bona dikarabo tsa dipotso tsa gago kgotsa go go lemoga ka botho.",
     "parties": "Ditlhopha Tse Di Akaretsitsweng",
-    "partiesText": "Re akaretsa ditlhopha di le 16 tse dikgolo tsa dipolotiki tsa Afrika Borwa tse di emelang dikakanyo tse di farologaneng mo go spectrum ya dipolotiki. Kgetho ya rona e theilwe mo kemeding ya palamente, botlhokwa jwa ditlhopho, le pharologanyo ya lenaneo.",
+    "partiesText": "Re akaretsa ditlhopha di le 14 tse dikgolo tsa dipolotiki tsa Afrika Borwa tse di emelang dikakanyo tse di farologaneng mo go spectrum ya dipolotiki. Kgetho ya rona e theilwe mo kemeding ya palamente, botlhokwa jwa ditlhopho, le pharologanyo ya lenaneo.",
     "disclaimer": "Tsiboso",
     "disclaimerText": "Sediriso se ke sa tshedimosho fela mme ga se kgakololo ya go vouta.",
     "viewData": "Bona Data Ya Motheo",
@@ -112,12 +112,6 @@
     "aljamah": {
       "desc": "Al Jama-ah e emela ditumelo tsa boIslam mme e rotloetsa toka ya loago, puso e e nang le maitsholo, le ditshwanelo tsa batho ba ba gateletsweng."
     },
-    "atm": {
-      "desc": "African Transformation Movement e itebaganya le go lwantsha bosenyi, boeteledipele jo bo nang le maitsholo, le go fetola Afrika Borwa ka maikarabelo."
-    },
-    "pf": {
-      "desc": "Patriotic Front e rotloetsa dipholisi tsa bosetshaba, boikemelo jwa ikonomi, le go baya pele dikgatlhego tsa baagi ba Afrika Borwa."
-    },
     "cope": {
       "desc": "Congress of the People e rotloetsa demokrasi ya loago, puso e e siameng, le dipholisi tsa ikonomi tse di lekanyang kgolo le boiketlo jwa loago."
     }
@@ -143,79 +137,103 @@
       "category": "boitekanelo jwa setšhaba"
     },
     "q4": {
-      "text": "Puso e tshwanetse go tlhatlosa lekgetho go bahumegi go tšhegetsa mananeo a setšhaba a a atolositsweng (botsogo, thuto le dimpho tsa loago).",
-      "category": "ikonomi"
-    },
-    "q5": {
       "text": "Puso e tshwanetse go beeletsa thata mo matlong a setšhaba a malapa a a senang madi a mantsi.",
       "category": "matlo"
     },
-    "q6": {
+    "q5": {
       "text": "Peeletso ya matlo a setšhaba e tshwanetse go nna kgakololo le fa go tlhokega go kgaoganya ditirelo tse dingwe tsa setšhaba.",
       "category": "matlo"
     },
+    "q6": {
+      "text": "Puso e tshwanetse go tlhatlosa lekgetho go bahumegi go tšhegetsa mananeo a setšhaba a a atolositsweng (botsogo, thuto le dimpho tsa loago).",
+      "category": "ikonomi"
+    },
     "q7": {
-      "text": "Tlhabololo ya magae le tshegetso ya temo (go akaretsa ditshegetso le motheo wa balemirui ba bannye) e tshwanetse go amogela matlole a mantsi a puso.",
-      "category": "temo"
-    },
-    "q8": {
-      "text": "Badiri ba tshwanetse go nna le ditshwanelo tse di nonofileng tsa go itlhagisa le go buisana ka tlhamalalo le bahiri kwa ntle ga go tsena ga puso.",
-      "category": "ditshwanelo tsa badiri"
-    },
-    "q9": {
-      "text": "BEE le go dira ka tshiamo go tshwanetse go tswelela e le dikgakololo tsa botlhokwa tsa puso go lokisa go se lekane ga morafe le ikonomi ga histori.",
-      "category": "phetogo"
-    },
-    "q10": {
-      "text": "Go tsewa ga lefatshe la poraefete kwa ntle ga tuelo ya boleng jwa mebaraka go tshwanetse go dumelwa ka fa tlase ga molao go potlakisa petoloelo ya lefatshe.",
-      "category": "petoloelo ya lefatshe"
-    },
-    "q11": {
-      "text": "Molaotheo o tshwanetse go fetolwa fa go tlhokega go potlakisa phetogo le go kgontsha kabo e e tswelelang.",
-      "category": "puso"
-    },
-    "q12": {
       "text": "Afrika Borwa e tshwanetse go baya kgakololo ditumalano tsa kgwebo tse di sireletsang madirelo a selegae, le fa go raya ditlhotlhwa tse di kwa godimo tsa bareki.",
       "category": "pholisi ya kgwebo"
     },
-    "q13": {
-      "text": "Naga e tshwanetse go baya kgakololo peeletso mo motlakaseng o o mpshafaditsweng (letsatsi, phefo) go feta go atolosa motlakase wa magala.",
-      "category": "motlakase"
-    },
-    "q14": {
-      "text": "Kgato e e nonofileng kgatlhanong le bosenyi (le fa e tsenya tiragalo mo baeteledipele ba jaana) e botlhokwa go feta go boloka botsitso jwa sepolotiki.",
-      "category": "bosenyi"
-    },
-    "q15": {
-      "text": "Go fokotsa bosenyi, puso e tshwanetse go tlhoma mogopolo mo kotlhaong e e thata go feta go lebagana le mabaka a loago jaaka lehuma.",
-      "category": "bosenyi"
-    },
-    "q16": {
-      "text": "Bafaladi ba ba sa dumelwang ba tshwanetse go lelekiwa le taolo e e tiileng ya moedi go sireletswa ditiro tsa selegae le dithuso.",
-      "category": "bofaladi"
-    },
-    "q17": {
-      "text": "Puso e tshwanetse go tlhama mananeo a magolo a ditiro tsa setšhaba le mananeo a go netefatsa tiro go fokotsa tlhoka tiro.",
-      "category": "tiro"
-    },
-    "q18": {
+    "q8": {
       "text": "Thoto ya poraefete le ditshwanelo tsa dikgwebo tse dinnye di tshwanetse go sirelediwa ka thata kgatlhanong le go tsewa le melawana e e bokete.",
       "category": "ditshwanelo tsa thoto"
     },
-    "q19": {
-      "text": "Puso e tshwanetse go nonotsha tshireletso ya molao ya batho ba LGBTQ+ le go tlhabolola ditshwanelo tse di lekana tsa baagi.",
-      "category": "ditshwanelo tsa baagi"
+    "q9": {
+      "text": "Puso e tshwanetse go tlhama mananeo a magolo a ditiro tsa setšhaba le mananeo a go netefatsa tiro go fokotsa tlhoka tiro.",
+      "category": "tiro"
     },
-    "q20": {
+    "q10": {
+      "text": "Badiri ba tshwanetse go nna le ditshwanelo tse di nonofileng tsa go itlhagisa le go buisana ka tlhamalalo le bahiri kwa ntle ga go tsena ga puso.",
+      "category": "ditshwanelo tsa badiri"
+    },
+    "q11": {
+      "text": "BEE le go dira ka tshiamo go tshwanetse go tswelela e le dikgakololo tsa botlhokwa tsa puso go lokisa go se lekane ga morafe le ikonomi ga histori.",
+      "category": "phetogo"
+    },
+    "q12": {
+      "text": "Go tsewa ga lefatshe la poraefete kwa ntle ga tuelo ya boleng jwa mebaraka go tshwanetse go dumelwa ka fa tlase ga molao go potlakisa petoloelo ya lefatshe.",
+      "category": "petoloelo ya lefatshe"
+    },
+    "q13": {
+      "text": "Tlhabololo ya magae le tshegetso ya temo (go akaretsa ditshegetso le motheo wa balemirui ba bannye) e tshwanetse go amogela matlole a mantsi a puso.",
+      "category": "temo"
+    },
+    "q14": {
+      "text": "Naga e tshwanetse go baya kgakololo peeletso mo motlakaseng o o mpshafaditsweng (letsatsi, phefo) go feta go atolosa motlakase wa magala.",
+      "category": "motlakase"
+    },
+    "q16": {
+      "text": "Molaotheo o tshwanetse go fetolwa fa go tlhokega go potlakisa phetogo le go kgontsha kabo e e tswelelang.",
+      "category": "puso"
+    },
+    "q17": {
+      "text": "Kgato e e nonofileng kgatlhanong le bosenyi (le fa e tsenya tiragalo mo baeteledipele ba jaana) e botlhokwa go feta go boloka botsitso jwa sepolotiki.",
+      "category": "bosenyi"
+    },
+    "q18": {
       "text": "Boikemelo jwa tsamaiso ya tshiamiso le marapo a a tshwereng molato bo tshwanetse go sirelediwa ka thata, le fa seo se fokotsa bofefo jwa tsamaiso.",
       "category": "ditheo"
     },
     "q21": {
-      "text": "Afrika Borwa e tshwanetse go baya kgakololo tirisanommogo e e pharaletseng ya dinaga tse dintsi ya dipolotiki le kgwebo (le EU, US le baagisani ba Afrika) go feta go tshwaragana bogolo le ditlhopha tse dingwe tsa sepolotiki.",
-      "category": "pholisi ya dinaga tsa kwa ntle"
+      "text": "Go fokotsa bosenyi, puso e tshwanetse go tlhoma mogopolo mo kotlhaong e e thata go feta go lebagana le mabaka a loago jaaka lehuma.",
+      "category": "bosenyi"
     },
     "q22": {
-      "text": "Puso e tshwanetse go atolosa maatla a tlhatlhobo le a phitlhelelo ya data a tsamaiso ya molao go lwantsha bosenyi le boqhekanyetsi, le fa go fokotsa sephiri.",
+      "text": "Bafaladi ba ba sa dumelwang ba tshwanetse go lelekiwa le taolo e e tiileng ya moedi go sireletswa ditiro tsa selegae le dithuso.",
+      "category": "bofaladi"
+    },
+    "q23": {
+      "text": "Puso e tshwanetse go nonotsha tshireletso ya molao ya batho ba LGBTQ+ le go tlhabolola ditshwanelo tse di lekana tsa baagi.",
+      "category": "ditshwanelo tsa baagi"
+    },
+    "q15": {
+      "text": "Puso e tshwanetse go tsenya madi ka bonako mo go baakanyeng mafaratlhatlha a metsi le phepafatso (dipaipi, mafelo a phepafatso) mo bommasepala ba ba sa atlang.",
+      "category": "mafaratlhatlha"
+    },
+    "q19": {
+      "text": "Aforika Borwa e tlhoka diphetogo tse di nonofileng tsa go tshwara puso, go akaretsa ditaolo tse di tiileng tsa madi a mephato ya dipolotiki le tlhotlheletso ya dikhamphani mo pusong.",
+      "category": "diphetogo tsa go tshwara puso"
+    },
+    "q20": {
+      "text": "Diporofense le bommasepala ba tshwanetse go nna le maatla a mantsi a taolo ya tsamaiso ya madi, le fa go raya go fokotsa thata ya puso ya bosetšhaba.",
+      "category": "go abelana maatla"
+    },
+    "q24": {
+      "text": "Dikgatlhegelo tsa bodumedi le dithuto di tshwanetse go nna le tlhotlheletso e kgolo mo go tlhomeng melao le pholisi ya puso.",
+      "category": "bodumedi & puso"
+    },
+    "q25": {
+      "text": "Aforika Borwa e tshwanetse go lemoga ka semolao le go thusa ditlhabololo tsa boeteledipele jwa setso (dikgosi le dikgosana) jaaka karolo ya puso.",
+      "category": "boeteledipele jwa setso"
+    },
+    "q26": {
+      "text": "Puso e tshwanetse go naya matlole a mantsi le tshegetso ya dipuo tsa setso mo thutong, mefutafuteng le ditirelong tsa setšhaba.",
+      "category": "puo & setso"
+    },
+    "q27": {
+      "text": "Aforika Borwa e tshwanetse go dira gore kgolagano ya madiplomata le kgwebo e e pharaletseng (le EU, US le baagisanyi ba Afrika) e nne pele ga go tsibogana le ditlhopha tse dingwe tsa jeopolitiki.",
+      "category": "pholisi ya dinaga tse dingwe"
+    },
+    "q28": {
+      "text": "Puso e tshwanetse go oketsa maatla a tlhokomelo le go fitlhelela tshedimosetso ya baokamedi go lwantsha bosenyi le bosenyi jwa boikgogomoso, le fa go ka fokotsa sephiri.",
       "category": "sephiri & thekenoloji"
     }
   },

@@ -45,7 +45,7 @@
     "methodology": "Indlela",
     "methodologyText": "I-Elekti isebenzisa inkqubo yamanqaku ukudibanisa iimbono zakho zezopolitiko namaqela ezopolitiko aseMzantsi Afrika.",
     "howItWorks": "Indlela Esebenza Ngayo",
-    "howItWorksText": "Uphendula imibuzo engama-22 eyakhiwe ngononophelo egubungela iindawo ezinkulu zomgaqo-nkqubo kubandakanywa ukhathalelo lwempilo, imfundo, uqoqosho, ulawulo kunye nemiba yoluntu. Umbuzo ngamnye wenzelwe ukuveza izinto ozikhethayo kwezopolitiko ngaphandle kokuthambekela kwiqela.",
+    "howItWorksText": "Uphendula imibuzo engama-28 eyakhiwe ngononophelo egubungela iindawo ezinkulu zomgaqo-nkqubo kubandakanywa ukhathalelo lwempilo, imfundo, uqoqosho, ulawulo kunye nemiba yoluntu. Umbuzo ngamnye wenzelwe ukuveza izinto ozikhethayo kwezopolitiko ngaphandle kokuthambekela kwiqela.",
     "scoring": "Inkqubo Yamanqaku",
     "scoringText": "Impendulo nganye oyinikayo ithelekiswa nezikhundla zamaqela ezibhaliweyo ezivela kwiimaniifesto ezisemthethweni, amaxwebhu omgaqo-nkqubo kunye neengxelo zoluntu. Amaqela afumana amanqaku alinganisiweyo ngokusekelwe ekusondelaneni kwezikhundla zawo ezivakalisiweyo neempendulo zakho. La manqaku alinganiswa kwisikali se-0-100, kunye nokufana kwakho okuphezulu kunye nezinye iindlela zichazwe ngokucacileyo. Sikunika nokubeka izinga lokuthembana ukunceda ukuqonda ukuba ukufanelana kwakho kuqinile kangakanani.",
     "transparency": "Ukuzibophelela Kwethu Ekucaceni",
@@ -63,7 +63,7 @@
     "analytics": "I-Analytics Egcina Ubumfihlo",
     "analyticsText": "Sisebenzisa iCloudflare Web Analytics, inkonzo ye-analytics egxile kubumfihlo engatoli amakhukhi, engalandeli abantu ngabanye kwiwebhusayithi, yaye engaqokeleli naluphi na ulwazi oluchongwayo lomntu. Isinika iinkcukacha ezidibanisiweyo ezisiseko (njengokujonga iphepha ngokupheleleyo) ukusinceda siqonde ukuba iwebhusayithi iyasetyenziswa, ngaphandle kokonakalisa ubumfihlo bakho. ICloudflare ayikwazi ukubona iimpendulo zakho zemibuzo okanye ukukuchonga ngokwakho.",
     "parties": "Amaqela Abandakanyiweyo",
-    "partiesText": "Sibandakanya amaqela amakhulu ali-16 ezopolitiko aseMzantsi Afrika amele iimbono ezahlukeneyo kwi-spectrum yezopolitiko. Ukhetho lwethu lusekelwe ekumelweni kweparamente, ukubaluleka konyulo, kunye nokwahluka kweengcamango.",
+    "partiesText": "Sibandakanya amaqela amakhulu ali-14 ezopolitiko aseMzantsi Afrika amele iimbono ezahlukeneyo kwi-spectrum yezopolitiko. Ukhetho lwethu lusekelwe ekumelweni kweparamente, ukubaluleka konyulo, kunye nokwahluka kweengcamango.",
     "disclaimer": "Isaziso",
     "disclaimerText": "Esi sixhobo sisetyenziselwa ulwazi kuphela kwaye asisiyongcebiso yokuvota.",
     "viewData": "Jonga Idatha Engalungisiwanga",
@@ -112,12 +112,6 @@
     "aljamah": {
       "desc": "I-Al Jama-ah imele iinqobo zamaSilamsi kwaye ikhuthaza ubulungisa bentlalo, ulawulo olunesimilo, kunye namalungelo oluntu olucinezelelweyo."
     },
-    "atm": {
-      "desc": "I-African Transformation Movement igxile ekulweni norhwaphilizo, ubunkokheli obunokuziphatha, kunye nokutshintsha uMzantsi Afrika ngokuphendula."
-    },
-    "pf": {
-      "desc": "I-Patriotic Front ikhuthaza imigaqo-nkqubo yezwe, ukuzimela kwezoqoqosho, kunye nokubeka phambili iimfuno zabemi boMzantsi Afrika."
-    },
     "cope": {
       "desc": "I-Congress of the People ikhuthaza idemokhrasi yentlalo, ulawulo olulungileyo, kunye nemigaqo-nkqubo yezoqoqosho elinganisa ukukhula nentlalontle yoluntu."
     }
@@ -143,80 +137,104 @@
       "category": "intlalontle yoluntu"
     },
     "q4": {
-      "text": "Urhulumeni kufuneka anyuse irhafu kubantu abatyebileyo ukuxhasa iinkqubo zoluntu ezandisiweyo (impilo, imfundo kunye nezibonelelo zentlalo).",
-      "category": "uqoqosho"
-    },
-    "q5": {
       "text": "Urhulumeni kufuneka atyale kakhulu kwizindlu zikawonke-wonke zeentsapho ezingenayo imali eninzi.",
       "category": "izindlu"
     },
-    "q6": {
+    "q5": {
       "text": "Utyalo-mali lwezindlu zikawonke-wonke kufuneka lube yinto ephambili nokuba kufuna ukusika ezinye iinkonzo zikawonke-wonke.",
       "category": "izindlu"
     },
+    "q6": {
+      "text": "Urhulumeni kufuneka anyuse irhafu kubantu abatyebileyo ukuxhasa iinkqubo zoluntu ezandisiweyo (impilo, imfundo kunye nezibonelelo zentlalo).",
+      "category": "uqoqosho"
+    },
     "q7": {
-      "text": "Uphuhliso lwamaphandle kunye nenkxaso yezolimo (kubandakanywa iinkxaso-mali kunye neziseko zeengqalasizinda zabalimi abancinci) kufuneka ifumane inkxaso-mali enkulu kurhulumeni.",
-      "category": "ezolimo"
-    },
-    "q8": {
-      "text": "Abasebenzi kufuneka babe namalungelo aqinileyo okugweva kunye nokuxoxisana ngqo nabaqeshi ngaphandle kokungenelela kurhulumeni.",
-      "category": "amalungelo abasebenzi"
-    },
-    "q9": {
-      "text": "I-BEE kunye nokwenza ngokulungisa kufuneka kuqhubeke kube ziinkalo eziphambili kurhulumeni ukubuyisela ukungalingani ngokobuhlanga noqoqosho.",
-      "category": "utshintsho"
-    },
-    "q10": {
-      "text": "Ukuthathwa komhlaba wabucala ngaphandle kwembuyekezo yexabiso lemarike kufuneka kuvunyelwe phantsi komthetho ukukhawulezisa uhlaziyo lomhlaba.",
-      "category": "uhlaziyo lomhlaba"
-    },
-    "q11": {
-      "text": "UMgaqo-siseko kufuneka uhlengahlengiswe apho kuyimfuneko ukukhawulezisa utshintsho kunye nokuvumela ulwabiwo oluqhubekayo.",
-      "category": "ulawulo"
-    },
-    "q12": {
       "text": "UMzantsi Afrika kufuneka ubeke phambili izivumelwano zorhwebo ezikhusela amashishini asekhaya, nokuba kuthetha amaxabiso aphezulu kubathengi.",
       "category": "umgaqo-nkqubo worhwebo"
     },
-    "q13": {
-      "text": "Ilizwe kufuneka libeke phambili utyalo-mali kumandla ahlaziyekayo (ilanga, umoya) kunokwandisa amandla amalahle.",
-      "category": "amandla"
-    },
-    "q14": {
-      "text": "Inyathelo elinamandla lokulwa urhwaphilizo (nokuba liphazamisa iinkokeli zangoku) libaluleke ngaphezu kokugcina uzinzo lwezopolitiko.",
-      "category": "urhwaphilizo"
-    },
-    "q15": {
-      "text": "Ukunciphisa ulwaphulo-mthetho, urhulumeni kufuneka agxile kwisohlwayo esinamandla kunokujongana nezizathu zentlalo ezifana nobuhlwempu.",
-      "category": "ulwaphulo-mthetho"
-    },
-    "q16": {
-      "text": "Abafuduki abangekho emthethweni kufuneka bagxothwe kwaye kulawulwe imida eqinileyo ukukhusela imisebenzi kunye nezibonelelo zasekhaya.",
-      "category": "ukufuduka"
-    },
-    "q17": {
-      "text": "Urhulumeni kufuneka adale iinkqubo ezinkulu zemisebenzi yoluntu kunye neenkqubo zokuqinisekisa umsebenzi ukunciphisa ukungaqeshwa.",
-      "category": "ingqesho"
-    },
-    "q18": {
+    "q8": {
       "text": "Ipropati yabucala kunye namalungelo amashishini amancane kufuneka akhuselelwe ngamandla ekuthathweni kunye nomthetho onzima.",
       "category": "amalungelo epropati"
     },
-    "q19": {
-      "text": "Urhulumeni kufuneka aqinise ukukhuselwa komthetho kwabantu be-LGBTQ+ kwaye aqhubele phambili amalungelo alinganayo oluntu.",
-      "category": "amalungelo oluntu"
+    "q9": {
+      "text": "Urhulumeni kufuneka adale iinkqubo ezinkulu zemisebenzi yoluntu kunye neenkqubo zokuqinisekisa umsebenzi ukunciphisa ukungaqeshwa.",
+      "category": "ingqesho"
     },
-    "q20": {
+    "q10": {
+      "text": "Abasebenzi kufuneka babe namalungelo aqinileyo okugweva kunye nokuxoxisana ngqo nabaqeshi ngaphandle kokungenelela kurhulumeni.",
+      "category": "amalungelo abasebenzi"
+    },
+    "q11": {
+      "text": "I-BEE kunye nokwenza ngokulungisa kufuneka kuqhubeke kube ziinkalo eziphambili kurhulumeni ukubuyisela ukungalingani ngokobuhlanga noqoqosho.",
+      "category": "utshintsho"
+    },
+    "q12": {
+      "text": "Ukuthathwa komhlaba wabucala ngaphandle kwembuyekezo yexabiso lemarike kufuneka kuvunyelwe phantsi komthetho ukukhawulezisa uhlaziyo lomhlaba.",
+      "category": "uhlaziyo lomhlaba"
+    },
+    "q13": {
+      "text": "Uphuhliso lwamaphandle kunye nenkxaso yezolimo (kubandakanywa iinkxaso-mali kunye neziseko zeengqalasizinda zabalimi abancinci) kufuneka ifumane inkxaso-mali enkulu kurhulumeni.",
+      "category": "ezolimo"
+    },
+    "q14": {
+      "text": "Ilizwe kufuneka libeke phambili utyalo-mali kumandla ahlaziyekayo (ilanga, umoya) kunokwandisa amandla amalahle.",
+      "category": "amandla"
+    },
+    "q16": {
+      "text": "UMgaqo-siseko kufuneka uhlengahlengiswe apho kuyimfuneko ukukhawulezisa utshintsho kunye nokuvumela ulwabiwo oluqhubekayo.",
+      "category": "ulawulo"
+    },
+    "q17": {
+      "text": "Inyathelo elinamandla lokulwa urhwaphilizo (nokuba liphazamisa iinkokeli zangoku) libaluleke ngaphezu kokugcina uzinzo lwezopolitiko.",
+      "category": "urhwaphilizo"
+    },
+    "q18": {
       "text": "Ukuzimela kwezobulungisa kunye namagunya okuphekelela kufuneka kukhuselelwe ngokungqongqo, nokuba oko kunciphisa ukuguquguquka kwesigqeba.",
       "category": "amaziko"
     },
     "q21": {
-      "text": "UMzantsi Afrika kufuneka ubeke phambili ukubambisana kwamazwe amaningi kwezodiplomacy norhwebo (ne-EU, i-US kunye nabamelwane base-Afrika) kunokuthambisana ikakhulu namaqela ezopolitiko.",
-      "category": "umgaqo-nkqubo wamazwe angaphandle"
+      "text": "Ukunciphisa ulwaphulo-mthetho, urhulumeni kufuneka agxile kwisohlwayo esinamandla kunokujongana nezizathu zentlalo ezifana nobuhlwempu.",
+      "category": "ulwaphulo-mthetho"
     },
     "q22": {
-      "text": "Urhulumeni kufuneka andise amagunya okubeka iliso kunye nokufikelela kwidatha yabanyanzelisi bomthetho ukulwa ulwaphulo-mthetho kunye nobunqolobi, nokuba oko kunciphisa ubumfihlo.",
-      "category": "ubumfihlo & iteknoloji"
+      "text": "Abafuduki abangekho emthethweni kufuneka bagxothwe kwaye kulawulwe imida eqinileyo ukukhusela imisebenzi kunye nezibonelelo zasekhaya.",
+      "category": "ukufuduka"
+    },
+    "q23": {
+      "text": "Urhulumeni kufuneka aqinise ukukhuselwa komthetho kwabantu be-LGBTQ+ kwaye aqhubele phambili amalungelo alinganayo oluntu.",
+      "category": "amalungelo oluntu"
+    },
+    "q15": {
+      "text": "Urhulumente kufuneka atyale imali ngokukhawuleza ekulungiseni iziseko zamanzi nezococeko (iimbombo, amaziko okuhlanza) koomasipala abangaphumeleliyo.",
+      "category": "iziseko"
+    },
+    "q19": {
+      "text": "uMzantsi Afrika ufuna uhlaziyo oluqinileyo lokuthinjwa korhulumente, kubandakanya ulawulo oluqinileyo kwinkxaso-mali yamaqela ezopolitiko kunye nempembelelo yenkampani kurhulumente.",
+      "category": "uhlaziyo lokuthinjwa korhulumente"
+    },
+    "q20": {
+      "text": "Amaphondo noomasipala kufuneka babe namandla angakumbi nokulawula uhlahlo-lwabiwo mali, nokuba oko kuthetha ukunciphisa igunya likaRhulumente weSizwe.",
+      "category": "ukusasazwa kwamandla"
+    },
+    "q24": {
+      "text": "Imikhwa yoqobo kunye neemfundiso kufuneka zibe nefuthe elikhulu ekumiselweni kwemithetho kunye nomgaqo-nkqubo karhulumente.",
+      "category": "unqulo norhulumente"
+    },
+    "q25": {
+      "text": "uMzantsi Afrika kufuneka aqaphele ngokusesikweni kwaye axhase izakhiwo zobunkokeli bemveli (iinkosi nookumkani) njengenxalenye yolawulo.",
+      "category": "ubunkokeli bemveli"
+    },
+    "q26": {
+      "text": "Urhulumente kufuneka anike inkxaso-mali eninzi kunye nenkxaso yeelwimi zemveli kwimfundo, kumajelo eendaba nakwiinkonzo zoluntu.",
+      "category": "ulwimi nenkcubeko"
+    },
+    "q27": {
+      "text": "uMzantsi Afrika kufuneka ubeke phambili intsebenziswano yezodiplomasi kunye norhwebo olubanzi (kunye ne-EU, i-US kunye nabamelwane base-Afrika) kunokuhambelana namaqela ezopolitiko angaphandle.",
+      "category": "umgaqo-nkqubo wangaphandle"
+    },
+    "q28": {
+      "text": "Urhulumente kufuneka andise amandla okubeka esweni kunye nokufikelela kwidatha yabasemthethweni ukulwa nolwaphulo-mthetho kunye nobunqolobi, nokuba kunciphisa ubumfihlo.",
+      "category": "ubumfihlo & itekhnoloji"
     }
   },
   "footer": {

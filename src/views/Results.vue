@@ -27,7 +27,6 @@
 
         <section v-if="result.alternatives.length > 0" class="results__section">
           <h2 class="results__section-title">
-            <Users :size="20" />
             {{ $t("results.alternativeMatch") }}
           </h2>
 
@@ -81,7 +80,7 @@
 </template>
 
 <script setup lang="ts">
-  import { AlertCircle, Copy, RotateCcw, Trophy, Users } from "lucide-vue-next";
+  import { AlertCircle, Copy, RotateCcw, Trophy } from "lucide-vue-next";
   import { onMounted, ref } from "vue";
   import { useRouter } from "vue-router";
   import PartyCard from "../components/PartyCard.vue";
@@ -95,6 +94,7 @@
     descriptionKey: string;
     colour: string;
     logo: string;
+    website?: string;
   }
 
   interface PartyScore {
@@ -245,12 +245,11 @@ View my results: ${shareUrl}`;
     align-items: center;
     letter-spacing: 0.025em;
     box-shadow: var(--shadow-md);
-    transition: all var(--transition-fast);
+    transition: box-shadow var(--transition-fast);
     height: 40px;
   }
 
   .results__confidence:hover {
-    transform: translateY(-1px);
     box-shadow: var(--shadow-lg);
   }
 
@@ -313,7 +312,6 @@ View my results: ${shareUrl}`;
 
   .results__button--primary:hover {
     background-color: var(--color-primary-dark);
-    transform: translateY(-1px);
     box-shadow: var(--shadow-md);
   }
 

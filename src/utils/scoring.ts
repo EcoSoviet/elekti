@@ -137,15 +137,15 @@ export function computeScores(
   }
 
   let confidence: "high" | "medium" | "low" = "high";
+
+  const gapToSecond =
+    alternatives.length > 0 && alternatives[0]
+      ? primary.normalizedScore - alternatives[0].normalizedScore
+      : primary.normalizedScore;
+
   if (primary.normalizedScore < 0.15) {
     confidence = "low";
-  } else if (
-    primary.normalizedScore < 0.4 ||
-    (alternatives.length > 0 &&
-      alternatives[0] &&
-      Math.abs(primary.normalizedScore - alternatives[0].normalizedScore) <
-        tieMargin * 2)
-  ) {
+  } else if (gapToSecond < 0.08 || primary.normalizedScore < 0.4) {
     confidence = "medium";
   }
 
