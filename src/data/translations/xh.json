@@ -44,14 +44,25 @@
     "title": "Malunga ne-Elekti",
     "methodology": "Indlela",
     "methodologyText": "I-Elekti isebenzisa inkqubo yamanqaku ukudibanisa iimbono zakho zezopolitiko namaqela ezopolitiko aseMzantsi Afrika.",
+    "howItWorks": "Indlela Esebenza Ngayo",
+    "howItWorksText": "Uphendula imibuzo engama-22 eyakhiwe ngononophelo egubungela iindawo ezinkulu zomgaqo-nkqubo kubandakanywa ukhathalelo lwempilo, imfundo, uqoqosho, ulawulo kunye nemiba yoluntu. Umbuzo ngamnye wenzelwe ukuveza izinto ozikhethayo kwezopolitiko ngaphandle kokuthambekela kwiqela.",
+    "scoring": "Inkqubo Yamanqaku",
+    "scoringText": "Impendulo nganye oyinikayo ithelekiswa nezikhundla zamaqela ezibhaliweyo ezivela kwiimaniifesto ezisemthethweni, amaxwebhu omgaqo-nkqubo kunye neengxelo zoluntu. Amaqela afumana amanqaku alinganisiweyo ngokusekelwe ekusondelaneni kwezikhundla zawo ezivakalisiweyo neempendulo zakho. La manqaku alinganiswa kwisikali se-0-100, kunye nokufana kwakho okuphezulu kunye nezinye iindlela zichazwe ngokucacileyo. Sikunika nokubeka izinga lokuthembana ukunceda ukuqonda ukuba ukufanelana kwakho kuqinile kangakanani.",
+    "transparency": "Ukuzibophelela Kwethu Ekucaceni",
+    "transparencyText": "Zonke izikhundla zamaqela kunye nobunzima bamanqaku zinqunywa ngophando oluqinileyo lwamaxwebhu asemthethweni amaqela. Indlela yethu ivulelekile futhi inokuphononongwa. Asikhethi naliphi na iqela lezopolitiko okanye ingcamango - injongo yethu kuphela kukunceda wenze izigqibo ezinolwazi ezisekelwe kwizinto ozikhethayo kunye nezikhundla ezichazwe ngamaqela.",
+    "dataSources": "Imithombo Yophando Lwethu",
+    "dataSourcesText": "Izikhundla zamaqela zicutshungulwa ngononophelo kwiimaniifesto ezisemthethweni zamaqela, amaxwebhu omgaqo-nkqubo, iirekhodi zokuvota zeparamente kunye neengxelo zoluntu eziqinisekisiweyo. Sihlaziya idatha yethu rhoqo ukubonisa utshintsho lomgaqo-nkqubo. Zonke izixhobo zemithombo zivela kumajelo asemthethweni amaqela okanye imibutho yeendaba ehloniphekileyo. Ukuba ukholelwa ukuba naluphi na ulwazi aluchanekanga, samukela izilungiso ngamaxwebhu afanelekileyo.",
     "privacy": "Ubumfihlo",
     "privacyText": "Ubumfihlo bakho bubalulekile. Asiqokeleli ulwazi lomntu ka noši noma iimpendulo zemibuzo. Kuphela i-language preference yakho igcinwe kwindawo kwisixhobo sakho. Iimpendulo zemibuzo zakho zikhunyelwe ngqo kwi-URL xa ubantu bagcina - ayikho ibhaliso eserveni, akukho i-database, ayikho ilandelelaniselo. Sisebenzisa iCloudflare Web Analytics, entle-hloniphanispiru e ngatoli-cookies, elathelelaniseli abantu, nangethola ulwazi lomntu. Iziphumo zakho ziyakho ukuzabela okanye ukuzigcina kwicinile ngokupheleleyo kwiigqatso zakho.",
     "parties": "Amaqela Abandakanyiweyo",
     "partiesText": "Sibandakanya amaqela amakhulu ali-11 ezopolitiko aseMzantsi Afrika.",
     "disclaimer": "Isaziso",
     "disclaimerText": "Esi sixhobo sisetyenziselwa ulwazi kuphela kwaye asisiyongcebiso yokuvota.",
-    "dataSources": "Imithombo Yedatha",
-    "dataSourcesText": "Izikhundla zamaqela zisekelwe kwiimaniifesto zoluntu."
+    "viewData": "Jonga Idatha Engalungisiwanga",
+    "viewDataText": "Ngomoya wokucaca ngokupheleleyo, unokuvavanya iifayile zethu zedatha ngokwakho. Ezi fayile zeJSON ziqulethe zonke izikhundla zamaqela, ubunzima bamanqaku, kunye nemetadata yemibuzo esetyenziswe yi-algorithm yethu.",
+    "scoringData": "Ubunzima Bamanqaku",
+    "partiesData": "Ulwazi Lwamaqela",
+    "questionsData": "Imetadata Yemibuzo"
   },
   "party": {
     "anc": {

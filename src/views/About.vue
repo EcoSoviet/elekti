@@ -9,6 +9,23 @@
           {{ $t("about.methodology") }}
         </h2>
         <p class="about__text">{{ $t("about.methodologyText") }}</p>
+
+        <div class="about__subsection">
+          <h3 class="about__subsection-title">{{ $t("about.howItWorks") }}</h3>
+          <p class="about__text">{{ $t("about.howItWorksText") }}</p>
+        </div>
+
+        <div class="about__subsection">
+          <h3 class="about__subsection-title">{{ $t("about.scoring") }}</h3>
+          <p class="about__text">{{ $t("about.scoringText") }}</p>
+        </div>
+
+        <div class="about__subsection">
+          <h3 class="about__subsection-title">
+            {{ $t("about.transparency") }}
+          </h3>
+          <p class="about__text">{{ $t("about.transparencyText") }}</p>
+        </div>
       </section>
 
       <section class="about__section">
@@ -17,6 +34,21 @@
           {{ $t("about.privacy") }}
         </h2>
         <p class="about__text">{{ $t("about.privacyText") }}</p>
+
+        <div class="about__subsection">
+          <h3 class="about__subsection-title">{{ $t("about.noTracking") }}</h3>
+          <p class="about__text">{{ $t("about.noTrackingText") }}</p>
+        </div>
+
+        <div class="about__subsection">
+          <h3 class="about__subsection-title">{{ $t("about.localOnly") }}</h3>
+          <p class="about__text">{{ $t("about.localOnlyText") }}</p>
+        </div>
+
+        <div class="about__subsection">
+          <h3 class="about__subsection-title">{{ $t("about.sharing") }}</h3>
+          <p class="about__text">{{ $t("about.sharingText") }}</p>
+        </div>
       </section>
 
       <section class="about__section">
@@ -45,14 +77,42 @@
           {{ $t("about.disclaimer") }}
         </h2>
         <p class="about__text">{{ $t("about.disclaimerText") }}</p>
-      </section>
 
-      <section class="about__section">
-        <h2 class="about__section-title">
-          <FileText :size="24" />
-          {{ $t("about.dataSources") }}
-        </h2>
-        <p class="about__text">{{ $t("about.dataSourcesText") }}</p>
+        <div class="about__subsection">
+          <h3 class="about__subsection-title">{{ $t("about.dataSources") }}</h3>
+          <p class="about__text">{{ $t("about.dataSourcesText") }}</p>
+        </div>
+
+        <div class="about__subsection">
+          <h3 class="about__subsection-title">{{ $t("about.viewData") }}</h3>
+          <p class="about__text">{{ $t("about.viewDataText") }}</p>
+          <div class="about__data-links">
+            <a
+              href="/src/data/scoring.json"
+              target="_blank"
+              class="about__data-link"
+            >
+              <FileText :size="16" />
+              {{ $t("about.scoringData") }}
+            </a>
+            <a
+              href="/src/data/questions.json"
+              target="_blank"
+              class="about__data-link"
+            >
+              <FileText :size="16" />
+              {{ $t("about.questionsData") }}
+            </a>
+            <a
+              href="/src/data/parties.json"
+              target="_blank"
+              class="about__data-link"
+            >
+              <FileText :size="16" />
+              {{ $t("about.partiesData") }}
+            </a>
+          </div>
+        </div>
       </section>
 
       <div class="about__actions">
@@ -121,6 +181,49 @@
     font-size: var(--font-size-base);
     line-height: var(--line-height-relaxed);
     color: var(--color-text-secondary);
+  }
+
+  .about__subsection {
+    margin-top: var(--space-xl);
+    padding-left: var(--space-lg);
+    border-left: 3px solid var(--color-primary);
+  }
+
+  .about__subsection-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-md);
+  }
+
+  .about__data-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+  }
+
+  .about__data-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    width: fit-content;
+  }
+
+  .about__data-link:hover {
+    background-color: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+    transform: translateX(4px);
   }
 
   .about__parties {

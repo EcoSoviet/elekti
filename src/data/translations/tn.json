@@ -44,14 +44,25 @@
     "title": "Ka ga Elekti",
     "methodology": "Mokgwa",
     "methodologyText": "Elekti e dirisa mokgwa wa diphoto go tsamaisa dikakanyo tsa gago tsa dipolotiki le ditlhopha tsa dipolotiki tsa Afrika Borwa.",
+    "howItWorks": "Indlela E E Dirang",
+    "howItWorksText": "O araba dipotso di le 22 tse di rulagantsweng ka kelotlhoko tse di akaretsang mafapha a makgolo a pholisi go akaretsa tlhokomelo ya boitekanelo, thuto, ikonomi, taolo le dintlha tsa loago. Potso nngwe le nngwe e dirilwe go senola dikgetho tsa gago tsa dipolotiki ntle le kgatlhanong le setlhopha sepe.",
+    "scoring": "Thulaganyo Ya Dintlha",
+    "scoringText": "Karabo nngwe le nngwe e o e fileng e tsamaisanngwa le maemo a ditlhopha a a kwadilweng a a tswang mo dimaniifesto tsa semolao, dikwalo tsa pholisi le dipolelo tsa setšhaba. Ditlhopha di amogela dintlha tse di lekantsweng go ya ka kamoo maemo a tsona a a buetsweng a tsamaelanang le dikarabo tsa gago. Dintlha tseno di dirilwe tse di tlwaelegileng mo sekaleng sa 0-100, ka tsamaelano ya gago e e kwa godimo le tse dingwe di tlhamilwe sentle. Re go fa gape tlhagiso ya tshepo go go thusa go tlhaloganya gore tsamaelano ya gago e nonofile jang.",
+    "transparency": "Boikano Jwa Rona Go Nna Pepeneneng",
+    "transparencyText": "Maemo otlhe a ditlhopha le boima jwa dintlha di tlhomamiswa ka patlisiso e e tiileng ya dikwalo tsa semolao tsa ditlhopha. Mokgwa wa rona o buletswe mme o ka sekasekwa. Ga re thuse setlhopha sepe sa dipolotiki kgotsa lenaneo - maikaelelo a rona fela ke go go thusa go dira ditshwetso tse di nang le kitso tse di ikaegileng mo ditumelong tsa gago le maemo a a builweng ke ditlhopha.",
+    "dataSources": "Metswedi Ya Patlisiso Ya Rona",
+    "dataSourcesText": "Maemo a ditlhopha a theilwe mo dimanifesto tsa setšhaba, dikwalo tsa pholisi, direkoto tsa boutu jwa palamente le dipolelo tsa setšhaba tse di netefaditsweng. Re ntšhwafatsa data ya rona gangwe le gape go bontsha diphetogo tsa pholisi. Metswedi yotlhe e tswa mo ditsaneleng tsa semolao tsa ditlhopha kgotsa mekgatlo ya ditaba e e tlotwang. Fa o dumela gore tshedimosetso epe ga e nepagale, re amogela ditokafatso ka dikwalo tse di siameng.",
     "privacy": "Sephiri",
     "privacyText": "Sepo sa gago se bothata jwa rona. Ga re boloka data ya motho ka noši noma di-quiz responses. Fela language preference ya gago e bolokilwe mo sediring sa gago. Di-quiz answers tsa gago di imetswe mo URL fa o ne o e abelane - ga go kgona go boloka mo serweng, ga go database, ga go lateleledisano. Re dirisa Cloudflare Web Analytics, e leng e tlotlang sephiri e leng e sa diriseng di-cookies, e sa lateleleng batho ka noši, noma e sa kgobokanyeng data ya motho ka noši. Dikakaretso tsa gago ke tsa gago go di abelana kgotsa go di boloka ka sethepo ka thotso go rata sa gago.",
     "parties": "Ditlhopha Tse Di Akaretsitsweng",
     "partiesText": "Re akaretsa ditlhopha di le 11 tse dikgolo tsa dipolotiki tsa Afrika Borwa.",
     "disclaimer": "Tsiboso",
     "disclaimerText": "Sediriso se ke sa tshedimosho fela mme ga se kgakololo ya go vouta.",
-    "dataSources": "Metswedi Ya Data",
-    "dataSourcesText": "Maemo a ditlhopha a theilwe mo dimanifesto tsa setšhaba."
+    "viewData": "Bona Data Ya Motheo",
+    "viewDataText": "Mo moweng wa go nna pepeneneng, o ka sekaseka difaele tsa rona tsa data ka bowena. Difaele tse tsa JSON di na le maemo otlhe a ditlhopha, boima jwa dintlha, le metadata ya dipotso tse di dirisiwang ke algorithm ya rona.",
+    "scoringData": "Boima Jwa Dintlha",
+    "partiesData": "Tshedimosetso Ya Ditlhopha",
+    "questionsData": "Metadata Ya Dipotso"
   },
   "party": {
     "anc": {
