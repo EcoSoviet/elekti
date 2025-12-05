@@ -43,7 +43,7 @@
   "about": {
     "title": "Malunga ne-Elekti",
     "methodology": "Indlela",
-    "methodologyText": "I-Elekti isebenzisa inkqubo yamanqaku ukudibanisa iimbono zakho zezopolitiko namaqela ezopolitiko aseMzantsi Afrika.",
+    "methodologyText": "I-Elekti isebenzisa indlela ebanzi, esekelwe kubungqina ukuthelekisa iimbono zakho zezopolitiko namaqela ezopolitiko aseMzantsi Afrika. Inkqubo yethu yenzelwe ukuba ibe nobulungisa, icace, kwaye ingakhethi cala.",
     "howItWorks": "Indlela Esebenza Ngayo",
     "howItWorksText": "Uphendula imibuzo engama-28 eyakhiwe ngononophelo egubungela iindawo ezinkulu zomgaqo-nkqubo kubandakanywa ukhathalelo lwempilo, imfundo, uqoqosho, ulawulo kunye nemiba yoluntu. Umbuzo ngamnye wenzelwe ukuveza izinto ozikhethayo kwezopolitiko ngaphandle kokuthambekela kwiqela.",
     "scoring": "Inkqubo Yamanqaku",
@@ -65,7 +65,7 @@
     "parties": "Amaqela Abandakanyiweyo",
     "partiesText": "Sibandakanya amaqela amakhulu ali-14 ezopolitiko aseMzantsi Afrika amele iimbono ezahlukeneyo kwi-spectrum yezopolitiko. Ukhetho lwethu lusekelwe ekumelweni kweparamente, ukubaluleka konyulo, kunye nokwahluka kweengcamango.",
     "disclaimer": "Isaziso",
-    "disclaimerText": "Esi sixhobo sisetyenziselwa ulwazi kuphela kwaye asisiyongcebiso yokuvota.",
+    "disclaimerText": "I-Elekti sisixhobo semfundo, hayi indawo yophando. Amaqela ezopolitiko yimibutho entsonkothileyo enezikhundla ezahlukeneyo eziguqukayo ngokuhamba kwexesha. Sikukhuthaza kakhulu ukuba ufunde iimanifesto zamaqela, uzimase iiforam zoluntu, kwaye uqinisekise ulwazi lwethu ngokuzimeleyo. Esi sixhobo sibonisa ulungelelwaniso olusekelwe kwizikhundla ezichaziweyo - ulawulo lokwenyani lunokwahluka. Sebenzisa ezi ziphumo njengesiqalo sokuphonononga nzulu, hayi njengesigqibo sakho sokugqibela.",
     "viewData": "Jonga Idatha Engalungisiwanga",
     "viewDataText": "Ngomoya wokucaca ngokupheleleyo, unokuvavanya iifayile zethu zedatha ngokwakho. Ezi fayile zeJSON ziqulethe zonke izikhundla zamaqela, ubunzima bamanqaku, kunye nemetadata yemibuzo esetyenziswe yi-algorithm yethu.",
     "scoringData": "Ubunzima Bamanqaku",

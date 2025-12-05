@@ -43,7 +43,7 @@
   "about": {
     "title": "Ka ga Elekti",
     "methodology": "Mokgwa",
-    "methodologyText": "Elekti e dirisa mokgwa wa diphoto go tsamaisa dikakanyo tsa gago tsa dipolotiki le ditlhopha tsa dipolotiki tsa Afrika Borwa.",
+    "methodologyText": "Elekti e dirisa mokgwa o o feletseng, o o ikaegileng ka bosupi go bapisa dikakanyo tsa gago tsa sepolotiki le mekgatlho ya sepolotiki ya Aforika Borwa. Thulaganyo ya rona e diretswe go nna e e siameng, e e leng pepeneneng, le e e sa tseyeng letlhakore.",
     "howItWorks": "Indlela E E Dirang",
     "howItWorksText": "O araba dipotso di le 28 tse di rulagantsweng ka kelotlhoko tse di akaretsang mafapha a makgolo a pholisi go akaretsa tlhokomelo ya boitekanelo, thuto, ikonomi, taolo le dintlha tsa loago. Potso nngwe le nngwe e dirilwe go senola dikgetho tsa gago tsa dipolotiki ntle le kgatlhanong le setlhopha sepe.",
     "scoring": "Thulaganyo Ya Dintlha",
@@ -65,7 +65,7 @@
     "parties": "Ditlhopha Tse Di Akaretsitsweng",
     "partiesText": "Re akaretsa ditlhopha di le 14 tse dikgolo tsa dipolotiki tsa Afrika Borwa tse di emelang dikakanyo tse di farologaneng mo go spectrum ya dipolotiki. Kgetho ya rona e theilwe mo kemeding ya palamente, botlhokwa jwa ditlhopho, le pharologanyo ya lenaneo.",
     "disclaimer": "Tsiboso",
-    "disclaimerText": "Sediriso se ke sa tshedimosho fela mme ga se kgakololo ya go vouta.",
+    "disclaimerText": "Elekti ke sedirisiwa sa thuto, e seng seemedi sa patlisiso. Mekgatlho ya sepolotiki ke mekgatlho e e raraaneng e e nang le maemo a a farologaneng a a fetogang fa nako e ntse e tsamaya. Re go rotloetsa thata go bala dimanifesto tsa mekgatlho, go tsenela diforamo tsa setšhaba, le go netefatsa tshedimosetso ya rona ka nosi. Sedirisiwa se se bontsha go tsamaelana go ikaegilwe ka maemo a a boletsweng - puso ya nnete e ka farologana. Dirisa dipholo tse jaaka tshimologo ya go batlisisa go ya kwa teng, e seng jaaka tshwetso ya gago ya bofelo.",
     "viewData": "Bona Data Ya Motheo",
     "viewDataText": "Mo moweng wa go nna pepeneneng, o ka sekaseka difaele tsa rona tsa data ka bowena. Difaele tse tsa JSON di na le maemo otlhe a ditlhopha, boima jwa dintlha, le metadata ya dipotso tse di dirisiwang ke algorithm ya rona.",
     "scoringData": "Boima Jwa Dintlha",
