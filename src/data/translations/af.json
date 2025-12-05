@@ -1,0 +1,165 @@
+{
+  "app": {
+    "title": "isiVote",
+    "tagline": "Vind jou politieke passing"
+  },
+  "nav": {
+    "home": "Tuis",
+    "quiz": "Vasvra",
+    "results": "Resultate",
+    "about": "Oor"
+  },
+  "landing": {
+    "title": "Vind Jou Politieke Passing",
+    "subtitle": "Beantwoord vrae oor jou politieke sienings en ontdek watter Suid-Afrikaanse party ooreenstem met jou waardes.",
+    "startButton": "Begin Vasvra",
+    "aboutLink": "Leer oor ons metodologie",
+    "privacy": "Jou antwoorde word plaaslik gestoor en word nooit gedeel nie."
+  },
+  "quiz": {
+    "question": "Vraag {number} van {total}",
+    "skip": "Slaan oor",
+    "back": "Terug",
+    "next": "Volgende",
+    "finish": "Voltooi",
+    "progress": "{count} van {total} beantwoord"
+  },
+  "results": {
+    "title": "Jou Resultate",
+    "primaryMatch": "Jou Primêre Passing",
+    "alternativeMatch": "Alternatiewe Passings",
+    "confidence": {
+      "high": "Sterk passing",
+      "medium": "Matige passing",
+      "low": "Swak passing - oorweeg om alle partye te hersien"
+    },
+    "scoreBreakdown": "Telling Uiteensetting",
+    "allParties": "Alle Party Tellings",
+    "copyResults": "Kopieer Resultate",
+    "resultsCopied": "Resultate gekopieer!",
+    "retakeQuiz": "Herdoen Vasvra",
+    "learnMore": "Leer meer oor {party}"
+  },
+  "about": {
+    "title": "Oor isiVote",
+    "methodology": "Metodologie",
+    "methodologyText": "isiVote gebruik 'n geweegde puntestelsel om jou politieke sienings met Suid-Afrikaanse politieke partye te pas.",
+    "privacy": "Privaatheid",
+    "privacyText": "Jou privaatheid is ons prioriteit. Ons stoor absoluut geen persoonlike data of vasvraag-antwoorde nie. Slegs jou taalvoorkeur word plaaslik op jou toestel gestoor. Jou vasvraag-antwoorde word direk in die URL enkodeer wanneer jy resultate deel - geen bedienerberging, geen databasisse, geen nagvolging. Ons gebruik Cloudflare Web Analytics, wat privaatheid-respekterend is en nie koekies gebruik, individue volg, of persoonlike inligting versamel nie. Jou resultate is joue om te deel of privaat te hou heeltemal op jou voorwaardes.",
+    "parties": "Partye Ingesluit",
+    "partiesText": "Ons sluit 11 groot Suid-Afrikaanse politieke partye in.",
+    "disclaimer": "Vrywaring",
+    "disclaimerText": "Hierdie instrument is slegs vir inligtingsdoeleindes en is nie stemadvies nie.",
+    "dataSources": "Data Bronne",
+    "dataSourcesText": "Party posisies is gebaseer op openbare manifeste en amptelike verklarings."
+  },
+  "party": {
+    "anc": {
+      "desc": "Die African National Congress is Suid-Afrika se regerende party."
+    },
+    "da": {
+      "desc": "Die Democratic Alliance bevorder liberale demokrasie en vryemark ekonomie."
+    },
+    "mk": {
+      "desc": "uMkhonto we Sizwe Party fokus op radikale ekonomiese transformasie."
+    },
+    "eff": {
+      "desc": "Die Economic Freedom Fighters is 'n ver-linkse party."
+    },
+    "ifp": {
+      "desc": "Die Inkatha Freedom Party bevorder Zulu kulturele waardes."
+    },
+    "pa": {
+      "desc": "Die Patriotic Alliance fokus op immigrasie kwessies."
+    },
+    "vfplus": {
+      "desc": "Vryheidsfront Plus verteenwoordig Afrikaner belange."
+    },
+    "actionsa": {
+      "desc": "ActionSA is 'n sentristiese party gefokus op praktiese bestuur."
+    },
+    "acdp": {
+      "desc": "Die African Christian Democratic Party bevorder Christelike waardes."
+    },
+    "ufc": {
+      "desc": "Unite for Change fokus op graswortelvlak mobilisasie."
+    },
+    "sacp": {
+      "desc": "Die South African Communist Party bepleit sosialisme."
+    }
+  },
+  "options": {
+    "stronglyAgree": "Stem sterk saam",
+    "agree": "Stem saam",
+    "neutral": "Neutraal",
+    "disagree": "Stem nie saam nie",
+    "stronglyDisagree": "Stem glad nie saam nie"
+  },
+  "questions": {
+    "q1": {
+      "text": "Gesondheidsorg moet gratis en deur die regering vir almal voorsien word.",
+      "category": "gesondheidsorg"
+    },
+    "q2": {
+      "text": "Hoër onderwys (kolleges en universiteite) moet gratis vir alle studente wees.",
+      "category": "onderwys"
+    },
+    "q3": {
+      "text": "Die staat behoort 'n basiese inkomstetoelae vir alle burgers te waarborg, al vereis dit hoër belastings of skuld.",
+      "category": "sosiale welsyn"
+    },
+    "q4": {
+      "text": "Die regering behoort belaste op die rykes te verhoog om maatskaplike programme te finansier.",
+      "category": "ekonomie"
+    },
+    "q5": {
+      "text": "Die regering behoort swaar in openbare behuising vir lae-inkomstegezinne te investeer, al beteken dit dat ander dienste gesny word.",
+      "category": "behuising"
+    },
+    "q6": {
+      "text": "Landelike ontwikkeling en landbousteun behoort aansienlik meer staatsbeleid en belegging te ontvang.",
+      "category": "landbou"
+    },
+    "q7": {
+      "text": "Werkers behoort sterker regte om te staking en direk met werkgewers te onderhandel sonder staatsintervensie te hê.",
+      "category": "arbeidsregte"
+    },
+    "q8": {
+      "text": "Swart Ekonomiese Bemagtiging (BEE) en regstellende aksie behoort sleutelregeringsprioriteite te bly.",
+      "category": "transformasie"
+    },
+    "q9": {
+      "text": "Ekspropriasie van privaat grond sonder kompensasie is geregverdig om grondhervorming te bereik.",
+      "category": "grondhervorming"
+    },
+    "q10": {
+      "text": "Die Grondwet behoort hervormd te word om vinniger transformasie toe te laat en die regering meer mag te gee om welvaart te herverdeel.",
+      "category": "bestuur"
+    },
+    "q11": {
+      "text": "Suid-Afrika behoort handel-ooreenkoms wat plaaslike nywerhede beskerm prioriteit te gee, al beteken dit hoër verbruikersryse.",
+      "category": "handelsbeleid"
+    },
+    "q12": {
+      "text": "Die land behoort belegging in hernubare energie (son, wind) prioriteit te gee bo die uitbreiding van steenkool.",
+      "category": "energie"
+    },
+    "q13": {
+      "text": "Sterk aksie teen korrupsie (selfs as dit huidige leiers versteur) is belangriker as politieke stabiliteit.",
+      "category": "korrupsie"
+    },
+    "q14": {
+      "text": "Om misdaad te verminder, behoort die regering op swaarder strawwe eerder as die aansprek van sosiale oorsake soos armoede te fokus.",
+      "category": "misdaad"
+    },
+    "q15": {
+      "text": "Onwettige immigrante behoort deporteer te word en streng grenskontrole afgedwing word om plaaslike werk en hulpbronne te beskerm.",
+      "category": "immigrasie"
+    }
+  },
+  "footer": {
+    "about": "Oor",
+    "privacy": "Privaatheid",
+    "contact": "Kontak"
+  }
+}

@@ -1,11 +1,141 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import LanguageSelector from "./components/LanguageSelector.vue";
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div id="app">
+    <header class="app-header">
+      <div class="app-header__container">
+        <router-link to="/" class="app-header__brand">
+          <h1 class="app-header__title">{{ $t("app.title") }}</h1>
+          <p class="app-header__tagline">{{ $t("app.tagline") }}</p>
+        </router-link>
+
+        <LanguageSelector />
+      </div>
+    </header>
+
+    <main class="app-main">
+      <router-view />
+    </main>
+
+    <footer class="app-footer">
+      <div class="app-footer__container">
+        <nav class="app-footer__nav">
+          <router-link to="/about">{{ $t("footer.about") }}</router-link>
+          <router-link to="/about">{{ $t("footer.privacy") }}</router-link>
+        </nav>
+        <p class="app-footer__copyright">
+          © {{ new Date().getFullYear() }} isiVote
+        </p>
+      </div>
+    </footer>
+  </div>
 </template>
 
-<style scoped></style>
+<style>
+  #app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-header {
+    height: var(--header-height);
+    border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-surface-elevated);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .app-header__container {
+    max-width: var(--max-width-xl);
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .app-header__brand {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-header__title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin: 0;
+    line-height: 1;
+  }
+
+  .app-header__tagline {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    margin: 0;
+    margin-top: var(--space-xs);
+  }
+
+  .app-main {
+    flex: 1;
+  }
+
+  .app-footer {
+    min-height: var(--footer-height);
+    border-top: 1px solid var(--color-border);
+    background-color: var(--color-surface);
+    padding: var(--space-xl) 0;
+  }
+
+  .app-footer__container {
+    max-width: var(--max-width-xl);
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+  }
+
+  .app-footer__nav {
+    display: flex;
+    gap: var(--space-xl);
+  }
+
+  .app-footer__nav a {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+  }
+
+  .app-footer__nav a:hover {
+    color: var(--color-primary);
+  }
+
+  .app-footer__copyright {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  @media (max-width: 640px) {
+    .app-header__container {
+      padding: 0 var(--space-md);
+    }
+
+    .app-header__title {
+      font-size: var(--font-size-lg);
+    }
+
+    .app-footer__nav {
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+  }
+</style>

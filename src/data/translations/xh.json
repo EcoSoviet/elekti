@@ -1,0 +1,165 @@
+{
+  "app": {
+    "title": "isiVote",
+    "tagline": "Fumana iqela lakho lezopolitiko"
+  },
+  "nav": {
+    "home": "Ikhaya",
+    "quiz": "Imibuzo",
+    "results": "Iziphumo",
+    "about": "Malunga"
+  },
+  "landing": {
+    "title": "Fumana Iqela Lakho Lezopolitiko",
+    "subtitle": "Phendula imibuzo malunga neembono zakho zezopolitiko uze ufumanise ukuba leliphi iqela loMzantsi Afrika elihambelana neenqobo zakho.",
+    "startButton": "Qala Imibuzo",
+    "aboutLink": "Funda ngendlela yethu",
+    "privacy": "Iimpendulo zakho zigcinwe kwindawo kwaye azikhe zabelwane."
+  },
+  "quiz": {
+    "question": "Umbuzo {number} we {total}",
+    "skip": "Tsiba",
+    "back": "Emva",
+    "next": "Okulandelayo",
+    "finish": "Gqiba",
+    "progress": "{count} ye {total} iphendulwe"
+  },
+  "results": {
+    "title": "Iziphumo Zakho",
+    "primaryMatch": "Ukuhambelana Kwakho Okuphambili",
+    "alternativeMatch": "Okunye Okuhambelanayo",
+    "confidence": {
+      "high": "Ukuhambelana okuqinileyo",
+      "medium": "Ukuhambelana okuphakathi",
+      "low": "Ukuhambelana okubuthathaka"
+    },
+    "scoreBreakdown": "Ukwahlulwa Kwamanqaku",
+    "allParties": "Onke Amaqela",
+    "copyResults": "Kopa Iziphumo",
+    "resultsCopied": "Iziphumo zikopishelwe!",
+    "retakeQuiz": "Phinda Wenze Imibuzo",
+    "learnMore": "Funda ngakumbi nge-{party}"
+  },
+  "about": {
+    "title": "Malunga ne-isiVote",
+    "methodology": "Indlela",
+    "methodologyText": "I-isiVote isebenzisa inkqubo yamanqaku ukudibanisa iimbono zakho zezopolitiko namaqela ezopolitiko aseMzantsi Afrika.",
+    "privacy": "Ubumfihlo",
+    "privacyText": "Ubumfihlo bakho bubalulekile. Asiqokeleli ulwazi lomntu ka noši noma iimpendulo zemibuzo. Kuphela i-language preference yakho igcinwe kwindawo kwisixhobo sakho. Iimpendulo zemibuzo zakho zikhunyelwe ngqo kwi-URL xa ubantu bagcina - ayikho ibhaliso eserveni, akukho i-database, ayikho ilandelelaniselo. Sisebenzisa iCloudflare Web Analytics, entle-hloniphanispiru e ngatoli-cookies, elathelelaniseli abantu, nangethola ulwazi lomntu. Iziphumo zakho ziyakho ukuzabela okanye ukuzigcina kwicinile ngokupheleleyo kwiigqatso zakho.",
+    "parties": "Amaqela Abandakanyiweyo",
+    "partiesText": "Sibandakanya amaqela amakhulu ali-11 ezopolitiko aseMzantsi Afrika.",
+    "disclaimer": "Isaziso",
+    "disclaimerText": "Esi sixhobo sisetyenziselwa ulwazi kuphela kwaye asisiyongcebiso yokuvota.",
+    "dataSources": "Imithombo Yedatha",
+    "dataSourcesText": "Izikhundla zamaqela zisekelwe kwiimaniifesto zoluntu."
+  },
+  "party": {
+    "anc": {
+      "desc": "I-African National Congress liqela elilawulayo eMzantsi Afrika."
+    },
+    "da": {
+      "desc": "I-Democratic Alliance ikhuthaza idemokhrasi yenkululeko."
+    },
+    "mk": {
+      "desc": "I-uMkhonto we Sizwe Party igxile kutshintsho lwezoqoqosho oluqinile."
+    },
+    "eff": {
+      "desc": "I-Economic Freedom Fighters liqela elikwesobunxele kakhulu."
+    },
+    "ifp": {
+      "desc": "I-Inkatha Freedom Party ikhuthaza iinqobo zenkcubeko yamaZulu."
+    },
+    "pa": {
+      "desc": "I-Patriotic Alliance igxile kwimiba yokufuduka."
+    },
+    "vfplus": {
+      "desc": "I-Freedom Front Plus imele iimfuno zama-Afrikaner."
+    },
+    "actionsa": {
+      "desc": "I-ActionSA liqela elisembindini eligxile kulawulo olusebenzayo."
+    },
+    "acdp": {
+      "desc": "I-African Christian Democratic Party ikhuthaza iinqobo zobuKristu."
+    },
+    "ufc": {
+      "desc": "I-Unite for Change igxile ekudibaniseni abantu."
+    },
+    "sacp": {
+      "desc": "I-South African Communist Party imele ubukomanisi."
+    }
+  },
+  "options": {
+    "stronglyAgree": "Ndiyavuma ngamandla",
+    "agree": "Ndiyavuma",
+    "neutral": "Phakathi",
+    "disagree": "Andivumi",
+    "stronglyDisagree": "Andivumi kwaphela"
+  },
+  "questions": {
+    "q1": {
+      "text": "Izalachichwa kufanele zibe simahla zze zibonelelwe yirhulumeni kubo bonke.",
+      "category": "izalachichwa"
+    },
+    "q2": {
+      "text": "Iimfundo eziphezulu (iikoleji kunye namanyunivesithi) kufanele zibe simahla kubo bonke abafundi.",
+      "category": "iimfundo"
+    },
+    "q3": {
+      "text": "Isifunda kufanele sikwenze isibonelelo sezimali yesiseko kubo bonke abantu, nokuba kukhomba izintela eziphakameleyo okanye umqolo.",
+      "category": "ukuzisindisa komuntu"
+    },
+    "q4": {
+      "text": "Irhulumeni kufanele inyuse intela kubo bantu abayimpumelelo ukuthandela iziniselezo zomuntu.",
+      "category": "iindlela zezomnotho"
+    },
+    "q5": {
+      "text": "Irhulumeni kufanele itshale ngamandla amanzi ezo indlu zabantu abanezindinganiso ezikwindlela, nokuba kukhomba ukuba izinye izinsiza ziyaliswa.",
+      "category": "izindlu"
+    },
+    "q6": {
+      "text": "Ukuthuthuka komhla wasetingwini kunye nenkxaso yezolimo kufanele zifumane iqambela lenkulu ephakameleyo kunye nokutsala ngobu.",
+      "category": "izolimo"
+    },
+    "q7": {
+      "text": "Abasebenzi kufanele babe nabambo abamakhulu okufa kunye nokunegotiyetha ngokuthe ngqo nezibancibenci kunye ngaphandle kokungenelela kwerhulumeni.",
+      "category": "amazwi abasebenzi"
+    },
+    "q8": {
+      "text": "Ukulungiswa Kwezomnotho Kwabantu Abamnyama (BEE) kunye nenkxaso yezifo kufanele ziqhubeke njengezikhundla eziphakameleyo zerhulumeni.",
+      "category": "uguquko"
+    },
+    "q9": {
+      "text": "Ukuthatha umhlaba womuntu ngaphandle kwemali ithile iyakufuneka ukufikela ekutshintsheni komhlaba.",
+      "category": "uguquko lomhlaba"
+    },
+    "q10": {
+      "text": "UMthetho-sisekelo kufanele utshintshwe ukuvumela uguquko olukhulu kunye nokumnika irhulumeni amandla okusasaza ingcwele.",
+      "category": "ubusele"
+    },
+    "q11": {
+      "text": "IMzantsi Afrika kufanele isixhasi senkqubo yethengi enokundibela e-izindustriya zasekhaya, nokuba kukhomba amtengo amanzi okuthenga.",
+      "category": "umthetho wethengi"
+    },
+    "q12": {
+      "text": "Elizwe kufanele likhusele amandla akabusha (ilanga, umoya) ekubeni namagumbi eamakola.",
+      "category": "amandla"
+    },
+    "q13": {
+      "text": "Ukungenelela okuqinile ekusasazeni (nokuba kukhomba abaholi bakamuva) kubalulekile kunokushaya kwesidumbu.",
+      "category": "uhozi"
+    },
+    "q14": {
+      "text": "Ukunciphisa uhozi, irhulumeni kufanele igxile ekuthuthweni kugqwesa kunokuthandela izizathu zezentlalo njengomsulwini.",
+      "category": "ubugora"
+    },
+    "q15": {
+      "text": "Abantu abangena kwanggeshini kufanele basulwe kunye nongezelelo lwamaphandle. enokundibela kusebenze kwanumzane womuntu noMzantsi Afrika.",
+      "category": "ukufika kwelinye ililunga"
+    }
+  },
+  "footer": {
+    "about": "Malunga",
+    "privacy": "Ubumfihlo",
+    "contact": "Qhagamshelana"
+  }
+}

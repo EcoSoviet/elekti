@@ -1,0 +1,165 @@
+{
+  "app": {
+    "title": "isiVote",
+    "tagline": "Find your political match"
+  },
+  "nav": {
+    "home": "Home",
+    "quiz": "Quiz",
+    "results": "Results",
+    "about": "About"
+  },
+  "landing": {
+    "title": "Find Your Political Match",
+    "subtitle": "Answer questions about your political views and discover which South African party aligns with your values.",
+    "startButton": "Start Quiz",
+    "aboutLink": "Learn about our methodology",
+    "privacy": "Your answers are stored locally and never shared."
+  },
+  "quiz": {
+    "question": "Question {number} of {total}",
+    "skip": "Skip",
+    "back": "Back",
+    "next": "Next",
+    "finish": "Finish",
+    "progress": "{count} of {total} answered"
+  },
+  "results": {
+    "title": "Your Results",
+    "primaryMatch": "Your Primary Match",
+    "alternativeMatch": "Alternative Matches",
+    "confidence": {
+      "high": "Strong match",
+      "medium": "Moderate match",
+      "low": "Weak match - consider reviewing all parties"
+    },
+    "scoreBreakdown": "Score Breakdown",
+    "allParties": "All Party Scores",
+    "copyResults": "Copy Results",
+    "resultsCopied": "Results copied to clipboard!",
+    "retakeQuiz": "Retake Quiz",
+    "learnMore": "Learn more about {party}"
+  },
+  "about": {
+    "title": "About isiVote",
+    "methodology": "Methodology",
+    "methodologyText": "isiVote uses a weighted scoring system to match your political views with South African political parties. Each answer contributes to party scores, which are normalized and ranked to find your best matches.",
+    "privacy": "Privacy",
+    "privacyText": "Your privacy is our priority. We store absolutely no personal data or quiz responses. Only your language preference is saved locally on your device. Your quiz answers are encoded directly into the URL when you share results - no server storage, no databases, no tracking. We use Cloudflare Web Analytics, which is privacy-respecting and does not use cookies, track individuals, or collect personal information. Your results are yours to share or keep private entirely on your terms.",
+    "parties": "Parties Included",
+    "partiesText": "We include 11 major South African political parties expected to contest future elections.",
+    "disclaimer": "Disclaimer",
+    "disclaimerText": "This tool is for informational purposes only and does not constitute voting advice. Please research parties independently before voting.",
+    "dataSources": "Data Sources",
+    "dataSourcesText": "Party positions are based on publicly available manifestos, policy documents, and official statements."
+  },
+  "party": {
+    "anc": {
+      "desc": "The African National Congress is South Africa's governing party, advocating for social democracy, transformation, and addressing inequality through state intervention."
+    },
+    "da": {
+      "desc": "The Democratic Alliance promotes liberal democracy, free market economics, and non-racial politics with emphasis on good governance and job creation."
+    },
+    "mk": {
+      "desc": "uMkhonto we Sizwe Party focuses on radical economic transformation, advocating for state-led development and addressing historical injustices."
+    },
+    "eff": {
+      "desc": "The Economic Freedom Fighters is a far-left party advocating for radical economic transformation, nationalization, and land redistribution without compensation."
+    },
+    "ifp": {
+      "desc": "The Inkatha Freedom Party promotes Zulu cultural values, federalism, and free market economics with social responsibility."
+    },
+    "pa": {
+      "desc": "The Patriotic Alliance focuses on addressing immigration issues, promoting South African nationalism, and prioritizing citizens' needs."
+    },
+    "vfplus": {
+      "desc": "Freedom Front Plus represents Afrikaner interests, advocating for federalism, minority rights, and conservative values."
+    },
+    "actionsa": {
+      "desc": "ActionSA is a centrist party focused on practical governance, anti-corruption, and economic growth through private sector engagement."
+    },
+    "acdp": {
+      "desc": "The African Christian Democratic Party promotes Christian values, conservative social policies, and constitutional democracy."
+    },
+    "ufc": {
+      "desc": "Unite for Change focuses on grassroots mobilization and addressing local community concerns through progressive policies."
+    },
+    "sacp": {
+      "desc": "The South African Communist Party advocates for socialism, workers' rights, and the transition to a socialist society through state control."
+    }
+  },
+  "options": {
+    "stronglyAgree": "Strongly agree",
+    "agree": "Agree",
+    "neutral": "Neutral",
+    "disagree": "Disagree",
+    "stronglyDisagree": "Strongly disagree"
+  },
+  "questions": {
+    "q1": {
+      "text": "Healthcare should be free and provided by the government for everyone.",
+      "category": "healthcare"
+    },
+    "q2": {
+      "text": "Higher education (colleges and universities) should be free for all students.",
+      "category": "education"
+    },
+    "q3": {
+      "text": "The state should guarantee a basic income grant for all citizens, even if it requires higher taxes or debt.",
+      "category": "social welfare"
+    },
+    "q4": {
+      "text": "The government should raise taxes on the wealthy to fund social programs.",
+      "category": "economy"
+    },
+    "q5": {
+      "text": "The government should invest heavily in public housing for low-income families, even if it means cutting other services.",
+      "category": "housing"
+    },
+    "q6": {
+      "text": "Rural development and agricultural support should receive significantly more government funding and investment.",
+      "category": "agriculture"
+    },
+    "q7": {
+      "text": "Workers should have stronger rights to strike and negotiate directly with employers without government interference.",
+      "category": "labour rights"
+    },
+    "q8": {
+      "text": "Black Economic Empowerment (BEE) and affirmative action should remain key government priorities.",
+      "category": "transformation"
+    },
+    "q9": {
+      "text": "Expropriation of private land without compensation is justified to achieve land reform.",
+      "category": "land reform"
+    },
+    "q10": {
+      "text": "The Constitution should be reformed to allow for faster transformation and give government more power to redistribute wealth.",
+      "category": "governance"
+    },
+    "q11": {
+      "text": "South Africa should prioritise trade agreements that protect local industries, even if it means higher consumer prices.",
+      "category": "trade policy"
+    },
+    "q12": {
+      "text": "The country should prioritise investment in renewable energy (solar, wind) over expanding coal power.",
+      "category": "energy"
+    },
+    "q13": {
+      "text": "Strong action against corruption (even if it disrupts current leaders) is more important than political stability.",
+      "category": "corruption"
+    },
+    "q14": {
+      "text": "To reduce crime, the government should focus more on harsher punishment rather than addressing social causes like poverty.",
+      "category": "crime"
+    },
+    "q15": {
+      "text": "Illegal immigrants should be deported and strict border control enforced to protect local jobs and resources.",
+      "category": "immigration"
+    }
+  },
+  "footer": {
+    "about": "About",
+    "privacy": "Privacy",
+    "contact": "Contact"
+  }
+}

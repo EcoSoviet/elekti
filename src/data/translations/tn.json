@@ -1,0 +1,165 @@
+{
+  "app": {
+    "title": "isiVote",
+    "tagline": "Batla setlhopha sa gago sa dipolotiki"
+  },
+  "nav": {
+    "home": "Gae",
+    "quiz": "Dipotso",
+    "results": "Dipoelo",
+    "about": "Ka ga"
+  },
+  "landing": {
+    "title": "Batla Setlhopha Sa Gago Sa Dipolotiki",
+    "subtitle": "Araba dipotso tsa dipolotiki tsa gago o bone gore ke setlhopha sefe sa Afrika Borwa se se tsamaelanang le ditumelo tsa gago.",
+    "startButton": "Simolola Dipotso",
+    "aboutLink": "Ithute ka ga mokgwa wa rona",
+    "privacy": "Dikarabo tsa gago di bolokwa fano mme ga di a kabelwana."
+  },
+  "quiz": {
+    "question": "Potso {number} ya {total}",
+    "skip": "Tlola",
+    "back": "Morago",
+    "next": "Latelang",
+    "finish": "Wetsa",
+    "progress": "{count} ya {total} e arabeditjwe"
+  },
+  "results": {
+    "title": "Dipoelo Tsa Gago",
+    "primaryMatch": "Tsamaelano Ya Gago Ya Ntlha",
+    "alternativeMatch": "Ditsamaelano Tse Dingwe",
+    "confidence": {
+      "high": "Tsamaelano e e tiileng",
+      "medium": "Tsamaelano e e fa gare",
+      "low": "Tsamaelano e e bokoa"
+    },
+    "scoreBreakdown": "Karolo Ya Dintlha",
+    "allParties": "Ditlhopha Tsotlhe",
+    "copyResults": "Kopela Dipoelo",
+    "resultsCopied": "Dipoelo di kopilwe!",
+    "retakeQuiz": "Boela O Arabe Dipotso",
+    "learnMore": "Ithute mo go oketsegileng ka {party}"
+  },
+  "about": {
+    "title": "Ka ga isiVote",
+    "methodology": "Mokgwa",
+    "methodologyText": "isiVote e dirisa mokgwa wa diphoto go tsamaisa dikakanyo tsa gago tsa dipolotiki le ditlhopha tsa dipolotiki tsa Afrika Borwa.",
+    "privacy": "Sephiri",
+    "privacyText": "Sepo sa gago se bothata jwa rona. Ga re boloka data ya motho ka noši noma di-quiz responses. Fela language preference ya gago e bolokilwe mo sediring sa gago. Di-quiz answers tsa gago di imetswe mo URL fa o ne o e abelane - ga go kgona go boloka mo serweng, ga go database, ga go lateleledisano. Re dirisa Cloudflare Web Analytics, e leng e tlotlang sephiri e leng e sa diriseng di-cookies, e sa lateleleng batho ka noši, noma e sa kgobokanyeng data ya motho ka noši. Dikakaretso tsa gago ke tsa gago go di abelana kgotsa go di boloka ka sethepo ka thotso go rata sa gago.",
+    "parties": "Ditlhopha Tse Di Akaretsitsweng",
+    "partiesText": "Re akaretsa ditlhopha di le 11 tse dikgolo tsa dipolotiki tsa Afrika Borwa.",
+    "disclaimer": "Tsiboso",
+    "disclaimerText": "Sediriso se ke sa tshedimosho fela mme ga se kgakololo ya go vouta.",
+    "dataSources": "Metswedi Ya Data",
+    "dataSourcesText": "Maemo a ditlhopha a theilwe mo dimanifesto tsa setšhaba."
+  },
+  "party": {
+    "anc": {
+      "desc": "African National Congress ke setlhopha se se busang kwa Afrika Borwa."
+    },
+    "da": {
+      "desc": "Democratic Alliance e rotloetsa demokrasi ya bolokolohelo."
+    },
+    "mk": {
+      "desc": "uMkhonto we Sizwe Party e itebaganya le diphetogo tsa ikonomi tse di tiileng."
+    },
+    "eff": {
+      "desc": "Economic Freedom Fighters ke setlhopha sa molema o o kgolo."
+    },
+    "ifp": {
+      "desc": "Inkatha Freedom Party e rotloetsa ditumelo tsa setso sa Zulu."
+    },
+    "pa": {
+      "desc": "Patriotic Alliance e itebaganya le dilo tsa ba ba fallang kwa nageng."
+    },
+    "vfplus": {
+      "desc": "Freedom Front Plus e emela dikgatlhego tsa Maafrikaner."
+    },
+    "actionsa": {
+      "desc": "ActionSA ke setlhopha sa fa gare se se itebagantse le taolo e e sebedisanang."
+    },
+    "acdp": {
+      "desc": "African Christian Democratic Party e rotloetsa ditumelo tsa Bokeresete."
+    },
+    "ufc": {
+      "desc": "Unite for Change e itebaganya le go kopanya batho."
+    },
+    "sacp": {
+      "desc": "South African Communist Party e emela bokomanisi."
+    }
+  },
+  "options": {
+    "stronglyAgree": "Ke dumela thata",
+    "agree": "Ke a dumela",
+    "neutral": "Fa gare",
+    "disagree": "Ga ke dumele",
+    "stronglyDisagree": "Ga ke dumele gotlhelele"
+  },
+  "questions": {
+    "q1": {
+      "text": "Tlhoafalo ya molwetse e ba bohitshware mo dikaogelo tsa setjhaba gohle.",
+      "category": "boitekanelo bja madi"
+    },
+    "q2": {
+      "text": "Thuto e e kwa godimo (dikoleje le diunivesithi) e ba bohitshware mo baithuti botlhe.",
+      "category": "thuto"
+    },
+    "q3": {
+      "text": "Setjhaba se ba le khuetso ya go neela bathusi ba dikonopo go batsi botlhe, gooba go lebana le dimakarapa e kwa godimo kgotsa ditlhole.",
+      "category": "tshireletso ya setjhaba"
+    },
+    "q4": {
+      "text": "Puso e se khuphule makarapa go ba ba le madi go realo dithuso tsa setjhaba.",
+      "category": "tshitantsho ya dikonopo"
+    },
+    "q5": {
+      "text": "Puso e se invelete go letlele mo ntlong ya baeti ba le dikonopo, gooba go remetsa dithuso tse dingwe.",
+      "category": "intlo"
+    },
+    "q6": {
+      "text": "Tlhabollo ya motse le thupo ya temoso e se amogele kakaretso e kgonano ga go le karolo ya puso.",
+      "category": "temoso"
+    },
+    "q7": {
+      "text": "Balesika ba se be le tsholo e e kgonano go go oketsa go gopana morago ga badugi ba tiro nang mo boipolelo bja puso.",
+      "category": "bokaedi bja balesika"
+    },
+    "q8": {
+      "text": "Bokgonne bja Tshitantsho ya Bantsho (BEE) le tshireletso ya go swanela go le setshwantsho se se kwa pele sa puso.",
+      "category": "phapanyetsano"
+    },
+    "q9": {
+      "text": "Go nka lefatshe la motho nang kgutlo alete go thekga phetogo ya lefatshe.",
+      "category": "phetogo ya lefatshe"
+    },
+    "q10": {
+      "text": "Molaomotheo o lokela go fetogwa go fa kgetsi go badela mo dirang go go re phiritso ya lefatshe.",
+      "category": "puso"
+    },
+    "q11": {
+      "text": "Afrika Borwa e se kaonela go thotloetsa ditumelano tsa go rekana tse di leboga dithuto tsa lapeng, gooba go thaka melato ya go realo.",
+      "category": "go rekana thapo"
+    },
+    "q12": {
+      "text": "Naga e se kaonela go invelete mo mafolofolo a mafsa (letsatsi, maloba) go fapana le go okeleza motlholo.",
+      "category": "mafolofolo"
+    },
+    "q13": {
+      "text": "Go bereka go le le mothusi (gooba go se bese bamoduli ba gontsokolo) go balele ke go ba le molemo go fapana le puo ya setjhaba.",
+      "category": "go hloile motho"
+    },
+    "q14": {
+      "text": "Go fokotsa serama, puso e se lebane go tlametela molato go thaka sengwe sa bothogo joalaka sematshwenyego.",
+      "category": "serama"
+    },
+    "q15": {
+      "text": "Batang ba ba isago ba ba lokela go sokologiwa go amoga sekgoba se se tiile se go sireletsa dithuso tsa tikologo le lefatshe.",
+      "category": "go mo setsi sa ditshi"
+    }
+  },
+  "footer": {
+    "about": "Ka ga",
+    "privacy": "Sephiri",
+    "contact": "Ikgolaganye"
+  }
+}

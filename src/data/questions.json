@@ -1,124 +1,184 @@
 {
-    "questions": [
-        {
-            "id": "q1",
-            "text": "The government should raise taxes on the wealthy to fund social programs.",
-            "category": "economy",
-            "options": [
-                "Strongly agree",
-                "Agree",
-                "Neutral",
-                "Disagree",
-                "Strongly disagree"
-            ]
-        },
-        {
-            "id": "q2",
-            "text": "The country should prioritise investment in renewable energy (solar, wind) over expanding coal power.",
-            "category": "energy",
-            "options": [
-                "Strongly agree",
-                "Agree",
-                "Neutral",
-                "Disagree",
-                "Strongly disagree"
-            ]
-        },
-        {
-            "id": "q3",
-            "text": "Strong action against corruption (even if it disrupts current leaders) is more important than political stability.",
-            "category": "corruption",
-            "options": [
-                "Strongly agree",
-                "Agree",
-                "Neutral",
-                "Disagree",
-                "Strongly disagree"
-            ]
-        },
-        {
-            "id": "q4",
-            "text": "The state should guarantee a basic income grant for all citizens, even if it requires higher taxes or debt.",
-            "category": "social welfare",
-            "options": [
-                "Strongly agree",
-                "Agree",
-                "Neutral",
-                "Disagree",
-                "Strongly disagree"
-            ]
-        },
-        {
-            "id": "q5",
-            "text": "Higher education (colleges and universities) should be free for all students.",
-            "category": "education",
-            "options": [
-                "Strongly agree",
-                "Agree",
-                "Neutral",
-                "Disagree",
-                "Strongly disagree"
-            ]
-        },
-        {
-            "id": "q6",
-            "text": "Healthcare should be free and provided by the government for everyone.",
-            "category": "healthcare",
-            "options": [
-                "Strongly agree",
-                "Agree",
-                "Neutral",
-                "Disagree",
-                "Strongly disagree"
-            ]
-        },
-        {
-            "id": "q7",
-            "text": "To reduce crime, the government should focus more on harsher punishment rather than addressing social causes like poverty.",
-            "category": "crime",
-            "options": [
-                "Strongly agree",
-                "Agree",
-                "Neutral",
-                "Disagree",
-                "Strongly disagree"
-            ]
-        },
-        {
-            "id": "q8",
-            "text": "Illegal immigrants should be deported and strict border control enforced to protect local jobs and resources.",
-            "category": "immigration",
-            "options": [
-                "Strongly agree",
-                "Agree",
-                "Neutral",
-                "Disagree",
-                "Strongly disagree"
-            ]
-        },
-        {
-            "id": "q9",
-            "text": "The government should invest heavily in public housing for low-income families, even if it means cutting other services.",
-            "category": "housing",
-            "options": [
-                "Strongly agree",
-                "Agree",
-                "Neutral",
-                "Disagree",
-                "Strongly disagree"
-            ]
-        },
-        {
-            "id": "q10",
-            "text": "Expropriation of private land without compensation is justified to achieve land reform.",
-            "category": "land reform",
-            "options": [
-                "Strongly agree",
-                "Agree",
-                "Neutral",
-                "Disagree",
-                "Strongly disagree"
-            ]
-        }
-    ]
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Healthcare should be free and provided by the government for everyone.",
+      "category": "healthcare",
+      "options": [
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "q2",
+      "text": "Higher education (colleges and universities) should be free for all students.",
+      "category": "education",
+      "options": [
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "q3",
+      "text": "The state should guarantee a basic income grant for all citizens, even if it requires higher taxes or debt.",
+      "category": "social welfare",
+      "options": [
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "q4",
+      "text": "The government should raise taxes on the wealthy to fund social programs.",
+      "category": "economy",
+      "options": [
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "q5",
+      "text": "The government should invest heavily in public housing for low-income families, even if it means cutting other services.",
+      "category": "housing",
+      "options": [
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "q6",
+      "text": "Rural development and agricultural support should receive significantly more government funding and investment.",
+      "category": "agriculture",
+      "options": [
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "q7",
+      "text": "Workers should have stronger rights to strike and negotiate directly with employers without government interference.",
+      "category": "labour rights",
+      "options": [
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "q8",
+      "text": "Black Economic Empowerment (BEE) and affirmative action should remain key government priorities.",
+      "category": "transformation",
+      "options": [
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "q9",
+      "text": "Expropriation of private land without compensation is justified to achieve land reform.",
+      "category": "land reform",
+      "options": [
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "q10",
+      "text": "The Constitution should be reformed to allow for faster transformation and give government more power to redistribute wealth.",
+      "category": "governance",
+      "options": [
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "q11",
+      "text": "South Africa should prioritise trade agreements that protect local industries, even if it means higher consumer prices.",
+      "category": "trade policy",
+      "options": [
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "q12",
+      "text": "The country should prioritise investment in renewable energy (solar, wind) over expanding coal power.",
+      "category": "energy",
+      "options": [
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "q13",
+      "text": "Strong action against corruption (even if it disrupts current leaders) is more important than political stability.",
+      "category": "corruption",
+      "options": [
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "q14",
+      "text": "To reduce crime, the government should focus more on harsher punishment rather than addressing social causes like poverty.",
+      "category": "crime",
+      "options": [
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "q15",
+      "text": "Illegal immigrants should be deported and strict border control enforced to protect local jobs and resources.",
+      "category": "immigration",
+      "options": [
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    }
+  ]
 }
