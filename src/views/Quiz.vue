@@ -3,15 +3,14 @@
     <div class="quiz__wrapper">
       <div class="quiz__container">
         <div class="quiz__header">
-          <ProgressBar :progress="quizStore.progress" />
-          <p class="quiz__progress-text">
+          <ProgressBar :progress="quizStore.progress">
             {{
               $t("quiz.question", {
                 number: quizStore.currentQuestionIndex + 1,
                 total: quizStore.questions.length,
               })
             }}
-          </p>
+          </ProgressBar>
         </div>
 
         <div v-if="currentQuestion" class="quiz__content">
@@ -116,46 +115,50 @@
 
   .quiz__container {
     flex: 1;
-    max-width: var(--max-width-md);
+    max-width: 700px;
     width: 100%;
   }
 
   .quiz__header {
-    margin-bottom: var(--space-xl);
-  }
-
-  .quiz__progress-text {
-    text-align: center;
-    margin-top: var(--space-sm);
-    font-size: var(--font-size-sm);
-    color: var(--color-text-secondary);
-    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--space-2xl);
   }
 
   .quiz__content {
     margin-bottom: var(--space-xl);
     min-height: auto;
+    animation: fadeIn 0.4s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   .quiz__navigation {
     display: flex;
     flex-direction: column;
-    gap: var(--space-md);
+    gap: var(--space-lg);
     align-items: center;
+    justify-content: center;
   }
 
   .quiz__nav-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 56px;
-    height: 56px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     border: 2px solid var(--color-border);
     background-color: var(--color-surface);
     color: var(--color-text-primary);
     cursor: pointer;
-    transition: all var(--transition-fast);
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-md);
   }
 
   .quiz__nav-button--next,
@@ -163,13 +166,15 @@
     background-color: var(--color-success);
     color: white;
     border-color: var(--color-success);
+    box-shadow: 0 8px 16px rgba(52, 168, 83, 0.3);
   }
 
   .quiz__nav-button--next:hover,
   .quiz__nav-button--finish:hover {
     background-color: #2d8a47;
     border-color: #2d8a47;
-    transform: scale(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(52, 168, 83, 0.4);
   }
 
   .quiz__nav-button--back {
@@ -179,19 +184,45 @@
   .quiz__nav-button--back:hover {
     background-color: var(--color-surface-elevated);
     border-color: var(--color-primary);
-    transform: scale(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
   }
 
   @media (max-width: 768px) {
+    .quiz {
+      padding: var(--space-lg) var(--space-md);
+    }
+
     .quiz__wrapper {
       flex-direction: column;
-      gap: var(--space-lg);
+      gap: var(--space-xl);
+      max-width: none;
+    }
+
+    .quiz__container {
+      max-width: none;
     }
 
     .quiz__navigation {
       flex-direction: row;
       width: 100%;
       justify-content: center;
+      gap: var(--space-md);
+      align-items: center;
+    }
+
+    .quiz__nav-button {
+      width: 56px;
+      height: 56px;
+    }
+
+    .quiz__nav-button--back {
+      order: -1;
+      opacity: 0.6;
+    }
+
+    .quiz__nav-button--back:hover {
+      opacity: 1;
     }
   }
 </style>

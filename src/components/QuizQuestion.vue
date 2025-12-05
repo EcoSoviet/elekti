@@ -70,30 +70,48 @@
   }
 
   .quiz-question__text {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-3xl);
     font-weight: var(--font-weight-bold);
     color: var(--color-text-primary);
-    margin-bottom: var(--space-sm);
-    line-height: var(--line-height-tight);
+    margin-bottom: var(--space-md);
+    line-height: var(--line-height-relaxed);
+    animation: fadeInUp 0.5s ease-out;
   }
 
   .quiz-question__category {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
     color: var(--color-text-secondary);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: var(--space-lg);
+    letter-spacing: 0.08em;
+    margin-bottom: var(--space-2xl);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .quiz-question__options {
     display: flex;
     flex-direction: column;
-    gap: var(--space-sm);
+    gap: var(--space-md);
+    animation: fadeInUp 0.5s ease-out 0.1s both;
   }
 
   @media (max-width: 640px) {
     .quiz-question__text {
-      font-size: var(--font-size-xl);
+      font-size: var(--font-size-2xl);
+    }
+
+    .quiz-question__category {
+      margin-bottom: var(--space-lg);
     }
   }
 </style>

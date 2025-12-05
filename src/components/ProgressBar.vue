@@ -1,17 +1,16 @@
 <template>
   <div class="progress-bar">
-    <div class="progress-bar__track">
-      <div
-        class="progress-bar__fill"
-        :style="{ width: `${progress}%` }"
-        role="progressbar"
-        :aria-valuenow="progress"
-        aria-valuemin="0"
-        aria-valuemax="100"
-      />
+    <div
+      class="progress-bar__track"
+      role="progressbar"
+      :aria-valuenow="progress"
+      aria-valuemin="0"
+      aria-valuemax="100"
+    >
+      <div class="progress-bar__fill" :style="{ width: `${progress}%` }" />
     </div>
-    <div class="progress-bar__text">
-      <slot>{{ Math.round(progress) }}%</slot>
+    <div v-if="$slots.default" class="progress-bar__label">
+      <slot />
     </div>
   </div>
 </template>
@@ -29,10 +28,11 @@
 
   .progress-bar__track {
     width: 100%;
-    height: 8px;
+    height: 6px;
     background-color: var(--color-border-light);
     border-radius: var(--radius-full);
     overflow: hidden;
+    margin-bottom: var(--space-md);
   }
 
   .progress-bar__fill {
@@ -46,10 +46,10 @@
     border-radius: var(--radius-full);
   }
 
-  .progress-bar__text {
-    margin-top: var(--space-sm);
-    text-align: center;
+  .progress-bar__label {
     font-size: var(--font-size-sm);
     color: var(--color-text-secondary);
+    font-weight: var(--font-weight-medium);
+    text-align: center;
   }
 </style>

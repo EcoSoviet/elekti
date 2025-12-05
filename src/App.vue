@@ -150,9 +150,7 @@
     }
 
     .app-footer__nav {
-      flex-direction: column;
-      align-items: center;
-      gap: var(--space-sm);
+      gap: var(--space-md);
     }
   }
 </style>
