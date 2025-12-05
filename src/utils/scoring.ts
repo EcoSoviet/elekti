@@ -79,23 +79,23 @@ export function computeScores(
     }
   });
 
-  const maxPossibleScore = 28 * 0.9;
-
-  const normalizedScores: Record<string, number> = {};
-  Object.entries(rawScores).forEach(([partyId, score]) => {
-    normalizedScores[partyId] = Math.max(
-      0,
-      Math.min(1, score / maxPossibleScore)
-    );
-  });
+  const scoreValues = Object.values(rawScores);
+  const minScore = Math.min(...scoreValues);
+  const maxScore = Math.max(...scoreValues);
+  const scoreRange = maxScore - minScore;
 
   const partyScores: PartyScore[] = parties.map((party) => {
     const rawScore = rawScores[party.id];
-    const normalizedScore = normalizedScores[party.id];
+    const normalizedScore =
+      scoreRange > 0
+        ? rawScore !== undefined
+          ? (rawScore - minScore) / scoreRange
+          : 0
+        : 0;
     return {
       partyId: party.id,
       rawScore: rawScore !== undefined ? rawScore : 0,
-      normalizedScore: normalizedScore !== undefined ? normalizedScore : 0,
+      normalizedScore,
       party,
     };
   });
