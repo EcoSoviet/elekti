@@ -1,34 +1,3 @@
-<template>
-  <div class="language-selector">
-    <button
-      @click="toggleDropdown"
-      class="language-selector__button"
-      :aria-expanded="isOpen"
-      aria-haspopup="listbox"
-    >
-      <Globe :size="20" />
-      <span>{{ currentLocaleName }}</span>
-      <ChevronDown :size="16" />
-    </button>
-
-    <div v-if="isOpen" class="language-selector__dropdown" role="listbox">
-      <button
-        v-for="locale in sortedLocales"
-        :key="locale.code"
-        @click="selectLanguage(locale.code)"
-        class="language-selector__option"
-        :class="{
-          'language-selector__option--active': locale.code === currentLocale,
-        }"
-        role="option"
-        :aria-selected="locale.code === currentLocale"
-      >
-        {{ locale.name }}
-      </button>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
   import { ChevronDown, Globe } from "lucide-vue-next";
   import { computed, ref } from "vue";
@@ -59,6 +28,37 @@
     isOpen.value = false;
   }
 </script>
+
+<template>
+  <div class="language-selector">
+    <button
+      @click="toggleDropdown"
+      class="language-selector__button"
+      :aria-expanded="isOpen"
+      aria-haspopup="listbox"
+    >
+      <Globe :size="20" />
+      <span>{{ currentLocaleName }}</span>
+      <ChevronDown :size="16" />
+    </button>
+
+    <div v-if="isOpen" class="language-selector__dropdown" role="listbox">
+      <button
+        v-for="locale in sortedLocales"
+        :key="locale.code"
+        @click="selectLanguage(locale.code)"
+        class="language-selector__option"
+        :class="{
+          'language-selector__option--active': locale.code === currentLocale,
+        }"
+        role="option"
+        :aria-selected="locale.code === currentLocale"
+      >
+        {{ locale.name }}
+      </button>
+    </div>
+  </div>
+</template>
 
 <style scoped>
   .language-selector {

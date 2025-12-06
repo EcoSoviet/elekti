@@ -1,84 +1,3 @@
-<template>
-  <div class="results">
-    <div class="results__container">
-      <h1 class="results__title">{{ $t("results.title") }}</h1>
-
-      <div v-if="result" class="results__content">
-        <section class="results__section results__section--primary">
-          <div class="results__pills">
-            <div class="results__badge">
-              <Trophy :size="20" />
-              <span>{{ $t("results.primaryMatch") }}</span>
-            </div>
-
-            <div
-              class="results__confidence"
-              :class="`results__confidence--${result.confidence}`"
-            >
-              {{ $t(`results.confidence.${result.confidence}`) }}
-            </div>
-          </div>
-
-          <PartyCard
-            :party="result.primary.party"
-            :score="result.primary.normalizedScore"
-          />
-        </section>
-
-        <section v-if="result.alternatives.length > 0" class="results__section">
-          <h2 class="results__section-title">
-            {{ $t("results.alternativeMatch") }}
-          </h2>
-
-          <div class="results__alternatives">
-            <PartyCard
-              v-for="alt in result.alternatives.slice(0, 2)"
-              :key="alt.partyId"
-              :party="alt.party"
-              :score="alt.normalizedScore"
-            />
-          </div>
-        </section>
-
-        <section class="results__section">
-          <ResultBreakdown :scores="result.allScores" />
-        </section>
-
-        <div class="results__actions">
-          <button
-            @click="copyResults"
-            class="results__button results__button--secondary"
-          >
-            <Copy :size="20" />
-            {{
-              copied ? $t("results.resultsCopied") : $t("results.copyResults")
-            }}
-          </button>
-
-          <button
-            @click="retakeQuiz"
-            class="results__button results__button--primary"
-          >
-            <RotateCcw :size="20" />
-            {{ $t("results.retakeQuiz") }}
-          </button>
-        </div>
-      </div>
-
-      <div v-else class="results__empty">
-        <AlertCircle :size="48" />
-        <p>No results available. Please take the quiz first.</p>
-        <button
-          @click="goToQuiz"
-          class="results__button results__button--primary"
-        >
-          Start Quiz
-        </button>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
   import { AlertCircle, Copy, RotateCcw, Trophy } from "lucide-vue-next";
   import { onMounted, ref } from "vue";
@@ -167,6 +86,87 @@ View my results: ${shareUrl}`;
     router.push("/quiz");
   }
 </script>
+
+<template>
+  <div class="results">
+    <div class="results__container">
+      <h1 class="results__title">{{ $t("results.title") }}</h1>
+
+      <div v-if="result" class="results__content">
+        <section class="results__section results__section--primary">
+          <div class="results__pills">
+            <div class="results__badge">
+              <Trophy :size="20" />
+              <span>{{ $t("results.primaryMatch") }}</span>
+            </div>
+
+            <div
+              class="results__confidence"
+              :class="`results__confidence--${result.confidence}`"
+            >
+              {{ $t(`results.confidence.${result.confidence}`) }}
+            </div>
+          </div>
+
+          <PartyCard
+            :party="result.primary.party"
+            :score="result.primary.normalizedScore"
+          />
+        </section>
+
+        <section v-if="result.alternatives.length > 0" class="results__section">
+          <h2 class="results__section-title">
+            {{ $t("results.alternativeMatch") }}
+          </h2>
+
+          <div class="results__alternatives">
+            <PartyCard
+              v-for="alt in result.alternatives.slice(0, 2)"
+              :key="alt.partyId"
+              :party="alt.party"
+              :score="alt.normalizedScore"
+            />
+          </div>
+        </section>
+
+        <section class="results__section">
+          <ResultBreakdown :scores="result.allScores" />
+        </section>
+
+        <div class="results__actions">
+          <button
+            @click="copyResults"
+            class="results__button results__button--secondary"
+          >
+            <Copy :size="20" />
+            {{
+              copied ? $t("results.resultsCopied") : $t("results.copyResults")
+            }}
+          </button>
+
+          <button
+            @click="retakeQuiz"
+            class="results__button results__button--primary"
+          >
+            <RotateCcw :size="20" />
+            {{ $t("results.retakeQuiz") }}
+          </button>
+        </div>
+      </div>
+
+      <div v-else class="results__empty">
+        <AlertCircle :size="48" />
+        <p>No results available. Please take the quiz first.</p>
+        <button
+          @click="goToQuiz"
+          class="results__button results__button--primary"
+        >
+          Start Quiz
+        </button>
+      </div>
+    </div>
+  </div>
+</template>
 
 <style scoped>
   .results {

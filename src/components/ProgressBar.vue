@@ -1,3 +1,9 @@
+<script setup lang="ts">
+  defineProps<{
+    progress: number;
+  }>();
+</script>
+
 <template>
   <div class="progress-bar">
     <div
@@ -14,12 +20,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-  defineProps<{
-    progress: number;
-  }>();
-</script>
 
 <style scoped>
   .progress-bar {

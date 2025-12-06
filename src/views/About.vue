@@ -1,3 +1,18 @@
+<script setup lang="ts">
+  import {
+    AlertCircle,
+    BookOpen,
+    FileText,
+    Home,
+    Lock,
+    Users,
+  } from "lucide-vue-next";
+  import { useQuizStore } from "../stores/quizStore";
+
+  const quizStore = useQuizStore();
+  const parties = quizStore.parties;
+</script>
+
 <template>
   <div class="about">
     <div class="about__container">
@@ -101,14 +116,6 @@
               {{ $t("about.scoringData") }}
             </a>
             <a
-              href="/src/data/questions.json"
-              target="_blank"
-              class="about__data-link"
-            >
-              <FileText :size="16" />
-              {{ $t("about.questionsData") }}
-            </a>
-            <a
               href="/src/data/parties.json"
               target="_blank"
               class="about__data-link"
@@ -129,21 +136,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-  import {
-    AlertCircle,
-    BookOpen,
-    FileText,
-    Home,
-    Lock,
-    Users,
-  } from "lucide-vue-next";
-  import { useQuizStore } from "../stores/quizStore";
-
-  const quizStore = useQuizStore();
-  const parties = quizStore.parties;
-</script>
 
 <style scoped>
   .about {

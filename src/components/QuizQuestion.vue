@@ -1,24 +1,3 @@
-<template>
-  <div class="quiz-question">
-    <h2 class="quiz-question__text">{{ question.text }}</h2>
-    <p class="quiz-question__category">{{ question.category }}</p>
-
-    <div
-      class="quiz-question__options"
-      role="radiogroup"
-      :aria-labelledby="question.id"
-    >
-      <QuizOption
-        v-for="(option, index) in optionLabels"
-        :key="index"
-        :label="option"
-        :is-selected="selectedOption === index"
-        @select="selectOption(index)"
-      />
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
   import { computed, ref, watch } from "vue";
   import { useI18n } from "vue-i18n";
@@ -63,6 +42,27 @@
     emit("update:modelValue", index);
   }
 </script>
+
+<template>
+  <div class="quiz-question">
+    <h2 class="quiz-question__text">{{ question.text }}</h2>
+    <p class="quiz-question__category">{{ question.category }}</p>
+
+    <div
+      class="quiz-question__options"
+      role="radiogroup"
+      :aria-labelledby="question.id"
+    >
+      <QuizOption
+        v-for="(option, index) in optionLabels"
+        :key="index"
+        :label="option"
+        :is-selected="selectedOption === index"
+        @select="selectOption(index)"
+      />
+    </div>
+  </div>
+</template>
 
 <style scoped>
   .quiz-question {

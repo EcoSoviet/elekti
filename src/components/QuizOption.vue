@@ -1,3 +1,14 @@
+<script setup lang="ts">
+  defineProps<{
+    label: string;
+    isSelected: boolean;
+  }>();
+
+  defineEmits<{
+    select: [];
+  }>();
+</script>
+
 <template>
   <button
     @click="$emit('select')"
@@ -10,17 +21,6 @@
     <span class="quiz-option__text">{{ label }}</span>
   </button>
 </template>
-
-<script setup lang="ts">
-  defineProps<{
-    label: string;
-    isSelected: boolean;
-  }>();
-
-  defineEmits<{
-    select: [];
-  }>();
-</script>
 
 <style scoped>
   .quiz-option {

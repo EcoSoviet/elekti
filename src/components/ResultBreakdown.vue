@@ -1,18 +1,3 @@
-<template>
-  <div class="result-breakdown">
-    <h3 class="result-breakdown__title">{{ $t("results.allParties") }}</h3>
-
-    <div class="result-breakdown__list">
-      <PartyCard
-        v-for="partyScore in scores"
-        :key="partyScore.partyId"
-        :party="partyScore.party"
-        :score="partyScore.normalizedScore"
-      />
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
   import PartyCard from "./PartyCard.vue";
 
@@ -36,6 +21,21 @@
     scores: PartyScore[];
   }>();
 </script>
+
+<template>
+  <div class="result-breakdown">
+    <h3 class="result-breakdown__title">{{ $t("results.allParties") }}</h3>
+
+    <div class="result-breakdown__list">
+      <PartyCard
+        v-for="partyScore in scores"
+        :key="partyScore.partyId"
+        :party="partyScore.party"
+        :score="partyScore.normalizedScore"
+      />
+    </div>
+  </div>
+</template>
 
 <style scoped>
   .result-breakdown {

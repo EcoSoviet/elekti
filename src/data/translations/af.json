@@ -68,9 +68,8 @@
     "disclaimerText": "Elekti is 'n opvoedkundige instrument, nie 'n plaasverving vir navorsing nie. Politieke partye is komplekse organisasies met genuanseerde posisies wat met verloop van tyd ontwikkel. Ons moedig jou sterk aan om party-manifeste te lees, openbare forums by te woon, en ons inligting onafhanklik te verifieer. Hierdie instrument toon belyning gebaseer op verklaarde posisies - werklike bestuur kan verskil. Gebruik hierdie resultate as 'n beginpunt vir dieper verkenning, nie as jou finale besluit nie.",
     "viewData": "Bekyk Rou Data",
     "viewDataText": "In die gees van volledige deursigtigheid, kan jy ons rou datalêers self ondersoek. Hierdie JSON-lêers bevat alle party-posisies, puntegewigte, en vraag-metadata wat deur ons algoritme gebruik word.",
-    "scoringData": "Puntegewigte",
-    "partiesData": "Party Inligting",
-    "questionsData": "Vrae Metadata"
+    "scoringData": "Telling Data (sluit vrae & gewigte in)",
+    "partiesData": "Party Inligting"
   },
   "party": {
     "anc": {

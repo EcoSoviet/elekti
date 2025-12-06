@@ -17,7 +17,7 @@ Elekti is a political quiz/matching application built with Vue 3, TypeScript, an
 
 ### Key Patterns
 
-**i18n Integration**: Questions are NOT in `questions.json` - they're in translation files under `questions.q1`, `questions.q2`, etc. Each question has `text` and `category` fields. When locale changes, `quizStore` reloads questions via `loadQuestionsFromI18n()`.
+**i18n Integration**: Questions load from translation files under `questions.q1`, `questions.q2`, etc. Each question has `text` and `category` fields. When locale changes, `quizStore` reloads questions via `loadQuestionsFromI18n()`. Question metadata (including scoring weights) is stored in `scoring.json`.
 
 **Party ID Mapping**: `scoring.json` uses display names (e.g., "ANC", "VF+"), but `parties.json` uses kebab-case IDs (e.g., "anc", "vfplus"). The `mapPartyKey()` function in `scoring.ts` handles this mapping. When adding parties, update both the mapping function and party data.
 

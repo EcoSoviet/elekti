@@ -68,9 +68,8 @@
     "disclaimerText": "Elekti ke sesebediswa sa thuto, eseng sebaka sa dipatlisiso. Mekgatlo ya dipolotiki ke mekgatlo e rarahaneng e nang le maemo a fapaneng a fetohang ha nako e ntse e ya. Re o kgothaletsa ka matla ho bala dimanifesto tsa mekgatlo, ho ba teng diforumong tsa setjhaba, le ho netefatsa tlhahisoleseding ya rona ka boikemelo. Sesebediswa sena se bontsha ho tsamaellana ho thehilweng ho maemo a boletsweng - puso ya nnete e ka fapana. Sebedisa diphetho tsena e le qalo ya ho hlahloba ka botebo, eseng e le qeto ya hao ya ho qetela.",
     "viewData": "Sheba Data e Felletseng",
     "viewDataText": "O ka sheba difaele tsa rona tsa JSON ka botlalo. Difaele tsena tsa JSON di na le maemo ohle a mekgatlo, boima ba matshwao, le metadata ya dipotso tse sebediswang ke algorithm ya rona.",
-    "scoringData": "Boima ba Dikoro",
-    "partiesData": "Tlhahisoleseding ka Mekga",
-    "questionsData": "Dintlha tsa Dipotso"
+    "scoringData": "Data ea Lintlha (e kenyelletsa dipotso le boima)",
+    "partiesData": "Tlhahisoleseding ka Mekga"
   },
   "party": {
     "anc": {

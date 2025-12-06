@@ -68,9 +68,8 @@
     "disclaimerText": "Elekti ke sedirisiwa sa thuto, e seng seemedi sa patlisiso. Mekgatlho ya sepolotiki ke mekgatlho e e raraaneng e e nang le maemo a a farologaneng a a fetogang fa nako e ntse e tsamaya. Re go rotloetsa thata go bala dimanifesto tsa mekgatlho, go tsenela diforamo tsa setšhaba, le go netefatsa tshedimosetso ya rona ka nosi. Sedirisiwa se se bontsha go tsamaelana go ikaegilwe ka maemo a a boletsweng - puso ya nnete e ka farologana. Dirisa dipholo tse jaaka tshimologo ya go batlisisa go ya kwa teng, e seng jaaka tshwetso ya gago ya bofelo.",
     "viewData": "Bona Data Ya Motheo",
     "viewDataText": "Mo moweng wa go nna pepeneneng, o ka sekaseka difaele tsa rona tsa data ka bowena. Difaele tse tsa JSON di na le maemo otlhe a ditlhopha, boima jwa dintlha, le metadata ya dipotso tse di dirisiwang ke algorithm ya rona.",
-    "scoringData": "Boima Jwa Dintlha",
-    "partiesData": "Tshedimosetso Ya Ditlhopha",
-    "questionsData": "Metadata Ya Dipotso"
+    "scoringData": "Data ya Dintlha (e akaretsa dipotso le boima)",
+    "partiesData": "Tshedimosetso ya Matlhopa"
   },
   "party": {
     "anc": {

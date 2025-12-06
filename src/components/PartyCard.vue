@@ -1,3 +1,20 @@
+<script setup lang="ts">
+  interface Party {
+    id: string;
+    name: string;
+    short: string;
+    descriptionKey: string;
+    colour: string;
+    logo?: string;
+    website?: string;
+  }
+
+  defineProps<{
+    party: Party;
+    score?: number;
+  }>();
+</script>
+
 <template>
   <div class="party-card" :style="{ borderLeftColor: party.colour }">
     <div class="party-card__header">
@@ -51,23 +68,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-  interface Party {
-    id: string;
-    name: string;
-    short: string;
-    descriptionKey: string;
-    colour: string;
-    logo?: string;
-    website?: string;
-  }
-
-  defineProps<{
-    party: Party;
-    score?: number;
-  }>();
-</script>
 
 <style scoped>
   .party-card {

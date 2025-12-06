@@ -1,3 +1,17 @@
+<script setup lang="ts">
+  import { Info, Lock, Vote } from "lucide-vue-next";
+  import { useRouter } from "vue-router";
+  import { useQuizStore } from "../stores/quizStore";
+
+  const router = useRouter();
+  const quizStore = useQuizStore();
+
+  function startQuiz() {
+    quizStore.reset();
+    router.push("/quiz");
+  }
+</script>
+
 <template>
   <div class="landing">
     <div class="landing__container">
@@ -25,20 +39,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-  import { Info, Lock, Vote } from "lucide-vue-next";
-  import { useRouter } from "vue-router";
-  import { useQuizStore } from "../stores/quizStore";
-
-  const router = useRouter();
-  const quizStore = useQuizStore();
-
-  function startQuiz() {
-    quizStore.reset();
-    router.push("/quiz");
-  }
-</script>
 
 <style scoped>
   .landing {

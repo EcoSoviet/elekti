@@ -16,6 +16,23 @@ export interface Question {
   options: string[];
 }
 
+interface ScoringOption {
+  option: string;
+  scores: Record<string, number>;
+}
+
+interface ScoringQuestion {
+  id: number;
+  text: string;
+  category: string;
+  weight: number;
+  options: ScoringOption[];
+}
+
+interface ScoringData {
+  questions: ScoringQuestion[];
+}
+
 export interface PartyScore {
   partyId: string;
   rawScore: number;
@@ -61,7 +78,7 @@ export function computeScores(
     rawScores[party.id] = 0;
   });
 
-  const scoringQuestions = scoringData.questions;
+  const scoringQuestions = (scoringData as ScoringData).questions;
 
   Object.entries(answers).forEach(([questionId, optionIndex]) => {
     const qNum = parseInt(questionId.substring(1));
@@ -69,11 +86,12 @@ export function computeScores(
 
     if (scoringQuestion && scoringQuestion.options[optionIndex]) {
       const scores = scoringQuestion.options[optionIndex].scores;
+      const weight = scoringQuestion.weight;
 
       Object.entries(scores).forEach(([partyKey, score]) => {
         const partyId = mapPartyKey(partyKey);
         if (rawScores[partyId] !== undefined) {
-          rawScores[partyId] += score as number;
+          rawScores[partyId] += (score as number) * weight;
         }
       });
     }
@@ -116,13 +134,12 @@ export function computeScores(
       continue;
     }
 
-    if (
-      Math.abs(score.normalizedScore - primary.normalizedScore) >= tieMargin
-    ) {
+    if (alternatives.length >= 2) {
+      break;
+    }
+
+    if (Math.abs(score.normalizedScore - primary.normalizedScore) < tieMargin) {
       alternatives.push(score);
-      if (alternatives.length >= 2) {
-        break;
-      }
     } else {
       alternatives.push(score);
     }

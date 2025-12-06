@@ -1,3 +1,46 @@
+<script setup lang="ts">
+  import { ChevronLeft, ChevronRight } from "lucide-vue-next";
+  import { computed } from "vue";
+  import { useRouter } from "vue-router";
+  import ProgressBar from "../components/ProgressBar.vue";
+  import QuizQuestion from "../components/QuizQuestion.vue";
+  import { useQuizStore } from "../stores/quizStore";
+
+  const router = useRouter();
+  const quizStore = useQuizStore();
+
+  const currentQuestion = computed(() => quizStore.currentQuestion);
+  const isLastQuestion = computed(
+    () => quizStore.currentQuestionIndex === quizStore.questions.length - 1
+  );
+
+  function handleAnswer(optionIndex: number) {
+    if (currentQuestion.value) {
+      quizStore.answerQuestion(currentQuestion.value.id, optionIndex);
+      setTimeout(() => {
+        if (isLastQuestion.value) {
+          handleFinish();
+        } else {
+          quizStore.nextQuestion();
+        }
+      }, 300);
+    }
+  }
+
+  function handleNext() {
+    if (isLastQuestion.value) {
+      handleFinish();
+    } else {
+      quizStore.nextQuestion();
+    }
+  }
+
+  function handleFinish() {
+    quizStore.completed = true;
+    router.push("/results");
+  }
+</script>
+
 <template>
   <div class="quiz">
     <div class="quiz__wrapper">
@@ -52,49 +95,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-  import { ChevronLeft, ChevronRight } from "lucide-vue-next";
-  import { computed } from "vue";
-  import { useRouter } from "vue-router";
-  import ProgressBar from "../components/ProgressBar.vue";
-  import QuizQuestion from "../components/QuizQuestion.vue";
-  import { useQuizStore } from "../stores/quizStore";
-
-  const router = useRouter();
-  const quizStore = useQuizStore();
-
-  const currentQuestion = computed(() => quizStore.currentQuestion);
-  const isLastQuestion = computed(
-    () => quizStore.currentQuestionIndex === quizStore.questions.length - 1
-  );
-
-  function handleAnswer(optionIndex: number) {
-    if (currentQuestion.value) {
-      quizStore.answerQuestion(currentQuestion.value.id, optionIndex);
-      setTimeout(() => {
-        if (isLastQuestion.value) {
-          handleFinish();
-        } else {
-          quizStore.nextQuestion();
-        }
-      }, 300);
-    }
-  }
-
-  function handleNext() {
-    if (isLastQuestion.value) {
-      handleFinish();
-    } else {
-      quizStore.nextQuestion();
-    }
-  }
-
-  function handleFinish() {
-    quizStore.completed = true;
-    router.push("/results");
-  }
-</script>
 
 <style scoped>
   .quiz {

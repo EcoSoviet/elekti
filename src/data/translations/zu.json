@@ -68,9 +68,8 @@
     "disclaimerText": "I-Elekti iyithuluzi lemfundo, akusiyo indawo yocwaningo. Amaqembu ezepolitiki ayizinhlangano eziyinkimbinkimbi ezinemibono ethintana kakhulu eguquka ngokuhamba kwesikhathi. Sikukhuthaza kakhulu ukuthi ufunde imibhalo yamaqembu, uhambe emihlanganweni yomphakathi, futhi uqinisekise ulwazi lwethu ngokuzimele. Leli thuluzi likhombisa ukuvumelana okusekelwe ezikhundleni ezikhulunywayo - ukuphatha kwangempela kungahluka. Sebenzisa le miphumela njengokukuqala kokuhlola okujulile, hhayi njengesinqumo sakho sokugcina.",
     "viewData": "Buka Idatha Engalungiswanga",
     "viewDataText": "Ngomoya wokucaca ngokugcwele, ungahlola amafayela edatha yethu ngokwakho. La mafayela e-JSON aqukethe zonke izikhundla zamaqembu, isisindo samaphuzu, nemetadata yemibuzo esetshenziswa yi-algorithm yethu.",
-    "scoringData": "Isisindo Samaphuzu",
-    "partiesData": "Ulwazi Lwamaqembu",
-    "questionsData": "Imetadata Yemibuzo"
+    "scoringData": "Idatha Yokuphointa (ihlanganisa imibuzo nezisindo)",
+    "partiesData": "Ulwazi Lwamaqembu"
   },
   "party": {
     "anc": {
