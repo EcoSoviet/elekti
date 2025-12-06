@@ -131,7 +131,7 @@
       "text": "Thuto e phahameng e lokela ho ba mahala ho bohle, eseng ka thuso ya dithuso tsa dithuto feela.",
       "category": "thuto"
     },
-    "q3": {
+    "q5": {
       "text": "Puso e lokela ho fana ka motlotlo wa motheo ho bohle, le ha ho ka bolela lekhetho le phahameng kapa ho alima haholo.",
       "category": "boiketlo ba sechaba"
     },
@@ -139,19 +139,19 @@
       "text": "Puso e lokela ho tsetela ka matla matlo a setjhaba bakeng sa malapa a fokolang.",
       "category": "bolulo"
     },
-    "q5": {
+    "q17": {
       "text": "Matlo a setjhaba a lokela ho fuwa pele, le ha ho ka bolela ho fokotsa ditshebeletso tse ding tsa setjhaba.",
       "category": "bolulo"
     },
-    "q6": {
+    "q3": {
       "text": "Puso e lokela ho phahamisa lekhetho ho batho ba ruileng ho tshehetsa mananeo a setjhaba.",
       "category": "moruo"
     },
-    "q7": {
+    "q8": {
       "text": "Afrika Borwa e lokela ho sireletsa diindasteri tsa lehae le ha ditheko tsa bareki di ka phahama.",
       "category": "maano a kgwebo"
     },
-    "q8": {
+    "q7": {
       "text": "Tokelo ya thepa le kgwebo e nyane e lokela ho sireletswa ka matla kgahlanong le ho amohuoa kapa melao e boima.",
       "category": "ditokelo tsa thepa"
     },
@@ -163,105 +163,105 @@
       "text": "Basebetsi ba lokela ho ba le tokelo e matla ya ho itshengella le ho buisana le dihoho kantle ho ho kenella ha puso.",
       "category": "ditokelo tsa basebetsi"
     },
-    "q11": {
+    "q15": {
       "text": "BEE le ditokisetso tsa ho lokisa kgethollo di lokela ho sala e le maano a bohareng a puso.",
       "category": "phetoho"
     },
-    "q12": {
+    "q16": {
       "text": "Puso e lokela ho dumella hore mobu o amohuoe ntle le puseletso ya mmaraka ho potlakisa tokiso ya mobu.",
       "category": "tokiso ya mobu"
     },
-    "q13": {
+    "q14": {
       "text": "Ntlafatso ya mahaeng le tshehetso ya temo di lokela ho fuwa chelete e ngata haholo.",
       "category": "temo"
     },
-    "q14": {
+    "q12": {
       "text": "Naha e lokela ho tsetela haholo mehloling ya eneji e ka tswelang pele ho ena le kgase ya mashala.",
       "category": "eneji"
     },
-    "q16": {
+    "q11": {
+      "text": "Puso e lokela ho lokisa ditsamaiso tsa metsi le bohloeki ka potlako metseng e senyehileng.",
+      "category": "ditheo"
+    },
+    "q21": {
       "text": "Molaotheo o lokela ho fetolwa moo ho hlokahalang ho potlakisa phetoho le kabo ya matlotlo.",
       "category": "puso"
     },
-    "q17": {
+    "q18": {
       "text": "Ho lwantsha bobodu ka matla ho bohlokoa ho feta ho boloka botsitso ba dipolotiki.",
       "category": "bobodu"
     },
-    "q18": {
+    "q20": {
       "text": "Boipuso ba makhotla le ba baqosuoa bo lokela ho sireletswa le ha ho ka thibela ho tenyetseha ha puso.",
       "category": "mekgatlo"
-    },
-    "q21": {
-      "text": "Ho fokotsa botlokotsebe, puso e lokela ho thatafatsa dikotlo ho ena le ho shebana haholo le mabaka a jwalo ka bofuma.",
-      "category": "botlokotsebe"
-    },
-    "q22": {
-      "text": "Ba kenang kahare ka bosenyi ba lokela ho lelekwa mme meedi e tiiswe ho sireletsa mesebetsi le mehlodi.",
-      "category": "bohahlaudi"
-    },
-    "q23": {
-      "text": "Puso e lokela ho matlafatsa tshehetso ya molao bakeng sa batho ba LGBTQ+ le ho phahamisa ditokelo tsa bona ka mafolofolo.",
-      "category": "ditokelo tsa sechaba"
-    },
-    "q15": {
-      "text": "Puso e lokela ho lokisa ditsamaiso tsa metsi le bohloeki ka potlako metseng e senyehileng.",
-      "category": "ditheo"
     },
     "q19": {
       "text": "Ho hlokahala dibaka tse matla tsa ho thibela state capture ho kenyeletswa melao e thata ya tshehetso ya mekga le kgwebo mmusong.",
       "category": "phetolo state capture"
     },
-    "q20": {
+    "q22": {
       "text": "Diporofense le bomasepala ba lokela ho fuwa matla le tjhelete e ngata, le ha ho ka fokotsa matla a puso ya naha.",
       "category": "karohano ya matla"
     },
+    "q23": {
+      "text": "Ho fokotsa botlokotsebe, puso e lokela ho thatafatsa dikotlo ho ena le ho shebana haholo le mabaka a jwalo ka bofuma.",
+      "category": "botlokotsebe"
+    },
     "q24": {
+      "text": "Ba kenang kahare ka bosenyi ba lokela ho lelekwa mme meedi e tiiswe ho sireletsa mesebetsi le mehlodi.",
+      "category": "bohahlaudi"
+    },
+    "q26": {
+      "text": "Puso e lokela ho matlafatsa tshehetso ya molao bakeng sa batho ba LGBTQ+ le ho phahamisa ditokelo tsa bona ka mafolofolo.",
+      "category": "ditokelo tsa sechaba"
+    },
+    "q31": {
       "text": "Boleng ba bodumedi bo lokela ho ba le karolo e kgolo ho kaho ya melao le maano a puso.",
       "category": "bodumedi le puso"
     },
-    "q25": {
+    "q33": {
       "text": "Naha e lokela ho amohela le ho tshehetsa puso ya marena le dikgosi e le karolo ya puso.",
       "category": "boetapele ba setso"
     },
-    "q26": {
+    "q29": {
       "text": "Puso e lokela ho eketsa tshehetso ya dipuo tsa matsoho thutong, mecheng ya phatlalatso le ditshebeletsong tsa setjhaba.",
       "category": "puo le setso"
     },
-    "q27": {
+    "q34": {
       "text": "Naha e lokela ho shebana haholo le dikamano tsa lefatshe le kgwebo le EU, US le Afrika ho ena le ho itshetleha ka mehlotlo e meng ya dipolotiki.",
       "category": "maano a kantle"
     },
-    "q28": {
+    "q35": {
       "text": "Puso e lokela ho eketsa matla a ho shebella le ho fumana data bakeng sa puso ya polokeho le tlhabollo ya botlokotsebe, le ha sena se fokotsa lekunutu.",
       "category": "lekunutu le thekenoloji"
     },
-    "q29": {
-      "text": "Abortion should be legal, publicly funded where necessary, and available on request.",
-      "category": "reproductive rights"
+    "q27": {
+      "text": "Ho ntsha mpa ho lokela ho ba molaong, ho tshehetswa ke tjhelete ya mmuso ha ho hlokahala, le ho fumaneha ka kopo.",
+      "category": "ditokelo tsa botsalo"
+    },
+    "q13": {
+      "text": "Mmuso o lokela ho boloka ditshebeletso tsa bohlokwa tsa setjhaba (motlakase, metsi, terene) boemong ba setjhaba ho fapana le ho di rekisetsa dikhamphani tsa poraebete.",
+      "category": "bong le thekiso ya poraebete"
     },
     "q30": {
-      "text": "The state should prioritise keeping key public utilities (power, water, rail) in public ownership rather than selling them to private firms.",
-      "category": "ownership & privatisation"
-    },
-    "q31": {
-      "text": "The government should actively fund and protect Afrikaans language education and cultural programmes.",
-      "category": "language & culture"
+      "text": "Mmuso o lokela ho tshehetswa ka mafolofolo le ho sireletsa thuto ya puo ya Seafrikanse le mananeo a setso.",
+      "category": "puo le setso"
     },
     "q32": {
-      "text": "Government should make active legal and practical accommodations for religious minorities, including Muslim practices and holidays.",
-      "category": "religion & state"
+      "text": "Mmuso o lokela ho etsa ditokiso tsa molao le tse sebetsang bakeng sa dihlopha tse nyenyane tsa bodumedi, ho kenyelletsa ditlwaelo le matsatsi a phomolo a Mosleme.",
+      "category": "bodumedi le mmuso"
     },
-    "q33": {
-      "text": "The government should introduce specific legal protections and targeted support to preserve the rights and cultures of national minorities.",
-      "category": "minority rights"
+    "q28": {
+      "text": "Mmuso o lokela ho hlahisa tshireletso e ikgethang ya molao le tshehetso e lebisitsweng ho boloka ditokelo le ditso tsa dihlopha tse nyenyane tsa naha.",
+      "category": "ditokelo tsa dihlopha tse nyenyane"
     },
-    "q34": {
-      "text": "The government should prioritise paying down public debt and ensuring fiscal sustainability even if it limits new social spending.",
-      "category": "fiscal policy"
+    "q6": {
+      "text": "Mmuso o lokela ho beha pele ho lefa dikoloto tsa setjhaba le ho netefatsa botsitso ba ditjhelete leha sena se ka fokotsa ditshebeletso tse ntjha tsa setjhaba.",
+      "category": "leano la ditjhelete"
     },
-    "q35": {
-      "text": "Immigration policy should be significantly tightened including stronger border controls and stricter vetting.",
-      "category": "immigration"
+    "q25": {
+      "text": "Leano la bofaladi le lokela ho tiiswa haholo ho kenyelletsa taolo e matla ya meedi le tlhahlobo e thata.",
+      "category": "bofaladi"
     }
   },
   "footer": {

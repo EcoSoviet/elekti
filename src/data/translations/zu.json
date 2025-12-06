@@ -131,7 +131,7 @@
       "text": "Imfundo ephakeme kufanele ibe mahhala kubo bonke abafundi (ayikho imali), hhayi nje usizo lwezimali oluhlolwayo.",
       "category": "imfundo"
     },
-    "q3": {
+    "q5": {
       "text": "Uhulumeni kufanele asebenzise isibonelelo semali esingagunyaziwe kubo bonke izakhamuzi, ngisho noma kudinga izintela eziphezulu noma ukuboleka.",
       "category": "inhlalakahle yomphakathi"
     },
@@ -139,19 +139,19 @@
       "text": "Uhulumeni kufanele atshale kakhulu ezindlini zomphakathi zemindeni engenayo imali eningi.",
       "category": "izindlu"
     },
-    "q5": {
+    "q17": {
       "text": "Ukutshalwa kwezimali ezindlini zomphakathi kufanele kube yinto ebalulekile ngisho noma kudinga ukunciphisa ezinye izinsizakalo zomphakathi.",
       "category": "izindlu"
     },
-    "q6": {
+    "q3": {
       "text": "Uhulumeni kufanele akhuphule izintela kubantu abanothileyo ukuxhasa izinhlelo zomphakathi ezingeziwe (ezempilo, imfundo nezibonelelo zomphakathi).",
       "category": "ezomnotho"
     },
-    "q7": {
+    "q8": {
       "text": "INingizimu Afrika kufanele ibeke phambili izivumelwano zohwebo ezivikela izimboni zasekhaya, ngisho noma kusho amanani aphezulu kubathengi.",
       "category": "inqubomgomo yohwebo"
     },
-    "q8": {
+    "q7": {
       "text": "Impahla yangasese namalungelo amabhizinisi amancane kufanele avikelwe ngokuqinile ekuthathweni nasemithethweni enzima.",
       "category": "amalungelo empahla"
     },
@@ -163,105 +163,105 @@
       "text": "Abasebenzi kufanele babe namalungelo aqinile okushayela nokuxoxisana ngqo nabaqashi ngaphandle kokungenelela kukahulumeni.",
       "category": "amalungelo abasebenzi"
     },
-    "q11": {
+    "q15": {
       "text": "I-BEE kanye nokwenza ngokubuyisana kufanele kuqhubeke kube yizinto ezibalulekile kuhulumeni ukubuyisela ukungalingani kobuhlanga kwezomnotho.",
       "category": "uguquko"
     },
-    "q12": {
+    "q16": {
       "text": "Ukuthathwa komhlaba wangasese ngaphandle kokukhokhelwa kwenani lemakethe kufanele kuvunyelwe ngaphansi komthetho ukusheshisa ukuguqulwa komhlaba.",
       "category": "ukuguqulwa komhlaba"
     },
-    "q13": {
+    "q14": {
       "text": "Ukuthuthukiswa kwezindawo zasemakhaya nokusekela ezolimo (okuhlanganisa izibonelelo nezingqalasizinda zabalimi abancane) kufanele kuthole uxhaso olukhulu luka hulumeni.",
       "category": "ezolimo"
     },
-    "q14": {
+    "q12": {
       "text": "Izwe kufanele libeke phambili ukutshalwa kwezimali emandleni avuselelekayo (ilanga, umoya) kunokwandisa amandla amalahle.",
       "category": "amandla"
     },
-    "q16": {
+    "q11": {
+      "text": "Uhulumeni kufanele utshale imali ngokushesha ekulungiseni ingqalasizinda yamanzi nokuhlanzwa (amapayipi, izindawo zokuhlanza) kumasipala angenile.",
+      "category": "ingqalasizinda"
+    },
+    "q21": {
       "text": "Umthethosisekelo kufanele uchitshiyelwe lapho kudingeka ukusheshisa uguquko nokuvumela ukwabiwa okuqhubekayo.",
       "category": "ukubusa"
     },
-    "q17": {
+    "q18": {
       "text": "Isenzo esinamandla esilwa nenkohlakalo (ngisho noma kuphazamisa abaholi bamanje) kubaluleke kunokugcina ukuzinza kwezepolitiki.",
       "category": "inkohlakalo"
     },
-    "q18": {
+    "q20": {
       "text": "Ukuzimela kwezinkantolo kanye nezikhathi zokushushisa kufanele kuvikelwe ngokuqinile, ngisho noma lokho kunciphisa ukuguquguquka kwesigqila.",
       "category": "izikhungo"
-    },
-    "q21": {
-      "text": "Ukunciphisa ubugebengu, uhulumeni kufanele agxile ekujeziseni okunamandla kunokubhekana nezimbangela zomphakathi njengobumpofu.",
-      "category": "ubugebengu"
-    },
-    "q22": {
-      "text": "Abafiki abangekho emthethweni kufanele baxoshwe bese kulawulwa imingcele eqinile ukuvikela imisebenzi nezinsiza zendawo.",
-      "category": "ukufika kwezizwe"
-    },
-    "q23": {
-      "text": "Uhulumeni kufanele aqinise ukuvikelwa komthetho kwabantu be-LGBTQ+ futhi athuthukise amalungelo alinganayo asakhamuzi.",
-      "category": "amalungelo asakhamuzi"
-    },
-    "q15": {
-      "text": "Uhulumeni kufanele utshale imali ngokushesha ekulungiseni ingqalasizinda yamanzi nokuhlanzwa (amapayipi, izindawo zokuhlanza) kumasipala angenile.",
-      "category": "ingqalasizinda"
     },
     "q19": {
       "text": "iNingizimu Afrika idinga izinguquko eziqinile zokuthatha umbuso, ezihlanganisa ukulawula okuqinile kwenkxaso-mali yeqembu lezombusazwe kanye nomthelela wezinkampani kuhulumeni.",
       "category": "ukubuyekezwa kokuthunjwa kombuso"
     },
-    "q20": {
+    "q22": {
       "text": "Izifundazwe nomasipala kufanele banandla eningeziwe nokulawula isabelomali, ngisho noma kusho ukunciphisa igunya likahulumeni kazwelonke.",
       "category": "ukusabalalisa"
     },
+    "q23": {
+      "text": "Ukunciphisa ubugebengu, uhulumeni kufanele agxile ekujeziseni okunamandla kunokubhekana nezimbangela zomphakathi njengobumpofu.",
+      "category": "ubugebengu"
+    },
     "q24": {
+      "text": "Abafiki abangekho emthethweni kufanele baxoshwe bese kulawulwa imingcele eqinile ukuvikela imisebenzi nezinsiza zendawo.",
+      "category": "ukufika kwezizwe"
+    },
+    "q26": {
+      "text": "Uhulumeni kufanele aqinise ukuvikelwa komthetho kwabantu be-LGBTQ+ futhi athuthukise amalungelo alinganayo asakhamuzi.",
+      "category": "amalungelo asakhamuzi"
+    },
+    "q31": {
       "text": "Izimiso zenkolo nemfundiso kufanele zibe nomthelela omkhulu ekwakhiweni kwemithetho nenqubomgomo kahulumeni.",
       "category": "inkolo nombuso"
     },
-    "q25": {
+    "q33": {
       "text": "iNingizimu Afrika kufanele ihloniphe ngokusemthethweni futhi ixhase izakhiwo zobuholi bendabuko (amakhosi namakhosi) njengengxenye yokubusa.",
       "category": "ubuholi bendabuko"
     },
-    "q26": {
+    "q29": {
       "text": "Uhulumeni kufanele unikeze uxhaso olungeziwe nezimali ezingeziwe zezilimi zomdabu emfundweni, ezindabeni nasezinsizakalweni zomphakathi.",
       "category": "ulimi namasiko"
     },
-    "q27": {
+    "q34": {
       "text": "iNingizimu Afrika kufanele ibeke phambili ukubambisana kokudiplomasi kanye nokuhweba okubanzi (ne-EU, i-US nabomakhelwane base-Afrika) kunokuhambisana namaqembu ezombangazwe angaphandle.",
       "category": "inqubomgomo yangaphandle"
     },
-    "q28": {
+    "q35": {
       "text": "Uhulumeni kufanele andise amandla okuqapha nokufinyelela kudatha kwabasemthethweni ukulwa nobugebengu nobandulkwane, ngisho noma kunciphisa ubumfihlo.",
       "category": "ubumfihlo & ubuchwepheshe"
     },
-    "q29": {
-      "text": "Abortion should be legal, publicly funded where necessary, and available on request.",
-      "category": "reproductive rights"
+    "q27": {
+      "text": "Ukuqhomfa kufanele kube okusemthethweni, kuxhaswe ngezimali zikahulumeni lapho kudingeka, futhi kutholakale ngokucela.",
+      "category": "amalungelo okuzala"
+    },
+    "q13": {
+      "text": "Uhulumeni kufanele agcine izinsizakalo eziyisisekelo zomphakathi (ugesi, amanzi, izitimela) kubunikazi bomphakathi kunokuzithengisa ezinkampanini ezizimele.",
+      "category": "ubunikazi nokunikezwa kwabangasese"
     },
     "q30": {
-      "text": "The state should prioritise keeping key public utilities (power, water, rail) in public ownership rather than selling them to private firms.",
-      "category": "ownership & privatisation"
-    },
-    "q31": {
-      "text": "The government should actively fund and protect Afrikaans language education and cultural programmes.",
-      "category": "language & culture"
+      "text": "Uhulumeni kufanele axhase ngokusebenzayo futhi avikele imfundo yolimi lwesi-Afrikaans nezinhlelo zamasiko.",
+      "category": "ulimi namasiko"
     },
     "q32": {
-      "text": "Government should make active legal and practical accommodations for religious minorities, including Muslim practices and holidays.",
-      "category": "religion & state"
+      "text": "Uhulumeni kufanele enze izilungiselelo ezisemthethweni nezisebenzayo zezincane zenkolo, kufaka phakathi imikhuba namalanga amakhethelo amaSlam.",
+      "category": "inkolo nombuso"
     },
-    "q33": {
-      "text": "The government should introduce specific legal protections and targeted support to preserve the rights and cultures of national minorities.",
-      "category": "minority rights"
+    "q28": {
+      "text": "Uhulumeni kufanele alethe ukuvikelwa okukhethekile komthetho kanye nokuxhaswa okuhlosiwe ukulondoloza amalungelo namasiko ezincane zesizwe.",
+      "category": "amalungelo ezincane"
     },
-    "q34": {
-      "text": "The government should prioritise paying down public debt and ensuring fiscal sustainability even if it limits new social spending.",
-      "category": "fiscal policy"
+    "q6": {
+      "text": "Uhulumeni kufanele abeke phambili ukukhokhwa kwezikweletu zomphakathi kanye nokuqinisekisa ukusimama kwezimali ngisho noma lokhu kukhawulela ukusetshenziswa kwemali entsha yezenhlalo.",
+      "category": "inqubomgomo yezimali"
     },
-    "q35": {
-      "text": "Immigration policy should be significantly tightened including stronger border controls and stricter vetting.",
-      "category": "immigration"
+    "q25": {
+      "text": "Inqubomgomo yokungena kwabantu bangaphandle kufanele iqiniswe kakhulu kufaka phakathi nokulawulwa okuqinile kwemingcele kanye nokuhlolwa okuqinile.",
+      "category": "ukungena kwabantu bangaphandle"
     }
   },
   "footer": {

@@ -131,7 +131,7 @@
       "text": "Higher education should be free for all students (even if it requires higher taxes or borrowing).",
       "category": "education"
     },
-    "q3": {
+    "q5": {
       "text": "The state should implement an unconditional basic income grant for all citizens, even if it requires higher taxes or borrowing.",
       "category": "social welfare"
     },
@@ -139,19 +139,19 @@
       "text": "Government should invest heavily in public housing construction to alleviate homelessness.",
       "category": "housing"
     },
-    "q5": {
+    "q17": {
       "text": "Public housing investment should take priority even if it means less investment in private housing development.",
       "category": "housing"
     },
-    "q6": {
+    "q3": {
       "text": "The government should raise taxes on the wealthy to fund expanded social programmes (health, education and social grants).",
       "category": "economy"
     },
-    "q7": {
+    "q8": {
       "text": "South Africa should prioritise trade agreements that protect local industries, even if it means higher consumer prices.",
       "category": "trade policy"
     },
-    "q8": {
+    "q7": {
       "text": "Private property and small-business rights should be strongly protected against expropriation and heavy regulation.",
       "category": "property rights"
     },
@@ -163,87 +163,87 @@
       "text": "Workers should have stronger rights to strike and protest for better conditions.",
       "category": "labour rights"
     },
-    "q11": {
+    "q15": {
       "text": "Black Economic Empowerment (BEE) and affirmative action should remain central government policies.",
       "category": "transformation"
     },
-    "q12": {
+    "q16": {
       "text": "Expropriation of private land without market-rate compensation should be permitted under law to accelerate land reform.",
       "category": "land reform"
     },
-    "q13": {
+    "q14": {
       "text": "Rural development and agricultural support (including food gardens) should be a major focus of government policy.",
       "category": "agriculture"
     },
-    "q14": {
+    "q12": {
       "text": "The country should prioritise investment in renewable energy and climate change adaptation.",
       "category": "energy"
     },
-    "q16": {
+    "q11": {
+      "text": "The government should invest in fixing water and electricity infrastructure.",
+      "category": "infrastructure"
+    },
+    "q21": {
       "text": "The Constitution should be amended where necessary to allow economic growth.",
       "category": "governance"
     },
-    "q17": {
+    "q18": {
       "text": "Strong action against corruption (even if it disrupts some government functions) is a priority.",
       "category": "corruption"
     },
-    "q18": {
-      "text": "The independence of the judiciary and prosecuting authorities is vital for a healthy democracy.",
+    "q20": {
+      "text": "The independence of the judiciary and prosecuting authorities should be protected.",
       "category": "institutions"
     },
-    "q21": {
-      "text": "To reduce crime, the government should focus more on harsher punishment rather than addressing social causes like poverty.",
-      "category": "crime"
-    },
-    "q22": {
-      "text": "Illegal immigrants should be deported and strict border controls enforced to protect jobs.",
-      "category": "immigration"
-    },
-    "q23": {
-      "text": "The government should strengthen legal protections against discrimination (e.g., on race, gender, sexual orientation).",
-      "category": "civil rights"
-    },
-    "q15": {
-      "text": "Government must urgently invest in fixing water and electricity infrastructure.",
-      "category": "infrastructure"
-    },
     "q19": {
-      "text": "South Africa needs stronger state capture reforms, even if it means upsetting some officials.",
+      "text": "South Africa should implement stronger state capture reforms, even if it means upsetting some officials.",
       "category": "state capture reform"
     },
-    "q20": {
+    "q22": {
       "text": "Provinces and municipalities should have more power (and money) to make decisions.",
       "category": "decentralization"
     },
+    "q23": {
+      "text": "To reduce crime, the government should focus more on harsher punishment rather than addressing social causes like poverty.",
+      "category": "crime"
+    },
     "q24": {
+      "text": "Illegal immigrants should be deported and strict border controls enforced to protect jobs.",
+      "category": "immigration"
+    },
+    "q26": {
+      "text": "The government should strengthen legal protections against discrimination (e.g., on race, gender, sexual orientation).",
+      "category": "civil rights"
+    },
+    "q31": {
       "text": "Religious values and teachings should have a great influence on political decisions.",
       "category": "religion & state"
     },
-    "q25": {
+    "q33": {
       "text": "South Africa should formally recognise and fund traditional leadership structures (chiefs and kings) as part of governance.",
       "category": "traditional leadership"
     },
-    "q26": {
+    "q29": {
       "text": "Government should provide more funding and support for minority languages and cultural programmes.",
       "category": "language & culture"
     },
-    "q27": {
+    "q34": {
       "text": "South Africa should prioritise broad multilateral diplomacy and cooperation over aligning with any specific geopolitical bloc.",
       "category": "foreign policy"
     },
-    "q28": {
+    "q35": {
       "text": "The government should expand surveillance and data collection to improve security and public safety.",
       "category": "privacy & tech"
     },
-    "q29": {
+    "q27": {
       "text": "Abortion should be legal, publicly funded where necessary, and available on request.",
       "category": "reproductive rights"
     },
-    "q30": {
+    "q13": {
       "text": "The state should prioritise keeping key public utilities (power, water, rail) in public ownership rather than selling them to private firms.",
       "category": "ownership & privatisation"
     },
-    "q31": {
+    "q30": {
       "text": "The government should actively fund and protect Afrikaans language education and cultural programmes.",
       "category": "language & culture"
     },
@@ -251,15 +251,15 @@
       "text": "Government should make active legal and practical accommodations for religious minorities, including Muslim practices and holidays.",
       "category": "religion & state"
     },
-    "q33": {
+    "q28": {
       "text": "The government should introduce specific legal protections and targeted support to preserve the rights and cultures of national minorities.",
       "category": "minority rights"
     },
-    "q34": {
+    "q6": {
       "text": "The government should prioritise paying down public debt and ensuring fiscal sustainability even if it limits new social spending.",
       "category": "fiscal policy"
     },
-    "q35": {
+    "q25": {
       "text": "Immigration policy should be significantly tightened including stronger border controls and stricter vetting.",
       "category": "immigration"
     }

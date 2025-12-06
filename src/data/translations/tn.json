@@ -131,7 +131,7 @@
       "text": "Thuto e e kwa godimo e tshwanetse go nna ya mahala go baithuti botlhe (ga go na dituelo), e seng fela thuso ya madi e e lekanyeditsweng.",
       "category": "thuto"
     },
-    "q3": {
+    "q5": {
       "text": "Puso e tshwanetse go tsenya mo tirisong mpho ya madi ya motheo e e sa beakanyeng mabaka go baagi botlhe, le fa go tlhokega lekgetho le le kwa godimo kgotsa go adima.",
       "category": "boitekanelo jwa setšhaba"
     },
@@ -139,19 +139,19 @@
       "text": "Puso e tshwanetse go beeletsa thata mo matlong a setšhaba a malapa a a senang madi a mantsi.",
       "category": "matlo"
     },
-    "q5": {
+    "q17": {
       "text": "Peeletso ya matlo a setšhaba e tshwanetse go nna kgakololo le fa go tlhokega go kgaoganya ditirelo tse dingwe tsa setšhaba.",
       "category": "matlo"
     },
-    "q6": {
+    "q3": {
       "text": "Puso e tshwanetse go tlhatlosa lekgetho go bahumegi go tšhegetsa mananeo a setšhaba a a atolositsweng (botsogo, thuto le dimpho tsa loago).",
       "category": "ikonomi"
     },
-    "q7": {
+    "q8": {
       "text": "Afrika Borwa e tshwanetse go baya kgakololo ditumalano tsa kgwebo tse di sireletsang madirelo a selegae, le fa go raya ditlhotlhwa tse di kwa godimo tsa bareki.",
       "category": "pholisi ya kgwebo"
     },
-    "q8": {
+    "q7": {
       "text": "Thoto ya poraefete le ditshwanelo tsa dikgwebo tse dinnye di tshwanetse go sirelediwa ka thata kgatlhanong le go tsewa le melawana e e bokete.",
       "category": "ditshwanelo tsa thoto"
     },
@@ -163,105 +163,105 @@
       "text": "Badiri ba tshwanetse go nna le ditshwanelo tse di nonofileng tsa go itlhagisa le go buisana ka tlhamalalo le bahiri kwa ntle ga go tsena ga puso.",
       "category": "ditshwanelo tsa badiri"
     },
-    "q11": {
+    "q15": {
       "text": "BEE le go dira ka tshiamo go tshwanetse go tswelela e le dikgakololo tsa botlhokwa tsa puso go lokisa go se lekane ga morafe le ikonomi ga histori.",
       "category": "phetogo"
     },
-    "q12": {
+    "q16": {
       "text": "Go tsewa ga lefatshe la poraefete kwa ntle ga tuelo ya boleng jwa mebaraka go tshwanetse go dumelwa ka fa tlase ga molao go potlakisa petoloelo ya lefatshe.",
       "category": "petoloelo ya lefatshe"
     },
-    "q13": {
+    "q14": {
       "text": "Tlhabololo ya magae le tshegetso ya temo (go akaretsa ditshegetso le motheo wa balemirui ba bannye) e tshwanetse go amogela matlole a mantsi a puso.",
       "category": "temo"
     },
-    "q14": {
+    "q12": {
       "text": "Naga e tshwanetse go baya kgakololo peeletso mo motlakaseng o o mpshafaditsweng (letsatsi, phefo) go feta go atolosa motlakase wa magala.",
       "category": "motlakase"
     },
-    "q16": {
+    "q11": {
+      "text": "Puso e tshwanetse go tsenya madi ka bonako mo go baakanyeng mafaratlhatlha a metsi le phepafatso (dipaipi, mafelo a phepafatso) mo bommasepala ba ba sa atlang.",
+      "category": "mafaratlhatlha"
+    },
+    "q21": {
       "text": "Molaotheo o tshwanetse go fetolwa fa go tlhokega go potlakisa phetogo le go kgontsha kabo e e tswelelang.",
       "category": "puso"
     },
-    "q17": {
+    "q18": {
       "text": "Kgato e e nonofileng kgatlhanong le bosenyi (le fa e tsenya tiragalo mo baeteledipele ba jaana) e botlhokwa go feta go boloka botsitso jwa sepolotiki.",
       "category": "bosenyi"
     },
-    "q18": {
+    "q20": {
       "text": "Boikemelo jwa tsamaiso ya tshiamiso le marapo a a tshwereng molato bo tshwanetse go sirelediwa ka thata, le fa seo se fokotsa bofefo jwa tsamaiso.",
       "category": "ditheo"
-    },
-    "q21": {
-      "text": "Go fokotsa bosenyi, puso e tshwanetse go tlhoma mogopolo mo kotlhaong e e thata go feta go lebagana le mabaka a loago jaaka lehuma.",
-      "category": "bosenyi"
-    },
-    "q22": {
-      "text": "Bafaladi ba ba sa dumelwang ba tshwanetse go lelekiwa le taolo e e tiileng ya moedi go sireletswa ditiro tsa selegae le dithuso.",
-      "category": "bofaladi"
-    },
-    "q23": {
-      "text": "Puso e tshwanetse go nonotsha tshireletso ya molao ya batho ba LGBTQ+ le go tlhabolola ditshwanelo tse di lekana tsa baagi.",
-      "category": "ditshwanelo tsa baagi"
-    },
-    "q15": {
-      "text": "Puso e tshwanetse go tsenya madi ka bonako mo go baakanyeng mafaratlhatlha a metsi le phepafatso (dipaipi, mafelo a phepafatso) mo bommasepala ba ba sa atlang.",
-      "category": "mafaratlhatlha"
     },
     "q19": {
       "text": "Aforika Borwa e tlhoka diphetogo tse di nonofileng tsa go tshwara puso, go akaretsa ditaolo tse di tiileng tsa madi a mephato ya dipolotiki le tlhotlheletso ya dikhamphani mo pusong.",
       "category": "diphetogo tsa go tshwara puso"
     },
-    "q20": {
+    "q22": {
       "text": "Diporofense le bommasepala ba tshwanetse go nna le maatla a mantsi a taolo ya tsamaiso ya madi, le fa go raya go fokotsa thata ya puso ya bosetšhaba.",
       "category": "go abelana maatla"
     },
+    "q23": {
+      "text": "Go fokotsa bosenyi, puso e tshwanetse go tlhoma mogopolo mo kotlhaong e e thata go feta go lebagana le mabaka a loago jaaka lehuma.",
+      "category": "bosenyi"
+    },
     "q24": {
+      "text": "Bafaladi ba ba sa dumelwang ba tshwanetse go lelekiwa le taolo e e tiileng ya moedi go sireletswa ditiro tsa selegae le dithuso.",
+      "category": "bofaladi"
+    },
+    "q26": {
+      "text": "Puso e tshwanetse go nonotsha tshireletso ya molao ya batho ba LGBTQ+ le go tlhabolola ditshwanelo tse di lekana tsa baagi.",
+      "category": "ditshwanelo tsa baagi"
+    },
+    "q31": {
       "text": "Dikgatlhegelo tsa bodumedi le dithuto di tshwanetse go nna le tlhotlheletso e kgolo mo go tlhomeng melao le pholisi ya puso.",
       "category": "bodumedi & puso"
     },
-    "q25": {
+    "q33": {
       "text": "Aforika Borwa e tshwanetse go lemoga ka semolao le go thusa ditlhabololo tsa boeteledipele jwa setso (dikgosi le dikgosana) jaaka karolo ya puso.",
       "category": "boeteledipele jwa setso"
     },
-    "q26": {
+    "q29": {
       "text": "Puso e tshwanetse go naya matlole a mantsi le tshegetso ya dipuo tsa setso mo thutong, mefutafuteng le ditirelong tsa setšhaba.",
       "category": "puo & setso"
     },
-    "q27": {
+    "q34": {
       "text": "Aforika Borwa e tshwanetse go dira gore kgolagano ya madiplomata le kgwebo e e pharaletseng (le EU, US le baagisanyi ba Afrika) e nne pele ga go tsibogana le ditlhopha tse dingwe tsa jeopolitiki.",
       "category": "pholisi ya dinaga tse dingwe"
     },
-    "q28": {
+    "q35": {
       "text": "Puso e tshwanetse go oketsa maatla a tlhokomelo le go fitlhelela tshedimosetso ya baokamedi go lwantsha bosenyi le bosenyi jwa boikgogomoso, le fa go ka fokotsa sephiri.",
       "category": "sephiri & thekenoloji"
     },
-    "q29": {
-      "text": "Abortion should be legal, publicly funded where necessary, and available on request.",
-      "category": "reproductive rights"
+    "q27": {
+      "text": "Go ntsha mpa go tshwanetse go nna semolao, go thusiwa ke madi a puso fa go tlhokega, le go bonala ka kopo.",
+      "category": "ditshwanelo tsa botsalo"
+    },
+    "q13": {
+      "text": "Mmuso o tshwanetse go boloka ditirelo tsa botlhokwa tsa setshaba (motlakase, metsi, terena) mo boemong jwa setshaba go na le go di rekisetsa dikhamphani tsa poraebete.",
+      "category": "bong le go rekisiwa ga poraebete"
     },
     "q30": {
-      "text": "The state should prioritise keeping key public utilities (power, water, rail) in public ownership rather than selling them to private firms.",
-      "category": "ownership & privatisation"
-    },
-    "q31": {
-      "text": "The government should actively fund and protect Afrikaans language education and cultural programmes.",
-      "category": "language & culture"
+      "text": "Puso e tshwanetse go thusa ka mafolofolo le go sireletsa thuto ya puo ya Seafrikanse le mananeo a setso.",
+      "category": "puo le setso"
     },
     "q32": {
-      "text": "Government should make active legal and practical accommodations for religious minorities, including Muslim practices and holidays.",
-      "category": "religion & state"
+      "text": "Puso e tshwanetse go dira dithulaganyo tsa semolao le tse di diragalang tsa ditlhopha tse dinnye tsa bodumedi, go akaretsa mekgwa le malatsi a boikhutso a Seislamo.",
+      "category": "bodumedi le puso"
     },
-    "q33": {
-      "text": "The government should introduce specific legal protections and targeted support to preserve the rights and cultures of national minorities.",
-      "category": "minority rights"
+    "q28": {
+      "text": "Puso e tshwanetse go tlisa tshireletso e e rileng ya semolao le tshegetso e e lebisitsweng go boloka ditshwanelo le ditso tsa ditlhopha tse dinnye tsa setshaba.",
+      "category": "ditshwanelo tsa ditlhopha tse dinnye"
     },
-    "q34": {
-      "text": "The government should prioritise paying down public debt and ensuring fiscal sustainability even if it limits new social spending.",
-      "category": "fiscal policy"
+    "q6": {
+      "text": "Puso e tshwanetse go bea pele go duela dikoloto tsa setshaba le go netefatsa go ema ka dinao ga ditšhelete le fa seno se ka fokotsa ditshenyegelo tse dintšha tsa loago.",
+      "category": "pholisi ya ditšhelete"
     },
-    "q35": {
-      "text": "Immigration policy should be significantly tightened including stronger border controls and stricter vetting.",
-      "category": "immigration"
+    "q25": {
+      "text": "Pholisi ya bofaladi e tshwanetse go tia thata go akaretsa taolo e e nonofileng ya melelwane le tlhatlhobo e e tiileng.",
+      "category": "bofaladi"
     }
   },
   "footer": {

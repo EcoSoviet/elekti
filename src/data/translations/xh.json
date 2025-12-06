@@ -131,7 +131,7 @@
       "text": "Imfundo ephakamileyo kufuneka ibe simahla kubo bonke abafundi (akukho mali), kungekhona nje uncedo lwemali oluhlolwayo.",
       "category": "imfundo"
     },
-    "q3": {
+    "q5": {
       "text": "Urhulumeni kufuneka asebenzise isibonelelo-mali esingenammiqathango kubo bonke abemi, nokuba kufuna irhafu ephezulu okanye ukuboleka.",
       "category": "intlalontle yoluntu"
     },
@@ -139,19 +139,19 @@
       "text": "Urhulumeni kufuneka atyale kakhulu kwizindlu zikawonke-wonke zeentsapho ezingenayo imali eninzi.",
       "category": "izindlu"
     },
-    "q5": {
+    "q17": {
       "text": "Utyalo-mali lwezindlu zikawonke-wonke kufuneka lube yinto ephambili nokuba kufuna ukusika ezinye iinkonzo zikawonke-wonke.",
       "category": "izindlu"
     },
-    "q6": {
+    "q3": {
       "text": "Urhulumeni kufuneka anyuse irhafu kubantu abatyebileyo ukuxhasa iinkqubo zoluntu ezandisiweyo (impilo, imfundo kunye nezibonelelo zentlalo).",
       "category": "uqoqosho"
     },
-    "q7": {
+    "q8": {
       "text": "UMzantsi Afrika kufuneka ubeke phambili izivumelwano zorhwebo ezikhusela amashishini asekhaya, nokuba kuthetha amaxabiso aphezulu kubathengi.",
       "category": "umgaqo-nkqubo worhwebo"
     },
-    "q8": {
+    "q7": {
       "text": "Ipropati yabucala kunye namalungelo amashishini amancane kufuneka akhuselelwe ngamandla ekuthathweni kunye nomthetho onzima.",
       "category": "amalungelo epropati"
     },
@@ -163,105 +163,105 @@
       "text": "Abasebenzi kufuneka babe namalungelo aqinileyo okugweva kunye nokuxoxisana ngqo nabaqeshi ngaphandle kokungenelela kurhulumeni.",
       "category": "amalungelo abasebenzi"
     },
-    "q11": {
+    "q15": {
       "text": "I-BEE kunye nokwenza ngokulungisa kufuneka kuqhubeke kube ziinkalo eziphambili kurhulumeni ukubuyisela ukungalingani ngokobuhlanga noqoqosho.",
       "category": "utshintsho"
     },
-    "q12": {
+    "q16": {
       "text": "Ukuthathwa komhlaba wabucala ngaphandle kwembuyekezo yexabiso lemarike kufuneka kuvunyelwe phantsi komthetho ukukhawulezisa uhlaziyo lomhlaba.",
       "category": "uhlaziyo lomhlaba"
     },
-    "q13": {
+    "q14": {
       "text": "Uphuhliso lwamaphandle kunye nenkxaso yezolimo (kubandakanywa iinkxaso-mali kunye neziseko zeengqalasizinda zabalimi abancinci) kufuneka ifumane inkxaso-mali enkulu kurhulumeni.",
       "category": "ezolimo"
     },
-    "q14": {
+    "q12": {
       "text": "Ilizwe kufuneka libeke phambili utyalo-mali kumandla ahlaziyekayo (ilanga, umoya) kunokwandisa amandla amalahle.",
       "category": "amandla"
     },
-    "q16": {
+    "q11": {
+      "text": "Urhulumente kufuneka atyale imali ngokukhawuleza ekulungiseni iziseko zamanzi nezococeko (iimbombo, amaziko okuhlanza) koomasipala abangaphumeleliyo.",
+      "category": "iziseko"
+    },
+    "q21": {
       "text": "UMgaqo-siseko kufuneka uhlengahlengiswe apho kuyimfuneko ukukhawulezisa utshintsho kunye nokuvumela ulwabiwo oluqhubekayo.",
       "category": "ulawulo"
     },
-    "q17": {
+    "q18": {
       "text": "Inyathelo elinamandla lokulwa urhwaphilizo (nokuba liphazamisa iinkokeli zangoku) libaluleke ngaphezu kokugcina uzinzo lwezopolitiko.",
       "category": "urhwaphilizo"
     },
-    "q18": {
+    "q20": {
       "text": "Ukuzimela kwezobulungisa kunye namagunya okuphekelela kufuneka kukhuselelwe ngokungqongqo, nokuba oko kunciphisa ukuguquguquka kwesigqeba.",
       "category": "amaziko"
-    },
-    "q21": {
-      "text": "Ukunciphisa ulwaphulo-mthetho, urhulumeni kufuneka agxile kwisohlwayo esinamandla kunokujongana nezizathu zentlalo ezifana nobuhlwempu.",
-      "category": "ulwaphulo-mthetho"
-    },
-    "q22": {
-      "text": "Abafuduki abangekho emthethweni kufuneka bagxothwe kwaye kulawulwe imida eqinileyo ukukhusela imisebenzi kunye nezibonelelo zasekhaya.",
-      "category": "ukufuduka"
-    },
-    "q23": {
-      "text": "Urhulumeni kufuneka aqinise ukukhuselwa komthetho kwabantu be-LGBTQ+ kwaye aqhubele phambili amalungelo alinganayo oluntu.",
-      "category": "amalungelo oluntu"
-    },
-    "q15": {
-      "text": "Urhulumente kufuneka atyale imali ngokukhawuleza ekulungiseni iziseko zamanzi nezococeko (iimbombo, amaziko okuhlanza) koomasipala abangaphumeleliyo.",
-      "category": "iziseko"
     },
     "q19": {
       "text": "uMzantsi Afrika ufuna uhlaziyo oluqinileyo lokuthinjwa korhulumente, kubandakanya ulawulo oluqinileyo kwinkxaso-mali yamaqela ezopolitiko kunye nempembelelo yenkampani kurhulumente.",
       "category": "uhlaziyo lokuthinjwa korhulumente"
     },
-    "q20": {
+    "q22": {
       "text": "Amaphondo noomasipala kufuneka babe namandla angakumbi nokulawula uhlahlo-lwabiwo mali, nokuba oko kuthetha ukunciphisa igunya likaRhulumente weSizwe.",
       "category": "ukusasazwa kwamandla"
     },
+    "q23": {
+      "text": "Ukunciphisa ulwaphulo-mthetho, urhulumeni kufuneka agxile kwisohlwayo esinamandla kunokujongana nezizathu zentlalo ezifana nobuhlwempu.",
+      "category": "ulwaphulo-mthetho"
+    },
     "q24": {
+      "text": "Abafuduki abangekho emthethweni kufuneka bagxothwe kwaye kulawulwe imida eqinileyo ukukhusela imisebenzi kunye nezibonelelo zasekhaya.",
+      "category": "ukufuduka"
+    },
+    "q26": {
+      "text": "Urhulumeni kufuneka aqinise ukukhuselwa komthetho kwabantu be-LGBTQ+ kwaye aqhubele phambili amalungelo alinganayo oluntu.",
+      "category": "amalungelo oluntu"
+    },
+    "q31": {
       "text": "Imikhwa yoqobo kunye neemfundiso kufuneka zibe nefuthe elikhulu ekumiselweni kwemithetho kunye nomgaqo-nkqubo karhulumente.",
       "category": "unqulo norhulumente"
     },
-    "q25": {
+    "q33": {
       "text": "uMzantsi Afrika kufuneka aqaphele ngokusesikweni kwaye axhase izakhiwo zobunkokeli bemveli (iinkosi nookumkani) njengenxalenye yolawulo.",
       "category": "ubunkokeli bemveli"
     },
-    "q26": {
+    "q29": {
       "text": "Urhulumente kufuneka anike inkxaso-mali eninzi kunye nenkxaso yeelwimi zemveli kwimfundo, kumajelo eendaba nakwiinkonzo zoluntu.",
       "category": "ulwimi nenkcubeko"
     },
-    "q27": {
+    "q34": {
       "text": "uMzantsi Afrika kufuneka ubeke phambili intsebenziswano yezodiplomasi kunye norhwebo olubanzi (kunye ne-EU, i-US kunye nabamelwane base-Afrika) kunokuhambelana namaqela ezopolitiko angaphandle.",
       "category": "umgaqo-nkqubo wangaphandle"
     },
-    "q28": {
+    "q35": {
       "text": "Urhulumente kufuneka andise amandla okubeka esweni kunye nokufikelela kwidatha yabasemthethweni ukulwa nolwaphulo-mthetho kunye nobunqolobi, nokuba kunciphisa ubumfihlo.",
       "category": "ubumfihlo & itekhnoloji"
     },
-    "q29": {
-      "text": "Abortion should be legal, publicly funded where necessary, and available on request.",
-      "category": "reproductive rights"
+    "q27": {
+      "text": "Ukuqhomfa kufuneka kube semthethweni, kuxhaswe ngezimali zikarhulumente xa kuyimfuneko, kwaye kufumaneke ngokucela.",
+      "category": "amalungelo okuzala"
+    },
+    "q13": {
+      "text": "Urhulumente kufuneka agcine iinkonzo eziyimfuneko zoluntu (umbane, amanzi, uloliwe) kubunikazi boluntu kunokuzithengisa kwiinkampani zabucala.",
+      "category": "ubunini nokuthengiswa kwabucala"
     },
     "q30": {
-      "text": "The state should prioritise keeping key public utilities (power, water, rail) in public ownership rather than selling them to private firms.",
-      "category": "ownership & privatisation"
-    },
-    "q31": {
-      "text": "The government should actively fund and protect Afrikaans language education and cultural programmes.",
-      "category": "language & culture"
+      "text": "Urhulumente kufuneka axhase ngenkuthalo kwaye akhusele imfundo yolwimi lwesiBhulu kunye neenkqubo zenkcubeko.",
+      "category": "ulwimi nenkcubeko"
     },
     "q32": {
-      "text": "Government should make active legal and practical accommodations for religious minorities, including Muslim practices and holidays.",
-      "category": "religion & state"
+      "text": "Urhulumente kufuneka enze amalungiselelo asemthethweni nasebenzayo kubantu abancinane bonqulo, kuquka imikhwa kunye neeholide zamaSilamsi.",
+      "category": "unqulo norhulumente"
     },
-    "q33": {
-      "text": "The government should introduce specific legal protections and targeted support to preserve the rights and cultures of national minorities.",
-      "category": "minority rights"
+    "q28": {
+      "text": "Urhulumente kufuneka azise ukukhuselwa okukhethekileyo komthetho kunye nenkxaso ejoliswe ekugcineni amalungelo neenkcubeko zabantu abancinane besizwe.",
+      "category": "amalungelo abantu abancinane"
     },
-    "q34": {
-      "text": "The government should prioritise paying down public debt and ensuring fiscal sustainability even if it limits new social spending.",
-      "category": "fiscal policy"
+    "q6": {
+      "text": "Urhulumente kufuneka abeke phambili ukuhlawula amatyala oluntu kunye nokuqinisekisa ukuzinza kwemali nangona oku kunokunciphisa inkcitho entsha yentlalo.",
+      "category": "umgaqo-nkqubo wezemali"
     },
-    "q35": {
-      "text": "Immigration policy should be significantly tightened including stronger border controls and stricter vetting.",
-      "category": "immigration"
+    "q25": {
+      "text": "Umgaqo-nkqubo wokufuduka kufuneka uqiniswe kakhulu kuquka ulawulo oluqinileyo lwemida kunye nokuhlolwa ngakumbi.",
+      "category": "ukufuduka"
     }
   },
   "footer": {

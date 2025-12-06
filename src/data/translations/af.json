@@ -131,7 +131,7 @@
       "text": "Hoër onderwys moet gratis wees vir alle studente (geen fooie), nie net behoeftetoets finansiële hulp nie.",
       "category": "onderwys"
     },
-    "q3": {
+    "q5": {
       "text": "Die staat moet 'n onvoorwaardelike basiese inkomste-toelae vir alle burgers implementeer, selfs as dit hoër belasting of lenings vereis.",
       "category": "sosiale welsyn"
     },
@@ -139,19 +139,19 @@
       "text": "Die regering moet swaar in openbare behuising vir lae-inkomste gesinne investeer.",
       "category": "behuising"
     },
-    "q5": {
+    "q17": {
       "text": "Openbare behuisingsbelegging moet prioriteit kry, selfs as dit vereis dat ander openbare dienste gesny word.",
       "category": "behuising"
     },
-    "q6": {
+    "q3": {
       "text": "Die regering behoort belasting op die rykes te verhoog om uitgebreide sosiale programme (gesondheid, onderwys en sosiale toelaes) te befonds.",
       "category": "ekonomie"
     },
-    "q7": {
+    "q8": {
       "text": "Suid-Afrika behoort handelsooreenskomste wat plaaslike nywerhede beskerm te prioritiseer, selfs as dit hoër verbruikerspryse beteken.",
       "category": "handelsbeleid"
     },
-    "q8": {
+    "q7": {
       "text": "Privaat eiendom en kleinsakeregte moet sterk beskerm word teen onteiening en swaar regulasie.",
       "category": "eiendomsregte"
     },
@@ -163,105 +163,105 @@
       "text": "Werkers behoort sterker regte te hê om te staak en direk met werkgewers te onderhandel sonder regeringsinminging.",
       "category": "arbeidsregte"
     },
-    "q11": {
+    "q15": {
       "text": "BEE en regstellende aksie behoort sentrale regeringsprioriteite te bly om historiese rasse- en ekonomiese ongelykheid aan te spreek.",
       "category": "transformasie"
     },
-    "q12": {
+    "q16": {
       "text": "Onteiening van privaat grond sonder markwaarde-vergoeding moet onder die wet toegelaat word om grondhervorming te versnel.",
       "category": "grondhervorming"
     },
-    "q13": {
+    "q14": {
       "text": "Landelike ontwikkeling en landbousteun (insluitend subsidies en infrastruktuur vir klein boere) behoort aansienlik meer regeringsbefondsing te ontvang.",
       "category": "landbou"
     },
-    "q14": {
+    "q12": {
       "text": "Die land behoort belegging in hernubare energie (sonkrag, wind) te prioritiseer bo die uitbreiding van steenkoolkrag.",
       "category": "energie"
     },
-    "q16": {
+    "q11": {
+      "text": "Die regering moet dringend belê in die herstel van water- en sanitasie-infrastruktuur (pype, suiweringsaanlegte) in falende munisipaliteite.",
+      "category": "infrastruktuur"
+    },
+    "q21": {
       "text": "Die Grondwet moet gewysig word waar nodig om transformasie te versnel en meer progressiewe herverdeling moontlik te maak.",
       "category": "bestuur"
     },
-    "q17": {
+    "q18": {
       "text": "Sterk optrede teen korrupsie (selfs as dit huidige leiers ontwrig) is belangriker as die behoud van politieke stabiliteit.",
       "category": "korrupsie"
     },
-    "q18": {
+    "q20": {
       "text": "Die onafhanklikheid van die regsprekende gesag en vervolgingsowerhede moet streng beskerm word, selfs as dit uitvoerende buigsaamheid beperk.",
       "category": "instellings"
-    },
-    "q21": {
-      "text": "Om misdaad te verminder, moet die regering meer op harder strawwe fokus eerder as om sosiale oorsake soos armoede aan te spreek.",
-      "category": "misdaad"
-    },
-    "q22": {
-      "text": "Onwettige immigrante moet gedeporteer word en streng grenskontrole afgedwing word om plaaslike werk en hulpbronne te beskerm.",
-      "category": "immigrasie"
-    },
-    "q23": {
-      "text": "Die regering moet regsbeskermings vir LGBTQ+ mense versterk en aktief gelyke burgerregte bevorder.",
-      "category": "burgerregte"
-    },
-    "q15": {
-      "text": "Die regering moet dringend belê in die herstel van water- en sanitasie-infrastruktuur (pype, suiweringsaanlegte) in falende munisipaliteite.",
-      "category": "infrastruktuur"
     },
     "q19": {
       "text": "Suid-Afrika het sterker staatskaping-hervormings nodig, insluitend strenger beheer oor politieke party-befondsing en korporatiewe invloed in die regering.",
       "category": "staatskaping hervorming"
     },
-    "q20": {
+    "q22": {
       "text": "Provinsies en munisipaliteite behoort meer mag en begrotingsbeheer te hê, selfs as dit beteken om nasionale regeringsgesag te verminder.",
       "category": "desentralisasie"
     },
+    "q23": {
+      "text": "Om misdaad te verminder, moet die regering meer op harder strawwe fokus eerder as om sosiale oorsake soos armoede aan te spreek.",
+      "category": "misdaad"
+    },
     "q24": {
+      "text": "Onwettige immigrante moet gedeporteer word en streng grenskontrole afgedwing word om plaaslike werk en hulpbronne te beskerm.",
+      "category": "immigrasie"
+    },
+    "q26": {
+      "text": "Die regering moet regsbeskermings vir LGBTQ+ mense versterk en aktief gelyke burgerregte bevorder.",
+      "category": "burgerregte"
+    },
+    "q31": {
       "text": "Godsdienstige waardes en leringe behoort 'n groter invloed te hê in die vorming van wette en regeringsbeleid.",
       "category": "godsdiens & staat"
     },
-    "q25": {
+    "q33": {
       "text": "Suid-Afrika moet tradisionele leierskapstrukture (hoofmanne en konings) formeel erken en befonds as deel van regering.",
       "category": "tradisionele leierskap"
     },
-    "q26": {
+    "q29": {
       "text": "Die regering moet meer befondsing en ondersteuning verskaf vir inheemse tale in onderwys, media en openbare dienste.",
       "category": "taal & kultuur"
     },
-    "q27": {
+    "q34": {
       "text": "Suid-Afrika moet breë multilaterale diplomatieke en handelsbetrokkenheid (met die EU, VSA en Afrika-bure) prioritiseer bo belyning met alternatiewe geopolitieke blokke.",
       "category": "buitelandse beleid"
     },
-    "q28": {
+    "q35": {
       "text": "Die regering moet toesig- en data-toegangsmagte vir wetstoepassers uitbrei om misdaad en terrorisme te bekamp, selfs al verminder dit privaatheid.",
       "category": "privaatheid & tegnologie"
     },
-    "q29": {
-      "text": "Abortion should be legal, publicly funded where necessary, and available on request.",
-      "category": "reproductive rights"
+    "q27": {
+      "text": "Aborsie behoort wettig, waar nodig openbaar befonds, en op aanvraag beskikbaar te wees.",
+      "category": "reproduktiewe regte"
+    },
+    "q13": {
+      "text": "Die staat behoort sleutel openbare nutsdienste (krag, water, spoor) in openbare eienaarskap te hou eerder as om dit aan privaat firmas te verkoop.",
+      "category": "eienaarskap & privatisering"
     },
     "q30": {
-      "text": "The state should prioritise keeping key public utilities (power, water, rail) in public ownership rather than selling them to private firms.",
-      "category": "ownership & privatisation"
-    },
-    "q31": {
-      "text": "The government should actively fund and protect Afrikaans language education and cultural programmes.",
-      "category": "language & culture"
+      "text": "Die regering behoort Afrikaanse taalonderwys en kulturele programme aktief te befonds en te beskerm.",
+      "category": "taal & kultuur"
     },
     "q32": {
-      "text": "Government should make active legal and practical accommodations for religious minorities, including Muslim practices and holidays.",
-      "category": "religion & state"
+      "text": "Die regering behoort aktiewe wetlike en praktiese voorsiening te maak vir godsdienstige minderhede, insluitend Moslem-praktyke en feesdae.",
+      "category": "godsdiens & staat"
     },
-    "q33": {
-      "text": "The government should introduce specific legal protections and targeted support to preserve the rights and cultures of national minorities.",
-      "category": "minority rights"
+    "q28": {
+      "text": "Die regering behoort spesifieke regsbeskermings en geteikende ondersteuning in te stel om die regte en kulture van nasionale minderhede te bewaar.",
+      "category": "minderheidsregte"
     },
-    "q34": {
-      "text": "The government should prioritise paying down public debt and ensuring fiscal sustainability even if it limits new social spending.",
-      "category": "fiscal policy"
+    "q6": {
+      "text": "Die regering behoort die afbetaling van openbare skuld en die versekering van fiskale volhoubaarheid te prioritiseer, selfs as dit nuwe sosiale besteding beperk.",
+      "category": "fiskale beleid"
     },
-    "q35": {
-      "text": "Immigration policy should be significantly tightened including stronger border controls and stricter vetting.",
-      "category": "immigration"
+    "q25": {
+      "text": "Immigrasiebeleid behoort aansienlik verskerp te word, insluitend sterker grensbeheer en strenger keuring.",
+      "category": "immigrasie"
     }
   },
   "footer": {
