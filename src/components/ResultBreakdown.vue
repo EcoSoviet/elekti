@@ -10,11 +10,19 @@
     logo?: string;
   }
 
+  interface PolicyAlignment {
+    questionId: string;
+    questionText: string;
+    category: string;
+    score: number;
+  }
+
   interface PartyScore {
     partyId: string;
     rawScore: number;
     normalizedScore: number;
     party: Party;
+    topPolicies?: PolicyAlignment[];
   }
 
   defineProps<{
@@ -32,6 +40,7 @@
         :key="partyScore.partyId"
         :party="partyScore.party"
         :score="partyScore.normalizedScore"
+        :policies="partyScore.topPolicies"
       />
     </div>
   </div>

@@ -16,11 +16,19 @@
     website?: string;
   }
 
+  interface PolicyAlignment {
+    questionId: string;
+    questionText: string;
+    category: string;
+    score: number;
+  }
+
   interface PartyScore {
     partyId: string;
     rawScore: number;
     normalizedScore: number;
     party: Party;
+    topPolicies?: PolicyAlignment[];
   }
 
   interface QuizResult {
@@ -111,6 +119,7 @@ View my results: ${shareUrl}`;
           <PartyCard
             :party="result.primary.party"
             :score="result.primary.normalizedScore"
+            :policies="result.primary.topPolicies"
           />
         </section>
 
@@ -125,6 +134,7 @@ View my results: ${shareUrl}`;
               :key="alt.partyId"
               :party="alt.party"
               :score="alt.normalizedScore"
+              :policies="alt.topPolicies"
             />
           </div>
         </section>
@@ -201,10 +211,6 @@ View my results: ${shareUrl}`;
   }
 
   .results__section--primary :deep(.party-card) {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-left-width: 4px;
-    padding: var(--space-xl);
     margin-top: var(--space-xl);
   }
 

@@ -29,11 +29,19 @@ interface ScoringQuestion {
   options: ScoringOption[];
 }
 
+export interface PolicyAlignment {
+  questionId: string;
+  questionText: string;
+  category: string;
+  score: number;
+}
+
 export interface PartyScore {
   partyId: string;
   rawScore: number;
   normalizedScore: number;
   party: Party;
+  topPolicies?: PolicyAlignment[];
 }
 
 export interface QuizResult {
@@ -49,8 +57,11 @@ export function computeScores(
   parties: Party[]
 ): QuizResult {
   const rawScores: Record<string, number> = {};
+  const policyAlignments: Record<string, PolicyAlignment[]> = {};
+
   parties.forEach((party) => {
     rawScores[party.id] = 0;
+    policyAlignments[party.id] = [];
   });
 
   const scoringQuestions = scoringData as unknown as ScoringQuestion[];
@@ -66,6 +77,15 @@ export function computeScores(
       Object.entries(scores).forEach(([partyId, score]) => {
         if (rawScores[partyId] !== undefined) {
           rawScores[partyId] += (score as number) * weight;
+
+          if ((score as number) >= 0.7 && policyAlignments[partyId]) {
+            policyAlignments[partyId].push({
+              questionId,
+              questionText: scoringQuestion.text,
+              category: scoringQuestion.category,
+              score: score as number,
+            });
+          }
         }
       });
     }
@@ -110,11 +130,19 @@ export function computeScores(
       maxScore > 0 ? (rawScore !== undefined ? rawScore / maxScore : 0) : 0;
     normalizedScore = Math.max(0, Math.min(1, normalizedScore));
 
+    const topPolicies =
+      normalizedScore >= 0.15
+        ? (policyAlignments[party.id] || [])
+            .sort((a, b) => b.score - a.score)
+            .slice(0, 3)
+        : [];
+
     return {
       partyId: party.id,
       rawScore: rawScore !== undefined ? rawScore : 0,
       normalizedScore,
       party,
+      topPolicies,
     };
   });
 

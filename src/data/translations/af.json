@@ -48,6 +48,7 @@
     "title": "Jou Resultate",
     "primaryMatch": "Jou Primêre Passing",
     "alternativeMatch": "Alternatiewe Passings",
+    "alignedPolicies": "Beleide Waarmee Jy Sterk Saamval",
     "confidence": {
       "high": "Sterk passing",
       "medium": "Matige passing",

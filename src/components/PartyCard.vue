@@ -9,9 +9,17 @@
     website?: string;
   }
 
+  interface PolicyAlignment {
+    questionId: string;
+    questionText: string;
+    category: string;
+    score: number;
+  }
+
   defineProps<{
     party: Party;
     score?: number;
+    policies?: PolicyAlignment[];
   }>();
 </script>
 
@@ -65,6 +73,23 @@
         />
       </div>
       <span class="party-card__score-text">{{ Math.round(score * 100) }}%</span>
+    </div>
+
+    <div v-if="policies && policies.length > 0" class="party-card__policies">
+      <div class="party-card__policies-label">
+        {{ $t("results.alignedPolicies") }}:
+      </div>
+      <div class="party-card__policies-tags">
+        <span
+          v-for="policy in policies"
+          :key="policy.questionId"
+          class="party-card__policy-tag"
+          :style="{ backgroundColor: party.colour }"
+          :title="policy.questionText"
+        >
+          {{ policy.category }}
+        </span>
+      </div>
     </div>
   </div>
 </template>
@@ -171,5 +196,46 @@
     color: var(--color-text-primary);
     min-width: 48px;
     text-align: right;
+  }
+
+  .party-card__policies {
+    margin-top: var(--space-md);
+    padding-top: var(--space-sm);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+  }
+
+  .party-card__policies-label {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-secondary);
+    white-space: nowrap;
+    line-height: 1.8;
+  }
+
+  .party-card__policies-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    flex: 1;
+  }
+
+  .party-card__policy-tag {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-sm);
+    color: white;
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    text-transform: capitalize;
+    cursor: help;
+    transition: opacity var(--transition-fast);
+    line-height: 1.4;
+  }
+
+  .party-card__policy-tag:hover {
+    opacity: 0.85;
   }
 </style>
