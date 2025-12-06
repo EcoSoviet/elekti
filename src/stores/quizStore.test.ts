@@ -34,6 +34,12 @@ vi.mock("../i18n", () => ({
               q20: { text: "Question 20?", category: "category20" },
               q21: { text: "Question 21?", category: "category21" },
               q22: { text: "Question 22?", category: "category22" },
+              q23: { text: "Question 23?", category: "category23" },
+              q24: { text: "Question 24?", category: "category24" },
+              q25: { text: "Question 25?", category: "category25" },
+              q26: { text: "Question 26?", category: "category26" },
+              q27: { text: "Question 27?", category: "category27" },
+              q28: { text: "Question 28?", category: "category28" },
             },
           },
         },
@@ -63,9 +69,9 @@ describe("quizStore", () => {
       expect(store.completed).toBe(false);
     });
 
-    it("should load 22 questions", () => {
+    it("should load 28 questions", () => {
       const store = useQuizStore();
-      expect(store.questions.length).toBe(22);
+      expect(store.questions.length).toBe(28);
     });
 
     it("should have all parties loaded", () => {
@@ -108,7 +114,7 @@ describe("quizStore", () => {
     it("should mark as completed when reaching last question", () => {
       const store = useQuizStore();
 
-      for (let i = 0; i < 22; i++) {
+      for (let i = 0; i < 28; i++) {
         store.nextQuestion();
       }
       expect(store.completed).toBe(true);
@@ -122,7 +128,7 @@ describe("quizStore", () => {
       expect(store.progress).toBeGreaterThan(0);
       expect(store.progress).toBeLessThan(100);
 
-      for (let i = 1; i < 21; i++) {
+      for (let i = 1; i < 27; i++) {
         store.nextQuestion();
       }
       expect(store.progress).toBeGreaterThan(90);
@@ -191,7 +197,7 @@ describe("quizStore", () => {
 
       const encoded = store.encodeAnswersToUrl();
       const parts = encoded.split(",");
-      expect(parts.length).toBe(22);
+      expect(parts.length).toBe(28);
       expect(parts[0]).toBe("0");
       expect(parts[1]).toBe("1");
     });
@@ -211,7 +217,7 @@ describe("quizStore", () => {
     it("should load answers from URL format", () => {
       const store = useQuizStore();
       const success = store.loadAnswersFromUrl(
-        "0,1,2,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+        "0,1,2,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
       );
 
       expect(success).toBe(true);
@@ -225,7 +231,7 @@ describe("quizStore", () => {
     it("should skip empty answers when loading from URL", () => {
       const store = useQuizStore();
       const success = store.loadAnswersFromUrl(
-        "0,,2,,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+        "0,,2,,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
       );
 
       expect(success).toBe(true);
@@ -237,7 +243,7 @@ describe("quizStore", () => {
     it("should reject invalid option indices", () => {
       const store = useQuizStore();
       const success = store.loadAnswersFromUrl(
-        "0,1,99,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+        "0,1,99,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
       );
 
       expect(success).toBe(true);
@@ -246,7 +252,8 @@ describe("quizStore", () => {
 
     it("should set completed flag when all answers loaded", () => {
       const store = useQuizStore();
-      const allAnswers = "0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1";
+      const allAnswers =
+        "0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2";
       const success = store.loadAnswersFromUrl(allAnswers);
 
       expect(success).toBe(true);
