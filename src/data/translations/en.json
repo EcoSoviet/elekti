@@ -71,7 +71,7 @@
     "transparency": "Our Commitment to Transparency",
     "transparencyText": "All party positions and scoring weights are determined through rigorous research of official party documents. Our methodology is open and reviewable. We do not favor any political party or ideology - our sole purpose is to help you make informed decisions based on your values and the parties' stated positions.",
     "dataSources": "Our Research Sources",
-    "dataSourcesText": "Party positions are meticulously researched from official party manifestos, policy documents, parliamentary voting records, and verified public statements. We update our data regularly to reflect policy changes. All source materials are from official party channels or reputable news organizations. If you believe any information is inaccurate, we welcome corrections with proper documentation.",
+    "dataSourcesText": "Party positions are meticulously researched from official party manifestos, policy documents, parliamentary voting records, and verified public statements. We update our data regularly to reflect policy changes. All source materials are from official party channels or reputable news organisations. If you believe any information is inaccurate, we welcome corrections with proper documentation.",
     "privacy": "Privacy & Your Data",
     "privacyText": "Your privacy is absolutely paramount. We believe your political views are deeply personal and deserve the highest level of protection.",
     "noTracking": "Zero Tracking",
@@ -85,7 +85,7 @@
     "parties": "Parties Included",
     "partiesText": "We include 14 major South African political parties representing diverse viewpoints across the political spectrum. Our selection is based on parliamentary representation, electoral significance, and ideological diversity.",
     "disclaimer": "Important Disclaimer",
-    "disclaimerText": "Elekti is an educational tool, not a substitute for research. Political parties are complex organizations with nuanced positions that evolve over time. We strongly encourage you to read party manifestos, attend public forums, and verify our information independently. This tool shows alignment based on stated positions - actual governance may differ. Use these results as a starting point for deeper exploration, not as your final decision.",
+    "disclaimerText": "Elekti is an educational tool, not a substitute for research. Political parties are complex organisations with nuanced positions that evolve over time. We strongly encourage you to read party manifestos, attend public forums, and verify our information independently. This tool shows alignment based on stated positions - actual governance may differ. Use these results as a starting point for deeper exploration, not as your final decision.",
     "viewData": "View Raw Data",
     "viewDataText": "In the spirit of complete transparency, you can inspect our raw data files yourself. These JSON files contain all party positions, scoring weights, and question metadata used by our algorithm.",
     "scoringData": "Scoring Data (includes questions & weights)",
@@ -108,7 +108,7 @@
       "desc": "The Inkatha Freedom Party promotes Zulu cultural values, federalism, and free market economics with social responsibility."
     },
     "pa": {
-      "desc": "The Patriotic Alliance focuses on addressing immigration issues, promoting South African nationalism, and prioritizing citizens' needs."
+      "desc": "The Patriotic Alliance focuses on addressing immigration issues, promoting South African nationalism, and prioritising citizens' needs."
     },
     "vfplus": {
       "desc": "Freedom Front Plus represents Afrikaner interests, advocating for federalism, minority rights, and conservative values."
