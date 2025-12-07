@@ -13,15 +13,15 @@
           "eff": -0.8,
           "ifp": -0.1,
           "mk": -0.8,
-          "pa": 0.4,
-          "vfplus": 0.4,
-          "actionsa": 0.6,
-          "acdp": 0.3,
-          "ufc": 0.7,
+          "pa": 0.6,
+          "vfplus": 0.6,
+          "actionsa": 0.8,
+          "acdp": 0.6,
+          "ufc": 0.9,
           "sacp": -0.6,
-          "udm": 0.5,
-          "aljamah": 0.3,
-          "cope": 0.5
+          "udm": 0.6,
+          "aljamah": 0.6,
+          "cope": 0.6
         }
       },
       {
@@ -32,15 +32,15 @@
           "eff": -0.6,
           "ifp": -0.05,
           "mk": -0.6,
-          "pa": 0.3,
-          "vfplus": 0.3,
-          "actionsa": 0.5,
-          "acdp": 0.2,
-          "ufc": 0.5,
+          "pa": 0.5,
+          "vfplus": 0.5,
+          "actionsa": 0.6,
+          "acdp": 0.5,
+          "ufc": 0.7,
           "sacp": -0.5,
-          "udm": 0.4,
-          "aljamah": 0.1,
-          "cope": 0.4
+          "udm": 0.5,
+          "aljamah": 0.5,
+          "cope": 0.5
         }
       },
       {
@@ -70,15 +70,15 @@
           "eff": 0.7,
           "ifp": 0.1,
           "mk": 0.6,
-          "pa": -0.2,
-          "vfplus": -0.2,
-          "actionsa": -0.3,
-          "acdp": -0.1,
-          "ufc": -0.3,
+          "pa": -0.3,
+          "vfplus": -0.3,
+          "actionsa": -0.4,
+          "acdp": -0.3,
+          "ufc": -0.5,
           "sacp": 0.5,
-          "udm": -0.2,
-          "aljamah": -0.1,
-          "cope": -0.2
+          "udm": -0.3,
+          "aljamah": -0.3,
+          "cope": -0.3
         }
       },
       {
@@ -89,15 +89,15 @@
           "eff": 1.0,
           "ifp": 0.2,
           "mk": 0.8,
-          "pa": -0.4,
-          "vfplus": -0.4,
-          "actionsa": -0.6,
-          "acdp": -0.4,
-          "ufc": -0.6,
+          "pa": -0.6,
+          "vfplus": -0.6,
+          "actionsa": -0.8,
+          "acdp": -0.6,
+          "ufc": -0.9,
           "sacp": 0.7,
-          "udm": -0.5,
-          "aljamah": -0.3,
-          "cope": -0.5
+          "udm": -0.6,
+          "aljamah": -0.6,
+          "cope": -0.6
         }
       }
     ]
