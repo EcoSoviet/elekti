@@ -196,9 +196,9 @@ export function computeScores(
       ? primary.normalizedScore - alternatives[0].normalizedScore
       : primary.normalizedScore;
 
-  if (primary.normalizedScore < 0.35) {
+  if (primary.normalizedScore < 0.5) {
     confidence = "low";
-  } else if (gapToSecond < 0.05 || primary.normalizedScore < 0.5) {
+  } else if (gapToSecond < 0.1 || primary.normalizedScore < 0.7) {
     confidence = "medium";
   }
 

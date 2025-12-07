@@ -76,9 +76,6 @@
     </div>
 
     <div v-if="policies && policies.length > 0" class="party-card__policies">
-      <div class="party-card__policies-label">
-        {{ $t("results.alignedPolicies") }}:
-      </div>
       <div class="party-card__policies-tags">
         <span
           v-for="policy in policies"
@@ -205,14 +202,6 @@
     align-items: flex-start;
     gap: var(--space-sm);
     flex-wrap: wrap;
-  }
-
-  .party-card__policies-label {
-    font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-secondary);
-    white-space: nowrap;
-    line-height: 1.8;
   }
 
   .party-card__policies-tags {

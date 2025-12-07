@@ -48,7 +48,6 @@
     "title": "Your Results",
     "primaryMatch": "Your Primary Match",
     "alternativeMatch": "Alternative Matches",
-    "alignedPolicies": "Policies you agree on",
     "confidence": {
       "high": "Strong match",
       "medium": "Moderate match",
