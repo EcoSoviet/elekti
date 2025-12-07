@@ -4,7 +4,7 @@
     "short": "ANC",
     "name": "African National Congress",
     "descriptionKey": "party.anc.desc",
-    "colour": "#00a650",
+    "colour": "#008542",
     "website": "https://www.anc1912.org.za/"
   },
   {
@@ -12,7 +12,7 @@
     "short": "DA",
     "name": "Democratic Alliance",
     "descriptionKey": "party.da.desc",
-    "colour": "#155fa2",
+    "colour": "#0D5A9C",
     "website": "https://www.da.org.za/"
   },
   {
@@ -20,7 +20,7 @@
     "short": "MK",
     "name": "uMkhonto we Sizwe Party",
     "descriptionKey": "party.mk.desc",
-    "colour": "#2f6b2f",
+    "colour": "#1E5A1E",
     "website": "https://mkparty.org.za/"
   },
   {
@@ -28,7 +28,7 @@
     "short": "EFF",
     "name": "Economic Freedom Fighters",
     "descriptionKey": "party.eff.desc",
-    "colour": "#fe0000",
+    "colour": "#D40000",
     "website": "https://effonline.org/"
   },
   {
@@ -36,7 +36,7 @@
     "short": "IFP",
     "name": "Inkatha Freedom Party",
     "descriptionKey": "party.ifp.desc",
-    "colour": "#f4c300",
+    "colour": "#D4A520",
     "website": "https://ifp.org.za/"
   },
   {
@@ -44,7 +44,7 @@
     "short": "PA",
     "name": "Patriotic Alliance",
     "descriptionKey": "party.pa.desc",
-    "colour": "#39ff14",
+    "colour": "#00A86B",
     "website": "https://mypa.org.za/"
   },
   {
@@ -52,7 +52,7 @@
     "short": "VF+",
     "name": "Freedom Front Plus",
     "descriptionKey": "party.vfplus.desc",
-    "colour": "#fc6500",
+    "colour": "#E85D00",
     "website": "https://www.vfplus.org.za/"
   },
   {
@@ -60,7 +60,7 @@
     "short": "ActionSA",
     "name": "ActionSA",
     "descriptionKey": "party.actionsa.desc",
-    "colour": "#05b616",
+    "colour": "#009639",
     "website": "https://www.actionsa.org.za/"
   },
   {
@@ -68,7 +68,7 @@
     "short": "ACDP",
     "name": "African Christian Democratic Party",
     "descriptionKey": "party.acdp.desc",
-    "colour": "#009cde",
+    "colour": "#0088CC",
     "website": "https://acdp.org.za/"
   },
   {
@@ -76,7 +76,7 @@
     "short": "UFC",
     "name": "Unite for Change",
     "descriptionKey": "party.ufc.desc",
-    "colour": "#ffc72c",
+    "colour": "#E89400",
     "website": "https://www.uniteforchangesa.org/"
   },
   {
@@ -84,7 +84,7 @@
     "short": "SACP",
     "name": "South African Communist Party",
     "descriptionKey": "party.sacp.desc",
-    "colour": "#ff0000",
+    "colour": "#B30000",
     "website": "https://www.sacp.org.za/"
   },
   {
@@ -92,7 +92,7 @@
     "short": "UDM",
     "name": "United Democratic Movement",
     "descriptionKey": "party.udm.desc",
-    "colour": "#017b57",
+    "colour": "#00755A",
     "website": "https://udm.org.za/"
   },
   {
@@ -100,7 +100,7 @@
     "short": "Al Jama-ah",
     "name": "Al Jama-ah",
     "descriptionKey": "party.aljamah.desc",
-    "colour": "#1c8442",
+    "colour": "#0F7A3D",
     "website": "https://www.aljama.co.za/"
   },
   {
@@ -108,7 +108,7 @@
     "short": "COPE",
     "name": "Congress of the People",
     "descriptionKey": "party.cope.desc",
-    "colour": "#ffcf2b",
+    "colour": "#E5A700",
     "website": "https://www.copesa.org.za/"
   }
 ]
