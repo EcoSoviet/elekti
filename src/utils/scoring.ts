@@ -42,7 +42,6 @@ export interface PartyScore {
   normalizedScore: number;
   party: Party;
   topPolicies?: PolicyAlignment[];
-  topDisagreements?: PolicyAlignment[];
 }
 
 export interface QuizResult {
@@ -154,27 +153,12 @@ export function computeScores(
             }))
         : [];
 
-    const topDisagreements =
-      normalizedScore >= 0.15
-        ? categoryAverages
-            .filter((c) => c.avgScore <= -0.5)
-            .sort((a, b) => a.avgScore - b.avgScore)
-            .slice(0, 3)
-            .map((c) => ({
-              questionId: "",
-              questionText: "",
-              category: c.category,
-              score: c.avgScore,
-            }))
-        : [];
-
     return {
       partyId: party.id,
       rawScore: rawScore !== undefined ? rawScore : 0,
       normalizedScore,
       party,
       topPolicies,
-      topDisagreements,
     };
   });
 

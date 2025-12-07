@@ -23,7 +23,6 @@
     normalizedScore: number;
     party: Party;
     topPolicies?: PolicyAlignment[];
-    topDisagreements?: PolicyAlignment[];
   }
 
   defineProps<{
@@ -42,7 +41,6 @@
         :party="partyScore.party"
         :score="partyScore.normalizedScore"
         :policies="partyScore.topPolicies"
-        :disagreements="partyScore.topDisagreements"
       />
     </div>
   </div>

@@ -49,7 +49,6 @@
     "primaryMatch": "Your Primary Match",
     "alternativeMatch": "Alternative Matches",
     "alignedPolicies": "Policies you agree on",
-    "disagreedPolicies": "Policies you disagree on",
     "confidence": {
       "high": "Strong match",
       "medium": "Moderate match",

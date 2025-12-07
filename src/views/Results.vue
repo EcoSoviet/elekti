@@ -29,7 +29,6 @@
     normalizedScore: number;
     party: Party;
     topPolicies?: PolicyAlignment[];
-    topDisagreements?: PolicyAlignment[];
   }
 
   interface QuizResult {
@@ -121,7 +120,6 @@ View my results: ${shareUrl}`;
             :party="result.primary.party"
             :score="result.primary.normalizedScore"
             :policies="result.primary.topPolicies"
-            :disagreements="result.primary.topDisagreements"
           />
         </section>
 
@@ -137,7 +135,6 @@ View my results: ${shareUrl}`;
               :party="alt.party"
               :score="alt.normalizedScore"
               :policies="alt.topPolicies"
-              :disagreements="alt.topDisagreements"
             />
           </div>
         </section>
