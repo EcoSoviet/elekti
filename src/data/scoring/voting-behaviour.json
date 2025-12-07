@@ -21,7 +21,8 @@
           "sacp": -0.6,
           "udm": 0.6,
           "aljamah": 0.6,
-          "cope": 0.6
+          "cope": 0.6,
+          "ncc": 0.8
         }
       },
       {
@@ -40,7 +41,8 @@
           "sacp": -0.5,
           "udm": 0.5,
           "aljamah": 0.5,
-          "cope": 0.5
+          "cope": 0.5,
+          "ncc": 0.6
         }
       },
       {
@@ -59,7 +61,8 @@
           "sacp": 0,
           "udm": 0,
           "aljamah": 0,
-          "cope": 0
+          "cope": 0,
+          "ncc": 0.0
         }
       },
       {
@@ -78,7 +81,8 @@
           "sacp": 0,
           "udm": 0,
           "aljamah": 0,
-          "cope": 0
+          "cope": 0,
+          "ncc": -0.3
         }
       },
       {
@@ -97,7 +101,8 @@
           "sacp": 0,
           "udm": 0,
           "aljamah": 0,
-          "cope": 0
+          "cope": 0,
+          "ncc": -0.5
         }
       }
     ]

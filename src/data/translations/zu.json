@@ -65,7 +65,7 @@
     "methodology": "Indlela Esiyisebenzisayo",
     "methodologyText": "I-Elekti isebenzisa indlela ebanzi, esekelweobufakazi, yokuhambanisa imibono yakho nezikhundla zamaqembu aseNingizimu Afrika. Uhlelo lwakhiwe ukuze lube nolungile, lusobala, futhi lungakhethi.",
     "howItWorks": "Indlela Esebenza Ngayo",
-    "howItWorksText": "Uphendula imibuzo engu-40 ehleliwe eqoqa izinkinga ezinkulu zenqubomgomo ezifaka ukunakekelwa kwempilo, imfundo, umnotho, ukuphatha kanye nezindaba zomphakathi. Umbuzo ngamunye udizayinwe ukuveza izintandokazi zakho ngaphandle kokucwasa.",
+    "howItWorksText": "Uphendula imibuzo engu-42 ehleliwe eqoqa izinkinga ezinkulu zenqubomgomo ezifaka ukunakekelwa kwempilo, imfundo, umnotho, ukuphatha kanye nezindaba zomphakathi. Umbuzo ngamunye udizayinwe ukuveza izintandokazi zakho ngaphandle kokucwasa.",
     "scoring": "Uhlelo Lokubala Amanqampuna",
     "scoringText": "Impendulo yakho ngayinye iyalinganiswa nezikhundla ezibhaliwe zamaqembu ezitholakala kumamanifesto, imibhalo yenqubomgomo nezitatimende zomphakathi. Amaqembu athola amaphuzu ahlelwe ngokusondeleka kwezikhundla zawo neziphendulo zakho. Sisebenzisa i-normalisation ngamaqembu ngalinye ukuze iqembu ngalinye likalwe ngokulingana, kuqinisekiswe ukuhlinzekwa okulungile kumabhendi ahlukene. Amanqampuna aguqulwa abe isikali sika-0 kuya ku-100, futhi kukhona nesilinganiso sokuzethemba ukukusiza uqonde amandla okuvumelana.",
     "transparency": "Isibopho Sethu Sokuba Sobala",
@@ -105,13 +105,13 @@
       "desc": "I-Economic Freedom Fighters yiqembu elisekela izinguquko ezinzima kwezomnotho, ukwenziwa kwesizwe kanye nokwabiwa komhlaba ngaphandle kwenkokhelo."
     },
     "ifp": {
-      "desc": "I-Inkatha Freedom Party igxile ekugcinweni kwesiko lamaZulu, ubumbano bezifunda kanye nomnotho wemakethe onomthwalo wokuhlanganyela."
+      "desc": "I-Inkatha Freedom Party ikhulu imele imiphakathi yamaZulu, igxile ekugcinweni kwesiko lamaZulu, ubumbano bezifunda kanye nomnotho wemakethe onomthwalo wokuhlanganyela. Noma inobuso obubanzi, izinqubomgomo zigxile ezinkolweni zamaZulu nasezidingweni zakwaZulu-Natali."
     },
     "pa": {
       "desc": "I-Patriotic Alliance igxile ezindabeni zokufuduka, ukukhuthaza ikusasa lezakhamuzi zaseNingizimu Afrika nokubeka phambili izidingo zabahlali."
     },
     "vfplus": {
-      "desc": "I-Freedom Front Plus imele izintshisekelo zoMzansi Afrika wama-Afrikaans, ikhulisa ubumbano bezifunda kanye namalungelo ezizathu."
+      "desc": "I-Freedom Front Plus ikhulu imele imiphakathi yama-Afrikaner nezintshisekelo zawo, ikhulisa ubumbano bezifunda, amalungelo ezizathu kanye nezindinganiso ezigcinayo. Izinqubomgomo zigxile ekuvikelweni kwamasiko ama-Afrikaner nasekuzilawuleni kwawo."
     },
     "actionsa": {
       "desc": "I-ActionSA ingaphakathi nendawo, igxile ekuphathweni okubhekele izixazululo, ukulwa nenkohlakalo nokukhuthaza ukukhula komnotho ngomkhakha ozimele."
@@ -129,10 +129,13 @@
       "desc": "I-United Democratic Movement isekela intando yeningi, ukubuyisana kanye nezinqubomgomo eziwusizo zokulwa nobumpofu nokungalingani."
     },
     "aljamah": {
-      "desc": "I-Al Jama-ah imele izindinganiso zobuSulumane, ibheke ubulungisa bomphakathi, ukubusa okufanele kanye namalungelo ezindawo ezicindezelekile."
+      "desc": "I-Al Jama-ah ikhulu imele imiphakathi yamaSulumane, ibheke izindinganiso zobuSulumane, ubulungisa bomphakathi nokubusa okufanele. Izinqubomgomo zibonakalisa izindinganiso zamaSulumane namalungelo emiphakathi ecindezelekile."
     },
     "cope": {
       "desc": "I-Congress of the People iphakamisa ubuholi obunobulungiswa, ukuphatha okuhle kanye nezindlela zomnotho ezihlanganisa ukukhula nenhlalakahle yomphakathi."
+    },
+    "ncc": {
+      "desc": "Iqembu elikhulu elimele imiphakathi yabantu abaColoured, libhekisa ekwamukelweni kwabo njengezizukulwane zeSizwe sokuQala, eligxile ekuthuthukisweni kwezenhlalo nomnotho, enesimo esiqinile sokulwa nobugebengu namagilebhesi. Izinqubomgomo zigxile ezindabeni ezithinta abantu abaColoured baseNingizimu Afrika."
     }
   },
   "options": {
@@ -302,6 +305,14 @@
     "q40": {
       "text": "Abavoti kufanele banake irekhodi lokulethwa kwezinsizakalo nokuqondisa inkohlakalo kwamaqembu kunokugcina izisho zawo zembono.",
       "category": "ukuvota & ukuziphatha"
+    },
+    "q41": {
+      "text": "Amaqembu ezepolitiki kufanele abeke phambili ngokukhethekile izinqubomgomo ezibhekana nezinselelo ezihlukile kanye nezipiliyoni zomlando zomphakathi wami wamasiko noma wobuhlanga.",
+      "category": "amasiko nobuzwe"
+    },
+    "q42": {
+      "text": "Ngikhetha ukuvotela amaqembu abheke ngokucacile ekumeleni nasekuphakamiseni iqembu lami lezakhiwo noma umphakathi.",
+      "category": "amasiko nobuzwe"
     }
   },
   "footer": {

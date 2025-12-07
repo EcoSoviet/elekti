@@ -9,14 +9,21 @@
   const router = useRouter();
   const quizStore = useQuizStore();
   const isTransitioning = ref(false);
+  const isAnswerDisabled = ref(false);
 
   const currentQuestion = computed(() => quizStore.currentQuestion);
   const isLastQuestion = computed(
     () => quizStore.currentQuestionIndex === quizStore.questions.length - 1
   );
+  const hasAnsweredCurrent = computed(
+    () =>
+      currentQuestion.value &&
+      quizStore.answers[currentQuestion.value.id] !== undefined
+  );
 
   function handleAnswer(optionIndex: number) {
-    if (currentQuestion.value) {
+    if (currentQuestion.value && !isAnswerDisabled.value) {
+      isAnswerDisabled.value = true;
       quizStore.answerQuestion(currentQuestion.value.id, optionIndex);
       isTransitioning.value = true;
       setTimeout(() => {
@@ -26,6 +33,7 @@
           quizStore.nextQuestion();
           setTimeout(() => {
             isTransitioning.value = false;
+            isAnswerDisabled.value = false;
           }, 50);
         }
       }, 300);
@@ -69,6 +77,7 @@
           <QuizQuestion
             :question="currentQuestion"
             :model-value="quizStore.answers[currentQuestion.id]"
+            :disabled="isAnswerDisabled"
             @update:model-value="handleAnswer"
           />
         </div>
@@ -89,6 +98,7 @@
           @click="handleNext"
           class="quiz__nav-button quiz__nav-button--next"
           :title="$t('quiz.next')"
+          :disabled="!hasAnsweredCurrent"
         >
           <ChevronRight :size="24" />
         </button>
@@ -97,6 +107,7 @@
           @click="handleFinish"
           class="quiz__nav-button quiz__nav-button--finish"
           :title="$t('quiz.finish')"
+          :disabled="!hasAnsweredCurrent"
         >
           <ChevronRight :size="24" />
         </button>
@@ -200,6 +211,12 @@
     border-color: var(--color-primary);
     transform: translateY(-2px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .quiz__nav-button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
   }
 
   @media (max-width: 768px) {

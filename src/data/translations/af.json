@@ -65,7 +65,7 @@
     "methodology": "Metodologie",
     "methodologyText": "Elekti gebruik 'n omvattende, bewysegebaseerde metode om jou politieke sienings teen Suid-Afrikaanse partye te meet. Die stelsel is ontwerp om regverdig, deursigtig en nie-partydig te wees.",
     "howItWorks": "Hoe dit werk",
-    "howItWorksText": "Jy beantwoord 40 sorgvuldig saamgestelde vrae oor hoofbeleidsareas soos gesondheidsorg, onderwys, ekonomie, bestuur en sosiale sake. Elke vraag is ontwerp om jou voorkeur sonder vooroordeel te openbaar.",
+    "howItWorksText": "Jy beantwoord 42 sorgvuldig saamgestelde vrae oor hoofbeleidsareas soos gesondheidsorg, onderwys, ekonomie, bestuur en sosiale sake. Elke vraag is ontwerp om jou voorkeur sonder vooroordeel te openbaar.",
     "scoring": "Puntestelsel",
     "scoringText": "Elke antwoord word vergelyk met gedokumenteerde partyposisies uit manifeste, beleidsdokumente en openbare verklarings. Partye kry geweegde punte op grond van hoe naby hul posisies aan jou antwoorde is. Ons normaliseer per party sodat elke party teen sy beste moontlike passing gemeet word. Die punte word op 'n 0–100-skaal uitgegee en 'n vertrouensvlak word aangedui om die sterkte van die ooreenkoms te verduidelik.",
     "transparency": "Ons verbintenis tot deursigtigheid",
@@ -105,13 +105,13 @@
       "desc": "Die Economic Freedom Fighters is 'n links-radikale party wat radikale ekonomiese hervorming, nasionalisering en grondhervorming sonder vergoeding bepleit."
     },
     "ifp": {
-      "desc": "Die Inkatha Freedom Party bevorder Zulu-kulturele waardes, federalisme en 'n vryemarkbenadering met sosiale verantwoordelikheid."
+      "desc": "Die Inkatha Freedom Party verteenwoordig hoofsaaklik Zulugemeenskappe en bevorder Zulu-kulturele waardes, federalisme en 'n vryemarkbenadering met sosiale verantwoordelikheid. Alhoewel dit breër aantrekking het, sentreer beleids prioriteite om Zulu-tradisies en KwaZulu-Natal-belange."
     },
     "pa": {
       "desc": "Die Patriotic Alliance fokus op immigrasie-kwessies, nasionalisme en die bevordering van burgers se behoeftes."
     },
     "vfplus": {
-      "desc": "Freedom Front Plus verteenwoordig Afrikanerbelange en bepleit federalisme, minderheidsregte en konserwatiewe waardes."
+      "desc": "Freedom Front Plus verteenwoordig hoofsaaklik Afrikanergemeenskappe en -belange, en bepleit federalisme, minderheidsregte en konserwatiewe waardes. Beleids prioriteite sentreer om Afrikaner-kulturele bewaring en selfbeskikking."
     },
     "actionsa": {
       "desc": "ActionSA is 'n sentrum-party gefokus op praktiese bestuur, anti-korrupsie en ekonomiese groei deur privaat-sektorbetrokkenheid."
@@ -129,10 +129,13 @@
       "desc": "Die United Democratic Movement bevorder sosiale demokrasie, versoening en pragmatiese beleidsoptredes om armoede en ongelykheid te bekamp."
     },
     "aljamah": {
-      "desc": "Al Jama-ah verteenwoordig Islamitiese waardes en pleit vir sosiale geregtigheid, etiese bestuur en die regte van gemarginaliseerde gemeenskappe."
+      "desc": "Al Jama-ah verteenwoordig hoofsaaklik Moslemgemeenskappe en bepleit Islamitiese waardes, sosiale geregtigheid en etiese bestuur. Beleids prioriteite weerspieël Moslemwaardes en die regte van gemarginaliseerde gemeenskappe."
     },
     "cope": {
-      "desc": "Die Congress of the People bevorder sosiale demokrasie, goeie regeringsbestuur en ekonomiese beleide wat groei met sosiale welsyn balanseer."
+      "desc": "Die Congress of the People bevorder sosiale demokrasie, goeie bestuur en ekonomiese beleide wat groei en maatskaplike welvaart balanseer."
+    },
+    "ncc": {
+      "desc": "'n Party wat hoofsaaklik Kleurlinggemeenskappe verteenwoordig en pleit vir erkenning as Eerste Nasie-afstammelinge met 'n fokus op sosio-ekonomiese opheffing en 'n sterk standpunt teen misdaad en bendegeweld. Beleids prioriteite sentreer om kwessies wat Kleurling Suid-Afrikaners raak."
     }
   },
   "options": {
@@ -302,6 +305,14 @@
     "q40": {
       "text": "Kiesers moet 'n party se rekord oor dienslewering en korrupsie swaarder weeg as ideologiese slagspreuke.",
       "category": "stemgedrag"
+    },
+    "q41": {
+      "text": "Politieke partye moet spesifiek prioriteit gee aan beleide wat die unieke uitdagings en historiese ervarings van my kulturele of etniese gemeenskap aanspreek.",
+      "category": "kultuur & identiteit"
+    },
+    "q42": {
+      "text": "Ek verkies om te stem vir partye wat eksplisiet fokus op die verteenwoordiging en opheffing van my spesifieke demografiese of gemeenskapsgroep.",
+      "category": "kultuur & identiteit"
     }
   },
   "footer": {

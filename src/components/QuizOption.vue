@@ -2,6 +2,7 @@
   defineProps<{
     label: string;
     isSelected: boolean;
+    disabled?: boolean;
   }>();
 
   defineEmits<{
@@ -14,6 +15,7 @@
     @click="$emit('select')"
     class="quiz-option"
     :class="{ 'quiz-option--selected': isSelected }"
+    :disabled="disabled"
     role="radio"
     :aria-checked="isSelected"
   >

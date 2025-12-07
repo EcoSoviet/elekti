@@ -65,7 +65,7 @@
     "methodology": "Methodology",
     "methodologyText": "Elekti uses a comprehensive, evidence-based approach to match your political views with South African political parties. Our system is designed to be fair, transparent, and non-partisan.",
     "howItWorks": "How It Works",
-    "howItWorksText": "You answer 40 carefully crafted questions covering major policy areas including healthcare, education, economy, governance, and social issues. Each question is designed to reveal your political preferences without bias toward any party.",
+    "howItWorksText": "You answer 42 carefully crafted questions covering major policy areas including healthcare, education, economy, governance, and social issues. Each question is designed to reveal your political preferences without bias toward any party.",
     "scoring": "Scoring System",
     "scoringText": "Each answer you provide is matched against documented party positions from official manifestos, policy documents, and public statements. Parties receive weighted scores based on how closely their stated positions align with your responses. We use a per-party normalization algorithm, meaning each party is scored against its own best possible match for the questions you answered. This ensures fair treatment for both moderate and radical parties. These scores are normalized on a 0-100 scale, with your top match and alternatives clearly identified. We also provide a confidence rating to help you understand how strong your match is.",
     "transparency": "Our Commitment to Transparency",
@@ -105,13 +105,13 @@
       "desc": "The Economic Freedom Fighters is a far-left party advocating for radical economic transformation, nationalization, and land redistribution without compensation."
     },
     "ifp": {
-      "desc": "The Inkatha Freedom Party promotes Zulu cultural values, federalism, and free market economics with social responsibility."
+      "desc": "The Inkatha Freedom Party primarily represents Zulu communities, promoting Zulu cultural values, federalism, and free market economics with social responsibility. While it has broader appeal, policy priorities center on Zulu traditions and KwaZulu-Natal interests."
     },
     "pa": {
       "desc": "The Patriotic Alliance focuses on addressing immigration issues, promoting South African nationalism, and prioritising citizens' needs."
     },
     "vfplus": {
-      "desc": "Freedom Front Plus represents Afrikaner interests, advocating for federalism, minority rights, and conservative values."
+      "desc": "Freedom Front Plus primarily represents Afrikaner communities and interests, advocating for federalism, minority rights, and conservative values. Policy priorities center on Afrikaner cultural preservation and self-determination."
     },
     "actionsa": {
       "desc": "ActionSA is a centrist party focused on practical governance, anti-corruption, and economic growth through private sector engagement."
@@ -129,10 +129,13 @@
       "desc": "The United Democratic Movement promotes social democracy, reconciliation, and pragmatic policies to address poverty and inequality."
     },
     "aljamah": {
-      "desc": "Al Jama-ah represents Islamic values and advocates for social justice, ethical governance, and the rights of marginalized communities."
+      "desc": "Al Jama-ah primarily represents Muslim communities, advocating for Islamic values, social justice, and ethical governance. Policy priorities reflect Muslim values and the rights of marginalised communities."
     },
     "cope": {
       "desc": "The Congress of the People promotes social democracy, good governance, and economic policies that balance growth with social welfare."
+    },
+    "ncc": {
+      "desc": "A party primarily representing Coloured communities, advocating for recognition as First Nation descendants and focusing on socio-economic upliftment, with a strong stance against crime and gangsterism. Policy priorities center on issues affecting Coloured South Africans."
     }
   },
   "options": {
@@ -302,6 +305,14 @@
     "q40": {
       "text": "Voters should weigh a party's track record on delivery and corruption more heavily than its ideological slogans.",
       "category": "voting & behaviour"
+    },
+    "q41": {
+      "text": "Political parties should specifically prioritise policies that address the unique challenges and historical experiences of my cultural or ethnic community.",
+      "category": "culture & identity"
+    },
+    "q42": {
+      "text": "I prefer voting for parties that explicitly focus on representing and uplifting my specific demographic or community group.",
+      "category": "culture & identity"
     }
   },
   "footer": {

@@ -2,7 +2,7 @@
 
 > A multilingual political alignment quiz that matches South African voters to parties via weighted scoring.
 
-Elekti is a Vue 3 + Pinia single-page application that walks users through 40 policy questions, normalizes their answers against curated party data, and surfaces tailored recommendations. The project emphasizes strict localization, reproducible scoring, and a lean state-management layer so new questions or parties can be introduced without rewiring the UI.
+Elekti is a Vue 3 + Pinia single-page application that walks users through 42 policy questions, normalizes their answers against curated party data, and surfaces tailored recommendations. The project emphasizes strict localization, reproducible scoring, and a lean state-management layer so new questions or parties can be introduced without rewiring the UI.
 
 ## Highlights
 

@@ -65,7 +65,7 @@
     "methodology": "Indlela Esiyisebenzisa",
     "methodologyText": "I-Elekti isebenzisa indlela ebanzi necacileyo yokuthelekisa iindlela zakho nezopolitiko namaqela aseMzantsi Afrika. Sisixhobo esingenacalucalulo nesisebenza ngokungafihlisiyo.",
     "howItWorks": "Indlela Esisebenza Ngayo",
-    "howItWorksText": "Uphendula imibuzo engama-40 ejolise kwimpilo, uqoqosho, ulawulo, imfundo kunye nemicimbi yoluntu. Imibuzo yenziwe ukuze iveze izimvo zakho ngaphandle kokukhokela kwicala elithile.",
+    "howItWorksText": "Uphendula imibuzo engama-42 ejolise kwimpilo, uqoqosho, ulawulo, imfundo kunye nemicimbi yoluntu. Imibuzo yenziwe ukuze iveze izimvo zakho ngaphandle kokukhokela kwicala elithile.",
     "scoring": "Indlela Yokubala Amanqaku",
     "scoringText": "Iimpendulo zakho zithelekiswa neembono zamaqela ezisematheni. Amaqela afumana amanqaku axhomekeke ekubeni ahambelana kangakanani nezimvo zakho. Amanqaku alinganiswa kwinqanaba lika 0–100 ukukunika umfanekiso ocacileyo wokuba liphi iqela elikufanela.",
     "transparency": "Ukuzibophelela Ekucaciseni",
@@ -105,13 +105,13 @@
       "desc": "I-Economic Freedom Fighters ligqiza lasekhohlo elijolise kuqoqosho oluphantsi kokonakala, ukwenziwa kwesizwe kunye nokubuyiswa komhlaba ngaphandle kwentlawulo."
     },
     "ifp": {
-      "desc": "I-Inkatha Freedom Party igxininisa amaxabiso esiZulu, ulawulo olwahlukeneyo kunye noqoqosho lwemarike olunesazela."
+      "desc": "I-Inkatha Freedom Party ingundoqo imela uluntu lwamaZulu, igxininisa amaxabiso esiZulu, ulawulo olwahlukeneyo kunye noqoqosho lwemarike olunesazela. Nangona inomdla obanzi, imigaqo-nkqubo igxile kwizithethe zamaZulu nakwiimfuno zaseKwaZulu-Natal."
     },
     "pa": {
       "desc": "I-Patriotic Alliance ijolise kwimicimbi yokufudukela nokukhusela iimfuno zabemi baseMzantsi Afrika."
     },
     "vfplus": {
-      "desc": "I-Freedom Front Plus imela iminqweno yama-Afrikaans, ixhasa ulawulo olwahlukeneyo kunye namalungelo oluntu."
+      "desc": "I-Freedom Front Plus ingundoqo imela uluntu lwama-Afrikaner kunye neeminqweno zawo, ixhasa ulawulo olwahlukeneyo, amalungelo oluntu kunye namaxabiso olondolozo. Imigaqo-nkqubo igxile ekugcinweni kwenkcubeko yama-Afrikaner nasekuzilawuleni."
     },
     "actionsa": {
       "desc": "I-ActionSA lijolise kulawulo olusebenzayo, ukulwa ukurhwaphilizo kunye nophuhliso noqoqosho."
@@ -129,10 +129,13 @@
       "desc": "I-United Democratic Movement ixhasa intlalontle, ukuzola kunye neenkqubo ezisebenzayo zokulwa intlupheko."
     },
     "aljamah": {
-      "desc": "I-Al Jama-ah ixhasa amaxabiso obuSilamsi, ubulungisa kunye nokukhusela abo baxhaphazekileyo."
+      "desc": "I-Al Jama-ah ingundoqo imela uluntu lwamaSilamsi, ixhasa amaxabiso obuSilamsi, ubulungisa kunye nolawulo olunobulungisa. Imigaqo-nkqubo ibonakalisa amaxabiso amaSilamsi kunye namalungelo oluntu oluxhaphazekileyo."
     },
     "cope": {
       "desc": "I-Congress of the People ijolise kulawulo oluthembekileyo, uqoqosho olulinganisayo noluxhasa abathathi-nxaxheba abaninzi."
+    },
+    "ncc": {
+      "desc": "Iqela elingundoqo elimela uluntu lwamaColoured, libhekisa ekubeni bamkelwe njengemveli yeSizwe sokuQala kwaye ligxile ekuphuculweni kwezentlalo noqoqosho, linombono owomeleleyo wokulwa ulwaphulo-mthetho namaqela olwaphulo-mthetho. Imigaqo-nkqubo igxile kwimiba echaphazela amaColoured aseMzantsi Afrika."
     }
   },
   "options": {
@@ -302,6 +305,14 @@
     "q40": {
       "text": "Abavoti kufuneka bajonge indlela amaqela aqhube ngayo kunokuba bajonge izithethanthemba.",
       "category": "voting & behaviour"
+    },
+    "q41": {
+      "text": "Amaqela ezopolitiko kufuneka enze imigaqo-nkqubo ekhethekileyo ejolise kwimingeni kunye namava embali oluntu lwam.",
+      "category": "culture & identity"
+    },
+    "q42": {
+      "text": "Ndikhethela ukuvotela amaqela agxininisa ekumeleni nasekuphuculeni iqela lam lomntu okanye uluntu.",
+      "category": "culture & identity"
     }
   },
   "footer": {

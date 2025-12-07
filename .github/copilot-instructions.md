@@ -3,14 +3,14 @@
 ## Architecture & Flow
 
 - Vue 3 SPA with Landing → Quiz → Results (+ About) routes in `src/router/index.ts` and `src/views/*`; Pinia stores (`quizStore`, `uiStore`) keep components thin.
-- `quizStore` loads `q1…q40` from active locale via `i18n`, throwing immediately if `questions.qN` is missing so localization drift is caught early.
+- `quizStore` loads `q1…q42` from active locale via `i18n`, throwing immediately if `questions.qN` is missing so localization drift is caught early.
 - Answers stored as `Record<questionId, optionIndex>` (0=Strongly Agree … 4=Strongly Disagree) and synced to URLs via `encodeAnswersToUrl`/`loadAnswersFromUrl`—keep indices stable.
 - Scoring pulls 16 merged topic files from `src/data/scoring/index.ts` (ordered: economy-fiscal → voting-behaviour), weights answers, and pairs with 14 parties from `src/data/parties.json`; Results expect a fully computed `QuizResult`.
 - Styling uses bespoke tokens in `src/styles/theme.css`; reuse variables instead of raw colors/spacing.
 
 ## Stores & Data Contracts
 
-- **quizStore** owns navigation, `canProceed`, watch-based locale reloads; push quiz logic here, not views. Hardcoded `questionIds` array (`q1…q40`) must match every translation file—missing entries crash on locale switch.
+- **quizStore** owns navigation, `canProceed`, watch-based locale reloads; push quiz logic here, not views. Hardcoded `questionIds` array (`q1…q42`) must match every translation file—missing entries crash on locale switch.
 - **uiStore** is the single gate to language persistence (en/af/xh/zu via `setLang`); bypassing it leaves stale `i18n` state and skips `localStorage`.
 - **scoring.ts** normalizes per-party scores against question-level maxima, surfaces top 3 categories when `normalizedScore ≥ 0.15`, tags confidence (low/medium/high) based on score gaps. Returns `QuizResult` with primary/alternatives/allScores.
 

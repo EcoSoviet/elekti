@@ -110,5 +110,13 @@
     "descriptionKey": "party.cope.desc",
     "colour": "#E5A700",
     "website": "https://www.copesa.org.za/"
+  },
+  {
+    "id": "ncc",
+    "short": "NCC",
+    "name": "National Coloured Congress",
+    "descriptionKey": "party.ncc.desc",
+    "colour": "#4a4440",
+    "website": "https://nationalcolouredcongress.org.za/"
   }
 ]

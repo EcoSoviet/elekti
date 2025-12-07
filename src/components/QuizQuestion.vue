@@ -13,6 +13,7 @@
   const props = defineProps<{
     question: Question;
     modelValue?: number;
+    disabled?: boolean;
   }>();
 
   const emit = defineEmits<{
@@ -38,6 +39,9 @@
   );
 
   function selectOption(index: number) {
+    if (props.disabled) {
+      return;
+    }
     selectedOption.value = index;
     emit("update:modelValue", index);
   }
@@ -52,12 +56,14 @@
       class="quiz-question__options"
       role="radiogroup"
       :aria-labelledby="question.id"
+      :class="{ 'quiz-question__options--disabled': disabled }"
     >
       <QuizOption
         v-for="(option, index) in optionLabels"
         :key="index"
         :label="option"
         :is-selected="selectedOption === index"
+        :disabled="disabled"
         @select="selectOption(index)"
       />
     </div>
@@ -103,6 +109,11 @@
     flex-direction: column;
     gap: var(--space-sm);
     animation: fadeInUp 0.5s ease-out 0.1s both;
+  }
+
+  .quiz-question__options--disabled {
+    pointer-events: none;
+    opacity: 0.6;
   }
 
   @media (max-width: 640px) {
