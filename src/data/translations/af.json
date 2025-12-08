@@ -28,11 +28,11 @@
       },
       "benefit3": {
         "title": "Sien al jou ooreenkomste",
-        "text": "Kry 'n gerangskikte lys van partye met ooreenstemmingspunte, sodat jy topkeuses en alternatiewe sien."
+        "text": "Kry \u0027n gerangskikte lys van partye met ooreenstemmingspunte, sodat jy topkeuses en alternatiewe sien."
       },
       "benefit4": {
         "title": "Stem met vertroue",
-        "text": "Neem 'n ingeligte besluit gebaseer op data, nie raaiskote nie. Jou waardes word teen partyposisies gemeet."
+        "text": "Neem \u0027n ingeligte besluit gebaseer op data, nie raaiskote nie. Jou waardes word teen partyposisies gemeet."
       }
     }
   },
@@ -63,16 +63,16 @@
   "about": {
     "title": "Oor Elekti",
     "methodology": "Metodologie",
-    "methodologyText": "Elekti gebruik 'n omvattende, as-gebaseerde benadering om jou politieke sienings teen Suid-Afrikaanse partye te meet. Ons stelsel karteer jou reaksies oor 12 afsonderlike politieke dimensies en is ontwerp om regverdig, deursigtig en nie-partydig te wees.",
+    "methodologyText": "Elekti gebruik \u0027n omvattende, as-gebaseerde benadering om jou politieke sienings teen Suid-Afrikaanse partye te meet. Ons stelsel karteer jou reaksies oor 12 afsonderlike politieke dimensies en is ontwerp om regverdig, deursigtig en nie-partydig te wees.",
     "howItWorks": "Hoe dit werk",
-    "howItWorksText": "Jy beantwoord 41 sorgvuldig saamgestelde vrae oor hoofbeleidsareas soos gesondheidsorg, onderwys, ekonomie, bestuur en sosiale sake. Elke vraag karteer na een van 12 politieke asse (soos Ekonomiese Links-Regs, Staat vs Mark, Arbeidersregte, ens.) en word geweeg volgens belangrikheid. Jou antwoorde word omgeskakel na posisies op hierdie asse en vergelyk met gedokumenteerde partyposisies.",
+    "howItWorksText": "Jy beantwoord 50 sorgvuldig saamgestelde vrae oor hoofbeleidsareas soos gesondheidsorg, onderwys, ekonomie, bestuur en sosiale sake. Elke vraag karteer na een van 12 politieke asse (soos Ekonomiese Links-Regs, Staat vs Mark, Arbeidersregte, ens.) en word geweeg volgens belangrikheid. Jou antwoorde word omgeskakel na posisies op hierdie asse en vergelyk met gedokumenteerde partyposisies.",
     "scoring": "Puntestelsel",
-    "scoringText": "Ons as-gebaseerde algoritme werk soos volg: (1) Elke antwoord word vergelyk met elke party se posisie op die relevante as, en ooreenkoms word bereken (1 minus die absolute verskil tussen jou posisie en hulle s'n). (2) Ooreenkomste word vermenigvuldig met vraaggewigte en saamgevoeg per as. (3) Vir elke party word aspunte genormaliseer deur te deel deur die totale gewig van vrae beantwoord op daardie as. (4) 'n Party se finale punt is die geweegde gemiddelde oor alle asse. Punte word as persentasies (0-100%) vertoon, met hoër punte wat sterker belyning aandui. Ons verskaf ook 'n vertrouensvlak gebaseer op jou toppunt en die gaping na alternatiewe.",
+    "scoringText": "Ons as-gebaseerde algoritme werk soos volg: (1) Elke antwoord word vergelyk met elke party se posisie op die relevante as, en ooreenkoms word bereken (1 minus die absolute verskil tussen jou posisie en hulle s\u0027n). (2) Ooreenkomste word vermenigvuldig met vraaggewigte en saamgevoeg per as. (3) Vir elke party word aspunte genormaliseer deur te deel deur die totale gewig van vrae beantwoord op daardie as. (4) \u0027n Party se finale punt is die geweegde gemiddelde oor alle asse. Punte word as persentasies (0-100%) vertoon, met hoër punte wat sterker belyning aandui. Ons verskaf ook \u0027n vertrouensvlak gebaseer op jou toppunt en die gaping na alternatiewe.",
     "transparency": "Ons verbintenis tot deursigtigheid",
     "transparencyText": "Partyposisies en gewigte word bepaal deur deeglike navorsing van amptelike dokumente. Ons metodologie is oop en hersienbaar. Ons bevoordeel geen party nie; doel is om jou te help om ingeligte besluite te neem.",
     "dataSources": "Ons navorsingsbronne",
-    "dataSourcesText": "Posisies word nagevors uit amptelike manifeste, beleiddokumente, parlementêre stemrekords en geverifieerde verklarings. Ons werk die data gereeld by. Indien jy 'n fout sien, verwelkom ons korreksies met gepaste brondokumentasie.",
-    "privacy": "Privaatheid & jou data",
+    "dataSourcesText": "Posisies word nagevors uit amptelike manifeste, beleiddokumente, parlementêre stemrekords en geverifieerde verklarings. Ons werk die data gereeld by. Indien jy \u0027n fout sien, verwelkom ons korreksies met gepaste brondokumentasie.",
+    "privacy": "Privaatheid \u0026 jou data",
     "privacyText": "Jou privaatheid is van kardinale belang. Jou politieke sienings is persoonlik en verdien die hoogste beskerming.",
     "noTracking": "Geen nasporing",
     "noTrackingText": "Ons gebruik nie koekies of spoortegnologieë wat jou kan identifiseer nie. Ons sien nie jou antwoorde en dit word nie na ons bedieners gestuur nie.",
@@ -81,14 +81,14 @@
     "sharing": "Hoe deel werk",
     "sharingText": "As jy resultate deel, word jou antwoorde in die URL enkodeer. Enigiemand met die skakel kan dit sien; die data raak nie ons bedieners nie. Jy beheer wie toegang het deur die skakel te deel of te verwyder.",
     "analytics": "Privaatheidsvriendelike analytics",
-    "analyticsText": "Ons gebruik Cloudflare Web Analytics — 'n privaatheidsgefokusde diens wat geen persoonlike identifiseerbare data versamel nie en geen koekies gebruik nie. Dit gee ons net saamgestelde statistieke om gebruik te meet.",
+    "analyticsText": "Ons gebruik Cloudflare Web Analytics — \u0027n privaatheidsgefokusde diens wat geen persoonlike identifiseerbare data versamel nie en geen koekies gebruik nie. Dit gee ons net saamgestelde statistieke om gebruik te meet.",
     "parties": "Ingeslote partye",
-    "partiesText": "Ons sluit 11 belangrike Suid-Afrikaanse partye in wat 'n wye spektrum van sienings verteenwoordig. Keuse is gebaseer op parlementsverteenwoordiging, verkiesingsbelang en ideologiese diversiteit.",
+    "partiesText": "Ons sluit 11 belangrike Suid-Afrikaanse partye in wat \u0027n wye spektrum van sienings verteenwoordig. Keuse is gebaseer op parlementsverteenwoordiging, verkiesingsbelang en ideologiese diversiteit.",
     "disclaimer": "Belangrike vrywaringsparagraaf",
-    "disclaimerText": "Elekti is 'n opvoedkundige hulpmiddel, nie 'n vervanging vir onafhanklike navorsing nie. Partyposisies is kompleks en kan verander. Lees manifeste en verifieer inligting self. Gebruik resultate as 'n beginpunt, nie as finale besluit nie.",
+    "disclaimerText": "Elekti is \u0027n opvoedkundige hulpmiddel, nie \u0027n vervanging vir onafhanklike navorsing nie. Partyposisies is kompleks en kan verander. Lees manifeste en verifieer inligting self. Gebruik resultate as \u0027n beginpunt, nie as finale besluit nie.",
     "viewData": "Bekyk rou data",
     "viewDataText": "Jy kan ons rou JSON-data inspekteer wat alle partyposisies, gewigte en vrametadata bevat.",
-    "scoringData": "Puntedata (vrae & gewigte ingesluit)",
+    "scoringData": "Puntedata (vrae \u0026 gewigte ingesluit)",
     "partiesData": "Party-inligting"
   },
   "party": {
@@ -102,10 +102,10 @@
       "desc": "uMkhonto we Sizwe Party fokus op radikale ekonomiese transformasie en bevorder staatgelei ontwikkeling en die aanspreek van historiese ongeregtighede."
     },
     "eff": {
-      "desc": "Die Economic Freedom Fighters is 'n links-radikale party wat radikale ekonomiese hervorming, nasionalisering en grondhervorming sonder vergoeding bepleit."
+      "desc": "Die Economic Freedom Fighters is \u0027n links-radikale party wat radikale ekonomiese hervorming, nasionalisering en grondhervorming sonder vergoeding bepleit."
     },
     "ifp": {
-      "desc": "Die Inkatha Freedom Party verteenwoordig hoofsaaklik Zulugemeenskappe en bevorder Zulu-kulturele waardes, federalisme en 'n vryemarkbenadering met sosiale verantwoordelikheid. Alhoewel dit breër aantrekking het, sentreer beleids prioriteite om Zulu-tradisies en KwaZulu-Natal-belange."
+      "desc": "Die Inkatha Freedom Party verteenwoordig hoofsaaklik Zulugemeenskappe en bevorder Zulu-kulturele waardes, federalisme en \u0027n vryemarkbenadering met sosiale verantwoordelikheid. Alhoewel dit breër aantrekking het, sentreer beleids prioriteite om Zulu-tradisies en KwaZulu-Natal-belange."
     },
     "pa": {
       "desc": "Die Patriotic Alliance fokus op immigrasie-kwessies, nasionalisme en die bevordering van burgers se behoeftes."
@@ -115,7 +115,7 @@
       "desc": "Vryheidsfront Plus verteenwoordig hoofsaaklik Afrikanergemeenskappe en -belange, en bepleit federalisme, minderheidsregte en konserwatiewe waardes. Beleids prioriteite sentreer om Afrikaner-kulturele bewaring en selfbeskikking."
     },
     "actionsa": {
-      "desc": "ActionSA is 'n sentrum-party gefokus op praktiese bestuur, anti-korrupsie en ekonomiese groei deur privaat-sektorbetrokkenheid."
+      "desc": "ActionSA is \u0027n sentrum-party gefokus op praktiese bestuur, anti-korrupsie en ekonomiese groei deur privaat-sektorbetrokkenheid."
     },
     "acdp": {
       "desc": "Die African Christian Democratic Party bevorder Christelike waardes, konserwatiewe sosiale beleide en grondwetlike demokrasie."
@@ -124,45 +124,45 @@
       "desc": "Unite for Change fokus op grondvlak-mobilisering en die aanspreek van plaaslike gemeenskapskwessies deur progressiewe beleid."
     },
     "sacp": {
-      "desc": "Die South African Communist Party bepleit sosialisme, werkersregte en 'n oorgang na 'n sosialistiese samelewing deur staatsbeheer."
+      "desc": "Die South African Communist Party bepleit sosialisme, werkersregte en \u0027n oorgang na \u0027n sosialistiese samelewing deur staatsbeheer."
     }
   },
   "axes": {
     "economic_left_right": {
-      "short": "Belasting & Sosiale Besteding"
+      "short": "Belasting \u0026 Sosiale Besteding"
     },
     "state_vs_market": {
       "short": "Openbare vs Private Dienste"
     },
     "land_and_ownership": {
-      "short": "Grond- & Eiendomsregte"
+      "short": "Grond- \u0026 Eiendomsregte"
     },
     "labour_rights": {
       "short": "Werkersregte"
     },
     "law_order_vs_liberty": {
-      "short": "Polisiëring & Burgerregte"
+      "short": "Polisiëring \u0026 Burgerregte"
     },
     "democratic_institutions": {
-      "short": "Bestuur & Anti-Korrupsie"
+      "short": "Bestuur \u0026 Anti-Korrupsie"
     },
     "environment_energy": {
-      "short": "Klimaat & Energie"
+      "short": "Klimaat \u0026 Energie"
     },
     "social_progressivism": {
-      "short": "LGBTQ+ & Geslagsregte"
+      "short": "LGBTQ+ \u0026 Geslagsregte"
     },
     "global_vs_local": {
-      "short": "Handel & Immigrasie"
+      "short": "Handel \u0026 Immigrasie"
     },
     "transformation_vs_continuity": {
       "short": "Tempo van Verandering"
     },
     "urban_development": {
-      "short": "Stedelike Beplanning & Vervoer"
+      "short": "Stedelike Beplanning \u0026 Vervoer"
     },
     "equity_and_inclusion": {
-      "short": "Regstellende Aksie & BEE"
+      "short": "Regstellende Aksie \u0026 BEE"
     }
   },
   "options": {
@@ -182,160 +182,196 @@
       "axis": "economic_left_right"
     },
     "q3": {
-      "text": "Die regering moet klein en medium ondernemings aktief ondersteun met belastingvermindering en deregulering.",
-      "axis": "state_vs_market"
-    },
-    "q4": {
-      "text": "Die staat moet 'n basiese inkomste vir alle burgers implementeer.",
+      "text": "Die staat moet \u0027n basiese inkomste vir alle burgers implementeer.",
       "axis": "economic_left_right"
     },
-    "q5": {
+    "q4": {
       "text": "Die staat moet openbare werksprogramme gebruik om werkloosheid te verminder.",
       "axis": "economic_left_right"
     },
-    "q6": {
+    "q5": {
       "text": "Gesondheidsorg moet universeel en publiek befonds word, met basiese dienste gratis by gebruikspunt.",
       "axis": "economic_left_right"
     },
-    "q7": {
+    "q6": {
       "text": "Hoër onderwys moet gratis wees vir alle studente, selfs as dit hoër belasting vereis.",
       "axis": "economic_left_right"
     },
-    "q8": {
+    "q7": {
       "text": "Die staat moet sterk subsidies vir kinderopvoeding verskaf om werkende ouers te ondersteun.",
       "axis": "economic_left_right"
     },
+    "q8": {
+      "text": "Nywerheidsbeleid moet beskermingsmaatrëels en subsidies vir opkomende swart-eienaarskap en werker-eienaarskap-ondernemings insluit.",
+      "axis": "economic_left_right"
+    },
     "q9": {
-      "text": "Plaaslike regering moet professioneel beman en onafhanklik geoudit word om munisipale mislukkings en korrupsie aan te spreek, selfs al beperk dit politieke aanstellings.",
-      "axis": "democratic_institutions"
+      "text": "Die regering moet klein en medium ondernemings aktief ondersteun met belastingvermindering en deregulering.",
+      "axis": "state_vs_market"
     },
     "q10": {
       "text": "Sleutel openbare nutsdienste (krag, water, spoor) moet in openbare besit bly en nie geprivatiseer word nie.",
       "axis": "state_vs_market"
     },
     "q11": {
-      "text": "Onteiening van grond sonder markwaarde-vergoeding moet toegelaat word om grondhervorming te versnel.",
-      "axis": "land_and_ownership"
-    },
-    "q12": {
-      "text": "Kleinskaalse boerdery en gemeenskapsgrondregte moet voorkeur geniet bo groot kommersiële landbouondernemings.",
-      "axis": "land_and_ownership"
-    },
-    "q13": {
-      "text": "Werkers moet sterker regte hê om te vakbondeer en te staak, met minder beperkinge.",
-      "axis": "labour_rights"
-    },
-    "q14": {
-      "text": "Minimum lone moet aansienlik verhoog word om armoede onder werkers te verminder, selfs as sommige klein besighede sukkel.",
-      "axis": "labour_rights"
-    },
-    "q15": {
-      "text": "Arbeidsmarkbuigbaarheid (makliker indiensneming en afdanking) sal belegging bevorder en moet aangemoedig word.",
-      "axis": "labour_rights"
-    },
-    "q16": {
-      "text": "Die polisie moet sterker magte en hulpbronne kry om gewelddadige misdaad te bekamp, selfs al vergroot dit staatsgesag.",
-      "axis": "law_order_vs_liberty"
-    },
-    "q17": {
-      "text": "Onafhanklike toesigliggame (regbank, vervolging) moet beskerm word, selfs al vertraag dit vervolgings van magtige amptenare.",
-      "axis": "democratic_institutions"
-    },
-    "q18": {
-      "text": "Korrupsievervolgings moet vinnig en agresief wees, selfs al veroorsaak dit korttermynonstabiliteit in die regering.",
-      "axis": "democratic_institutions"
-    },
-    "q19": {
-      "text": "Vryheid van uitdrukking en vreedsame protesaksie moet geprioritiseer word, selfs wanneer demonstrasies ekonomiese aktiwiteit ontwrig.",
-      "axis": "law_order_vs_liberty"
-    },
-    "q20": {
-      "text": "Die staat moet LGBTQ+-anti-diskriminasiewette en inklusiwiteitsbeleid afdwing.",
-      "axis": "social_progressivism"
-    },
-    "q21": {
-      "text": "Suid-Afrika moet wetlik bindende teikens stel om kweekhuisgasvrystellings te sny en steenkoolkrag uit te faseer.",
-      "axis": "environment_energy"
-    },
-    "q22": {
-      "text": "Die staat moet belegging in hernubare energie prioritiseer om afhanklikheid van steenkoolkrag te verminder.",
-      "axis": "environment_energy"
-    },
-    "q23": {
-      "text": "Omgewingsbeskermingswette moet prioriteit geniet bo nuwe minerale- en steenkoolontwikkeling.",
-      "axis": "environment_energy"
-    },
-    "q24": {
-      "text": "Suid-Afrika moet uitvoer-gedrewe groei prioritiseer deur sterker handelsbande met internasionale markte te bou.",
-      "axis": "global_vs_local"
-    },
-    "q25": {
-      "text": "Suid-Afrika moet sterker bande met Global South-lande prioritiseer bo belyning met Westerse moondhede.",
-      "axis": "global_vs_local"
-    },
-    "q26": {
-      "text": "Handelsbeleid moet plaaslike nywerhede beskerm deur tariewe en plaaslike inhoudsreëls te prioritiseer.",
-      "axis": "global_vs_local"
-    },
-    "q27": {
-      "text": "Vervoerinfrastruktuur-befondsing moet massa-openbare vervoer bo nuwe hoofwee-konstruksie prioritiseer, selfs al ongerief dit motoriste.",
-      "axis": "urban_development"
-    },
-    "q28": {
-      "text": "Bekostigbare openbare behuising moet bo aansporings vir private ontwikkelaars geprioritiseer word.",
-      "axis": "urban_development"
-    },
-    "q29": {
-      "text": "Stede moet wetlik verplig word om lae-digtheid, motorafhanklike ontwikkelings te beperk en loopbare, gemengde-gebruik buurte te mandateer—selfs al beperk dit eiendomsregte.",
-      "axis": "urban_development"
-    },
-    "q30": {
-      "text": "Suid-Afrika moet sterk digitale privaatheidswette aanvaar wat korporatiewe en staats toesig beperk.",
-      "axis": "law_order_vs_liberty"
-    },
-    "q31": {
-      "text": "Voedselsekuriteit moet deur 'n nasionale strategie bereik word wat plaaslike produksie, agro-ekologie en gemeenskaps tuine ondersteun.",
-      "axis": "transformation_vs_continuity"
-    },
-    "q32": {
-      "text": "Regeringsdepartemente moet streng toeganklikheidstandaarde vir mense met gestremdhede nakom, selfs as dit ander dienste beïnvloed.",
-      "axis": "equity_and_inclusion"
-    },
-    "q33": {
-      "text": "Die staat moet geteikende subsidies en aansporings instel om townships en landelike ekonomieë te versnel.",
-      "axis": "equity_and_inclusion"
-    },
-    "q34": {
-      "text": "Suid-Afrika moet strenger immigrasie- en grenstoesigbeleide aanvaar, selfs al span dit betrekkinge met buurlande.",
-      "axis": "global_vs_local"
-    },
-    "q35": {
-      "text": "Regering moet die indiensneming van ongedokumenteerde buitelandse burgers meer aggressief reguleer, selfs al ontwrig dit nywerhede wat op migrantarbeid staatmaak.",
-      "axis": "global_vs_local"
-    },
-    "q36": {
-      "text": "Politieke partye moet kompromieë maak oor hul ideologiese standpunte om stabiele koalisieregerings te vorm, selfs al teleurstel dit sommige ondersteuners.",
-      "axis": "democratic_institutions"
-    },
-    "q37": {
-      "text": "Beleide soos Gelyke Indiensneming en BEE moet sentrale instrumente bly om rasse-ongelykheid aan te spreek, selfs al beperk dit buigsaamheid vir besighede.",
-      "axis": "equity_and_inclusion"
-    },
-    "q38": {
       "text": "Private maatskappye moet toegelaat word om elektrisiteit te genereer en te verkoop om beurtkrag te beëindig, selfs al verminder dit Eskom se rol.",
       "axis": "state_vs_market"
     },
-    "q39": {
-      "text": "Nasionale regering moet meer aggressief ingryp in falende munisipaliteite, selfs al beperk dit plaaslike demokratiese outonomie.",
-      "axis": "democratic_institutions"
+    "q12": {
+      "text": "Watervoorsiening- en sanitasiondienste moet hoofsaaklik staatbeheer bly in plaas van oopgestelde vir private operateurs.",
+      "axis": "state_vs_market"
     },
-    "q40": {
+    "q13": {
+      "text": "Onteiening van grond sonder markwaarde-vergoeding moet toegelaat word om grondhervorming te versnel.",
+      "axis": "land_and_ownership"
+    },
+    "q14": {
+      "text": "Kleinskaalse boerdery en gemeenskapsgrondregte moet voorkeur geniet bo groot kommersiële landbouondernemings.",
+      "axis": "land_and_ownership"
+    },
+    "q15": {
+      "text": "Gemeenskapseiendom-landbou-inisiatiewe en koöperatiewe boerdery-modelle moet aktief deur regeringsbeleid en -befondsing ondersteun word.",
+      "axis": "land_and_ownership"
+    },
+    "q16": {
+      "text": "Tradisionele en inheemse landregte moet wetlik erken en beskerm word, selfs al bots dit met bestaande eiendomstitel.",
+      "axis": "land_and_ownership"
+    },
+    "q17": {
+      "text": "Werkers moet sterker regte hê om te vakbondeer en te staak, met minder beperkinge.",
+      "axis": "labour_rights"
+    },
+    "q18": {
+      "text": "Minimum lone moet aansienlik verhoog word om armoede onder werkers te verminder, selfs as sommige klein besighede sukkel.",
+      "axis": "labour_rights"
+    },
+    "q19": {
+      "text": "Arbeidsmarkbuigbaarheid (makliker indiensneming en afdanking) sal belegging bevorder en moet aangemoedig word.",
+      "axis": "labour_rights"
+    },
+    "q20": {
+      "text": "Werkplekgeregtighede soos betaalde verlof, siekeverlof en skeidsingsvergoeding moet versterk en aktief regdeur alle sektore afgedwing word.",
+      "axis": "labour_rights"
+    },
+    "q21": {
+      "text": "Die polisie moet sterker magte en hulpbronne kry om gewelddadige misdaad te bekamp, selfs al vergroot dit staatsgesag.",
+      "axis": "law_order_vs_liberty"
+    },
+    "q22": {
+      "text": "Vryheid van uitdrukking en vreedsame protesaksie moet geprioritiseer word, selfs wanneer demonstrasies ekonomiese aktiwiteit ontwrig.",
+      "axis": "law_order_vs_liberty"
+    },
+    "q23": {
+      "text": "Suid-Afrika moet sterk digitale privaatheidswette aanvaar wat korporatiewe en staats toesig beperk.",
+      "axis": "law_order_vs_liberty"
+    },
+    "q24": {
       "text": "Ontwrigtende proteste en afsluitings moet sterker wetlike beperkings in die gesig staar, selfs al beperk dit sekere vorme van politieke uitdrukking.",
       "axis": "law_order_vs_liberty"
     },
-    "q41": {
+    "q25": {
+      "text": "Plaaslike regering moet professioneel beman en onafhanklik geoudit word om munisipale mislukkings en korrupsie aan te spreek, selfs al beperk dit politieke aanstellings.",
+      "axis": "democratic_institutions"
+    },
+    "q26": {
+      "text": "Onafhanklike toesigliggame (regbank, vervolging) moet beskerm word, selfs al vertraag dit vervolgings van magtige amptenare.",
+      "axis": "democratic_institutions"
+    },
+    "q27": {
+      "text": "Korrupsievervolgings moet vinnig en agresief wees, selfs al veroorsaak dit korttermynonstabiliteit in die regering.",
+      "axis": "democratic_institutions"
+    },
+    "q28": {
+      "text": "Politieke partye moet kompromieë maak oor hul ideologiese standpunte om stabiele koalisieregerings te vorm, selfs al teleurstel dit sommige ondersteuners.",
+      "axis": "democratic_institutions"
+    },
+    "q29": {
+      "text": "Nasionale regering moet meer aggressief ingryp in falende munisipaliteite, selfs al beperk dit plaaslike demokratiese outonomie.",
+      "axis": "democratic_institutions"
+    },
+    "q30": {
       "text": "Politieke leiers wat die regbank, verkiesingsliggame, of die Grondwet openlik ondermyn, moet gevolge in die gesig staar.",
       "axis": "democratic_institutions"
+    },
+    "q31": {
+      "text": "Suid-Afrika moet wetlik bindende teikens stel om kweekhuisgasvrystellings te sny en steenkoolkrag uit te faseer.",
+      "axis": "environment_energy"
+    },
+    "q32": {
+      "text": "Die staat moet belegging in hernubare energie prioritiseer om afhanklikheid van steenkoolkrag te verminder.",
+      "axis": "environment_energy"
+    },
+    "q33": {
+      "text": "Omgewingsbeskermingswette moet prioriteit geniet bo nuwe minerale- en steenkoolontwikkeling.",
+      "axis": "environment_energy"
+    },
+    "q34": {
+      "text": "Die staat moet LGBTQ+-anti-diskriminasiewette en inklusiwiteitsbeleid afdwing.",
+      "axis": "social_progressivism"
+    },
+    "q35": {
+      "text": "Die staat moet aktief geslag-gelykheid bevorder deur verpligte ouersverlofbeleide en werkplek-antidiskriminasietoepassing.",
+      "axis": "social_progressivism"
+    },
+    "q36": {
+      "text": "Suid-Afrika moet uitvoer-gedrewe groei prioritiseer deur sterker handelsbande met internasionale markte te bou.",
+      "axis": "global_vs_local"
+    },
+    "q37": {
+      "text": "Suid-Afrika moet sterker bande met Global South-lande prioritiseer bo belyning met Westerse moondhede.",
+      "axis": "global_vs_local"
+    },
+    "q38": {
+      "text": "Handelsbeleid moet plaaslike nywerhede beskerm deur tariewe en plaaslike inhoudsreëls te prioritiseer.",
+      "axis": "global_vs_local"
+    },
+    "q39": {
+      "text": "Suid-Afrika moet strenger immigrasie- en grenstoesigbeleide aanvaar, selfs al span dit betrekkinge met buurlande.",
+      "axis": "global_vs_local"
+    },
+    "q40": {
+      "text": "Regering moet die indiensneming van ongedokumenteerde buitelandse burgers meer aggressief reguleer, selfs al ontwrig dit nywerhede wat op migrantarbeid staatmaak.",
+      "axis": "global_vs_local"
+    },
+    "q41": {
+      "text": "Voedselsekuriteit moet deur \u0027n nasionale strategie bereik word wat plaaslike produksie, agro-ekologie en gemeenskaps tuine ondersteun.",
+      "axis": "transformation_vs_continuity"
+    },
+    "q42": {
+      "text": "Suid-Afrika moet radikale herstrukturering van die ekonomie en arbeidsmark prioritiseer bo stadige, markgedrewe hervormings.",
+      "axis": "transformation_vs_continuity"
+    },
+    "q43": {
+      "text": "Die apartheid-erfenis moet deur stadige institusionele hervormings aangespreek word in plaas van radikale stelselveranderinge.",
+      "axis": "transformation_vs_continuity"
+    },
+    "q44": {
+      "text": "Vervoerinfrastruktuur-befondsing moet massa-openbare vervoer bo nuwe hoofwee-konstruksie prioritiseer, selfs al ongerief dit motoriste.",
+      "axis": "urban_development"
+    },
+    "q45": {
+      "text": "Bekostigbare openbare behuising moet bo aansporings vir private ontwikkelaars geprioritiseer word.",
+      "axis": "urban_development"
+    },
+    "q46": {
+      "text": "Stede moet wetlik verplig word om lae-digtheid, motorafhanklike ontwikkelings te beperk en loopbare, gemengde-gebruik buurte te mandateer—selfs al beperk dit eiendomsregte.",
+      "axis": "urban_development"
+    },
+    "q47": {
+      "text": "Regeringsdepartemente moet streng toeganklikheidstandaarde vir mense met gestremdhede nakom, selfs as dit ander dienste beïnvloed.",
+      "axis": "equity_and_inclusion"
+    },
+    "q48": {
+      "text": "Die staat moet geteikende subsidies en aansporings instel om townships en landelike ekonomieë te versnel.",
+      "axis": "equity_and_inclusion"
+    },
+    "q49": {
+      "text": "Beleide soos Gelyke Indiensneming en BEE moet sentrale instrumente bly om rasse-ongelykheid aan te spreek, selfs al beperk dit buigsaamheid vir besighede.",
+      "axis": "equity_and_inclusion"
+    },
+    "q50": {
+      "text": "Vaardigheidsontwikelingsprogramme moet op histories-benadeelde persone gerig word om ekonomiese deelname te versnel.",
+      "axis": "equity_and_inclusion"
     }
   },
   "footer": {

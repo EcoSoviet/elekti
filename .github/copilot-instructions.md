@@ -11,8 +11,8 @@
 - **Views**: Route-level components in `src/views/` (Landing, Quiz, Results, About).
 - **State Management**: Pinia stores in `src/stores/` (`quizStore`, `uiStore`).
 - **Data**:
-  - `src/data/questions.json`: Question metadata (id, axis, weight, textKey).
-  - `src/data/axes.json`: 14 axes definitions.
+  - `src/data/questions.json`: Question metadata (id, axis, weight, textKey) for 50 questions.
+  - `src/data/axes.json`: 12 axes definitions.
   - `src/data/parties.json`: Party metadata.
   - `src/data/party_positions.json`: Party stances per axis.
   - `src/data/translations/{en,af}.json`: Localized UI and question text.

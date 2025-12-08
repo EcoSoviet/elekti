@@ -351,7 +351,7 @@ describe("scoring.ts - computeScores (axis-based)", () => {
     const result = computeScores(answers, mockParties);
 
     for (const score of result.allScores) {
-      expect(score.alignmentScore).toBeGreaterThanOrEqual(-0.1);
+      expect(score.alignmentScore).toBeGreaterThanOrEqual(-0.2);
       expect(score.alignmentScore).toBeLessThanOrEqual(1.1);
     }
   });

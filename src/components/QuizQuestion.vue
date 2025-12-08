@@ -8,7 +8,6 @@
     text: string;
     axis: string;
     weight: number;
-    options: Array<{ value: number; label: string }>;
   }
 
   const properties = defineProps<{

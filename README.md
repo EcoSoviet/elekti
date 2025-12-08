@@ -2,11 +2,11 @@
 
 > A multilingual political alignment quiz that matches South African voters to parties via weighted scoring.
 
-Elekti is a Vue 3 + Pinia single-page application that walks users through 41 policy questions, normalizes their answers against curated party data, and surfaces tailored recommendations. The project emphasizes strict localization, reproducible scoring, and a lean state-management layer so new questions or parties can be introduced without rewiring the UI.
+Elekti is a Vue 3 + Pinia single-page application that walks users through 50 policy questions, normalises their answers against curated party data, and surfaces tailored recommendations. The project emphasises strict localization, reproducible scoring, and a lean state-management layer so new questions or parties can be introduced without rewiring the UI.
 
 ## Highlights
 
-- 🎯 **Policy matching** – 41 policy questions mapped to 14 political axes; each question has weighted impact on party alignment scores.
+- 🎯 **Policy matching** – 50 policy questions mapped to 12 political axes; each question has weighted impact on party alignment scores.
 - 🌍 **Fully localized content** – All questions live in `src/data/translations/{en,af}.json`; metadata references translations via `textKey`.
 - 🧠 **Deterministic scoring** – `src/utils/scoring.ts` uses axis-based alignment with similarity scoring, normalized per-party, and tracks top 3 policy axes.
 - 🧭 **URL-shareable results** – Answers encode into a comma-delimited string, enabling sharable quiz states across locales.
@@ -16,7 +16,7 @@ Elekti is a Vue 3 + Pinia single-page application that walks users through 41 po
 
 - **Views** – Landing, Quiz, Results, and About routes under `src/views/*` managed by `vue-router`.
 - **State** – `quizStore` loads questions from i18n and `questions.json` metadata, manages answers and quiz progress; `uiStore` handles locale persistence.
-- **Data** – `parties.json` defines 11 parties; `questions.json` contains 41 questions with metadata (axis, weight, textKey); `translations/{en,af}.json` hold all UI text and question content.
+- **Data** – `parties.json` defines 11 parties; `questions.json` contains 50 questions with metadata (axis, weight, textKey); `translations/{en,af}.json` hold all UI text and question content.
 - **Scoring flow** – `computeScores()` calculates axis-based similarity between user answers and party positions, returns ranked parties with top policy axes and confidence level.
 
 ```

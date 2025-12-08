@@ -1,6 +1,7 @@
 import axesData from "../data/axes.json";
 import partyPositionsData from "../data/party_positions.json";
 import questionsData from "../data/questions.json";
+import { STANDARD_OPTIONS } from "./constants";
 
 export interface Party {
   id: string;
@@ -25,7 +26,6 @@ interface QuestionMetadata {
   textKey: string;
   axis: string;
   weight: number;
-  options: Array<{ value: number; label: string }>;
 }
 
 export interface Axis {
@@ -86,7 +86,7 @@ export function computeScores(
     const question = questionsMetadata.find((q) => q.id === questionId);
     if (!question) continue;
 
-    const userValue = question.options[optionIndex]?.value;
+    const userValue = STANDARD_OPTIONS[optionIndex]?.value;
     if (userValue === undefined) continue;
 
     const axis = question.axis;

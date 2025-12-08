@@ -17,7 +17,7 @@
     "privacy": "Your answers are stored locally and never shared.",
     "howItHelps": {
       "title": "How This Tool Helps",
-      "intro": "Understand where you truly stand and make your vote count. Match your views with every party's actual positions.",
+      "intro": "Understand where you truly stand and make your vote count. Match your views with every party\u0027s actual positions.",
       "benefit1": {
         "title": "Cut Through the Noise",
         "text": "Skip campaign promises and see which parties align with your beliefs on real policy issues."
@@ -65,14 +65,14 @@
     "methodology": "Methodology",
     "methodologyText": "Elekti uses a comprehensive, axis-based approach to match your political views with South African political parties. Our system maps your responses across 12 distinct political dimensions and is designed to be fair, transparent, and non-partisan.",
     "howItWorks": "How It Works",
-    "howItWorksText": "You answer 41 carefully crafted questions covering major policy areas including healthcare, education, economy, governance, and social issues. Each question maps to one of 12 political axes (such as Economic Left-Right, State vs Market, Labour Rights, etc.) and is weighted by importance. Your responses are converted to positions on these axes and compared with documented party positions.",
+    "howItWorksText": "You answer 50 carefully crafted questions covering major policy areas including healthcare, education, economy, governance, and social issues. Each question maps to one of 12 political axes (such as Economic Left-Right, State vs Market, Labour Rights, etc.) and is weighted by importance. Your responses are converted to positions on these axes and compared with documented party positions.",
     "scoring": "Scoring System",
-    "scoringText": "Our axis-based algorithm works as follows: (1) Each answer is compared to each party's position on the relevant axis, calculating similarity (1 minus the absolute difference between your position and theirs). (2) Similarities are multiplied by question weights and aggregated per axis. (3) For each party, axis scores are normalised by dividing by the total weight of questions answered on that axis. (4) A party's final score is the weighted average across all axes. Scores are displayed as percentages (0-100%), with higher scores indicating stronger alignment. We also provide a confidence rating based on your top score and the gap to alternatives.",
+    "scoringText": "Our axis-based algorithm works as follows: (1) Each answer is compared to each party\u0027s position on the relevant axis, calculating similarity (1 minus the absolute difference between your position and theirs). (2) Similarities are multiplied by question weights and aggregated per axis. (3) For each party, axis scores are normalised by dividing by the total weight of questions answered on that axis. (4) A party\u0027s final score is the weighted average across all axes. Scores are displayed as percentages (0-100%), with higher scores indicating stronger alignment. We also provide a confidence rating based on your top score and the gap to alternatives.",
     "transparency": "Our Commitment to Transparency",
-    "transparencyText": "All party positions and scoring weights are determined through rigorous research of official party documents. Our methodology is open and reviewable. We do not favor any political party or ideology - our sole purpose is to help you make informed decisions based on your values and the parties' stated positions.",
+    "transparencyText": "All party positions and scoring weights are determined through rigorous research of official party documents. Our methodology is open and reviewable. We do not favor any political party or ideology - our sole purpose is to help you make informed decisions based on your values and the parties\u0027 stated positions.",
     "dataSources": "Our Research Sources",
     "dataSourcesText": "Party positions are meticulously researched from official party manifestos, policy documents, parliamentary voting records, and verified public statements. We update our data regularly to reflect policy changes. All source materials are from official party channels or reputable news organisations. If you believe any information is inaccurate, we welcome corrections with proper documentation.",
-    "privacy": "Privacy & Your Data",
+    "privacy": "Privacy \u0026 Your Data",
     "privacyText": "Your privacy is absolutely paramount. We believe your political views are deeply personal and deserve the highest level of protection.",
     "noTracking": "Zero Tracking",
     "noTrackingText": "We do not use cookies, analytics pixels, or any tracking technologies. We cannot see your answers, cannot identify you, and have no interest in doing so. Your quiz responses are never transmitted to our servers.",
@@ -88,12 +88,12 @@
     "disclaimerText": "Elekti is an educational tool, not a substitute for research. Political parties are complex organisations with nuanced positions that evolve over time. We strongly encourage you to read party manifestos, attend public forums, and verify our information independently. This tool shows alignment based on stated positions - actual governance may differ. Use these results as a starting point for deeper exploration, not as your final decision.",
     "viewData": "View Raw Data",
     "viewDataText": "In the spirit of complete transparency, you can inspect our raw data files yourself. These JSON files contain all party positions, scoring weights, and question metadata used by our algorithm.",
-    "scoringData": "Scoring Data (includes questions & weights)",
+    "scoringData": "Scoring Data (includes questions \u0026 weights)",
     "partiesData": "Party Information "
   },
   "party": {
     "anc": {
-      "desc": "The African National Congress is South Africa's governing party, advocating for social democracy, transformation, and addressing inequality through state intervention."
+      "desc": "The African National Congress is South Africa\u0027s governing party, advocating for social democracy, transformation, and addressing inequality through state intervention."
     },
     "da": {
       "desc": "The Democratic Alliance promotes liberal democracy, free market economics, and non-racial politics with emphasis on good governance and job creation."
@@ -108,7 +108,7 @@
       "desc": "The Inkatha Freedom Party primarily represents Zulu communities, promoting Zulu cultural values, federalism, and free market economics with social responsibility. While it has broader appeal, policy priorities center on Zulu traditions and KwaZulu-Natal interests."
     },
     "pa": {
-      "desc": "The Patriotic Alliance focuses on addressing immigration issues, promoting South African nationalism, and prioritising citizens' needs."
+      "desc": "The Patriotic Alliance focuses on addressing immigration issues, promoting South African nationalism, and prioritising citizens\u0027 needs."
     },
     "vfplus": {
       "name": "Freedom Front Plus",
@@ -124,45 +124,45 @@
       "desc": "Unite for Change focuses on grassroots mobilization and addressing local community concerns through progressive policies."
     },
     "sacp": {
-      "desc": "The South African Communist Party advocates for socialism, workers' rights, and the transition to a socialist society through state control."
+      "desc": "The South African Communist Party advocates for socialism, workers\u0027 rights, and the transition to a socialist society through state control."
     }
   },
   "axes": {
     "economic_left_right": {
-      "short": "Taxation & Social Spending"
+      "short": "Taxation \u0026 Social Spending"
     },
     "state_vs_market": {
       "short": "Public vs Private Services"
     },
     "land_and_ownership": {
-      "short": "Land & Property Rights"
+      "short": "Land \u0026 Property Rights"
     },
     "labour_rights": {
-      "short": "Workers' Rights"
+      "short": "Workers\u0027 Rights"
     },
     "law_order_vs_liberty": {
-      "short": "Policing & Civil Rights"
+      "short": "Policing \u0026 Civil Rights"
     },
     "democratic_institutions": {
-      "short": "Governance & Anti-Corruption"
+      "short": "Governance \u0026 Anti-Corruption"
     },
     "environment_energy": {
-      "short": "Climate & Energy"
+      "short": "Climate \u0026 Energy"
     },
     "social_progressivism": {
-      "short": "LGBTQ+ & Gender Rights"
+      "short": "LGBTQ+ \u0026 Gender Rights"
     },
     "global_vs_local": {
-      "short": "Trade & Immigration"
+      "short": "Trade \u0026 Immigration"
     },
     "transformation_vs_continuity": {
       "short": "Pace of Change"
     },
     "urban_development": {
-      "short": "Urban Planning & Transport"
+      "short": "Urban Planning \u0026 Transport"
     },
     "equity_and_inclusion": {
-      "short": "Affirmative Action & BEE"
+      "short": "Affirmative Action \u0026 BEE"
     }
   },
   "options": {
@@ -182,160 +182,196 @@
       "axis": "economic_left_right"
     },
     "q3": {
-      "text": "The government should actively support small and medium businesses with tax breaks and deregulation.",
-      "axis": "state_vs_market"
-    },
-    "q4": {
       "text": "The state should introduce a universal basic income for all citizens.",
       "axis": "economic_left_right"
     },
-    "q5": {
+    "q4": {
       "text": "The state should use public works programmes to reduce unemployment.",
       "axis": "economic_left_right"
     },
-    "q6": {
+    "q5": {
       "text": "Healthcare should be universally publicly funded, with basic services free at point of use.",
       "axis": "economic_left_right"
     },
-    "q7": {
+    "q6": {
       "text": "Higher education should be free for all students, even if it requires higher taxes.",
       "axis": "economic_left_right"
     },
-    "q8": {
+    "q7": {
       "text": "The state should provide strong subsidies for childcare to support working parents.",
       "axis": "economic_left_right"
     },
+    "q8": {
+      "text": "Industrial policy should include protective measures and subsidies for emerging black-owned and worker-owned enterprises.",
+      "axis": "economic_left_right"
+    },
     "q9": {
-      "text": "Local government should be professionally staffed and independently audited to address municipal failures and corruption, even if this limits political appointments.",
-      "axis": "democratic_institutions"
+      "text": "The government should actively support small and medium businesses with tax breaks and deregulation.",
+      "axis": "state_vs_market"
     },
     "q10": {
       "text": "Key public utilities (power, water, rail) should remain publicly owned and not be privatised.",
       "axis": "state_vs_market"
     },
     "q11": {
+      "text": "Private companies should be allowed to generate and sell electricity to end load-shedding, even if this reduces Eskom\u0027s role.",
+      "axis": "state_vs_market"
+    },
+    "q12": {
+      "text": "Water supply and sanitation services should remain primarily state-controlled rather than be opened to private operators.",
+      "axis": "state_vs_market"
+    },
+    "q13": {
       "text": "Expropriation of land without market-rate compensation should be allowed to speed up land reform.",
       "axis": "land_and_ownership"
     },
-    "q12": {
+    "q14": {
       "text": "Smallholder farming and communal land rights should receive priority policy support over large commercial agribusiness.",
       "axis": "land_and_ownership"
     },
-    "q13": {
+    "q15": {
+      "text": "Community-owned agricultural initiatives and cooperative farming models should be actively supported by government policy and funding.",
+      "axis": "land_and_ownership"
+    },
+    "q16": {
+      "text": "Traditional and indigenous land rights should be legally recognised and protected, even if this conflicts with existing property titles.",
+      "axis": "land_and_ownership"
+    },
+    "q17": {
       "text": "Workers should have stronger rights to unionise and strike, with fewer restrictions.",
       "axis": "labour_rights"
     },
-    "q14": {
+    "q18": {
       "text": "Minimum wages should be increased significantly to reduce in-work poverty, even if some small businesses struggle.",
       "axis": "labour_rights"
     },
-    "q15": {
+    "q19": {
       "text": "Labour market flexibility (easier hiring and firing) will increase investment and should be encouraged.",
       "axis": "labour_rights"
     },
-    "q16": {
+    "q20": {
+      "text": "Workplace rights such as paid leave, sick leave, and severance pay should be strengthened and actively enforced across all sectors.",
+      "axis": "labour_rights"
+    },
+    "q21": {
       "text": "Police should be given stronger powers and resources to tackle violent crime, even if it expands state authority.",
       "axis": "law_order_vs_liberty"
     },
-    "q17": {
-      "text": "Independent oversight institutions (judiciary, prosecution) should be protected even if it slows prosecutions of powerful officials.",
-      "axis": "democratic_institutions"
-    },
-    "q18": {
-      "text": "Corruption prosecutions should be fast and aggressive even if they cause short-term instability in government.",
-      "axis": "democratic_institutions"
-    },
-    "q19": {
+    "q22": {
       "text": "Freedom of expression and peaceful protest should be prioritised even when demonstrations disrupt economic activity.",
       "axis": "law_order_vs_liberty"
     },
-    "q20": {
-      "text": "The state should enforce LGBTQ+ anti-discrimination protections and inclusion policies.",
-      "axis": "social_progressivism"
-    },
-    "q21": {
-      "text": "South Africa should set legally binding targets to cut greenhouse gas emissions and phase out coal power.",
-      "axis": "environment_energy"
-    },
-    "q22": {
-      "text": "The state should prioritise investment in renewable energy to reduce dependence on coal power.",
-      "axis": "environment_energy"
-    },
     "q23": {
-      "text": "Environmental protection laws should take priority over new mineral and coal developments.",
-      "axis": "environment_energy"
-    },
-    "q24": {
-      "text": "South Africa should prioritise export-led growth through stronger trade links with international markets.",
-      "axis": "global_vs_local"
-    },
-    "q25": {
-      "text": "South Africa should prioritise stronger ties with Global South countries over alignment with Western powers.",
-      "axis": "global_vs_local"
-    },
-    "q26": {
-      "text": "Trade policy should prioritise protecting local industries through tariffs and local content rules.",
-      "axis": "global_vs_local"
-    },
-    "q27": {
-      "text": "Transport infrastructure funding should prioritise mass public transit over new highway construction, even if this inconveniences motorists.",
-      "axis": "urban_development"
-    },
-    "q28": {
-      "text": "Affordable public housing projects should be prioritised over incentives for private housing developers.",
-      "axis": "urban_development"
-    },
-    "q29": {
-      "text": "Cities should be legally required to restrict low-density, car-dependent developments and mandate walkable, mixed-use neighbourhoods—even if this limits property rights.",
-      "axis": "urban_development"
-    },
-    "q30": {
       "text": "South Africa should adopt strong digital privacy laws limiting corporate and state surveillance.",
       "axis": "law_order_vs_liberty"
     },
-    "q31": {
-      "text": "Food security should be achieved through a national strategy supporting local production, agroecology and community gardens.",
-      "axis": "transformation_vs_continuity"
-    },
-    "q32": {
-      "text": "Government departments must meet strict accessibility standards for people with disabilities, even if this impacts other services.",
-      "axis": "equity_and_inclusion"
-    },
-    "q33": {
-      "text": "The state should introduce targeted subsidies and incentives to accelerate township and rural economies.",
-      "axis": "equity_and_inclusion"
-    },
-    "q34": {
-      "text": "South Africa should adopt stricter immigration and border enforcement policies, even if this strains relations with neighbouring countries.",
-      "axis": "global_vs_local"
-    },
-    "q35": {
-      "text": "Government should more aggressively regulate the employment of undocumented foreign nationals, even if this disrupts industries that rely on migrant labour.",
-      "axis": "global_vs_local"
-    },
-    "q36": {
-      "text": "Political parties should compromise on their ideological positions to form stable coalition governments, even if this disappoints some supporters.",
-      "axis": "democratic_institutions"
-    },
-    "q37": {
-      "text": "Policies such as Employment Equity and BEE should remain central tools for addressing racial inequality, even if they limit flexibility for businesses.",
-      "axis": "equity_and_inclusion"
-    },
-    "q38": {
-      "text": "Private companies should be allowed to generate and sell electricity to end load-shedding, even if this reduces Eskom's role.",
-      "axis": "state_vs_market"
-    },
-    "q39": {
-      "text": "National government should intervene more aggressively in failing municipalities, even if this limits local democratic autonomy.",
-      "axis": "democratic_institutions"
-    },
-    "q40": {
+    "q24": {
       "text": "Disruptive protests and shutdowns should face stronger legal limits, even if this restricts certain forms of political expression.",
       "axis": "law_order_vs_liberty"
     },
-    "q41": {
+    "q25": {
+      "text": "Local government should be professionally staffed and independently audited to address municipal failures and corruption, even if this limits political appointments.",
+      "axis": "democratic_institutions"
+    },
+    "q26": {
+      "text": "Independent oversight institutions (judiciary, prosecution) should be protected even if it slows prosecutions of powerful officials.",
+      "axis": "democratic_institutions"
+    },
+    "q27": {
+      "text": "Corruption prosecutions should be fast and aggressive even if they cause short-term instability in government.",
+      "axis": "democratic_institutions"
+    },
+    "q28": {
+      "text": "Political parties should compromise on their ideological positions to form stable coalition governments, even if this disappoints some supporters.",
+      "axis": "democratic_institutions"
+    },
+    "q29": {
+      "text": "National government should intervene more aggressively in failing municipalities, even if this limits local democratic autonomy.",
+      "axis": "democratic_institutions"
+    },
+    "q30": {
       "text": "Political leaders who publicly undermine the judiciary, electoral bodies, or the Constitution should face consequences.",
       "axis": "democratic_institutions"
+    },
+    "q31": {
+      "text": "South Africa should set legally binding targets to cut greenhouse gas emissions and phase out coal power.",
+      "axis": "environment_energy"
+    },
+    "q32": {
+      "text": "The state should prioritise investment in renewable energy to reduce dependence on coal power.",
+      "axis": "environment_energy"
+    },
+    "q33": {
+      "text": "Environmental protection laws should take priority over new mineral and coal developments.",
+      "axis": "environment_energy"
+    },
+    "q34": {
+      "text": "The state should enforce LGBTQ+ anti-discrimination protections and inclusion policies.",
+      "axis": "social_progressivism"
+    },
+    "q35": {
+      "text": "The state should actively promote gender equality through mandatory parental leave policies and workplace anti-discrimination enforcement.",
+      "axis": "social_progressivism"
+    },
+    "q36": {
+      "text": "South Africa should prioritise export-led growth through stronger trade links with international markets.",
+      "axis": "global_vs_local"
+    },
+    "q37": {
+      "text": "South Africa should prioritise stronger ties with Global South countries over alignment with Western powers.",
+      "axis": "global_vs_local"
+    },
+    "q38": {
+      "text": "Trade policy should prioritise protecting local industries through tariffs and local content rules.",
+      "axis": "global_vs_local"
+    },
+    "q39": {
+      "text": "South Africa should adopt stricter immigration and border enforcement policies, even if this strains relations with neighbouring countries.",
+      "axis": "global_vs_local"
+    },
+    "q40": {
+      "text": "Government should more aggressively regulate the employment of undocumented foreign nationals, even if this disrupts industries that rely on migrant labour.",
+      "axis": "global_vs_local"
+    },
+    "q41": {
+      "text": "Food security should be achieved through a national strategy supporting local production, agroecology and community gardens.",
+      "axis": "transformation_vs_continuity"
+    },
+    "q42": {
+      "text": "South Africa should prioritise radical restructuring of the economy and labour market over gradual, market-driven reforms.",
+      "axis": "transformation_vs_continuity"
+    },
+    "q43": {
+      "text": "The apartheid-era legacy should be addressed through incremental institutional reforms rather than sweeping systemic overhauls.",
+      "axis": "transformation_vs_continuity"
+    },
+    "q44": {
+      "text": "Transport infrastructure funding should prioritise mass public transit over new highway construction, even if this inconveniences motorists.",
+      "axis": "urban_development"
+    },
+    "q45": {
+      "text": "Affordable public housing projects should be prioritised over incentives for private housing developers.",
+      "axis": "urban_development"
+    },
+    "q46": {
+      "text": "Cities should be legally required to restrict low-density, car-dependent developments and mandate walkable, mixed-use neighbourhoods—even if this limits property rights.",
+      "axis": "urban_development"
+    },
+    "q47": {
+      "text": "Government departments must meet strict accessibility standards for people with disabilities, even if this impacts other services.",
+      "axis": "equity_and_inclusion"
+    },
+    "q48": {
+      "text": "The state should introduce targeted subsidies and incentives to accelerate township and rural economies.",
+      "axis": "equity_and_inclusion"
+    },
+    "q49": {
+      "text": "Policies such as Employment Equity and BEE should remain central tools for addressing racial inequality, even if they limit flexibility for businesses.",
+      "axis": "equity_and_inclusion"
+    },
+    "q50": {
+      "text": "Skills development programmes should be targeted at historically disadvantaged individuals to accelerate economic participation.",
+      "axis": "equity_and_inclusion"
     }
   },
   "footer": {

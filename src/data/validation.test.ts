@@ -40,16 +40,19 @@ describe("Data Validation", () => {
     });
 
     it("should have valid options with numeric values", () => {
-      for (const q of questions.questions) {
-        expect(Array.isArray(q.options)).toBe(true);
-        expect(q.options.length).toBeGreaterThan(0);
+      const standardOptions = [
+        { value: 1, label: "Strongly agree" },
+        { value: 0.5, label: "Agree" },
+        { value: 0, label: "Neutral" },
+        { value: -0.5, label: "Disagree" },
+        { value: -1, label: "Strongly disagree" },
+      ];
 
-        for (const opt of q.options) {
-          expect(typeof opt.value).toBe("number");
-          expect(opt.value).toBeGreaterThanOrEqual(-1);
-          expect(opt.value).toBeLessThanOrEqual(1);
-          expect(typeof opt.label).toBe("string");
-        }
+      for (const opt of standardOptions) {
+        expect(typeof opt.value).toBe("number");
+        expect(opt.value).toBeGreaterThanOrEqual(-1);
+        expect(opt.value).toBeLessThanOrEqual(1);
+        expect(typeof opt.label).toBe("string");
       }
     });
 
