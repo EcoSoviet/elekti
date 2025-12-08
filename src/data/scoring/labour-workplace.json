@@ -1,5 +1,6 @@
 [
   {
+    "qId": "q13",
     "text": "Workers should have stronger rights to unionise and strike, with fewer restrictions.",
     "category": "labour & workplace",
     "weight": 1.6,
@@ -84,10 +85,10 @@
           "sacp": -0.9
         }
       }
-    ],
-    "qId": "q13"
+    ]
   },
   {
+    "qId": "q14",
     "text": "Minimum wages should be increased significantly to reduce in-work poverty, even if some small businesses struggle.",
     "category": "labour & workplace",
     "weight": 1.5,
@@ -172,10 +173,10 @@
           "sacp": -0.9
         }
       }
-    ],
-    "qId": "q14"
+    ]
   },
   {
+    "qId": "q15",
     "text": "Labour market flexibility (easier hiring and firing) will increase investment and should be encouraged.",
     "category": "labour & workplace",
     "weight": 1.4,
@@ -260,10 +261,10 @@
           "sacp": 0.9
         }
       }
-    ],
-    "qId": "q15"
+    ]
   },
   {
+    "qId": "q35",
     "text": "Government should more aggressively regulate the employment of undocumented foreign nationals, even if this disrupts industries that rely on migrant labour.",
     "category": "labour & workplace",
     "weight": 1.4,
@@ -348,7 +349,6 @@
           "sacp": 0.7
         }
       }
-    ],
-    "qId": "q35"
+    ]
   }
 ]

@@ -1,5 +1,6 @@
 [
   {
+    "qId": "q33",
     "text": "The state should introduce targeted subsidies and incentives to accelerate township and rural economies.",
     "category": "economic inclusion",
     "weight": 1.4,
@@ -84,10 +85,10 @@
           "sacp": -0.8
         }
       }
-    ],
-    "qId": "q33"
+    ]
   },
   {
+    "qId": "q37",
     "text": "Policies such as Employment Equity and BEE should remain central tools for addressing racial inequality, even if they limit flexibility for businesses.",
     "category": "economic inclusion",
     "weight": 1.8,
@@ -172,7 +173,6 @@
           "sacp": -0.9
         }
       }
-    ],
-    "qId": "q37"
+    ]
   }
 ]

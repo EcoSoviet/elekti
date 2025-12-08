@@ -1,5 +1,4 @@
 import crimeInstitutions from "./crime-institutions.json";
-import cultureIdentity from "./culture-identity.json";
 import digitalTech from "./digital-tech.json";
 import economicInclusion from "./economic-inclusion.json";
 import economyFiscal from "./economy-fiscal.json";
@@ -27,5 +26,4 @@ export default [
   ...foodAgriculture,
   ...socialInclusion,
   ...economicInclusion,
-  ...cultureIdentity,
 ];

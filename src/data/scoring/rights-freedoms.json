@@ -1,5 +1,6 @@
 [
   {
+    "qId": "q19",
     "text": "Civil liberties such as freedom of expression and peaceful protest must be prioritised even if they complicate policing.",
     "category": "rights & freedoms",
     "weight": 1.6,
@@ -84,10 +85,10 @@
           "sacp": -0.8
         }
       }
-    ],
-    "qId": "q19"
+    ]
   },
   {
+    "qId": "q20",
     "text": "The state should actively promote LGBTQ+ anti-discrimination protections and inclusion policies.",
     "category": "rights & freedoms",
     "weight": 1.5,
@@ -172,10 +173,10 @@
           "sacp": -0.7
         }
       }
-    ],
-    "qId": "q20"
+    ]
   },
   {
+    "qId": "q40",
     "text": "Disruptive protests and shutdowns should face stronger legal limits, even if this restricts certain forms of political expression.",
     "category": "rights & freedoms",
     "weight": 1.7,
@@ -260,7 +261,6 @@
           "sacp": 0.9
         }
       }
-    ],
-    "qId": "q40"
+    ]
   }
 ]

@@ -5,7 +5,7 @@
 - Vue 3 SPA with Landing → Quiz → Results (+ About) routes in `src/router/index.ts` and `src/views/*`; Pinia stores (`quizStore`, `uiStore`) keep components thin.
 - `quizStore` **auto-discovers questions from translation keys** (q1…qN) via `i18n`, sorted numerically and thrown immediately if missing so localization drift is caught early.
 - Answers stored as `Record<questionId, optionIndex>` (0=Strongly Agree … 4=Strongly Disagree) and synced to URLs via `encodeAnswersToUrl`/`loadAnswersFromUrl`—keep indices stable.
-- Scoring pulls 14 merged topic files from `src/data/scoring/index.ts` (ordered: economy-fiscal → culture-identity), weights answers, and pairs with 11 parties from `src/data/parties.json`; Results expect a fully computed `QuizResult`.
+- Scoring pulls 14 merged topic files from `src/data/scoring/index.ts`, weights answers, and pairs with 11 parties from `src/data/parties.json`; Results expect a fully computed `QuizResult`.
 - Styling uses bespoke tokens in `src/styles/theme.css`; reuse variables instead of raw colors/spacing.
 
 ## Stores & Data Contracts

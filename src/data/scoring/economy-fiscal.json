@@ -1,5 +1,6 @@
 [
   {
+    "qId": "q1",
     "text": "The government should raise taxes on the wealthy to fund expanded social programmes (health, education, social grants).",
     "category": "economy & fiscal",
     "weight": 2,
@@ -84,10 +85,10 @@
           "sacp": -0.9
         }
       }
-    ],
-    "qId": "q1"
+    ]
   },
   {
+    "qId": "q2",
     "text": "Fiscal discipline and reducing public debt should be prioritised even if it limits new social spending.",
     "category": "economy & fiscal",
     "weight": 1.8,
@@ -172,10 +173,10 @@
           "sacp": 0.9
         }
       }
-    ],
-    "qId": "q2"
+    ]
   },
   {
+    "qId": "q3",
     "text": "The government should actively support small and medium businesses with tax breaks and deregulation to spur growth.",
     "category": "economy & fiscal",
     "weight": 1.6,
@@ -260,10 +261,10 @@
           "sacp": 0.3
         }
       }
-    ],
-    "qId": "q3"
+    ]
   },
   {
+    "qId": "q4",
     "text": "The state should introduce a universal basic income as a national policy.",
     "category": "economy & fiscal",
     "weight": 1.5,
@@ -348,10 +349,10 @@
           "sacp": -0.9
         }
       }
-    ],
-    "qId": "q4"
+    ]
   },
   {
+    "qId": "q5",
     "text": "Public investment in job-rich public works programmes is a suitable short-term method to reduce unemployment.",
     "category": "economy & fiscal",
     "weight": 1.7,
@@ -436,7 +437,6 @@
           "sacp": -0.8
         }
       }
-    ],
-    "qId": "q5"
+    ]
   }
 ]

@@ -1,5 +1,6 @@
 [
   {
+    "qId": "q21",
     "text": "South Africa should set legally binding national targets to cut greenhouse gas emissions and phase out coal power over time.",
     "category": "environment & energy",
     "weight": 1.5,
@@ -84,10 +85,10 @@
           "sacp": -0.8
         }
       }
-    ],
-    "qId": "q21"
+    ]
   },
   {
+    "qId": "q22",
     "text": "The state should prioritise investment in renewable energy and energy efficiency to reduce dependence on Eskom/coal.",
     "category": "environment & energy",
     "weight": 1.8,
@@ -172,10 +173,10 @@
           "sacp": -0.8
         }
       }
-    ],
-    "qId": "q22"
+    ]
   },
   {
+    "qId": "q23",
     "text": "Environmental protection laws should take priority over new mineral and coal developments.",
     "category": "environment & energy",
     "weight": 1.5,
@@ -260,10 +261,10 @@
           "sacp": -0.8
         }
       }
-    ],
-    "qId": "q23"
+    ]
   },
   {
+    "qId": "q38",
     "text": "Private companies should be allowed to generate and sell electricity widely to end load-shedding, even if this reduces Eskom's central role in the energy sector.",
     "category": "environment & energy",
     "weight": 1.9,
@@ -348,7 +349,6 @@
           "sacp": 0.95
         }
       }
-    ],
-    "qId": "q38"
+    ]
   }
 ]

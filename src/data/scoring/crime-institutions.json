@@ -1,5 +1,6 @@
 [
   {
+    "qId": "q16",
     "text": "Police should be given stronger powers and resources to tackle violent crime, even if it expands state authority.",
     "category": "crime & institutions",
     "weight": 2,
@@ -84,10 +85,10 @@
           "sacp": 0.8
         }
       }
-    ],
-    "qId": "q16"
+    ]
   },
   {
+    "qId": "q17",
     "text": "Independent oversight institutions (judiciary, prosecution) should be protected even if it slows prosecutions of powerful officials.",
     "category": "crime & institutions",
     "weight": 1.8,
@@ -172,10 +173,10 @@
           "sacp": -0.9
         }
       }
-    ],
-    "qId": "q17"
+    ]
   },
   {
+    "qId": "q18",
     "text": "Corruption prosecutions should be fast and aggressive even if they cause short-term instability in government.",
     "category": "crime & institutions",
     "weight": 1.9,
@@ -260,10 +261,10 @@
           "sacp": -0.7
         }
       }
-    ],
-    "qId": "q18"
+    ]
   },
   {
+    "qId": "q36",
     "text": "Political parties should compromise on their ideological positions to form stable coalition governments, even if this disappoints some supporters.",
     "category": "crime & institutions",
     "weight": 1.3,
@@ -348,10 +349,10 @@
           "sacp": 0.7
         }
       }
-    ],
-    "qId": "q36"
+    ]
   },
   {
+    "qId": "q41",
     "text": "Political leaders who publicly undermine the judiciary, electoral bodies, or the Constitution should face formal consequences, even if their statements are framed as political speech.",
     "category": "crime & institutions",
     "weight": 1.9,
@@ -436,7 +437,6 @@
           "sacp": -0.2
         }
       }
-    ],
-    "qId": "q41"
+    ]
   }
 ]
