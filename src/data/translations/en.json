@@ -143,19 +143,19 @@
       "axis": "economic_left_right"
     },
     "q3": {
-      "text": "The government should actively support small and medium businesses with tax breaks and deregulation to spur growth.",
+      "text": "The government should actively support small and medium businesses with tax breaks and deregulation.",
       "axis": "state_vs_market"
     },
     "q4": {
-      "text": "The state should introduce a universal basic income as a national policy.",
+      "text": "The state should introduce a universal basic income for all citizens.",
       "axis": "economic_left_right"
     },
     "q5": {
-      "text": "Public investment in job-rich public works programmes is a suitable short-term method to reduce unemployment.",
+      "text": "The state should use public works programmes to reduce unemployment.",
       "axis": "economic_left_right"
     },
     "q6": {
-      "text": "Healthcare should be universally publicly funded (basic services free at point of use).",
+      "text": "Healthcare should be universally publicly funded, with basic services free at point of use.",
       "axis": "economic_left_right"
     },
     "q7": {
@@ -167,7 +167,7 @@
       "axis": "economic_left_right"
     },
     "q9": {
-      "text": "Local government should be professionally staffed and independently audited to address chronic municipal failures and reduce corruption, even if this limits political appointments or triggers national intervention.",
+      "text": "Local government should be professionally staffed and independently audited to address municipal failures and corruption, even if this limits political appointments.",
       "axis": "democratic_institutions"
     },
     "q10": {
@@ -207,19 +207,19 @@
       "axis": "democratic_institutions"
     },
     "q19": {
-      "text": "Civil liberties such as freedom of expression and peaceful protest should be prioritised even when demonstrations disrupt traffic or economic activity and complicate policing operations.",
+      "text": "Freedom of expression and peaceful protest should be prioritised even when demonstrations disrupt economic activity.",
       "axis": "law_order_vs_liberty"
     },
     "q20": {
-      "text": "The state should actively promote LGBTQ+ anti-discrimination protections and inclusion policies.",
+      "text": "The state should enforce LGBTQ+ anti-discrimination protections and inclusion policies.",
       "axis": "social_progressivism"
     },
     "q21": {
-      "text": "South Africa should set legally binding national targets to cut greenhouse gas emissions and phase out coal power over time.",
+      "text": "South Africa should set legally binding targets to cut greenhouse gas emissions and phase out coal power.",
       "axis": "environment_energy"
     },
     "q22": {
-      "text": "The state should prioritise investment in renewable energy and energy efficiency to reduce dependence on Eskom/coal.",
+      "text": "The state should prioritise investment in renewable energy to reduce dependence on coal power.",
       "axis": "environment_energy"
     },
     "q23": {
@@ -231,7 +231,7 @@
       "axis": "global_vs_local"
     },
     "q25": {
-      "text": "South Africa should prioritise building stronger strategic ties with other Global South countries over exclusive alignment with Western powers.",
+      "text": "South Africa should prioritise stronger ties with Global South countries over alignment with Western powers.",
       "axis": "global_vs_local"
     },
     "q26": {
@@ -239,7 +239,7 @@
       "axis": "global_vs_local"
     },
     "q27": {
-      "text": "Public funds for transport infrastructure should prioritise mass public transit (rail and BRT) over new highway construction, including major expansions in Gauteng, even if this inconveniences motorists or slows growth in car-dependent areas.",
+      "text": "Transport infrastructure funding should prioritise mass public transit over new highway construction, even if this inconveniences motorists.",
       "axis": "urban_development"
     },
     "q28": {
@@ -247,7 +247,7 @@
       "axis": "urban_development"
     },
     "q29": {
-      "text": "Cities should be required by law to restrict new low-density, car-dependent developments and enforce zoning rules that mandate walkable, mixed-use neighborhoods—even if this limits private property rights or increases housing costs.",
+      "text": "Cities should be legally required to restrict low-density, car-dependent developments and mandate walkable, mixed-use neighbourhoods—even if this limits property rights.",
       "axis": "urban_development"
     },
     "q30": {
@@ -259,7 +259,7 @@
       "axis": "transformation_vs_continuity"
     },
     "q32": {
-      "text": "Government departments should be legally required to meet strict accessibility standards for people with disabilities, even if this means diverting funds from other public services or increasing regulatory burdens.",
+      "text": "Government departments must meet strict accessibility standards for people with disabilities, even if this impacts other services.",
       "axis": "equity_and_inclusion"
     },
     "q33": {
@@ -267,7 +267,7 @@
       "axis": "equity_and_inclusion"
     },
     "q34": {
-      "text": "South Africa should adopt significantly stricter immigration and border enforcement policies, even if this strains relations with neighbouring countries or reduces labour supply in certain sectors.",
+      "text": "South Africa should adopt stricter immigration and border enforcement policies, even if this strains relations with neighbouring countries.",
       "axis": "global_vs_local"
     },
     "q35": {
@@ -283,7 +283,7 @@
       "axis": "equity_and_inclusion"
     },
     "q38": {
-      "text": "Private companies should be allowed to generate and sell electricity widely to end load-shedding, even if this reduces Eskom's central role in the energy sector.",
+      "text": "Private companies should be allowed to generate and sell electricity to end load-shedding, even if this reduces Eskom's role.",
       "axis": "state_vs_market"
     },
     "q39": {
@@ -295,7 +295,7 @@
       "axis": "law_order_vs_liberty"
     },
     "q41": {
-      "text": "Political leaders who publicly undermine the judiciary, electoral bodies, or the Constitution should face formal consequences, even if their statements are framed as political speech.",
+      "text": "Political leaders who publicly undermine the judiciary, electoral bodies, or the Constitution should face consequences.",
       "axis": "democratic_institutions"
     }
   },

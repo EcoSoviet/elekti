@@ -127,16 +127,20 @@
 
   .quiz__wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: var(--space-xl);
     width: 100%;
     max-width: 900px;
+    min-height: 500px;
   }
 
   .quiz__container {
     flex: 1;
     max-width: 700px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
   }
 
   .quiz__header {
@@ -145,7 +149,9 @@
 
   .quiz__content {
     margin-bottom: var(--space-xl);
-    min-height: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     animation: fadeIn 0.4s ease-out;
     transition: opacity 0.25s ease-out;
   }

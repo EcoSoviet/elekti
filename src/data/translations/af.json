@@ -143,19 +143,19 @@
       "axis": "economic_left_right"
     },
     "q3": {
-      "text": "Die regering moet klein en medium ondernemings aktief ondersteun met belastingvermindering en deregulering om groei aan te moedig.",
+      "text": "Die regering moet klein en medium ondernemings aktief ondersteun met belastingvermindering en deregulering.",
       "axis": "state_vs_market"
     },
     "q4": {
-      "text": "Die staat moet 'n onvoorwaardelike basiese inkomste vir alle burgers implementeer.",
+      "text": "Die staat moet 'n basiese inkomste vir alle burgers implementeer.",
       "axis": "economic_left_right"
     },
     "q5": {
-      "text": "Openbare belegging in werkryke openbare werksprogramme is 'n geskikte korttermynmetode om werkloosheid te verminder.",
+      "text": "Die staat moet openbare werksprogramme gebruik om werkloosheid te verminder.",
       "axis": "economic_left_right"
     },
     "q6": {
-      "text": "Gesondheidsorg moet universeel en publiek befonds word (basiese dienste gratis by gebruikspunt).",
+      "text": "Gesondheidsorg moet universeel en publiek befonds word, met basiese dienste gratis by gebruikspunt.",
       "axis": "economic_left_right"
     },
     "q7": {
@@ -167,7 +167,7 @@
       "axis": "economic_left_right"
     },
     "q9": {
-      "text": "Plaaslike regering moet professioneel beman en onafhanklik geoudit word om chroniese munisipale mislukkings aan te spreek en korrupsie te verminder, selfs al beperk dit politieke aanstellings of veroorsaak nasionale ingryping.",
+      "text": "Plaaslike regering moet professioneel beman en onafhanklik geoudit word om munisipale mislukkings en korrupsie aan te spreek, selfs al beperk dit politieke aanstellings.",
       "axis": "democratic_institutions"
     },
     "q10": {
@@ -207,19 +207,19 @@
       "axis": "democratic_institutions"
     },
     "q19": {
-      "text": "Burgerlike vryhede soos vryheid van uitdrukking en vreedsame protesaksie moet geprioritiseer word, selfs wanneer demonstrasies verkeer of ekonomiese aktiwiteit ontwrig en polisie-operasies bemoeilik.",
+      "text": "Vryheid van uitdrukking en vreedsame protesaksie moet geprioritiseer word, selfs wanneer demonstrasies ekonomiese aktiwiteit ontwrig.",
       "axis": "law_order_vs_liberty"
     },
     "q20": {
-      "text": "Die staat moet aktief LGBTQ+-anti-diskriminasiewette en inklusiwiteitsbeleid bevorder.",
+      "text": "Die staat moet LGBTQ+-anti-diskriminasiewette en inklusiwiteitsbeleid afdwing.",
       "axis": "social_progressivism"
     },
     "q21": {
-      "text": "Suid-Afrika moet wetlik bindende nasionale teikens stel om kweekhuisgasvrystellings te sny en steenkoolkrag oor tyd uit te faseer.",
+      "text": "Suid-Afrika moet wetlik bindende teikens stel om kweekhuisgasvrystellings te sny en steenkoolkrag uit te faseer.",
       "axis": "environment_energy"
     },
     "q22": {
-      "text": "Die staat moet belegging in hernubare energie en energiedoeltreffendheid prioritiseer om afhanklikheid van Eskom/steenkool te verminder.",
+      "text": "Die staat moet belegging in hernubare energie prioritiseer om afhanklikheid van steenkoolkrag te verminder.",
       "axis": "environment_energy"
     },
     "q23": {
@@ -231,7 +231,7 @@
       "axis": "global_vs_local"
     },
     "q25": {
-      "text": "Suid-Afrika moet strategiee ontwikkel om sterker bande met ander Global South-lande te bou eerder as eksklusiewe belyning met Westerse moondhede.",
+      "text": "Suid-Afrika moet sterker bande met Global South-lande prioritiseer bo belyning met Westerse moondhede.",
       "axis": "global_vs_local"
     },
     "q26": {
@@ -239,7 +239,7 @@
       "axis": "global_vs_local"
     },
     "q27": {
-      "text": "Openbare fondse vir vervoerinfrastruktuur moet massa-openbare vervoer (spoor en BRT) prioritiseer bo nuwe hoofwee-konstruksie, insluitend groot uitbreidings in Gauteng, selfs al ongerief dit motoriste of vertraag groei in motorafhanklike gebiede.",
+      "text": "Vervoerinfrastruktuur-befondsing moet massa-openbare vervoer bo nuwe hoofwee-konstruksie prioritiseer, selfs al ongerief dit motoriste.",
       "axis": "urban_development"
     },
     "q28": {
@@ -247,7 +247,7 @@
       "axis": "urban_development"
     },
     "q29": {
-      "text": "Stede moet wetlik verplig word om nuwe lae-digtheid, motorafhanklike ontwikkelings te beperk en soneringswette af te dwing wat loopbare, gemengde-gebruik buurte mandateer—selfs al beperk dit private eiendomsregte of verhoog dit behuisingskoste.",
+      "text": "Stede moet wetlik verplig word om lae-digtheid, motorafhanklike ontwikkelings te beperk en loopbare, gemengde-gebruik buurte te mandateer—selfs al beperk dit eiendomsregte.",
       "axis": "urban_development"
     },
     "q30": {
@@ -259,7 +259,7 @@
       "axis": "transformation_vs_continuity"
     },
     "q32": {
-      "text": "Regeringsdepartemente moet wetlik verplig word om streng toeganklikheidstandaarde vir mense met gestremdhede na te kom, selfs as dit beteken dat fondse van ander openbare dienste afgewentel word of regulere laste verhoog word.",
+      "text": "Regeringsdepartemente moet streng toeganklikheidstandaarde vir mense met gestremdhede nakom, selfs as dit ander dienste beïnvloed.",
       "axis": "equity_and_inclusion"
     },
     "q33": {
@@ -267,7 +267,7 @@
       "axis": "equity_and_inclusion"
     },
     "q34": {
-      "text": "Suid-Afrika moet aansienlik strenger immigrasie- en grenstoesigbeleide aanvaar, selfs al span dit betrekkinge met buurlande of verminder arbeidsverskaffing in sekere sektore.",
+      "text": "Suid-Afrika moet strenger immigrasie- en grenstoesigbeleide aanvaar, selfs al span dit betrekkinge met buurlande.",
       "axis": "global_vs_local"
     },
     "q35": {
@@ -283,7 +283,7 @@
       "axis": "equity_and_inclusion"
     },
     "q38": {
-      "text": "Private maatskappye moet toegelaat word om elektrisiteit wyd te genereer en te verkoop om beurtkrag te beëindig, selfs al verminder dit Eskom se sentrale rol in die energiesektor.",
+      "text": "Private maatskappye moet toegelaat word om elektrisiteit te genereer en te verkoop om beurtkrag te beëindig, selfs al verminder dit Eskom se rol.",
       "axis": "state_vs_market"
     },
     "q39": {
@@ -295,7 +295,7 @@
       "axis": "law_order_vs_liberty"
     },
     "q41": {
-      "text": "Politieke leiers wat die regbank, verkiesingsliggame, of die Grondwet openlik ondermyn, moet formele gevolge in die gesig staar, selfs al is hul stellings as politieke spraak geraam.",
+      "text": "Politieke leiers wat die regbank, verkiesingsliggame, of die Grondwet openlik ondermyn, moet gevolge in die gesig staar.",
       "axis": "democratic_institutions"
     }
   },

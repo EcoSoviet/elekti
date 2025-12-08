@@ -81,6 +81,10 @@
     color: var(--color-text-primary);
     margin-bottom: var(--space-sm);
     line-height: var(--line-height-snug);
+    height: 6em;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
     animation: fadeInUp 0.5s ease-out;
   }
 
