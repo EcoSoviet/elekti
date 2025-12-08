@@ -96,12 +96,14 @@ export const useQuizStore = defineStore("quiz", () => {
       const answer = answers.value[q.id];
       return answer === undefined ? "" : answer.toString();
     });
-    return answerArray.join(",");
+    const joined = answerArray.join(",");
+    return btoa(joined);
   }
 
   function loadAnswersFromUrl(encoded: string): boolean {
     try {
-      const parts = encoded.split(",");
+      const decoded = atob(encoded);
+      const parts = decoded.split(",");
       const newAnswers: Record<string, number> = {};
       let hasValidAnswers = false;
 

@@ -168,23 +168,25 @@ describe("quizStore", () => {
   });
 
   describe("URL encoding/decoding", () => {
-    it("should encode answers to URL format", () => {
+    it("should encode answers to base64 format", () => {
       const store = useQuizStore();
       store.answerQuestion("q1", 0);
       store.answerQuestion("q2", 1);
       store.answerQuestion("q3", 2);
 
       const encoded = store.encodeAnswersToUrl();
-      expect(encoded).toContain("0,1,2");
+      const decoded = atob(encoded);
+      expect(decoded).toContain("0,1,2");
     });
 
-    it("should encode as comma-separated string", () => {
+    it("should encode as base64 with comma-separated values internally", () => {
       const store = useQuizStore();
       store.answerQuestion("q1", 0);
       store.answerQuestion("q2", 1);
 
       const encoded = store.encodeAnswersToUrl();
-      const parts = encoded.split(",");
+      const decoded = atob(encoded);
+      const parts = decoded.split(",");
       expect(parts.length).toBe(41);
       expect(parts[0]).toBe("0");
       expect(parts[1]).toBe("1");
@@ -196,17 +198,19 @@ describe("quizStore", () => {
       store.answerQuestion("q3", 4);
 
       const encoded = store.encodeAnswersToUrl();
-      const parts = encoded.split(",");
+      const decoded = atob(encoded);
+      const parts = decoded.split(",");
       expect(parts[0]).toBe("2");
       expect(parts[1]).toBe("");
       expect(parts[2]).toBe("4");
     });
 
-    it("should load answers from URL format", () => {
+    it("should load answers from base64 URL format", () => {
       const store = useQuizStore();
-      const success = store.loadAnswersFromUrl(
-        "0,1,2,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
-      );
+      const plainText =
+        "0,1,2,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0";
+      const encoded = btoa(plainText);
+      const success = store.loadAnswersFromUrl(encoded);
 
       expect(success).toBe(true);
       expect(store.answers["q1"]).toBe(0);
@@ -218,9 +222,10 @@ describe("quizStore", () => {
 
     it("should skip empty answers when loading from URL", () => {
       const store = useQuizStore();
-      const success = store.loadAnswersFromUrl(
-        "0,,2,,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
-      );
+      const plainText =
+        "0,,2,,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0";
+      const encoded = btoa(plainText);
+      const success = store.loadAnswersFromUrl(encoded);
 
       expect(success).toBe(true);
       expect(store.answers["q1"]).toBe(0);
@@ -230,9 +235,10 @@ describe("quizStore", () => {
 
     it("should reject invalid option indices", () => {
       const store = useQuizStore();
-      const success = store.loadAnswersFromUrl(
-        "0,1,99,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
-      );
+      const plainText =
+        "0,1,99,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0";
+      const encoded = btoa(plainText);
+      const success = store.loadAnswersFromUrl(encoded);
 
       expect(success).toBe(true);
       expect(store.answers["q3"]).toBeUndefined();
@@ -240,9 +246,10 @@ describe("quizStore", () => {
 
     it("should set completed flag when all answers loaded", () => {
       const store = useQuizStore();
-      const allAnswers =
-        "0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1";
-      const success = store.loadAnswersFromUrl(allAnswers);
+      const plainText =
+        "0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0";
+      const encoded = btoa(plainText);
+      const success = store.loadAnswersFromUrl(encoded);
 
       expect(success).toBe(true);
       expect(store.completed).toBe(true);
@@ -250,8 +257,9 @@ describe("quizStore", () => {
 
     it("should not set completed if partial answers", () => {
       const store = useQuizStore();
-      const partialAnswers = "0,1,2,3,4,0,0,0,0,0";
-      const success = store.loadAnswersFromUrl(partialAnswers);
+      const plainText = "0,1,2,3,4,0,0,0,0,0";
+      const encoded = btoa(plainText);
+      const success = store.loadAnswersFromUrl(encoded);
 
       expect(success).toBe(true);
       expect(store.completed).toBe(false);
