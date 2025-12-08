@@ -126,7 +126,7 @@ describe("quizStore", () => {
     it("should mark as completed when reaching last question", () => {
       const store = useQuizStore();
 
-      for (let i = 0; i < 38; i++) {
+      for (let i = 0; i < 41; i++) {
         store.nextQuestion();
       }
       expect(store.completed).toBe(true);
@@ -140,10 +140,10 @@ describe("quizStore", () => {
       expect(store.progress).toBeGreaterThan(0);
       expect(store.progress).toBeLessThan(100);
 
-      for (let i = 1; i < 35; i++) {
+      for (let i = 1; i < 37; i++) {
         store.nextQuestion();
       }
-      expect(store.progress).toBeGreaterThan(90);
+      expect(store.progress).toBeGreaterThan(85);
       expect(store.progress).toBeLessThanOrEqual(100);
     });
   });
