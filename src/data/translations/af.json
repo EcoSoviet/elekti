@@ -215,76 +215,56 @@
       "category": "regte & vryhede"
     },
     "q21": {
-      "text": "Persvryheid en die beskerming van joernaliste moet versterk word, selfs al beteken dit kritiese verslagdoening oor die regering.",
-      "category": "regte & vryhede"
-    },
-    "q22": {
       "text": "Suid-Afrika moet wetlik bindende nasionale teikens stel om kweekhuisgasvrystellings te sny en steenkoolkrag oor tyd uit te faseer.",
       "category": "omgewing & energie"
     },
-    "q23": {
+    "q22": {
       "text": "Die staat moet belegging in hernubare energie en energiedoeltreffendheid prioritiseer om afhanklikheid van Eskom/steenkool te verminder.",
       "category": "omgewing & energie"
     },
-    "q24": {
+    "q23": {
       "text": "Omgewingsbeskermingswette moet prioriteit geniet bo nuwe minerale- en steenkoolontwikkeling.",
       "category": "omgewing & energie"
     },
-    "q25": {
+    "q24": {
       "text": "Suid-Afrika moet uitvoer-gedrewe groei prioritiseer deur sterker handelsbande met internasionale markte te bou.",
       "category": "buitelandse beleid & handel"
     },
-    "q26": {
+    "q25": {
       "text": "Suid-Afrika moet strategieë ontwikkel om sterker bande met ander Global South-lande te bou eerder as eksklusiewe belyning met Westerse moondhede.",
       "category": "buitelandse beleid & handel"
     },
-    "q27": {
+    "q26": {
       "text": "Handelsbeleid moet plaaslike nywerhede beskerm deur tariewe en plaaslike inhoudsreëls te prioritiseer.",
       "category": "buitelandse beleid & handel"
     },
-    "q28": {
+    "q27": {
       "text": "Openbare fondse vir vervoerinfrastruktuur moet eksklusief aan massa-openbare vervoer (spoor en snelbusvervoer) toegewys word, met 'n moratorium op nuwe hoofweëkonstruksie—selfs al ongerief dit motoriste of vertraag ekonomiese groei in motorafhanklike streke.",
       "category": "infrastruktuur & stedelik"
     },
-    "q29": {
+    "q28": {
       "text": "Bekostigbare openbare behuising moet bo aansporings vir private ontwikkelaars geprioritiseer word.",
       "category": "infrastruktuur & stedelik"
     },
-    "q30": {
+    "q29": {
       "text": "Stede moet wetlik verplig word om nuwe lae-digtheid, motorafhanklike ontwikkelings te beperk en soneringswette af te dwing wat loopbare, gemengde-gebruik buurte mandateer—selfs al beperk dit private eiendomsregte of verhoog dit behuisingskoste.",
       "category": "infrastruktuur & stedelik"
     },
-    "q31": {
+    "q30": {
       "text": "Suid-Afrika moet sterk digitale privaatheidswette aanvaar wat korporatiewe en staats toesig beperk.",
       "category": "digitaal & tegnologie"
     },
-    "q32": {
-      "text": "Die regering moet kunsmatige intelligensie reguleer om werk te beskerm en bevooroordeelde outomatiese besluite te voorkom.",
-      "category": "digitaal & tegnologie"
-    },
-    "q33": {
-      "text": "Wetenskap- en navorsingsbefondsing moet aansienlik verhoog word om innovasie en langtermyn groei te dryf.",
-      "category": "digitaal & tegnologie"
-    },
-    "q34": {
+    "q31": {
       "text": "Voedselsekuriteit moet deur 'n nasionale strategie bereik word wat plaaslike produksie, agro-ekologie en gemeenskaps tuine ondersteun.",
       "category": "voedsel & landbou"
     },
-    "q35": {
-      "text": "Jeugwerkloosheid vereis 'n toegewyde nasionale jeugdiens en gewaarborgde leerlingskapskemas.",
-      "category": "jeug & onderwys"
-    },
-    "q36": {
+    "q32": {
       "text": "Regeringsdepartemente moet wetlik verplig word om streng toeganklikheidstandaarde vir mense met gestremdhede na te kom, selfs as dit beteken dat fondse van ander openbare dienste afgewentel word of regulêre laste verhoog word.",
       "category": "sosiale insluiting"
     },
-    "q37": {
+    "q33": {
       "text": "Die staat moet geteikende subsidies en aansporings instel om townships en landelike ekonomieë te versnel.",
       "category": "ekonomiese insluiting"
-    },
-    "q38": {
-      "text": "Kiesers moet 'n party se rekord oor dienslewering en korrupsie swaarder weeg as ideologiese slagspreuke.",
-      "category": "stemgedrag"
     }
   },
   "footer": {

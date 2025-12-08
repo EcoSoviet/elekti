@@ -215,76 +215,56 @@
       "category": "rights & freedoms"
     },
     "q21": {
-      "text": "Inkxaso kumajelo eendaba azimeleyo kufuneka yomelezwe.",
-      "category": "rights & freedoms"
-    },
-    "q22": {
       "text": "UMzantsi Afrika kufuneka unciphise ukukhutshwa kweegesi ezitshabalalisayo.",
       "category": "environment & energy"
     },
-    "q23": {
+    "q22": {
       "text": "Kufuneka kutyalo-mali kumandla ahlaziyekayo.",
       "category": "environment & energy"
     },
-    "q24": {
+    "q23": {
       "text": "Umthetho wokukhusela indalo kufuneka uzingwe ngaphezu kweminye imisebenzi yezimbiwa.",
       "category": "environment & energy"
     },
-    "q25": {
+    "q24": {
       "text": "UMzantsi Afrika kufuneka unyuse urhwebo lwamazwe ngamazwe.",
       "category": "foreign policy & trade"
     },
-    "q26": {
+    "q25": {
       "text": "Kufuneka kuqinisekiswe ubudlelwane obomeleleyo namazwe eGlobal South.",
       "category": "foreign policy & trade"
     },
-    "q27": {
+    "q26": {
       "text": "Kufuneka kukhuselwe amashishini asekhaya.",
       "category": "foreign policy & trade"
     },
-    "q28": {
+    "q27": {
       "text": "Imali kawonke-wonke yeziseko zothutho kufuneka ibekelwe kuphela kwizithuthi zikawonke-wonke (uloliwe kunye ne-BRT), kunye nokumiselwa kokunqandwa kokwakhiwa kweendlela ezintsha—nokuba oko kuphazamisa abaqhubi beemoto okanye kucothise ukukhula koqoqosho kwimimandla exhomekeke kwiimoto.",
       "category": "infrastructure & urban"
     },
-    "q29": {
+    "q28": {
       "text": "Izindlu zikawonkewonke kufuneka zixhaswe ngakumbi.",
       "category": "infrastructure & urban"
     },
-    "q30": {
+    "q29": {
       "text": "Izixeko kufuneka zinyanzeliswe ngumthetho ukuba zinqande uphuhliso olutsha olunoxinzelelo oluphantsi, oluxhomekeke kwiimoto kwaye zinyanzelise imithetho yezoning enyanzelisa iindawo ezihambeka ngeenyawo, ezixubileyo—nokuba oko kuthintela amalungelo epropathi yabucala okanye kwandise iindleko zezindlu.",
       "category": "infrastructure & urban"
     },
-    "q31": {
+    "q30": {
       "text": "Imithetho yabucala edijithali kufuneka iqiniswe.",
       "category": "digital & tech"
     },
-    "q32": {
-      "text": "Urhulumente kufuneka alawule i-AI ukuze akhusele imisebenzi.",
-      "category": "digital & tech"
-    },
-    "q33": {
-      "text": "Imali yophando kufuneka inyuswe ukuze kuqhutyekwe uphuhliso.",
-      "category": "digital & tech"
-    },
-    "q34": {
+    "q31": {
       "text": "Ukutya kufuneka kukhuselwe ngemigaqo-nkqubo exhasa ukuvelisa kwasekhaya.",
       "category": "food & agriculture"
     },
-    "q35": {
-      "text": "Ukwenzeka kwemisebenzi yabantu abancinci kufuna iinkqubo ezikhethekileyo zesizwe.",
-      "category": "youth & education"
-    },
-    "q36": {
+    "q32": {
       "text": "Amasebe karhulumente kufuneka anyanzeliswe ngumthetho ukuba ahlangabezane nemigangatho engqongqo yokufikeleleka yabantu abakhubazekileyo, nokuba oku kuthetha ukuguqula imali ukusuka kwezinye iinkonzo zikawonke-wonke okanye ukwandisa imithwalo yolawulo.",
       "category": "social inclusion"
     },
-    "q37": {
+    "q33": {
       "text": "Kufuneka kubekho inkxaso kwiimarike zasezilalini nasezidolophini.",
       "category": "economic inclusion"
-    },
-    "q38": {
-      "text": "Abavoti kufuneka bajonge indlela amaqela aqhube ngayo kunokuba bajonge izithethanthemba.",
-      "category": "voting & behaviour"
     }
   },
   "footer": {

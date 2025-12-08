@@ -215,76 +215,56 @@
       "category": "amalungelo & inkululeko"
     },
     "q21": {
-      "text": "Inkululeko yezindaba kanye nokuvikelwa kwezintatheli kufanele kuqinisekiswe, noma ngabe umbiko ogxekayo ubhekiswe kuhulumeni.",
-      "category": "amalungelo & inkululeko"
-    },
-    "q22": {
       "text": "INingizimu Afrika kufanele ibeke imigomo ebophezela yokwehlisa ukukhishwa kwegesi elahlekisayo futhi igcine phambili ukuncishiswa kokusetshenziswa kwamalahle.",
       "category": "imvelo & amandla"
     },
-    "q23": {
+    "q22": {
       "text": "Izwe kufanele libeke phambili ukutshalwa kwezimali emandleni avuselelekayo nangokonga amandla ukuze linciphise ukuthembela kumalahle.",
       "category": "imvelo & amandla"
     },
-    "q24": {
+    "q23": {
       "text": "Imithetho yokuvikela imvelo kufanele ibekwe phambili kunokunikeza indawo yokuthuthukisa izimboni zezimbiwa namalahle.",
       "category": "imvelo & amandla"
     },
-    "q25": {
+    "q24": {
       "text": "INingizimu Afrika kufanele igxile ekukhuliseni ukuthunyelwa kwempahla njengendlela yokukhula ngokwakha ubudlelwano bokuhweba bamazwe ngamazwe.",
       "category": "inqubomgomo yangaphandle & uhwebo"
     },
-    "q26": {
+    "q25": {
       "text": "INingizimu Afrika kufanele igxile ekuqineni ubudlelwano namazwe ase-Global South kunokuxhumana kuphela namandla aseNtshonalanga.",
       "category": "inqubomgomo yangaphandle & uhwebo"
     },
-    "q27": {
+    "q26": {
       "text": "Imigomo yokuhweba kufanele ivikele imboni yasekhaya ngezintela nokuvunywa kwezinto zendalo ukuze kukhuthazwe ukukhiqiza kwangaphakathi.",
       "category": "inqubomgomo yangaphandle & uhwebo"
     },
-    "q28": {
+    "q27": {
       "text": "Izimali zikahulumeni zengqalasizinda yezokuthutha kufanele zanikelwe kuphela ezithuthweni zomphakathi (izitimela ne-BRT), ngokumiswa kokwakhiwa kwemigwaqo emikhulu emisha—ngisho noma lokhu kuphazamisa abashayeli bezimoto noma kunciphisa ukukhula komnotho ezindaweni ezithembele ezimotweni.",
       "category": "ingqalasizinda & amadolobha"
     },
-    "q29": {
+    "q28": {
       "text": "Ukuthuthukiswa kwezindlu ezishibhile kanye nezinhlelo zikahulumeni zifanele ukunikezwa inqubomgomo ephambili.",
       "category": "ingqalasizinda & amadolobha"
     },
-    "q30": {
+    "q29": {
       "text": "Amadolobha kufanele aphoqelelwe ngomthetho ukuba avimbele ukuthuthukiswa okusha okuphansi, okuncike ezimotweni futhi aphoqelele imithetho yokwehlukanisa izindawo ephoqelela izindawo ezihambeka ngezinyawo, ezixubile—ngisho noma lokhu kukhawulela amalungelo epropathi eyangasese noma kwandise izindleko zezindlu.",
       "category": "ingqalasizinda & amadolobha"
     },
-    "q31": {
+    "q30": {
       "text": "INingizimu Afrika kufanele yamukele imithetho eqinile yobumfihlo bedijithali evimbela ukugadwa yizinkampani nohulumeni.",
       "category": "idijithali & ubuchwepheshe"
     },
-    "q32": {
-      "text": "Uhulumeni kufanele alawule i-AI ukuze kuqinisekiswe ukuvikelwa kwemisebenzi nokuvikelwa ezinqumweni ezizenzakalayo ezinobandlululo.",
-      "category": "idijithali & ubuchwepheshe"
-    },
-    "q33": {
-      "text": "Uxhaso lwesayensi nocwaningo kufanele lwenyuswe ukuze kusheshiswe ukusungula izinto ezintsha nokukhula kwesikhathi eside.",
-      "category": "idijithali & ubuchwepheshe"
-    },
-    "q34": {
+    "q31": {
       "text": "Ukuphepha kokudla kufanele kufezwe ngesicwangciso sikazwelonke esisekela ukukhiqiza kwendawo, indlela yezolimo enobungane bemvelo kanye nezindonga zomphakathi.",
       "category": "ukudla & ezolimo"
     },
-    "q35": {
-      "text": "Ukungabi namsebenzi kwentsha kudinga insiza kazwelonke yokusekela nokuqinisekisa izifundo zobuchwepheshe nokuqeqeshwa.",
-      "category": "intsha & imfundo"
-    },
-    "q36": {
+    "q32": {
       "text": "Eminyangweni kahulumeni kufanele iphoqelelwe ngomthetho ukuthi ihlangabezane nezindinganiso eziqinile zokufinyelela zabantu abakhubazekile, ngisho noma lokhu kusho ukuguqulela izimali ezivela kwezinye izinsizakalo zomphakathi noma ukwandisa umthwalo wemithetho.",
       "category": "ukufakwa komphakathi"
     },
-    "q37": {
+    "q33": {
       "text": "Uhulumeni kufanele anikeze izikhuthazo ezihlosiwe nezisombululo ezisheshayo zokusheshisa umnotho ezindaweni zasemakhaya nasemadolobheni.",
       "category": "ukufakwa kwezomnotho"
-    },
-    "q38": {
-      "text": "Abavoti kufanele banake irekhodi lokulethwa kwezinsizakalo nokuqondisa inkohlakalo kwamaqembu kunokugcina izisho zawo zembono.",
-      "category": "ukuvota & ukuziphatha"
     }
   },
   "footer": {

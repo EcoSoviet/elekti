@@ -12,8 +12,6 @@ import ownershipLand from "./ownership-land.json";
 import rightsFreedoms from "./rights-freedoms.json";
 import socialInclusion from "./social-inclusion.json";
 import socialWelfare from "./social-welfare.json";
-import votingBehaviour from "./voting-behaviour.json";
-import youthEducation from "./youth-education.json";
 
 export default [
   ...economyFiscal,
@@ -27,9 +25,7 @@ export default [
   ...infrastructureUrban,
   ...digitalTech,
   ...foodAgriculture,
-  ...youthEducation,
   ...socialInclusion,
   ...economicInclusion,
   ...cultureIdentity,
-  ...votingBehaviour,
 ];
