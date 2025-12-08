@@ -25,8 +25,7 @@
 
   interface PartyScore {
     partyId: string;
-    rawScore: number;
-    normalizedScore: number;
+    alignmentScore: number;
     party: Party;
     topPolicies?: PolicyAlignment[];
   }
@@ -72,8 +71,8 @@
     const shareUrl = `${window.location.origin}/results?r=${encoded}`;
 
     const text = `My Elekti Results:
-Primary Match: ${result.value.primary.party.name} (${Math.round(result.value.primary.normalizedScore * 100)}%)
-Alternatives: ${result.value.alternatives.map((a: PartyScore) => `${a.party.name} (${Math.round(a.normalizedScore * 100)}%)`).join(", ")}
+Primary Match: ${result.value.primary.party.name} (${Math.round(result.value.primary.alignmentScore * 100)}%)
+Alternatives: ${result.value.alternatives.map((a: PartyScore) => `${a.party.name} (${Math.round(a.alignmentScore * 100)}%)`).join(", ")}
 
 View my results: ${shareUrl}`;
 
@@ -118,7 +117,7 @@ View my results: ${shareUrl}`;
 
           <PartyCard
             :party="result.primary.party"
-            :score="result.primary.normalizedScore"
+            :score="result.primary.alignmentScore"
             :policies="result.primary.topPolicies"
           />
         </section>
@@ -133,7 +132,7 @@ View my results: ${shareUrl}`;
               v-for="alt in result.alternatives.slice(0, 2)"
               :key="alt.partyId"
               :party="alt.party"
-              :score="alt.normalizedScore"
+              :score="alt.alignmentScore"
               :policies="alt.topPolicies"
             />
           </div>

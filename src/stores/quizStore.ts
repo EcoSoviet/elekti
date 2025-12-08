@@ -17,27 +17,29 @@ export const useQuizStore = defineStore("quiz", () => {
 
   const parties = partiesData as Party[];
 
+  interface QuestionMetadata {
+    id: string;
+    textKey: string;
+    axis: string;
+    weight: number;
+    options: Array<{ value: number; label: string }>;
+  }
+
   function loadQuestionsFromI18n(): Question[] {
     const { t } = useI18n();
 
     const questionsMetadata = import.meta.glob<{
-      questions: Array<{
-        id: string;
-        textKey: string;
-        axis: string;
-        weight: number;
-        options: Array<{ value: number; label: string }>;
-      }>;
+      questions: QuestionMetadata[];
     }>("../data/questions.json", {
       eager: true,
       import: "default",
-    })["../data/questions.json"] as any;
+    })["../data/questions.json"] as { questions: QuestionMetadata[] };
 
     if (!questionsMetadata?.questions) {
       throw new Error("Could not load questions from questions.json");
     }
 
-    return questionsMetadata.questions.map((q: any) => ({
+    return questionsMetadata.questions.map((q: QuestionMetadata) => ({
       ...q,
       text: t(q.textKey),
     }));

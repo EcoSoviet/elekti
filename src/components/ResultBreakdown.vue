@@ -19,8 +19,7 @@
 
   interface PartyScore {
     partyId: string;
-    rawScore: number;
-    normalizedScore: number;
+    alignmentScore: number;
     party: Party;
     topPolicies?: PolicyAlignment[];
   }
@@ -39,7 +38,7 @@
         v-for="partyScore in scores"
         :key="partyScore.partyId"
         :party="partyScore.party"
-        :score="partyScore.normalizedScore"
+        :score="partyScore.alignmentScore"
         :policies="partyScore.topPolicies"
       />
     </div>

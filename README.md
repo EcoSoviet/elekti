@@ -2,7 +2,7 @@
 
 > A multilingual political alignment quiz that matches South African voters to parties via weighted scoring.
 
-Elekti is a Vue 3 + Pinia single-page application that walks users through 42 policy questions, normalizes their answers against curated party data, and surfaces tailored recommendations. The project emphasizes strict localization, reproducible scoring, and a lean state-management layer so new questions or parties can be introduced without rewiring the UI.
+Elekti is a Vue 3 + Pinia single-page application that walks users through 41 policy questions, normalizes their answers against curated party data, and surfaces tailored recommendations. The project emphasizes strict localization, reproducible scoring, and a lean state-management layer so new questions or parties can be introduced without rewiring the UI.
 
 ## Highlights
 
@@ -90,7 +90,7 @@ Visit `http://localhost:5173` (default Vite port).
    }
    ```
 
-   The `axis` must match one of the 14 defined axes in `src/data/axes.json`.
+   The `axis` must match one of the 14 defined axes in `src/data/axes.json`. Question IDs should be sequential (next available is q42).
 
 3. **Add party positions** – Update `src/data/party_positions.json` to include position scores for all 11 parties on the relevant axis(es):
 
@@ -141,7 +141,7 @@ The axis-based alignment system replaces naive text matching:
 - Scoring tests use lightweight axis and party fixtures (`src/utils/scoring.test.ts`).
 - Quiz store tests mock `vue-i18n` and `questions.json` to verify i18n loading and state management.
 - Vitest uses `happy-dom`; browser-only APIs may need shims/mocks.
-- **All 63 tests passing** – covers scoring, state management, URL encoding/decoding, and locale handling.
+- Tests cover scoring, state management, URL encoding/decoding, and locale handling.
 
 ## Tooling Notes
 

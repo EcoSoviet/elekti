@@ -79,11 +79,13 @@
         <p class="about__text">{{ $t("about.partiesText") }}</p>
 
         <div class="about__parties">
-          <div v-for="party in parties" :key="party.id" class="about__party">
-            <span
-              class="about__party-badge"
-              :style="{ backgroundColor: party.colour }"
-            >
+          <div
+            v-for="party in parties"
+            :key="party.id"
+            class="about__party"
+            :style="{ '--party-colour': party.colour }"
+          >
+            <span class="about__party-badge">
               {{ party.short }}
             </span>
             <span class="about__party-name">{{ party.name }}</span>
@@ -243,6 +245,7 @@
   .about__party-badge {
     display: inline-block;
     padding: var(--space-xs) var(--space-sm);
+    background-color: var(--party-colour);
     color: white;
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-bold);

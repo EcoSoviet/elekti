@@ -24,13 +24,10 @@
 </script>
 
 <template>
-  <div class="party-card" :style="{ borderLeftColor: party.colour }">
+  <div class="party-card" :style="{ '--party-colour': party.colour }">
     <div class="party-card__header">
       <h3 class="party-card__name">{{ party.name }}</h3>
-      <span
-        class="party-card__short"
-        :style="{ backgroundColor: party.colour }"
-      >
+      <span class="party-card__short">
         {{ party.short }}
       </span>
     </div>
@@ -45,7 +42,6 @@
       target="_blank"
       rel="noopener noreferrer"
       class="party-card__website"
-      :style="{ color: party.colour, borderColor: party.colour }"
     >
       Visit Website
       <svg
@@ -69,7 +65,7 @@
       <div class="party-card__score-bar">
         <div
           class="party-card__score-fill"
-          :style="{ width: `${score * 100}%`, backgroundColor: party.colour }"
+          :style="{ width: `${Math.max(0, score * 100)}%` }"
         />
       </div>
       <span class="party-card__score-text">{{ Math.round(score * 100) }}%</span>
@@ -81,7 +77,6 @@
           v-for="policy in policies"
           :key="policy.questionId"
           class="party-card__policy-tag"
-          :style="{ backgroundColor: party.colour }"
           :title="policy.questionText"
         >
           {{ policy.category }}
@@ -95,7 +90,7 @@
   .party-card {
     background-color: var(--color-surface-elevated);
     border: 1px solid var(--color-border);
-    border-left: 4px solid var(--color-primary);
+    border-left: 4px solid var(--party-colour);
     border-radius: var(--radius-md);
     padding: var(--space-lg);
     transition: all var(--transition-base);
@@ -123,7 +118,7 @@
   .party-card__short {
     display: inline-block;
     padding: var(--space-xs) var(--space-sm);
-    background-color: var(--color-primary);
+    background-color: var(--party-colour);
     color: white;
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-bold);
@@ -147,7 +142,8 @@
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
     text-decoration: none;
-    border: 1px solid;
+    color: var(--party-colour);
+    border: 1px solid var(--party-colour);
     border-radius: var(--radius-sm);
     transition: all var(--transition-fast);
     background-color: transparent;
@@ -182,7 +178,7 @@
 
   .party-card__score-fill {
     height: 100%;
-    background-color: var(--color-primary);
+    background-color: var(--party-colour);
     border-radius: var(--radius-full);
     transition: width var(--transition-base);
   }
@@ -214,6 +210,7 @@
   .party-card__policy-tag {
     display: inline-block;
     padding: var(--space-xs) var(--space-sm);
+    background-color: var(--party-colour);
     color: white;
     border-radius: var(--radius-sm);
     font-size: var(--font-size-xs);
