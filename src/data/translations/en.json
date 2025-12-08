@@ -63,11 +63,11 @@
   "about": {
     "title": "About Elekti",
     "methodology": "Methodology",
-    "methodologyText": "Elekti uses a comprehensive, evidence-based approach to match your political views with South African political parties. Our system is designed to be fair, transparent, and non-partisan.",
+    "methodologyText": "Elekti uses a comprehensive, axis-based approach to match your political views with South African political parties. Our system maps your responses across 12 distinct political dimensions and is designed to be fair, transparent, and non-partisan.",
     "howItWorks": "How It Works",
-    "howItWorksText": "You answer 41 carefully crafted questions covering major policy areas including healthcare, education, economy, governance, and social issues. Each question is designed to reveal your political preferences without bias toward any party.",
+    "howItWorksText": "You answer 41 carefully crafted questions covering major policy areas including healthcare, education, economy, governance, and social issues. Each question maps to one of 12 political axes (such as Economic Left-Right, State vs Market, Labour Rights, etc.) and is weighted by importance. Your responses are converted to positions on these axes and compared with documented party positions.",
     "scoring": "Scoring System",
-    "scoringText": "Each answer you provide is matched against documented party positions from official manifestos, policy documents, and public statements. Parties receive weighted scores based on how closely their stated positions align with your responses. We use a per-party normalization algorithm, meaning each party is scored against its own best possible match for the questions you answered. This ensures fair treatment for both moderate and radical parties. These scores are normalized on a 0-100 scale, with your top match and alternatives clearly identified. We also provide a confidence rating to help you understand how strong your match is.",
+    "scoringText": "Our axis-based algorithm works as follows: (1) Each answer is compared to each party's position on the relevant axis, calculating similarity (1 minus the absolute difference between your position and theirs). (2) Similarities are multiplied by question weights and aggregated per axis. (3) For each party, axis scores are normalised by dividing by the total weight of questions answered on that axis. (4) A party's final score is the weighted average across all axes. Scores are displayed as percentages (0-100%), with higher scores indicating stronger alignment. We also provide a confidence rating based on your top score and the gap to alternatives.",
     "transparency": "Our Commitment to Transparency",
     "transparencyText": "All party positions and scoring weights are determined through rigorous research of official party documents. Our methodology is open and reviewable. We do not favor any political party or ideology - our sole purpose is to help you make informed decisions based on your values and the parties' stated positions.",
     "dataSources": "Our Research Sources",
@@ -111,6 +111,7 @@
       "desc": "The Patriotic Alliance focuses on addressing immigration issues, promoting South African nationalism, and prioritising citizens' needs."
     },
     "vfplus": {
+      "name": "Freedom Front Plus",
       "desc": "Freedom Front Plus primarily represents Afrikaner communities and interests, advocating for federalism, minority rights, and conservative values. Policy priorities center on Afrikaner cultural preservation and self-determination."
     },
     "actionsa": {
@@ -124,6 +125,44 @@
     },
     "sacp": {
       "desc": "The South African Communist Party advocates for socialism, workers' rights, and the transition to a socialist society through state control."
+    }
+  },
+  "axes": {
+    "economic_left_right": {
+      "short": "Taxation & Social Spending"
+    },
+    "state_vs_market": {
+      "short": "Public vs Private Services"
+    },
+    "land_and_ownership": {
+      "short": "Land & Property Rights"
+    },
+    "labour_rights": {
+      "short": "Workers' Rights"
+    },
+    "law_order_vs_liberty": {
+      "short": "Policing & Civil Rights"
+    },
+    "democratic_institutions": {
+      "short": "Governance & Anti-Corruption"
+    },
+    "environment_energy": {
+      "short": "Climate & Energy"
+    },
+    "social_progressivism": {
+      "short": "LGBTQ+ & Gender Rights"
+    },
+    "global_vs_local": {
+      "short": "Trade & Immigration"
+    },
+    "transformation_vs_continuity": {
+      "short": "Pace of Change"
+    },
+    "urban_development": {
+      "short": "Urban Planning & Transport"
+    },
+    "equity_and_inclusion": {
+      "short": "Affirmative Action & BEE"
     }
   },
   "options": {

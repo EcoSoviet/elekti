@@ -4,6 +4,7 @@
   interface Party {
     id: string;
     name: string;
+    nameKey?: string;
     short: string;
     descriptionKey: string;
     colour: string;
@@ -11,9 +12,9 @@
   }
 
   interface PolicyAlignment {
-    questionId: string;
-    questionText: string;
-    category: string;
+    axis: string;
+    axisName: string;
+    shortNameKey: string;
     score: number;
   }
 
@@ -21,7 +22,7 @@
     partyId: string;
     alignmentScore: number;
     party: Party;
-    topPolicies?: PolicyAlignment[];
+    topAxes?: PolicyAlignment[];
   }
 
   defineProps<{
@@ -39,7 +40,7 @@
         :key="partyScore.partyId"
         :party="partyScore.party"
         :score="partyScore.alignmentScore"
-        :policies="partyScore.topPolicies"
+        :top-axes="partyScore.topAxes"
       />
     </div>
   </div>

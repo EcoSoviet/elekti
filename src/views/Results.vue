@@ -9,6 +9,7 @@
   interface Party {
     id: string;
     name: string;
+    nameKey?: string;
     short: string;
     descriptionKey: string;
     colour: string;
@@ -17,9 +18,9 @@
   }
 
   interface PolicyAlignment {
-    questionId: string;
-    questionText: string;
-    category: string;
+    axis: string;
+    axisName: string;
+    shortNameKey: string;
     score: number;
   }
 
@@ -27,7 +28,7 @@
     partyId: string;
     alignmentScore: number;
     party: Party;
-    topPolicies?: PolicyAlignment[];
+    topAxes?: PolicyAlignment[];
   }
 
   interface QuizResult {
@@ -118,7 +119,7 @@ View my results: ${shareUrl}`;
           <PartyCard
             :party="result.primary.party"
             :score="result.primary.alignmentScore"
-            :policies="result.primary.topPolicies"
+            :top-axes="result.primary.topAxes"
           />
         </section>
 
@@ -133,7 +134,7 @@ View my results: ${shareUrl}`;
               :key="alt.partyId"
               :party="alt.party"
               :score="alt.alignmentScore"
-              :policies="alt.topPolicies"
+              :top-axes="alt.topAxes"
             />
           </div>
         </section>
@@ -201,7 +202,7 @@ View my results: ${shareUrl}`;
   }
 
   .results__section--primary {
-    padding: var(--space-2xl);
+    padding: var(--space-lg);
     background: var(--color-surface-elevated);
     border-radius: var(--radius-xl);
     border: 2px solid var(--color-primary);
@@ -210,7 +211,7 @@ View my results: ${shareUrl}`;
   }
 
   .results__section--primary :deep(.party-card) {
-    margin-top: var(--space-xl);
+    margin-top: var(--space-md);
   }
 
   .results__pills {

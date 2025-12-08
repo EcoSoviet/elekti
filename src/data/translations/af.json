@@ -63,11 +63,11 @@
   "about": {
     "title": "Oor Elekti",
     "methodology": "Metodologie",
-    "methodologyText": "Elekti gebruik 'n omvattende, bewysegebaseerde metode om jou politieke sienings teen Suid-Afrikaanse partye te meet. Die stelsel is ontwerp om regverdig, deursigtig en nie-partydig te wees.",
+    "methodologyText": "Elekti gebruik 'n omvattende, as-gebaseerde benadering om jou politieke sienings teen Suid-Afrikaanse partye te meet. Ons stelsel karteer jou reaksies oor 12 afsonderlike politieke dimensies en is ontwerp om regverdig, deursigtig en nie-partydig te wees.",
     "howItWorks": "Hoe dit werk",
-    "howItWorksText": "Jy beantwoord 41 sorgvuldig saamgestelde vrae oor hoofbeleidsareas soos gesondheidsorg, onderwys, ekonomie, bestuur en sosiale sake. Elke vraag is ontwerp om jou voorkeur sonder vooroordeel te openbaar.",
+    "howItWorksText": "Jy beantwoord 41 sorgvuldig saamgestelde vrae oor hoofbeleidsareas soos gesondheidsorg, onderwys, ekonomie, bestuur en sosiale sake. Elke vraag karteer na een van 12 politieke asse (soos Ekonomiese Links-Regs, Staat vs Mark, Arbeidersregte, ens.) en word geweeg volgens belangrikheid. Jou antwoorde word omgeskakel na posisies op hierdie asse en vergelyk met gedokumenteerde partyposisies.",
     "scoring": "Puntestelsel",
-    "scoringText": "Elke antwoord word vergelyk met gedokumenteerde partyposisies uit manifeste, beleidsdokumente en openbare verklarings. Partye kry geweegde punte op grond van hoe naby hul posisies aan jou antwoorde is. Ons normaliseer per party sodat elke party teen sy beste moontlike passing gemeet word. Die punte word op 'n 0–100-skaal uitgegee en 'n vertrouensvlak word aangedui om die sterkte van die ooreenkoms te verduidelik.",
+    "scoringText": "Ons as-gebaseerde algoritme werk soos volg: (1) Elke antwoord word vergelyk met elke party se posisie op die relevante as, en ooreenkoms word bereken (1 minus die absolute verskil tussen jou posisie en hulle s'n). (2) Ooreenkomste word vermenigvuldig met vraaggewigte en saamgevoeg per as. (3) Vir elke party word aspunte genormaliseer deur te deel deur die totale gewig van vrae beantwoord op daardie as. (4) 'n Party se finale punt is die geweegde gemiddelde oor alle asse. Punte word as persentasies (0-100%) vertoon, met hoër punte wat sterker belyning aandui. Ons verskaf ook 'n vertrouensvlak gebaseer op jou toppunt en die gaping na alternatiewe.",
     "transparency": "Ons verbintenis tot deursigtigheid",
     "transparencyText": "Partyposisies en gewigte word bepaal deur deeglike navorsing van amptelike dokumente. Ons metodologie is oop en hersienbaar. Ons bevoordeel geen party nie; doel is om jou te help om ingeligte besluite te neem.",
     "dataSources": "Ons navorsingsbronne",
@@ -111,7 +111,8 @@
       "desc": "Die Patriotic Alliance fokus op immigrasie-kwessies, nasionalisme en die bevordering van burgers se behoeftes."
     },
     "vfplus": {
-      "desc": "Freedom Front Plus verteenwoordig hoofsaaklik Afrikanergemeenskappe en -belange, en bepleit federalisme, minderheidsregte en konserwatiewe waardes. Beleids prioriteite sentreer om Afrikaner-kulturele bewaring en selfbeskikking."
+      "name": "Vryheidsfront Plus",
+      "desc": "Vryheidsfront Plus verteenwoordig hoofsaaklik Afrikanergemeenskappe en -belange, en bepleit federalisme, minderheidsregte en konserwatiewe waardes. Beleids prioriteite sentreer om Afrikaner-kulturele bewaring en selfbeskikking."
     },
     "actionsa": {
       "desc": "ActionSA is 'n sentrum-party gefokus op praktiese bestuur, anti-korrupsie en ekonomiese groei deur privaat-sektorbetrokkenheid."
@@ -124,6 +125,44 @@
     },
     "sacp": {
       "desc": "Die South African Communist Party bepleit sosialisme, werkersregte en 'n oorgang na 'n sosialistiese samelewing deur staatsbeheer."
+    }
+  },
+  "axes": {
+    "economic_left_right": {
+      "short": "Belasting & Sosiale Besteding"
+    },
+    "state_vs_market": {
+      "short": "Openbare vs Private Dienste"
+    },
+    "land_and_ownership": {
+      "short": "Grond- & Eiendomsregte"
+    },
+    "labour_rights": {
+      "short": "Werkersregte"
+    },
+    "law_order_vs_liberty": {
+      "short": "Polisiëring & Burgerregte"
+    },
+    "democratic_institutions": {
+      "short": "Bestuur & Anti-Korrupsie"
+    },
+    "environment_energy": {
+      "short": "Klimaat & Energie"
+    },
+    "social_progressivism": {
+      "short": "LGBTQ+ & Geslagsregte"
+    },
+    "global_vs_local": {
+      "short": "Handel & Immigrasie"
+    },
+    "transformation_vs_continuity": {
+      "short": "Tempo van Verandering"
+    },
+    "urban_development": {
+      "short": "Stedelike Beplanning & Vervoer"
+    },
+    "equity_and_inclusion": {
+      "short": "Regstellende Aksie & BEE"
     }
   },
   "options": {

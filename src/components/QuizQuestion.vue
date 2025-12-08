@@ -6,8 +6,9 @@
   interface Question {
     id: string;
     text: string;
-    category: string;
-    options: string[];
+    axis: string;
+    weight: number;
+    options: Array<{ value: number; label: string }>;
   }
 
   const props = defineProps<{
@@ -50,7 +51,6 @@
 <template>
   <div class="quiz-question">
     <h2 class="quiz-question__text">{{ question.text }}</h2>
-    <p class="quiz-question__category">{{ question.category }}</p>
 
     <div
       class="quiz-question__options"
@@ -79,22 +79,13 @@
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
     color: var(--color-text-primary);
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-lg);
     line-height: var(--line-height-snug);
     height: 6em;
     overflow-y: auto;
     display: flex;
     align-items: center;
     animation: fadeInUp 0.5s ease-out;
-  }
-
-  .quiz-question__category {
-    font-size: var(--font-size-xs);
-    color: var(--color-text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: var(--space-lg);
-    font-weight: var(--font-weight-semibold);
   }
 
   @keyframes fadeInUp {
@@ -123,10 +114,6 @@
   @media (max-width: 640px) {
     .quiz-question__text {
       font-size: var(--font-size-xl);
-    }
-
-    .quiz-question__category {
-      margin-bottom: var(--space-md);
     }
 
     .quiz-question__options {

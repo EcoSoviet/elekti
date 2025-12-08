@@ -5,6 +5,7 @@ import questionsData from "../data/questions.json";
 export interface Party {
   id: string;
   name: string;
+  nameKey?: string;
   short: string;
   descriptionKey: string;
   colour: string;
@@ -19,15 +20,25 @@ export interface Question {
   options: Array<{ value: number; label: string }>;
 }
 
+interface QuestionMetadata {
+  id: string;
+  textKey: string;
+  axis: string;
+  weight: number;
+  options: Array<{ value: number; label: string }>;
+}
+
 export interface Axis {
   id: string;
   name: string;
+  shortNameKey: string;
   description: string;
 }
 
 export interface PolicyAlignment {
   axis: string;
   axisName: string;
+  shortNameKey: string;
   score: number;
 }
 
@@ -55,7 +66,8 @@ export function computeScores(
   const partyPositions = (
     partyPositionsData as { parties: Record<string, Record<string, number>> }
   ).parties;
-  const questions = (questionsData as { questions: Question[] }).questions;
+  const questionsMetadata = (questionsData as { questions: QuestionMetadata[] })
+    .questions;
 
   const axisScoresPerParty: Record<string, Record<string, number>> = {};
   const axisWeightsPerParty: Record<string, Record<string, number>> = {};
@@ -65,13 +77,13 @@ export function computeScores(
     axisWeightsPerParty[party.id] = {};
 
     axes.forEach((axis) => {
-      axisScoresPerParty[party.id][axis.id] = 0;
-      axisWeightsPerParty[party.id][axis.id] = 0;
+      axisScoresPerParty[party.id]![axis.id] = 0;
+      axisWeightsPerParty[party.id]![axis.id] = 0;
     });
   });
 
   Object.entries(answers).forEach(([questionId, optionIndex]) => {
-    const question = questions.find((q) => q.id === questionId);
+    const question = questionsMetadata.find((q) => q.id === questionId);
     if (!question) return;
 
     const userValue = question.options[optionIndex]?.value;
@@ -88,8 +100,15 @@ export function computeScores(
 
       const weightedScore = similarity * weight;
 
-      axisScoresPerParty[party.id][axis] += weightedScore;
-      axisWeightsPerParty[party.id][axis] += weight;
+      const partyAxisScores = axisScoresPerParty[party.id];
+      const partyAxisWeights = axisWeightsPerParty[party.id];
+
+      if (partyAxisScores && partyAxisScores[axis] !== undefined) {
+        partyAxisScores[axis] += weightedScore;
+      }
+      if (partyAxisWeights && partyAxisWeights[axis] !== undefined) {
+        partyAxisWeights[axis] += weight;
+      }
     });
   });
 
@@ -99,10 +118,14 @@ export function computeScores(
     let totalWeight = 0;
 
     axes.forEach((axis) => {
-      const weightedSum = axisScoresPerParty[party.id][axis.id];
-      const totalWeight_ = axisWeightsPerParty[party.id][axis.id];
+      const weightedSum = axisScoresPerParty[party.id]?.[axis.id];
+      const totalWeight_ = axisWeightsPerParty[party.id]?.[axis.id];
 
-      if (totalWeight_ > 0) {
+      if (
+        weightedSum !== undefined &&
+        totalWeight_ !== undefined &&
+        totalWeight_ > 0
+      ) {
         normalizedAxisScores[axis.id] = weightedSum / totalWeight_;
         totalWeightedScore += weightedSum;
         totalWeight += totalWeight_;
@@ -116,9 +139,10 @@ export function computeScores(
       .map((axis) => ({
         axis: axis.id,
         axisName: axis.name,
+        shortNameKey: axis.shortNameKey,
         score: normalizedAxisScores[axis.id] ?? 0,
       }))
-      .filter((item) => item.score > 0)
+      .filter((item) => item.score > 0.5)
       .sort((a, b) => b.score - a.score)
       .slice(0, 3);
 
@@ -144,7 +168,7 @@ export function computeScores(
 
   const topScore = primary.alignmentScore;
   const scoreSpread =
-    alternatives.length > 0
+    alternatives.length > 0 && alternatives[0]
       ? topScore - alternatives[0].alignmentScore
       : topScore;
 

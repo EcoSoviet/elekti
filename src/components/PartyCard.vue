@@ -2,6 +2,7 @@
   interface Party {
     id: string;
     name: string;
+    nameKey?: string;
     short: string;
     descriptionKey: string;
     colour: string;
@@ -10,23 +11,25 @@
   }
 
   interface PolicyAlignment {
-    questionId: string;
-    questionText: string;
-    category: string;
+    axis: string;
+    axisName: string;
+    shortNameKey: string;
     score: number;
   }
 
   defineProps<{
     party: Party;
     score?: number;
-    policies?: PolicyAlignment[];
+    topAxes?: PolicyAlignment[];
   }>();
 </script>
 
 <template>
   <div class="party-card" :style="{ '--party-colour': party.colour }">
     <div class="party-card__header">
-      <h3 class="party-card__name">{{ party.name }}</h3>
+      <h3 class="party-card__name">
+        {{ party.nameKey ? $t(party.nameKey) : party.name }}
+      </h3>
       <span class="party-card__short">
         {{ party.short }}
       </span>
@@ -71,15 +74,15 @@
       <span class="party-card__score-text">{{ Math.round(score * 100) }}%</span>
     </div>
 
-    <div v-if="policies && policies.length > 0" class="party-card__policies">
+    <div v-if="topAxes && topAxes.length > 0" class="party-card__policies">
       <div class="party-card__policies-tags">
         <span
-          v-for="policy in policies"
-          :key="policy.questionId"
+          v-for="axis in topAxes"
+          :key="axis.axis"
           class="party-card__policy-tag"
-          :title="policy.questionText"
+          :title="`${axis.axisName}: ${Math.round(axis.score * 100)}% alignment`"
         >
-          {{ policy.category }}
+          {{ $t(axis.shortNameKey) }}
         </span>
       </div>
     </div>
@@ -205,11 +208,12 @@
     flex-wrap: wrap;
     gap: var(--space-xs);
     flex: 1;
+    justify-content: flex-start;
   }
 
   .party-card__policy-tag {
     display: inline-block;
-    padding: var(--space-xs) var(--space-sm);
+    padding: 4px 10px;
     background-color: var(--party-colour);
     color: white;
     border-radius: var(--radius-sm);
@@ -218,7 +222,8 @@
     text-transform: capitalize;
     cursor: help;
     transition: opacity var(--transition-fast);
-    line-height: 1.4;
+    line-height: 1.3;
+    white-space: nowrap;
   }
 
   .party-card__policy-tag:hover {
