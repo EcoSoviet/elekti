@@ -45,6 +45,82 @@
 - **Pinia**: Centralised state, hydrated in `main.ts`.
 - **vue-i18n**: Fallback locale is `en`; all keys must be present in new locales.
 - **Scoring**: Axis-based, not direct text matching. See `scoring.ts` for algorithm.
+- **Reverse Scoring**: Questions may be phrased from different political viewpoints. Use `reverseScoring: true` in `questions.json` when a question's framing opposes the axis direction (e.g., right-wing phrasing on a left-wing axis).
+- **Axis Direction**: Each axis has a defined positive (+1) and negative (-1) direction. Most questions are phrased so "Strongly agree" = +1 direction. Questions with `reverseScoring: true` invert the user's answer value before scoring.
 - **Tests**: Stores and scoring logic are unit tested; use fixtures/mocks for i18n and data.
 - **Comments**: Do not add comments to code unless specifically requested.
 - **Language**: Use British English spelling and grammar throughout code and documentation.
+
+## Scoring & Question Directionality
+
+### Axis Directions
+
+Each axis has a defined positive and negative direction:
+
+| Axis ID                        | Positive (+1)                     | Negative (-1)                   |
+| ------------------------------ | --------------------------------- | ------------------------------- |
+| `economic_left_right`          | Left (redistribution, high tax)   | Right (low tax, market-led)     |
+| `state_vs_market`              | State control, public ownership   | Market/privatisation            |
+| `land_and_ownership`           | Expropriation, communal rights    | Private property rights         |
+| `labour_rights`                | Strong unions, worker protection  | Labour flexibility              |
+| `law_order_vs_liberty`         | Civil liberties, protest rights   | Law & order, policing           |
+| `democratic_institutions`      | Strong oversight, anti-corruption | Executive flexibility           |
+| `environment_energy`           | Climate action, green transition  | Pragmatic energy mix            |
+| `social_progressivism`         | LGBTQ+ rights, gender equality    | Traditional/conservative values |
+| `global_vs_local`              | Free trade, open borders          | Protectionist, nationalist      |
+| `transformation_vs_continuity` | Radical transformation            | Incremental reform              |
+| `urban_development`            | Public transit, dense walkability | Car-friendly, sprawl            |
+| `equity_and_inclusion`         | Strong BEE/affirmative action     | Meritocratic/colour-blind       |
+
+### Question Phrasing & Reverse Scoring
+
+Questions can be phrased from two perspectives:
+
+1. **Direct phrasing** (`reverseScoring: false` or omitted)
+   - Question statement aligns with the positive axis direction
+   - "Strongly agree" (user value +1) maps to +1 on the axis
+   - Example: Q1 "The government should raise taxes..." (left-wing framing)
+   - User: Strongly agree (+1) → Aligns with economic_left_right +1 direction
+
+2. **Reverse phrasing** (`reverseScoring: true`)
+   - Question statement aligns with the negative axis direction
+   - User's answer must be inverted before scoring
+   - Example: Q11 "Private companies should generate electricity..." (market framing on state_vs_market axis)
+   - User: Strongly agree (value +1) → Inverted to -1 → Aligns with market position
+   - Example: Q19 "Labour flexibility will increase investment..." (anti-union framing on labour_rights axis)
+   - User: Strongly disagree (value -1) → Inverted to +1 → Aligns with pro-labour position
+
+### Questions with Reverse Scoring (Current List)
+
+- **q2**: "Fiscal discipline and reducing public debt should be prioritised" (right-wing framing on economic_left_right)
+- **q9**: "Government should support SMEs with tax breaks and deregulation" (market framing on state_vs_market)
+- **q11**: "Private companies should generate and sell electricity" (market framing on state_vs_market)
+- **q19**: "Labour market flexibility (easier hiring/firing) will increase investment" (anti-union framing on labour_rights)
+- **q22**: "Freedom of expression and protest should be prioritised" (liberty framing on law_order_vs_liberty)
+- **q23**: "South Africa should adopt strong digital privacy laws" (liberty framing on law_order_vs_liberty)
+- **q38**: "Trade policy should protect local industries through tariffs" (protectionist framing on global_vs_local)
+- **q39**: "South Africa should adopt stricter immigration policies" (protectionist framing on global_vs_local)
+- **q40**: "Regulate employment of undocumented foreign nationals" (protectionist framing on global_vs_local)
+- **q43**: "Apartheid legacy addressed through incremental reforms rather than systemic overhauls" (continuity framing on transformation_vs_continuity)
+
+### Adding New Questions
+
+When adding a question, determine its axis and phrasing direction:
+
+1. **Decide the axis** – Choose from the 12 defined axes above
+2. **Decide the framing** – Will "Strongly agree" align with the positive (+1) or negative (-1) direction of the axis?
+3. **Set reverseScoring accordingly**:
+   - Positive direction framing → `"reverseScoring": false` (or omit)
+   - Negative direction framing → `"reverseScoring": true`
+
+Example: Adding a question about renewable energy transition
+
+- Axis: `environment_energy` (positive = climate action, negative = pragmatic energy)
+- Question: "South Africa should rapidly transition to 100% renewable energy" (climate action framing)
+- Answer: Agreeing = +1 direction → `"reverseScoring": false`
+
+Example: Adding a question about business deregulation
+
+- Axis: `state_vs_market` (positive = state control, negative = market/private)
+- Question: "Businesses should face lighter regulatory burdens to boost competitiveness" (market framing)
+- Answer: Agreeing = -1 direction → `"reverseScoring": true`

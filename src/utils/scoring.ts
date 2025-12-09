@@ -26,6 +26,7 @@ interface QuestionMetadata {
   textKey: string;
   axis: string;
   weight: number;
+  reverseScoring?: boolean;
 }
 
 export interface Axis {
@@ -78,8 +79,13 @@ export function computeScores(
     const question = questionsMetadata.find((q) => q.id === questionId);
     if (!question) continue;
 
-    const userValue = STANDARD_OPTIONS[optionIndex]?.value;
+    let userValue = STANDARD_OPTIONS[optionIndex]?.value;
     if (userValue === undefined) continue;
+
+    // Apply reverse scoring if needed
+    if (question.reverseScoring) {
+      userValue = -userValue;
+    }
 
     const axis = question.axis;
     const weight = question.weight;
