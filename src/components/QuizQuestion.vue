@@ -78,7 +78,7 @@
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
     color: var(--color-text-primary);
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
     line-height: var(--line-height-snug);
     height: 6em;
     overflow-y: auto;
@@ -112,12 +112,14 @@
 
   @media (max-width: 640px) {
     .quiz-question__text {
-      font-size: var(--font-size-xl);
-      height: 8em;
+      font-size: var(--font-size-lg);
+      height: auto;
+      max-height: 8em;
+      margin-bottom: var(--space-md);
     }
 
     .quiz-question__options {
-      gap: var(--space-md);
+      gap: var(--space-sm);
     }
   }
 </style>

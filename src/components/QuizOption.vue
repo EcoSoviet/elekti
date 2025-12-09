@@ -41,6 +41,15 @@
     font-size: var(--font-size-base);
   }
 
+  @media (max-width: 640px) {
+    .quiz-option {
+      padding: var(--space-sm) var(--space-md);
+      min-height: 48px;
+      font-size: var(--font-size-sm);
+      gap: var(--space-sm);
+    }
+  }
+
   .quiz-option:hover {
     border-color: var(--color-primary-light);
     background-color: var(--color-surface-elevated);
@@ -69,6 +78,14 @@
     flex-shrink: 0;
     position: relative;
     transition: all var(--transition-fast);
+  }
+
+  @media (max-width: 640px) {
+    .quiz-option__circle {
+      width: 18px;
+      height: 18px;
+      border-width: 2px;
+    }
   }
 
   .quiz-option:hover .quiz-option__circle {

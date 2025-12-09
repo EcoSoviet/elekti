@@ -81,6 +81,12 @@
     transition: all var(--transition-fast);
   }
 
+  @media (max-width: 640px) {
+    .language-selector__button span {
+      display: none;
+    }
+  }
+
   .language-selector__button:hover {
     background-color: var(--color-surface-elevated);
     border-color: var(--color-primary);
@@ -97,6 +103,16 @@
     box-shadow: var(--shadow-lg);
     z-index: 100;
     overflow: hidden;
+  }
+
+  @media (max-width: 640px) {
+    .language-selector__dropdown {
+      position: fixed;
+      right: var(--space-sm);
+      left: var(--space-sm);
+      width: auto;
+      min-width: auto;
+    }
   }
 
   .language-selector__option {

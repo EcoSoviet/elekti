@@ -170,6 +170,12 @@
     transition: all var(--transition-base);
   }
 
+  @media (max-width: 640px) {
+    .party-card {
+      padding: var(--space-md);
+    }
+  }
+
   .party-card:hover {
     box-shadow: var(--shadow-md);
   }
@@ -182,11 +188,26 @@
     margin-bottom: var(--space-md);
   }
 
+  @media (max-width: 640px) {
+    .party-card__header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-sm);
+    }
+  }
+
   .party-card__name {
     margin: 0;
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     color: var(--color-text-primary);
+    word-break: break-word;
+  }
+
+  @media (max-width: 640px) {
+    .party-card__name {
+      font-size: var(--font-size-base);
+    }
   }
 
   .party-card__short {
@@ -205,6 +226,12 @@
     color: var(--color-text-secondary);
     font-size: var(--font-size-sm);
     line-height: var(--line-height-relaxed);
+  }
+
+  @media (max-width: 640px) {
+    .party-card__description {
+      font-size: var(--font-size-xs);
+    }
   }
 
   .party-card__website {
@@ -328,6 +355,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (max-width: 640px) {
+    .party-card__axis-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-xs);
+    }
   }
 
   .party-card__axis-name {
