@@ -113,6 +113,7 @@
   @media (max-width: 640px) {
     .quiz-question__text {
       font-size: var(--font-size-xl);
+      height: 8em;
     }
 
     .quiz-question__options {
