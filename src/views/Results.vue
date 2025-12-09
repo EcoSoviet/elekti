@@ -65,8 +65,8 @@
     const shareUrl = `${globalThis.location.origin}/results?r=${encoded}`;
 
     const text = `My Elekti Results:
-Primary Match: ${result.value.primary.party.name} (${Math.round(result.value.primary.alignmentScore * 100)}%)
-Alternatives: ${result.value.alternatives.map((a: PartyScore) => `${a.party.name} (${Math.round(a.alignmentScore * 100)}%)`).join(", ")}
+Primary Match: ${result.value.primary.party.name} (${(result.value.primary.alignmentScore * 100).toFixed(1)}%)
+Alternatives: ${result.value.alternatives.map((a: PartyScore) => `${a.party.name} (${(a.alignmentScore * 100).toFixed(1)}%)`).join(", ")}
 
 View my results: ${shareUrl}`;
 

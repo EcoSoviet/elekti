@@ -65,10 +65,7 @@
 
   const formatPercentage = (score: number): string => {
     const percentage = Math.max(0, score * 100);
-    if (percentage < 1) {
-      return percentage.toFixed(1);
-    }
-    return Math.round(percentage).toString();
+    return percentage.toFixed(1);
   };
 </script>
 
