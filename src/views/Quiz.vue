@@ -172,7 +172,7 @@
   .quiz__navigation {
     display: flex;
     flex-direction: column;
-    gap: var(--space-lg);
+    gap: var(--space-md);
     align-items: center;
     justify-content: center;
   }
