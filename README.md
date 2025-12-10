@@ -16,7 +16,7 @@ Elekti is a Vue 3 + Pinia single-page application that walks users through 50 po
 
 - **Views** – Landing, Quiz, Results, and About routes under `src/views/*` managed by `vue-router`.
 - **State** – `quizStore` loads questions from i18n and `questions.json` metadata, manages answers and quiz progress; `uiStore` handles locale persistence.
-- **Data** – `parties.json` defines 11 parties; `questions.json` contains 50 questions with metadata (axis, weight, textKey); `translations/{en,af}.json` hold all UI text and question content.
+- **Data** – `parties.json` defines 12 parties. `questions.json` contains 50 questions with metadata (axis, weight, textKey). Translation files `translations/{en,af}.json` hold all UI text and question content.
 - **Scoring flow** – `computeScores()` calculates axis-based similarity between user answers and party positions, returns ranked parties with top policy axes and confidence level.
 
 ```
@@ -24,14 +24,17 @@ src/
 ├── components/          # QuizQuestion, PartyCard, ResultBreakdown, etc.
 ├── data/
 │   ├── axes.json        # 12 political axis definitions
-│   ├── parties.json     # 11 party metadata (names, colors, descriptions)
-│   ├── party_positions.json  # Party positions on each axis
+│   ├── parties.json     # 12 party metadata (names, colors, descriptions)
+│   ├── party_positions.json  # Party positions on each axis (12 parties × 12 axes)
 │   ├── questions.json   # 50 questions with textKey refs, axis, weight
 │   └── translations/
 │       ├── en.json      # English UI + question text
 │       └── af.json      # Afrikaans UI + question text
 ├── stores/              # Pinia stores (quiz + ui) and unit tests
-├── utils/               # scoring logic + tests
+├── utils/
+│   ├── constants.ts     # STANDARD_OPTIONS (answer values -1 to +1)
+│   ├── scoring.ts       # Core scoring algorithm
+│   └── scoring.test.ts  # Scoring tests
 └── views/               # Route-level components
 ```
 
@@ -103,7 +106,7 @@ Visit `http://localhost:5173` (default Vite port).
    - If the question asks about incremental reform on the transformation_vs_continuity axis → `true`
    - Otherwise → `false` (or omit)
 
-4. **Add party positions** – Update `src/data/party_positions.json` to include position scores for all 11 parties on the relevant axis(es):
+4. **Add party positions** – Update `src/data/party_positions.json` to include position scores for all 12 parties on the relevant axis(es):
 
    ```json
    "parties": {
@@ -137,11 +140,13 @@ The axis-based alignment system replaces naive text matching:
 
 - **Axes** – 12 political dimensions from `axes.json`, each with a defined positive (+1) and negative (-1) direction
 - **Questions** – 50 questions, each mapped to one axis with a weight (1.0–2.0)
+- **Answer values** – User responses map to numeric values via `STANDARD_OPTIONS` (Strongly Agree = +1, Agree = +0.5, Neutral = 0, Disagree = -0.5, Strongly Disagree = -1)
 - **Party positions** – Each party's stance on all axes (range: -1 to +1)
 - **Reverse scoring** – Some questions are phrased from opposing viewpoints (e.g., right-wing statements for left-wing axes). The `reverseScoring` field in `questions.json` indicates whether user answers should be inverted before comparison
-- **Similarity scoring** – For each axis: `1 - abs(userAnswer - partyPosition)` weighted by question weight
-- **Top axes** – Show the 3 strongest alignment axes in results
-- **Confidence** – `high` / `medium` / `low` based on score spread
+- **Similarity scoring** – For each question: calculate `1 - abs(userAnswer - partyPosition)`, multiply by question weight. This yields values from 0 (opposite positions) to 1 (identical positions)
+- **Normalization** – For each axis, divide total weighted score by total question weight on that axis. Then aggregate normalised axis scores into a final alignment score per party
+- **Top axes** – Results display the 3 axes with the highest weighted contribution to the final match
+- **Confidence** – `high` (top score ≥0.5 and gap to second place ≥0.1), `medium` (top score between 0.2–0.5 or gap <0.1), or `low` (top score <0.2)
 
 ### Understanding Question Direction & Reverse Scoring
 
@@ -182,17 +187,50 @@ This ensures a communist answering "Strongly disagree" to "Labour flexibility wi
 
 When reviewing party positions in `party_positions.json`, think about how typical supporters of that party would answer the questions:
 
-**Example: Checking the ANC on `democratic_institutions`**
+**Example: Validating ANC on `democratic_institutions`**
 
-1. Find all questions on this axis (q25-q30 in `questions.json`)
+1. Find all questions on this axis (q25–q30 in `questions.json`)
 2. Consider how ANC supporters would likely answer:
    - q25: "Local government should be professionally staffed... even if this limits political appointments" → Likely **disagree** (supports cadre deployment)
    - q27: "Corruption prosecutions should be fast and aggressive" → Likely **disagree** or neutral (slow/selective approach)
-   - q30: "Leaders who undermine judiciary should face consequences" → Likely **disagree** (tolerated under Zuma)
-3. Check `reverseScoring` for each question - these all have `false`, so disagreement = negative values on the axis
-4. Party position should be **negative** (around -0.3), reflecting weak institutional support
+   - q30: "Leaders who undermine judiciary should face consequences" → Likely **disagree** (tolerated under Zuma era)
+3. Check `reverseScoring` for each question – these all have `false`, so disagreement = negative values on the axis
+4. Conclusion: Party position should be **negative** (around -0.3), reflecting weak institutional support
 
 This approach ensures party positions accurately reflect how their base would respond to the quiz, not just abstract policy statements.
+
+## Parties Included
+
+The quiz currently includes 12 South African political parties:
+
+1. **ANC** (African National Congress) - Centre-left governing party
+2. **DA** (Democratic Alliance) - Centre-right liberal opposition
+3. **EFF** (Economic Freedom Fighters) - Far-left radical transformation
+4. **IFP** (Inkatha Freedom Party) - Centrist, Zulu-focused, conservative
+5. **MK** (uMkhonto we Sizwe Party) - Left-wing, Zuma-led
+6. **PA** (Patriotic Alliance) - Right-wing nationalist
+7. **VF+** (Freedom Front Plus) - Right-wing, Afrikaner-focused
+8. **ActionSA** - Centre-right, anti-corruption focus
+9. **ACDP** (African Christian Democratic Party) - Christian conservative
+10. **UFC** (Unite for Change) - Centrist progressive
+11. **UDM** (United Democratic Movement) - Centre-left, pro-institution
+12. **SACP** (South African Communist Party) - Far-left socialist
+
+See `src/data/parties.json` for full metadata and `src/data/party_positions.json` for their positions on all 12 axes.
+
+### Adding a New Party
+
+To add a new party to the quiz:
+
+1. **Research party positions** – Review official manifestos, parliamentary voting records, and verified public statements to understand their stance on each of the 12 axes
+2. **Add to parties.json** – Include party metadata: `id`, `name`, `short`, `descriptionKey`, `colour`, `website`
+3. **Add to party_positions.json** – For each of the 12 axes, determine position (-1 to +1) by:
+   - Reading all questions mapped to that axis (check `questions.json`)
+   - Considering how typical party supporters would answer each question
+   - Accounting for `reverseScoring` on each question
+   - Setting the position to reflect their average stance across all questions on that axis
+4. **Add translations** – Add party name and description keys to both `en.json` and `af.json` under `party.[partyId]`
+5. **Verify** – Run `npm run test` and manually test the quiz to ensure the party appears correctly in results
 
 Translation files contain all UI and question text. Locale switching persists to `localStorage` and resets the quiz.
 

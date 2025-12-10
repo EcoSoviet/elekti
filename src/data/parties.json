@@ -1,5 +1,21 @@
 [
   {
+    "id": "acdp",
+    "short": "ACDP",
+    "name": "African Christian Democratic Party",
+    "descriptionKey": "party.acdp.desc",
+    "colour": "#0088CC",
+    "website": "https://acdp.org.za/"
+  },
+  {
+    "id": "actionsa",
+    "short": "ActionSA",
+    "name": "ActionSA",
+    "descriptionKey": "party.actionsa.desc",
+    "colour": "#009639",
+    "website": "https://www.actionsa.org.za/"
+  },
+  {
     "id": "anc",
     "short": "ANC",
     "name": "African National Congress",
@@ -16,20 +32,21 @@
     "website": "https://www.da.org.za/"
   },
   {
-    "id": "mk",
-    "short": "MK",
-    "name": "uMkhonto we Sizwe Party",
-    "descriptionKey": "party.mk.desc",
-    "colour": "#1E5A1E",
-    "website": "https://mkparty.org.za/"
-  },
-  {
     "id": "eff",
     "short": "EFF",
     "name": "Economic Freedom Fighters",
     "descriptionKey": "party.eff.desc",
     "colour": "#D40000",
     "website": "https://effonline.org/"
+  },
+  {
+    "id": "vfplus",
+    "short": "VF+",
+    "name": "Freedom Front Plus",
+    "nameKey": "party.vfplus.name",
+    "descriptionKey": "party.vfplus.desc",
+    "colour": "#E85D00",
+    "website": "https://www.vfplus.org.za/"
   },
   {
     "id": "ifp",
@@ -48,37 +65,20 @@
     "website": "https://mypa.org.za/"
   },
   {
-    "id": "vfplus",
-    "short": "VF+",
-    "name": "Freedom Front Plus",
-    "nameKey": "party.vfplus.name",
-    "descriptionKey": "party.vfplus.desc",
-    "colour": "#E85D00",
-    "website": "https://www.vfplus.org.za/"
+    "id": "sacp",
+    "short": "SACP",
+    "name": "South African Communist Party",
+    "descriptionKey": "party.sacp.desc",
+    "colour": "#B30000",
+    "website": "https://www.sacp.org.za/"
   },
   {
-    "id": "actionsa",
-    "short": "ActionSA",
-    "name": "ActionSA",
-    "descriptionKey": "party.actionsa.desc",
-    "colour": "#009639",
-    "website": "https://www.actionsa.org.za/"
-  },
-  {
-    "id": "acdp",
-    "short": "ACDP",
-    "name": "African Christian Democratic Party",
-    "descriptionKey": "party.acdp.desc",
-    "colour": "#0088CC",
-    "website": "https://acdp.org.za/"
-  },
-  {
-    "id": "ufc",
-    "short": "UFC",
-    "name": "Unite for Change",
-    "descriptionKey": "party.ufc.desc",
-    "colour": "#E89400",
-    "website": "https://www.uniteforchangesa.org/"
+    "id": "mk",
+    "short": "MK",
+    "name": "uMkhonto we Sizwe Party",
+    "descriptionKey": "party.mk.desc",
+    "colour": "#1E5A1E",
+    "website": "https://mkparty.org.za/"
   },
   {
     "id": "udm",
@@ -89,11 +89,11 @@
     "website": "https://www.udm.org.za/"
   },
   {
-    "id": "sacp",
-    "short": "SACP",
-    "name": "South African Communist Party",
-    "descriptionKey": "party.sacp.desc",
-    "colour": "#B30000",
-    "website": "https://www.sacp.org.za/"
+    "id": "ufc",
+    "short": "UFC",
+    "name": "Unite for Change",
+    "descriptionKey": "party.ufc.desc",
+    "colour": "#E89400",
+    "website": "https://www.uniteforchangesa.org/"
   }
 ]
