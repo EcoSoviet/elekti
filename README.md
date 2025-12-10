@@ -178,6 +178,22 @@ if (question.reverseScoring) {
 
 This ensures a communist answering "Strongly disagree" to "Labour flexibility will increase investment" correctly scores as +1 (pro-labour, aligned with left-wing axis), not -1.
 
+### Validating Party Positions
+
+When reviewing party positions in `party_positions.json`, think about how typical supporters of that party would answer the questions:
+
+**Example: Checking the ANC on `democratic_institutions`**
+
+1. Find all questions on this axis (q25-q30 in `questions.json`)
+2. Consider how ANC supporters would likely answer:
+   - q25: "Local government should be professionally staffed... even if this limits political appointments" → Likely **disagree** (supports cadre deployment)
+   - q27: "Corruption prosecutions should be fast and aggressive" → Likely **disagree** or neutral (slow/selective approach)
+   - q30: "Leaders who undermine judiciary should face consequences" → Likely **disagree** (tolerated under Zuma)
+3. Check `reverseScoring` for each question - these all have `false`, so disagreement = negative values on the axis
+4. Party position should be **negative** (around -0.3), reflecting weak institutional support
+
+This approach ensures party positions accurately reflect how their base would respond to the quiz, not just abstract policy statements.
+
 Translation files contain all UI and question text. Locale switching persists to `localStorage` and resets the quiz.
 
 ## Testing

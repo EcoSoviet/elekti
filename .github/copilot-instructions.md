@@ -103,6 +103,29 @@ Questions can be phrased from two perspectives:
 - **q40**: "Regulate employment of undocumented foreign nationals" (protectionist framing on global_vs_local)
 - **q43**: "Apartheid legacy addressed through incremental reforms rather than systemic overhauls" (continuity framing on transformation_vs_continuity)
 
+### Validating Party Positions
+
+When reviewing or adjusting party positions in `party_positions.json`, think about **how someone aligned with that party would answer the questions on each axis**:
+
+1. Read all questions for a given axis (check `questions.json` to find which questions map to which axis)
+2. For each question, consider: Would a typical supporter of this party agree or disagree?
+3. Factor in `reverseScoring` – if `true`, disagreement moves the party toward the positive axis direction
+4. The party's position should reflect the average stance across all questions on that axis
+
+**Example: ANC on `democratic_institutions` axis**
+
+Questions include:
+
+- q25: "Local government should be professionally staffed... even if this limits political appointments" (`reverseScoring: false`)
+- q27: "Corruption prosecutions should be fast and aggressive" (`reverseScoring: false`)
+- q30: "Leaders who undermine judiciary should face consequences" (`reverseScoring: false`)
+
+ANC's actual behaviour: Cadre deployment, slow/selective prosecutions, limited consequences for institutional undermining.
+
+→ ANC supporters would likely **disagree** with these pro-institution questions
+→ Since `reverseScoring: false` on all these questions, disagreement = negative values on the axis
+→ Position should be **negative** (around -0.3), not positive
+
 ### Adding New Questions
 
 When adding a question, determine its axis and phrasing direction:
