@@ -28,11 +28,11 @@
       },
       "benefit3": {
         "title": "Sien al jou ooreenkomste",
-        "text": "Kry \u0027n gerangskikte lys van partye met ooreenstemmingspunte, sodat jy topkeuses en alternatiewe sien."
+        "text": "Kry 'n gerangskikte lys van partye met ooreenstemmingspunte, sodat jy topkeuses en alternatiewe sien."
       },
       "benefit4": {
         "title": "Stem met vertroue",
-        "text": "Neem \u0027n ingeligte besluit gebaseer op data, nie raaiskote nie. Jou waardes word teen partyposisies gemeet."
+        "text": "Neem 'n ingeligte besluit gebaseer op data, nie raaiskote nie. Jou waardes word teen partyposisies gemeet."
       }
     }
   },
@@ -65,16 +65,16 @@
   "about": {
     "title": "Oor Elekti",
     "methodology": "Metodologie",
-    "methodologyText": "Elekti gebruik \u0027n omvattende, as-gebaseerde benadering om jou politieke sienings teen Suid-Afrikaanse partye te meet. Ons stelsel karteer jou reaksies oor 12 afsonderlike politieke dimensies en is ontwerp om regverdig, deursigtig en nie-partydig te wees.",
+    "methodologyText": "Elekti gebruik 'n omvattende, as-gebaseerde benadering om jou politieke sienings teen Suid-Afrikaanse partye te meet. Ons stelsel karteer jou reaksies oor 12 afsonderlike politieke dimensies en is ontwerp om regverdig, deursigtig en nie-partydig te wees.",
     "howItWorks": "Hoe dit werk",
     "howItWorksText": "Jy beantwoord 50 sorgvuldig saamgestelde vrae oor hoofbeleidsareas soos gesondheidsorg, onderwys, ekonomie, bestuur en sosiale sake. Elke vraag karteer na een van 12 politieke asse (soos Ekonomiese Links-Regs, Staat vs Mark, Arbeidersregte, ens.) en word geweeg volgens belangrikheid. Jou antwoorde word omgeskakel na posisies op hierdie asse en vergelyk met gedokumenteerde partyposisies.",
     "scoring": "Puntestelsel",
-    "scoringText": "Ons as-gebaseerde algoritme werk soos volg: (1) Elke antwoord word vergelyk met elke party se posisie op die relevante as, en ooreenkoms word bereken (1 minus die absolute verskil tussen jou posisie en hulle s\u0027n). (2) Ooreenkomste word vermenigvuldig met vraaggewigte en saamgevoeg per as. (3) Vir elke party word aspunte genormaliseer deur te deel deur die totale gewig van vrae beantwoord op daardie as. (4) \u0027n Party se finale punt is die geweegde gemiddelde oor alle asse. Punte word as persentasies (0-100%) vertoon, met hoër punte wat sterker belyning aandui. Ons verskaf ook \u0027n vertrouensvlak gebaseer op jou toppunt en die gaping na alternatiewe.",
+    "scoringText": "Ons as-gebaseerde algoritme werk soos volg: (1) Elke antwoord word vergelyk met elke party se posisie op die relevante as, en ooreenkoms word bereken (1 minus die absolute verskil tussen jou posisie en hulle s'n). (2) Ooreenkomste word vermenigvuldig met vraaggewigte en saamgevoeg per as. (3) Vir elke party word aspunte genormaliseer deur te deel deur die totale gewig van vrae beantwoord op daardie as. (4) 'n Party se finale punt is die geweegde gemiddelde oor alle asse. Punte word as persentasies (0-100%) vertoon, met hoër punte wat sterker belyning aandui. Ons verskaf ook 'n vertrouensvlak gebaseer op jou toppunt en die gaping na alternatiewe.",
     "transparency": "Ons verbintenis tot deursigtigheid",
     "transparencyText": "Partyposisies en gewigte word bepaal deur deeglike navorsing van amptelike dokumente. Ons metodologie is oop en hersienbaar. Ons bevoordeel geen party nie; doel is om jou te help om ingeligte besluite te neem.",
     "dataSources": "Ons navorsingsbronne",
-    "dataSourcesText": "Posisies word nagevors uit amptelike manifeste, beleiddokumente, parlementêre stemrekords en geverifieerde verklarings. Ons werk die data gereeld by. Indien jy \u0027n fout sien, verwelkom ons korreksies met gepaste brondokumentasie.",
-    "privacy": "Privaatheid \u0026 jou data",
+    "dataSourcesText": "Posisies word nagevors uit amptelike manifeste, beleiddokumente, parlementêre stemrekords en geverifieerde verklarings. Ons werk die data gereeld by. Indien jy 'n fout sien, verwelkom ons korreksies met gepaste brondokumentasie.",
+    "privacy": "Privaatheid & jou data",
     "privacyText": "Jou privaatheid is van kardinale belang. Jou politieke sienings is persoonlik en verdien die hoogste beskerming.",
     "noTracking": "Geen nasporing",
     "noTrackingText": "Ons gebruik nie koekies of spoortegnologieë wat jou kan identifiseer nie. Ons sien nie jou antwoorde en dit word nie na ons bedieners gestuur nie.",
@@ -83,11 +83,11 @@
     "sharing": "Hoe deel werk",
     "sharingText": "As jy resultate deel, word jou antwoorde in die URL enkodeer. Enigiemand met die skakel kan dit sien; die data raak nie ons bedieners nie. Jy beheer wie toegang het deur die skakel te deel of te verwyder.",
     "analytics": "Privaatheidsvriendelike analytics",
-    "analyticsText": "Ons gebruik Cloudflare Web Analytics — \u0027n privaatheidsgefokusde diens wat geen persoonlike identifiseerbare data versamel nie en geen koekies gebruik nie. Dit gee ons net saamgestelde statistieke om gebruik te meet.",
+    "analyticsText": "Ons gebruik Cloudflare Web Analytics — 'n privaatheidsgefokusde diens wat geen persoonlike identifiseerbare data versamel nie en geen koekies gebruik nie. Dit gee ons net saamgestelde statistieke om gebruik te meet.",
     "parties": "Ingeslote partye",
-    "partiesText": "Ons sluit 11 belangrike Suid-Afrikaanse partye in wat \u0027n wye spektrum van sienings verteenwoordig. Keuse is gebaseer op parlementsverteenwoordiging, verkiesingsbelang en ideologiese diversiteit.",
+    "partiesText": "Ons sluit 16 belangrike Suid-Afrikaanse partye in wat 'n wye spektrum van sienings verteenwoordig. Keuse is gebaseer op parlementsverteenwoordiging, verkiesingsbelang en ideologiese diversiteit.",
     "disclaimer": "Belangrike vrywaringsparagraaf",
-    "disclaimerText": "Elekti is \u0027n opvoedkundige hulpmiddel, nie \u0027n vervanging vir onafhanklike navorsing nie. Partyposisies is kompleks en kan verander. Lees manifeste en verifieer inligting self. Gebruik resultate as \u0027n beginpunt, nie as finale besluit nie.",
+    "disclaimerText": "Elekti is 'n opvoedkundige hulpmiddel, nie 'n vervanging vir onafhanklike navorsing nie. Partyposisies is kompleks en kan verander. Lees manifeste en verifieer inligting self. Gebruik resultate as 'n beginpunt, nie as finale besluit nie.",
     "viewData": "Bekyk rou data",
     "viewDataText": "Jy kan ons rou JSON-data inspekteer wat alle partyposisies, gewigte en vrametadata bevat.",
     "scoringData": "Puntedata (vrae \u0026 gewigte ingesluit)",
@@ -104,10 +104,10 @@
       "desc": "uMkhonto we Sizwe Party fokus op radikale ekonomiese transformasie en bevorder staatgelei ontwikkeling en die aanspreek van historiese ongeregtighede."
     },
     "eff": {
-      "desc": "Die Economic Freedom Fighters is \u0027n links-radikale party wat radikale ekonomiese hervorming, nasionalisering en grondhervorming sonder vergoeding bepleit."
+      "desc": "Die Economic Freedom Fighters is 'n links-radikale party wat radikale ekonomiese hervorming, nasionalisering en grondhervorming sonder vergoeding bepleit."
     },
     "ifp": {
-      "desc": "Die Inkatha Freedom Party verteenwoordig hoofsaaklik Zulugemeenskappe en bevorder Zulu-kulturele waardes, federalisme en \u0027n vryemarkbenadering met sosiale verantwoordelikheid. Alhoewel dit breër aantrekking het, sentreer beleids prioriteite om Zulu-tradisies en KwaZulu-Natal-belange."
+      "desc": "Die Inkatha Freedom Party verteenwoordig hoofsaaklik Zulugemeenskappe en bevorder Zulu-kulturele waardes, federalisme en 'n vryemarkbenadering met sosiale verantwoordelikheid. Alhoewel dit breër aantrekking het, sentreer beleids prioriteite om Zulu-tradisies en KwaZulu-Natal-belange."
     },
     "pa": {
       "desc": "Die Patriotic Alliance fokus op immigrasie-kwessies, nasionalisme en die bevordering van burgers se behoeftes."
@@ -117,7 +117,7 @@
       "desc": "Vryheidsfront Plus verteenwoordig hoofsaaklik Afrikanergemeenskappe en -belange, en bepleit federalisme, minderheidsregte en konserwatiewe waardes. Beleids prioriteite sentreer om Afrikaner-kulturele bewaring en selfbeskikking."
     },
     "actionsa": {
-      "desc": "ActionSA is \u0027n sentrum-party gefokus op praktiese bestuur, anti-korrupsie en ekonomiese groei deur privaat-sektorbetrokkenheid."
+      "desc": "ActionSA is 'n sentrum-party gefokus op praktiese bestuur, anti-korrupsie en ekonomiese groei deur privaat-sektorbetrokkenheid."
     },
     "acdp": {
       "desc": "Die African Christian Democratic Party bevorder Christelike waardes, konserwatiewe sosiale beleide en grondwetlike demokrasie."
@@ -126,48 +126,60 @@
       "desc": "Unite for Change fokus op grondvlak-mobilisering en die aanspreek van plaaslike gemeenskapskwessies deur progressiewe beleid."
     },
     "udm": {
-      "desc": "Die United Democratic Movement is \u0027n sosiale demokratiese party wat goeie bestuur, anti-korrupsie en gebalanseerde ekonomiese beleide met meriete-gebaseerde aanstellings beklemtoon."
+      "desc": "Die United Democratic Movement is 'n sosiale demokratiese party wat goeie bestuur, anti-korrupsie en gebalanseerde ekonomiese beleide met meriete-gebaseerde aanstellings beklemtoon."
     },
     "sacp": {
-      "desc": "Die South African Communist Party bepleit sosialisme, werkersregte en \u0027n oorgang na \u0027n sosialistiese samelewing deur staatsbeheer."
+      "desc": "Die South African Communist Party bepleit sosialisme, werkersregte en 'n oorgang na 'n sosialistiese samelewing deur staatsbeheer."
+    },
+    "atm": {
+      "desc": "Die African Transformation Movement is 'n Christen-demokratiese party wat konserwatiewe waardes, die doodstraf en strenger opvoedkundige standaarde bepleit."
+    },
+    "aljama-ah": {
+      "desc": "Al Jama-ah is 'n Islamitiese demokratiese party wat Moslem-belange, sosiale demokrasie en konserwatiewe sosiale waardes bevorder terwyl dit vir alle Suid-Afrikaners werk."
+    },
+    "ncc": {
+      "desc": "Die National Coloured Congress verteenwoordig Kleurling-gemeenskapsbelange en bepleit die aanspreek van kwessies wat die Kleurling-bevolking raak."
+    },
+    "pac": {
+      "desc": "Die Pan Africanist Congress of Azania is 'n Swart-nasionalistiese party wat Afrika-sosialisme, Pan-Afrikanisme en grondhervorming gebaseer op Afrika-eienaarskap bepleit."
     }
   },
   "axes": {
     "economic_left_right": {
-      "short": "Belasting \u0026 Sosiale Besteding"
+      "short": "Belasting & Sosiale Besteding"
     },
     "state_vs_market": {
       "short": "Openbare vs Private Dienste"
     },
     "land_and_ownership": {
-      "short": "Grond- \u0026 Eiendomsregte"
+      "short": "Grond- & Eiendomsregte"
     },
     "labour_rights": {
       "short": "Werkersregte"
     },
     "law_order_vs_liberty": {
-      "short": "Polisiëring \u0026 Burgerregte"
+      "short": "Polisiëring & Burgerregte"
     },
     "democratic_institutions": {
-      "short": "Bestuur \u0026 Anti-Korrupsie"
+      "short": "Bestuur & Anti-Korrupsie"
     },
     "environment_energy": {
-      "short": "Klimaat \u0026 Energie"
+      "short": "Klimaat & Energie"
     },
     "social_progressivism": {
-      "short": "LGBTQ+ \u0026 Geslagsregte"
+      "short": "LGBTQ+ & Geslagsregte"
     },
     "global_vs_local": {
-      "short": "Handel \u0026 Immigrasie"
+      "short": "Handel & Immigrasie"
     },
     "transformation_vs_continuity": {
       "short": "Tempo van Verandering"
     },
     "urban_development": {
-      "short": "Stedelike Beplanning \u0026 Vervoer"
+      "short": "Stedelike Beplanning & Vervoer"
     },
     "equity_and_inclusion": {
-      "short": "Regstellende Aksie \u0026 BEE"
+      "short": "Regstellende Aksie & BEE"
     }
   },
   "options": {
@@ -187,7 +199,7 @@
       "axis": "economic_left_right"
     },
     "q3": {
-      "text": "Die staat moet \u0027n basiese inkomste vir alle burgers implementeer.",
+      "text": "Die staat moet 'n basiese inkomste vir alle burgers implementeer.",
       "axis": "economic_left_right"
     },
     "q4": {
@@ -339,7 +351,7 @@
       "axis": "global_vs_local"
     },
     "q41": {
-      "text": "Voedselsekuriteit moet deur \u0027n nasionale strategie bereik word wat plaaslike produksie, agro-ekologie en gemeenskaps tuine ondersteun.",
+      "text": "Voedselsekuriteit moet deur 'n nasionale strategie bereik word wat plaaslike produksie, agro-ekologie en gemeenskaps tuine ondersteun.",
       "axis": "transformation_vs_continuity"
     },
     "q42": {

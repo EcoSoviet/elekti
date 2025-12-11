@@ -14,7 +14,7 @@
   - `src/data/questions.json`: Question metadata (id, axis, weight, textKey) for 50 questions
   - `src/data/axes.json`: 12 axes definitions
   - `src/data/parties.json`: Party metadata
-  - `src/data/party_positions.json`: Party stances per axis (12 parties × 12 axes)
+  - `src/data/party_positions.json`: Party stances per axis (16 parties × 12 axes)
   - `src/data/translations/{en,af}.json`: Localized UI and question text
 - Scoring: `src/utils/scoring.ts` (core logic), tested in `scoring.test.ts`
 - Constants: `src/utils/constants.ts` defines `STANDARD_OPTIONS` (answer values -1 to +1)
@@ -35,7 +35,7 @@
 - Add Question:
   1. Add to both `en.json` and `af.json` under `questions`
   2. Add metadata to `questions.json` (id, textKey, axis, weight)
-  3. Update `party_positions.json` for all 12 parties on the axis
+  3. Update `party_positions.json` for all 16 parties on the axis
   4. Run tests to verify
 - Remove/Modify Question: Update translation files and `questions.json`; keep question `id` stable
 - Localization: All UI and quiz text must exist in both translation files. Locale switching uses `uiStore.setLang()` and persists to localStorage
@@ -68,7 +68,7 @@ These values are compared against party positions (also in the -1 to +1 range) a
 
 ## Parties Included
 
-The quiz includes 12 South African political parties:
+The quiz includes 16 South African political parties:
 
 1. ANC - African National Congress (centre-left, governing party)
 2. DA - Democratic Alliance (centre-right, liberal)
@@ -82,6 +82,10 @@ The quiz includes 12 South African political parties:
 10. UFC - Unite for Change (centrist)
 11. UDM - United Democratic Movement (centre-left, pro-institution)
 12. SACP - South African Communist Party (far-left, socialist)
+13. ATM - African Transformation Movement (centre-right, Christian democratic)
+14. Al Jama-ah - Al Jama-ah (Islamic democratic, socially conservative)
+15. NCC - National Coloured Congress (centrist, Coloured community representation)
+16. PAC - Pan Africanist Congress of Azania (left-wing, Black nationalist, African socialist)
 
 All party metadata (names, descriptions, colours) are in `src/data/parties.json`. Party positions on all 12 axes are in `src/data/party_positions.json`.
 

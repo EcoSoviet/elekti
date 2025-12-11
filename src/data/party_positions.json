@@ -167,6 +167,62 @@
       "transformation_vs_continuity": 1.0,
       "urban_development": 0.8,
       "equity_and_inclusion": 0.9
+    },
+    "atm": {
+      "economic_left_right": -0.3,
+      "state_vs_market": -0.2,
+      "land_and_ownership": -0.1,
+      "labour_rights": -0.2,
+      "law_order_vs_liberty": -0.6,
+      "democratic_institutions": 0.2,
+      "environment_energy": 0.0,
+      "social_progressivism": -0.8,
+      "global_vs_local": -0.5,
+      "transformation_vs_continuity": -0.2,
+      "urban_development": 0.0,
+      "equity_and_inclusion": -0.1
+    },
+    "aljama-ah": {
+      "economic_left_right": 0.2,
+      "state_vs_market": 0.1,
+      "land_and_ownership": 0.3,
+      "labour_rights": 0.2,
+      "law_order_vs_liberty": 0.2,
+      "democratic_institutions": 0.1,
+      "environment_energy": 0.2,
+      "social_progressivism": -0.7,
+      "global_vs_local": 0.1,
+      "transformation_vs_continuity": 0.3,
+      "urban_development": 0.2,
+      "equity_and_inclusion": 0.4
+    },
+    "ncc": {
+      "economic_left_right": 0.0,
+      "state_vs_market": 0.0,
+      "land_and_ownership": 0.0,
+      "labour_rights": 0.0,
+      "law_order_vs_liberty": 0.1,
+      "democratic_institutions": 0.3,
+      "environment_energy": 0.1,
+      "social_progressivism": 0.1,
+      "global_vs_local": 0.0,
+      "transformation_vs_continuity": 0.1,
+      "urban_development": 0.1,
+      "equity_and_inclusion": 0.3
+    },
+    "pac": {
+      "economic_left_right": 0.7,
+      "state_vs_market": 0.6,
+      "land_and_ownership": 0.9,
+      "labour_rights": 0.6,
+      "law_order_vs_liberty": -0.3,
+      "democratic_institutions": 0.2,
+      "environment_energy": 0.3,
+      "social_progressivism": 0.2,
+      "global_vs_local": -0.6,
+      "transformation_vs_continuity": 0.8,
+      "urban_development": 0.5,
+      "equity_and_inclusion": 0.8
     }
   }
 }

@@ -1,13 +1,5 @@
 [
   {
-    "id": "acdp",
-    "short": "ACDP",
-    "name": "African Christian Democratic Party",
-    "descriptionKey": "party.acdp.desc",
-    "colour": "#0088CC",
-    "website": "https://acdp.org.za/"
-  },
-  {
     "id": "actionsa",
     "short": "ActionSA",
     "name": "ActionSA",
@@ -16,12 +8,36 @@
     "website": "https://www.actionsa.org.za/"
   },
   {
+    "id": "acdp",
+    "short": "ACDP",
+    "name": "African Christian Democratic Party",
+    "descriptionKey": "party.acdp.desc",
+    "colour": "#0088CC",
+    "website": "https://acdp.org.za/"
+  },
+  {
     "id": "anc",
     "short": "ANC",
     "name": "African National Congress",
     "descriptionKey": "party.anc.desc",
     "colour": "#008542",
     "website": "https://www.anc1912.org.za/"
+  },
+  {
+    "id": "atm",
+    "short": "ATM",
+    "name": "African Transformation Movement",
+    "descriptionKey": "party.atm.desc",
+    "colour": "#7B5E8A",
+    "website": "https://www.atm-sa.org/"
+  },
+  {
+    "id": "aljama-ah",
+    "short": "Al Jama-ah",
+    "name": "Al Jama-ah",
+    "descriptionKey": "party.aljama-ah.desc",
+    "colour": "#00875A",
+    "website": "https://www.aljama.co.za/"
   },
   {
     "id": "da",
@@ -55,6 +71,22 @@
     "descriptionKey": "party.ifp.desc",
     "colour": "#D4A520",
     "website": "https://ifp.org.za/"
+  },
+  {
+    "id": "ncc",
+    "short": "NCC",
+    "name": "National Coloured Congress",
+    "descriptionKey": "party.ncc.desc",
+    "colour": "#C85A3C",
+    "website": "https://www.nationalcolouredcongress.org.za/"
+  },
+  {
+    "id": "pac",
+    "short": "PAC",
+    "name": "Pan Africanist Congress of Azania",
+    "descriptionKey": "party.pac.desc",
+    "colour": "#BF9D5C",
+    "website": "https://www.pacofazania.org.za/"
   },
   {
     "id": "pa",

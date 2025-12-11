@@ -74,7 +74,7 @@
     "transparencyText": "All party positions and scoring weights are determined through rigorous research of official party documents. Our methodology is open and reviewable. We do not favor any political party or ideology - our sole purpose is to help you make informed decisions based on your values and the parties\u0027 stated positions.",
     "dataSources": "Our Research Sources",
     "dataSourcesText": "Party positions are meticulously researched from official party manifestos, policy documents, parliamentary voting records, and verified public statements. We update our data regularly to reflect policy changes. All source materials are from official party channels or reputable news organisations. If you believe any information is inaccurate, we welcome corrections with proper documentation.",
-    "privacy": "Privacy \u0026 Your Data",
+    "privacy": "Privacy & Your Data",
     "privacyText": "Your privacy is absolutely paramount. We believe your political views are deeply personal and deserve the highest level of protection.",
     "noTracking": "Zero Tracking",
     "noTrackingText": "We do not use cookies, analytics pixels, or any tracking technologies. We cannot see your answers, cannot identify you, and have no interest in doing so. Your quiz responses are never transmitted to our servers.",
@@ -95,7 +95,7 @@
   },
   "party": {
     "anc": {
-      "desc": "The African National Congress is South Africa\u0027s governing party, advocating for social democracy, transformation, and addressing inequality through state intervention."
+      "desc": "The African National Congress is South Africa's governing party, advocating for social democracy, transformation, and addressing inequality through state intervention."
     },
     "da": {
       "desc": "The Democratic Alliance promotes liberal democracy, free market economics, and non-racial politics with emphasis on good governance and job creation."
@@ -129,7 +129,19 @@
       "desc": "The United Democratic Movement is a social democratic party emphasising good governance, anti-corruption, and balanced economic policies with merit-based appointments."
     },
     "sacp": {
-      "desc": "The South African Communist Party advocates for socialism, workers\u0027 rights and a transition to a socialist society through state control."
+      "desc": "The South African Communist Party advocates for socialism, workers' rights and a transition to a socialist society through state control."
+    },
+    "atm": {
+      "desc": "The African Transformation Movement is a Christian democratic party advocating for conservative values, the death penalty, and stricter educational standards."
+    },
+    "aljama-ah": {
+      "desc": "Al Jama-ah is an Islamic democratic party promoting Muslim interests, social democracy, and conservative social values while working for all South Africans."
+    },
+    "ncc": {
+      "desc": "The National Coloured Congress represents Coloured community interests and advocates for addressing issues affecting the Coloured population."
+    },
+    "pac": {
+      "desc": "The Pan Africanist Congress of Azania is a Black nationalist party advocating for African socialism, Pan-Africanism, and land reform based on African ownership."
     }
   },
   "axes": {
@@ -143,7 +155,7 @@
       "short": "Land \u0026 Property Rights"
     },
     "labour_rights": {
-      "short": "Workers\u0027 Rights"
+      "short": "Workers' Rights"
     },
     "law_order_vs_liberty": {
       "short": "Policing \u0026 Civil Rights"
@@ -219,7 +231,7 @@
       "axis": "state_vs_market"
     },
     "q11": {
-      "text": "Private companies should be allowed to generate and sell electricity to end load-shedding, even if this reduces Eskom\u0027s role.",
+      "text": "Private companies should be allowed to generate and sell electricity to end load-shedding, even if this reduces Eskom's role.",
       "axis": "state_vs_market"
     },
     "q12": {

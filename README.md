@@ -16,7 +16,7 @@ Elekti is a Vue 3 + Pinia single-page application that walks users through 50 po
 
 - **Views** – Landing, Quiz, Results, and About routes under `src/views/*` managed by `vue-router`.
 - **State** – `quizStore` loads questions from i18n and `questions.json` metadata, manages answers and quiz progress; `uiStore` handles locale persistence.
-- **Data** – `parties.json` defines 12 parties. `questions.json` contains 50 questions with metadata (axis, weight, textKey). Translation files `translations/{en,af}.json` hold all UI text and question content.
+- **Data** – `parties.json` defines 16 parties. `questions.json` contains 50 questions with metadata (axis, weight, textKey). Translation files `translations/{en,af}.json` hold all UI text and question content.
 - **Scoring flow** – `computeScores()` calculates axis-based similarity between user answers and party positions, returns ranked parties with top policy axes and confidence level.
 
 ```
@@ -24,8 +24,8 @@ src/
 ├── components/          # QuizQuestion, PartyCard, ResultBreakdown, etc.
 ├── data/
 │   ├── axes.json        # 12 political axis definitions
-│   ├── parties.json     # 12 party metadata (names, colors, descriptions)
-│   ├── party_positions.json  # Party positions on each axis (12 parties × 12 axes)
+│   ├── parties.json     # 16 party metadata (names, colors, descriptions)
+│   ├── party_positions.json  # Party positions on each axis (16 parties × 12 axes)
 │   ├── questions.json   # 50 questions with textKey refs, axis, weight
 │   └── translations/
 │       ├── en.json      # English UI + question text
@@ -201,7 +201,7 @@ This approach ensures party positions accurately reflect how their base would re
 
 ## Parties Included
 
-The quiz currently includes 12 South African political parties:
+The quiz currently includes 16 South African political parties:
 
 1. **ANC** (African National Congress) - Centre-left governing party
 2. **DA** (Democratic Alliance) - Centre-right liberal opposition
@@ -215,6 +215,10 @@ The quiz currently includes 12 South African political parties:
 10. **UFC** (Unite for Change) - Centrist progressive
 11. **UDM** (United Democratic Movement) - Centre-left, pro-institution
 12. **SACP** (South African Communist Party) - Far-left socialist
+13. **ATM** (African Transformation Movement) - Centre-right Christian democratic
+14. **Al Jama-ah** - Islamic democratic, socially conservative
+15. **NCC** (National Coloured Congress) - Coloured community representation
+16. **PAC** (Pan Africanist Congress of Azania) - Black nationalist, African socialist
 
 See `src/data/parties.json` for full metadata and `src/data/party_positions.json` for their positions on all 12 axes.
 
