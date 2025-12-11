@@ -166,7 +166,7 @@
       "textKey": "questions.q24.text",
       "axis": "law_order_vs_liberty",
       "weight": 1.4,
-      "reverseScoring": false
+      "reverseScoring": true
     },
     {
       "id": "q25",
