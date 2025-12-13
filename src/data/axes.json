@@ -4,73 +4,73 @@
       "id": "economic_left_right",
       "name": "Economic Left ↔ Right",
       "shortNameKey": "axes.economic_left_right.short",
-      "description": "Taxation, redistribution, and social spending. Left: Progressive taxation, expanded social services. Right: Low taxation, minimal state intervention, market-led growth."
+      "description": "Taxation, redistribution, and social spending. Positive (+1): Progressive taxation, expanded social services, high redistribution. Negative (-1): Low taxation, minimal state intervention, market-led growth."
     },
     {
       "id": "state_vs_market",
       "name": "State Control ↔ Market Economics",
       "shortNameKey": "axes.state_vs_market.short",
-      "description": "Role of the state in the economy. Left: State ownership of key utilities, active regulation. Right: Privatisation, deregulation, private sector leadership."
+      "description": "Role of the state in the economy. Positive (+1): State ownership of key utilities, active regulation, public sector leadership. Negative (-1): Privatisation, deregulation, private sector leadership."
     },
     {
       "id": "land_and_ownership",
       "name": "Land & Property Rights",
       "shortNameKey": "axes.land_and_ownership.short",
-      "description": "Land expropriation, communal rights, and land reform pace. Left: Expropriation without compensation, communal precedence. Right: Market-rate transactions, private property rights, commercial agriculture."
+      "description": "Land expropriation, communal rights, and land reform pace. Positive (+1): Expropriation without compensation, communal precedence, rapid reform. Negative (-1): Market-rate transactions, private property rights, commercial agriculture."
     },
     {
       "id": "labour_rights",
       "name": "Labour Rights ↔ Market Flexibility",
       "shortNameKey": "axes.labour_rights.short",
-      "description": "Union power, minimum wages, and labour regulation. Left: Strong unionisation, wage floors, job protection. Right: Labour flexibility, minimal restrictions, lower wage floors."
+      "description": "Union power, minimum wages, and labour regulation. Positive (+1): Strong unionisation, wage floors, job protection. Negative (-1): Labour flexibility, minimal restrictions, lower wage floors."
     },
     {
       "id": "law_order_vs_liberty",
       "name": "Law & Order ↔ Civil Liberties",
       "shortNameKey": "axes.law_order_vs_liberty.short",
-      "description": "State authority, policing, and protest. Left: Civil liberties prioritised, protest rights, scrutiny of state power. Right: Strong policing, order prioritised, limits on disruptive protest."
+      "description": "State authority, policing, and protest. Positive (+1): Civil liberties prioritised, protest rights, scrutiny of state power. Negative (-1): Strong policing, order prioritised, limits on disruptive protest."
     },
     {
       "id": "democratic_institutions",
       "name": "Institutional Independence & Governance",
       "shortNameKey": "axes.democratic_institutions.short",
-      "description": "Independence of judiciary, electoral bodies, and oversight. Strong support for institutional autonomy, anti-corruption, good governance vs. political executive flexibility."
+      "description": "Independence of judiciary, electoral bodies, and oversight. Positive (+1): Strong institutional autonomy, anti-corruption, good governance, oversight mechanisms. Negative (-1): Political executive flexibility, cadre deployment, centralised control."
     },
     {
       "id": "environment_energy",
       "name": "Environmental Protection ↔ Energy Pragmatism",
       "shortNameKey": "axes.environment_energy.short",
-      "description": "Climate action and energy transition speed. Left: Aggressive climate targets, rapid renewable transition, restrictions on fossil fuels. Right: Pragmatic energy mix, coal flexibility, economic prioritisation."
+      "description": "Climate action and energy transition speed. Positive (+1): Aggressive climate targets, rapid renewable transition, restrictions on fossil fuels. Negative (-1): Pragmatic energy mix, coal flexibility, economic prioritisation."
     },
     {
       "id": "social_progressivism",
       "name": "Social Progressivism ↔ Conservatism",
       "shortNameKey": "axes.social_progressivism.short",
-      "description": "LGBTQ+ rights, gender equality, and cultural liberalism. Left: Active promotion of progressive values. Right: Traditional/conservative values, minimal state intervention in social morality."
+      "description": "LGBTQ+ rights, gender equality, and cultural liberalism. Positive (+1): Active promotion of progressive values, LGBTQ+ rights, gender equality. Negative (-1): Traditional/conservative values, minimal state intervention in social morality."
     },
     {
       "id": "global_vs_local",
       "name": "Global Integration ↔ Economic Nationalism",
       "shortNameKey": "axes.global_vs_local.short",
-      "description": "Trade openness, international integration, and immigration. Left: Global cooperation, open borders, multilateral engagement. Right: Economic nationalism, border control, protectionism."
+      "description": "Trade openness, international integration, and immigration. Positive (+1): Global cooperation, open borders, multilateral engagement, free trade. Negative (-1): Economic nationalism, border control, protectionism."
     },
     {
       "id": "transformation_vs_continuity",
       "name": "Radical Transformation ↔ Incremental Reform",
       "shortNameKey": "axes.transformation_vs_continuity.short",
-      "description": "Speed and depth of systemic change. Left: Radical, rapid transformation addressing historical injustices. Right: Continuity, incremental reform, stability-focused."
+      "description": "Speed and depth of systemic change. Positive (+1): Radical, rapid transformation addressing historical injustices. Negative (-1): Continuity, incremental reform, stability-focused."
     },
     {
       "id": "urban_development",
       "name": "Public Urban Planning ↔ Market-Led Development",
       "shortNameKey": "axes.urban_development.short",
-      "description": "Urban form and transit priorities. Left: Public transport, mixed-use walkability, affordable housing. Right: Car-friendly, private property rights, market-led sprawl."
+      "description": "Urban form and transit priorities. Positive (+1): Public transport, mixed-use walkability, affordable housing, dense development. Negative (-1): Car-friendly, private property rights, market-led sprawl."
     },
     {
       "id": "equity_and_inclusion",
       "name": "Affirmative Action & BEE ↔ Meritocratic Neutrality",
       "shortNameKey": "axes.equity_and_inclusion.short",
-      "description": "Employment equity, BEE, and targeted economic support. Left: Active targeting to address inequality, protected minorities. Right: Minimal state-mandated targets, colour-blind approaches."
+      "description": "Employment equity, BEE, and targeted economic support. Positive (+1): Active targeting to address inequality, strong BEE, protected minorities. Negative (-1): Minimal state-mandated targets, colour-blind approaches, merit-based."
     }
   ]
 }
