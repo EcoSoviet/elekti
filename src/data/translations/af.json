@@ -395,5 +395,11 @@
     "about": "Oor",
     "privacy": "Privaatheid",
     "contact": "Kontak"
+  },
+  "disclaimer": {
+    "title": "Belangrike Vrywaringsparagraaf",
+    "educational": "Elekti is 'n opvoedkundige hulpmiddel, nie 'n vervanging vir navorsing nie. Partyposisies is kompleks en kan verander.",
+    "alpha": "Hierdie webwerf is tans in alfa-fase en onder aktiewe ontwikkeling. Kenmerke kan verander, en data kan opgedateer word namate ons ons metodologie verfyn.",
+    "research": "Ons moedig jou sterk aan om partymanifeste te lees, openbare forums by te woon, en ons inligting onafhanklik te verifieer. Gebruik hierdie resultate as 'n beginpunt vir dieper ondersoek, nie as jou finale besluit nie."
   }
 }

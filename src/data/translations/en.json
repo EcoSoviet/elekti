@@ -395,5 +395,11 @@
     "about": "About",
     "privacy": "Privacy",
     "contact": "Contact"
+  },
+  "disclaimer": {
+    "title": "Important Disclaimer",
+    "educational": "Elekti is an educational tool, not a substitute for research. Political parties are complex organisations with nuanced positions that evolve over time.",
+    "alpha": "This site is currently in alpha and under active development. Features may change, and data may be updated as we refine our methodology.",
+    "research": "We strongly encourage you to read party manifestos, attend public forums, and verify our information independently. Use these results as a starting point for deeper exploration, not as your final decision."
   }
 }

@@ -73,6 +73,17 @@
         </div>
       </div>
 
+      <div class="landing__disclaimer">
+        <h3 class="landing__disclaimer-title">{{ $t("disclaimer.title") }}</h3>
+        <p class="landing__disclaimer-text">
+          {{ $t("disclaimer.educational") }}
+        </p>
+        <p class="landing__disclaimer-text landing__disclaimer-text--warning">
+          {{ $t("disclaimer.alpha") }}
+        </p>
+        <p class="landing__disclaimer-text">{{ $t("disclaimer.research") }}</p>
+      </div>
+
       <div class="landing__links">
         <router-link to="/about" class="landing__link">
           <Info :size="20" />
@@ -158,6 +169,50 @@
     margin-top: var(--space-lg);
     font-size: var(--font-size-sm);
     color: var(--color-text-muted);
+  }
+
+  .landing__disclaimer {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    margin-bottom: var(--space-2xl);
+    border: 1px solid var(--color-border);
+  }
+
+  .landing__disclaimer-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--space-lg);
+    text-align: center;
+  }
+
+  .landing__disclaimer-text {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-md);
+  }
+
+  .landing__disclaimer-text:last-child {
+    margin-bottom: 0;
+  }
+
+  .landing__disclaimer-text--warning {
+    padding: var(--space-md);
+    background-color: var(--color-warning);
+    color: var(--color-primary-dark);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--color-accent-dark);
+    font-weight: var(--font-weight-medium);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .landing__disclaimer-text--warning {
+      background-color: rgba(212, 165, 32, 0.15);
+      color: var(--color-accent-light);
+      border-left-color: var(--color-accent);
+    }
   }
 
   .landing__links {
