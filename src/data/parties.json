@@ -4,6 +4,7 @@
     "short": "ActionSA",
     "name": "ActionSA",
     "descriptionKey": "party.actionsa.desc",
+    "ideologyKey": "party.actionsa.ideology",
     "colour": "#009639",
     "website": "https://www.actionsa.org.za/"
   },
@@ -12,6 +13,7 @@
     "short": "ACDP",
     "name": "African Christian Democratic Party",
     "descriptionKey": "party.acdp.desc",
+    "ideologyKey": "party.acdp.ideology",
     "colour": "#0088CC",
     "website": "https://acdp.org.za/"
   },
@@ -20,6 +22,7 @@
     "short": "ANC",
     "name": "African National Congress",
     "descriptionKey": "party.anc.desc",
+    "ideologyKey": "party.anc.ideology",
     "colour": "#008542",
     "website": "https://www.anc1912.org.za/"
   },
@@ -28,6 +31,7 @@
     "short": "ATM",
     "name": "African Transformation Movement",
     "descriptionKey": "party.atm.desc",
+    "ideologyKey": "party.atm.ideology",
     "colour": "#7B5E8A",
     "website": "https://www.atm-sa.org/"
   },
@@ -36,6 +40,7 @@
     "short": "Al Jama-ah",
     "name": "Al Jama-ah",
     "descriptionKey": "party.aljama-ah.desc",
+    "ideologyKey": "party.aljama-ah.ideology",
     "colour": "#00875A",
     "website": "https://www.aljama.co.za/"
   },
@@ -44,6 +49,7 @@
     "short": "DA",
     "name": "Democratic Alliance",
     "descriptionKey": "party.da.desc",
+    "ideologyKey": "party.da.ideology",
     "colour": "#0D5A9C",
     "website": "https://www.da.org.za/"
   },
@@ -52,6 +58,7 @@
     "short": "EFF",
     "name": "Economic Freedom Fighters",
     "descriptionKey": "party.eff.desc",
+    "ideologyKey": "party.eff.ideology",
     "colour": "#D40000",
     "website": "https://effonline.org/"
   },
@@ -61,6 +68,7 @@
     "name": "Freedom Front Plus",
     "nameKey": "party.vfplus.name",
     "descriptionKey": "party.vfplus.desc",
+    "ideologyKey": "party.vfplus.ideology",
     "colour": "#E85D00",
     "website": "https://www.vfplus.org.za/"
   },
@@ -69,6 +77,7 @@
     "short": "IFP",
     "name": "Inkatha Freedom Party",
     "descriptionKey": "party.ifp.desc",
+    "ideologyKey": "party.ifp.ideology",
     "colour": "#D4A520",
     "website": "https://ifp.org.za/"
   },
@@ -77,6 +86,7 @@
     "short": "NCC",
     "name": "National Coloured Congress",
     "descriptionKey": "party.ncc.desc",
+    "ideologyKey": "party.ncc.ideology",
     "colour": "#C85A3C",
     "website": "https://www.nationalcolouredcongress.org.za/"
   },
@@ -85,6 +95,7 @@
     "short": "PAC",
     "name": "Pan Africanist Congress of Azania",
     "descriptionKey": "party.pac.desc",
+    "ideologyKey": "party.pac.ideology",
     "colour": "#BF9D5C",
     "website": "https://www.pacofazania.org.za/"
   },
@@ -93,6 +104,7 @@
     "short": "PA",
     "name": "Patriotic Alliance",
     "descriptionKey": "party.pa.desc",
+    "ideologyKey": "party.pa.ideology",
     "colour": "#00A86B",
     "website": "https://mypa.org.za/"
   },
@@ -101,6 +113,7 @@
     "short": "SACP",
     "name": "South African Communist Party",
     "descriptionKey": "party.sacp.desc",
+    "ideologyKey": "party.sacp.ideology",
     "colour": "#B30000",
     "website": "https://www.sacp.org.za/"
   },
@@ -109,6 +122,7 @@
     "short": "MK",
     "name": "uMkhonto we Sizwe Party",
     "descriptionKey": "party.mk.desc",
+    "ideologyKey": "party.mk.ideology",
     "colour": "#1E5A1E",
     "website": "https://mkparty.org.za/"
   },
@@ -117,6 +131,7 @@
     "short": "UDM",
     "name": "United Democratic Movement",
     "descriptionKey": "party.udm.desc",
+    "ideologyKey": "party.udm.ideology",
     "colour": "#5B8C5A",
     "website": "https://www.udm.org.za/"
   },
@@ -125,6 +140,7 @@
     "short": "UFC",
     "name": "Unite for Change",
     "descriptionKey": "party.ufc.desc",
+    "ideologyKey": "party.ufc.ideology",
     "colour": "#E89400",
     "website": "https://www.uniteforchangesa.org/"
   }

@@ -17,9 +17,10 @@
     nameKey?: string;
     short: string;
     descriptionKey: string;
+    ideologyKey: string;
     colour: string;
     logo?: string;
-    website?: string;
+    website: string;
   }
 
   const props = defineProps<{
@@ -80,12 +81,15 @@
       </span>
     </div>
 
+    <p class="party-card__ideology">
+      {{ $t(party.ideologyKey) }}
+    </p>
+
     <p class="party-card__description">
       {{ $t(party.descriptionKey) }}
     </p>
 
     <a
-      v-if="party.website"
       :href="party.website"
       target="_blank"
       rel="noopener noreferrer"
@@ -219,6 +223,13 @@
     font-weight: var(--font-weight-bold);
     border-radius: var(--radius-sm);
     white-space: nowrap;
+  }
+
+  .party-card__ideology {
+    margin: 0 0 var(--space-sm) 0;
+    color: var(--color-text-tertiary);
+    font-size: var(--font-size-xs);
+    font-style: italic;
   }
 
   .party-card__description {

@@ -95,53 +95,69 @@
   },
   "party": {
     "anc": {
-      "desc": "The African National Congress is South Africa's governing party, advocating for social democracy, transformation, and addressing inequality through state intervention."
+      "desc": "The African National Congress is South Africa's governing party, advocating for social democracy, transformation, and addressing inequality through state intervention.",
+      "ideology": "Centre-left, developmental state"
     },
     "da": {
-      "desc": "The Democratic Alliance promotes liberal democracy, free market economics, and non-racial politics with emphasis on good governance and job creation."
+      "desc": "The Democratic Alliance promotes liberal democracy, free market economics, and non-racial politics with emphasis on good governance and job creation.",
+      "ideology": "Centre-right, liberal market"
     },
     "mk": {
-      "desc": "uMkhonto we Sizwe Party focuses on radical economic transformation, advocating for state-led development and addressing historical injustices."
+      "desc": "uMkhonto we Sizwe Party focuses on radical economic transformation, advocating for state-led development and addressing historical injustices.",
+      "ideology": "Left-wing, populist"
     },
     "eff": {
-      "desc": "The Economic Freedom Fighters is a far-left party advocating for radical economic transformation, nationalization, and land redistribution without compensation."
+      "desc": "The Economic Freedom Fighters is a far-left party advocating for radical economic transformation, nationalization, and land redistribution without compensation.",
+      "ideology": "Left-wing, pan-Africanist"
     },
     "ifp": {
-      "desc": "The Inkatha Freedom Party primarily represents Zulu communities, promoting Zulu cultural values, federalism, and free market economics with social responsibility. While it has broader appeal, policy priorities center on Zulu traditions and KwaZulu-Natal interests."
+      "desc": "The Inkatha Freedom Party primarily represents Zulu communities, promoting Zulu cultural values, federalism, and free market economics with social responsibility. While it has broader appeal, policy priorities centre on Zulu traditions and KwaZulu-Natal interests.",
+      "ideology": "Centre, Zulu-focused, conservative"
     },
     "pa": {
-      "desc": "The Patriotic Alliance focuses on addressing immigration issues, promoting South African nationalism, and prioritising citizens\u0027 needs."
+      "desc": "The Patriotic Alliance focuses on addressing immigration issues, promoting South African nationalism, and prioritising citizens' needs.",
+      "ideology": "Right-wing, nationalist"
     },
     "vfplus": {
       "name": "Freedom Front Plus",
-      "desc": "Freedom Front Plus primarily represents Afrikaner communities and interests, advocating for federalism, minority rights, and conservative values. Policy priorities center on Afrikaner cultural preservation and self-determination."
+      "desc": "Freedom Front Plus primarily represents Afrikaner communities and interests, advocating for federalism, minority rights, and conservative values. Policy priorities centre on Afrikaner cultural preservation and self-determination.",
+      "ideology": "Right-wing, Afrikaner interests"
     },
     "actionsa": {
-      "desc": "ActionSA is a centrist party focused on practical governance, anti-corruption, and economic growth through private sector engagement."
+      "desc": "ActionSA is a centrist party focused on practical governance, anti-corruption, and economic growth through private sector engagement.",
+      "ideology": "Centre-right, anti-corruption"
     },
     "acdp": {
-      "desc": "The African Christian Democratic Party promotes Christian values, conservative social policies, and constitutional democracy."
+      "desc": "The African Christian Democratic Party promotes Christian values, conservative social policies, and constitutional democracy.",
+      "ideology": "Centre-right, Christian conservative"
     },
     "ufc": {
-      "desc": "Unite for Change focuses on grassroots mobilization and addressing local community concerns through progressive policies."
+      "desc": "Unite for Change focuses on grassroots mobilisation and addressing local community concerns through progressive policies.",
+      "ideology": "Centrist, grassroots"
     },
     "udm": {
-      "desc": "The United Democratic Movement is a social democratic party emphasising good governance, anti-corruption, and balanced economic policies with merit-based appointments."
+      "desc": "The United Democratic Movement is a social democratic party emphasising good governance, anti-corruption, and balanced economic policies with merit-based appointments.",
+      "ideology": "Centre-left, pro-institution"
     },
     "sacp": {
-      "desc": "The South African Communist Party advocates for socialism, workers' rights and a transition to a socialist society through state control."
+      "desc": "The South African Communist Party advocates for socialism, workers' rights and a transition to a socialist society through state control.",
+      "ideology": "Far-left, socialist"
     },
     "atm": {
-      "desc": "The African Transformation Movement is a Christian democratic party advocating for conservative values, the death penalty, and stricter educational standards."
+      "desc": "The African Transformation Movement is a Christian democratic party advocating for conservative values, the death penalty, and stricter educational standards.",
+      "ideology": "Centre-right, Christian democratic"
     },
     "aljama-ah": {
-      "desc": "Al Jama-ah is an Islamic democratic party promoting Muslim interests, social democracy, and conservative social values while working for all South Africans."
+      "desc": "Al Jama-ah is an Islamic democratic party promoting Muslim interests, social democracy, and conservative social values while working for all South Africans.",
+      "ideology": "Islamic democratic, socially conservative"
     },
     "ncc": {
-      "desc": "The National Coloured Congress represents Coloured community interests and advocates for addressing issues affecting the Coloured population."
+      "desc": "The National Coloured Congress represents Coloured community interests and advocates for addressing issues affecting the Coloured population.",
+      "ideology": "Centrist, Coloured representation"
     },
     "pac": {
-      "desc": "The Pan Africanist Congress of Azania is a Black nationalist party advocating for African socialism, Pan-Africanism, and land reform based on African ownership."
+      "desc": "The Pan Africanist Congress of Azania is a Black nationalist party advocating for African socialism, Pan-Africanism, and land reform based on African ownership.",
+      "ideology": "Left-wing, Black nationalist"
     }
   },
   "axes": {
