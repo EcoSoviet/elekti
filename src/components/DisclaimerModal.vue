@@ -143,6 +143,7 @@
     display: flex;
     justify-content: flex-end;
     background-color: var(--color-surface);
+    padding-bottom: max(var(--space-xl), env(safe-area-inset-bottom));
   }
 
   .modal__button {
@@ -218,6 +219,10 @@
 
     .modal__footer {
       padding: var(--space-lg);
+      padding-bottom: max(
+        var(--space-lg),
+        calc(env(safe-area-inset-bottom) + var(--space-md))
+      );
     }
 
     .modal__title {
