@@ -78,21 +78,27 @@ const mockParties: Party[] = [
     name: "African National Congress",
     short: "ANC",
     descriptionKey: "party.anc.desc",
+    ideologyKey: "party.anc.ideology",
     colour: "#007A1C",
+    website: "https://www.anc1912.org.za/",
   },
   {
     id: "da",
     name: "Democratic Alliance",
     short: "DA",
     descriptionKey: "party.da.desc",
+    ideologyKey: "party.da.ideology",
     colour: "#007BFF",
+    website: "https://www.da.org.za/",
   },
   {
     id: "eff",
     name: "Economic Freedom Fighters",
     short: "EFF",
     descriptionKey: "party.eff.desc",
+    ideologyKey: "party.eff.ideology",
     colour: "#D70022",
+    website: "https://www.effonline.org/",
   },
 ];
 

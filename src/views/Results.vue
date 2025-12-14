@@ -12,9 +12,10 @@
     nameKey?: string;
     short: string;
     descriptionKey: string;
+    ideologyKey: string;
     colour: string;
     logo?: string;
-    website?: string;
+    website: string;
   }
 
   interface PartyScore {
