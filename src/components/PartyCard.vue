@@ -85,6 +85,16 @@
       {{ $t(party.ideologyKey) }}
     </p>
 
+    <div v-if="score !== undefined" class="party-card__score">
+      <div class="party-card__score-bar">
+        <div
+          class="party-card__score-fill"
+          :style="{ width: `${Math.max(0, score * 100)}%` }"
+        />
+      </div>
+      <span class="party-card__score-text">{{ formatPercentage(score) }}%</span>
+    </div>
+
     <p class="party-card__description">
       {{ $t(party.descriptionKey) }}
     </p>
@@ -112,16 +122,6 @@
         <line x1="10" y1="14" x2="21" y2="3" />
       </svg>
     </a>
-
-    <div v-if="score !== undefined" class="party-card__score">
-      <div class="party-card__score-bar">
-        <div
-          class="party-card__score-fill"
-          :style="{ width: `${Math.max(0, score * 100)}%` }"
-        />
-      </div>
-      <span class="party-card__score-text">{{ formatPercentage(score) }}%</span>
-    </div>
 
     <button
       v-if="axisScores && allAxisScores.length > 0 && score && score > 0"
