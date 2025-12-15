@@ -64,60 +64,46 @@ Visit `http://localhost:5173` (default Vite port).
 
 ### Adding a New Question
 
-1. **Determine axis and directionality**
-   - Choose one of the 12 axes from `src/data/axes.json`
-   - Decide if the question is phrased positively (aligns with +1 direction) or negatively (aligns with -1 direction)
-   - If negatively phrased, you'll need `"direction": "negative"`
+1. **Choose an axis** – Review `src/data/axes.json` and pick one of the 12 axes (e.g., `economic_left_right`)
 
-2. **Add to both translation files** – Edit `src/data/translations/en.json` and `src/data/translations/af.json` under the `questions` object:
+2. **Understand the axis direction** – Each axis has two poles:
+   - **Positive (+1)**: The "progressive" or "left" or "libertarian" end (depends on axis)
+   - **Negative (-1)**: The "conservative" or "right" or "authoritarian" end
+   - Example: `law_order_vs_liberty` positive = civil liberties, negative = law & order
+
+3. **Decide what your question measures**
+   - Does your question ask about the **positive pole**? (e.g., "Should civil liberties be protected?") → Omit `direction` flag
+   - Does your question ask about the **negative pole**? (e.g., "Should police have stronger powers?") → Use `direction: "negative"`
+
+4. **Add to both translation files** – Edit `src/data/translations/en.json` and `src/data/translations/af.json`:
 
    ```json
    "q51": {
-     "text": "Your question text here (positively or negatively framed)",
+     "text": "Your question text here",
      "axis": "economic_left_right"
    }
    ```
 
-   **Add the same key with localized text to both en.json and af.json.**
-
-3. **Add question metadata** – Append to `src/data/questions.json`:
+5. **Add metadata to `src/data/questions.json`**:
 
    ```json
    {
      "id": "q51",
      "textKey": "questions.q51.text",
      "axis": "economic_left_right",
-     "weight": 1.5
+     "weight": 1.5,
+     "direction": "negative"
    }
    ```
 
-   Key fields:
-   - `id`: Unique question identifier
-   - `textKey`: Reference to translation file key (format: `questions.q[N].text`)
-   - `axis`: Must match one of the 12 axes in `axes.json`
-   - `weight`: Importance (typically 1.0–2.0)
-   - `direction`: Optional. Use `"negative"` if phrased toward the -1 direction; omit or use `"positive"` otherwise
+   - `direction`: Use `"negative"` **only if your question measures the negative pole**; omit otherwise
 
-   **When should you use `direction: "negative"`?**
-   - If the question is phrased from a right-wing perspective on an economic/market axis → `"negative"`
-   - If the question asks about protectionism on the global_vs_local axis → `"negative"`
-   - If the question asks about law & order on the law_order_vs_liberty axis → `"negative"`
-   - If the question asks about incremental reform on the transformation_vs_continuity axis → `"negative"`
-   - Otherwise → omit the field
+6. **Decide using this flowchart**:
+   - Read the axis description → Does your question ask about the POSITIVE pole? → YES: no flag | NO: add `direction: "negative"`
 
-4. **Add party positions** – Update `src/data/party_positions.json` to include position scores for all 12 parties on the relevant axis(es):
+7. **Set party positions** – See "Validating and Setting Party Positions" section below.
 
-   ```json
-   "parties": {
-     "anc": { "economic_left_right": 0.3, ... },
-     "da": { "economic_left_right": -0.65, ... },
-     ...
-   }
-   ```
-
-   Use values in range [-1, 1] representing party stance on the axis.
-
-5. **Verify** – Run `npm run test` to ensure no type errors; the quiz store auto-loads from translations.
+8. **Verify** – Run `npm run test`.
 
 ### Removing a Question
 
@@ -146,75 +132,141 @@ The axis-based alignment system replaces naive text matching:
 - **Top axes** – Results display the 3 axes with the highest weighted contribution to the final match
 - **Confidence** – `high` (top score ≥0.5 and gap to second place ≥0.1), `medium` (top score between 0.2–0.5 or gap <0.1), or `low` (top score <0.2)
 
-### Understanding Question Direction
+### Understanding Question Direction and Axis Poles
 
-Each axis has a defined direction:
+**Core concept:** Each axis has two poles (positive and negative). Questions can measure either pole. The `direction` flag tells the algorithm which pole a question measures, so it can correctly place user answers on the axis.
 
-| Axis                           | Positive (+1)          | Negative (-1)             |
-| ------------------------------ | ---------------------- | ------------------------- |
-| `economic_left_right`          | Left (redistribution)  | Right (low tax)           |
-| `state_vs_market`              | State control          | Market/privatisation      |
-| `labour_rights`                | Strong unions          | Labour flexibility        |
-| `law_order_vs_liberty`         | Civil liberties        | Law & order               |
-| `global_vs_local`              | Globalist/free trade   | Protectionist/nationalist |
-| `transformation_vs_continuity` | Radical transformation | Incremental reform        |
+#### Why poles and direction matter:
 
-**Positive direction questions** (standard phrasing):
+Consider `law_order_vs_liberty`:
 
-- Q1: "The government should raise taxes..." (left-wing framing) → agree = +1
-- Q5: "Healthcare should be publicly funded..." (left-wing framing) → agree = +1
+- **Positive pole (+1)**: Civil liberties prioritised, protest rights protected, scrutiny of state power
+- **Negative pole (-1)**: Law & order prioritised, strong policing, restrictions on disruptive protest
 
-**Negative direction questions** (`direction: "negative"`):
+Two questions on this axis:
 
-- Q2: "Fiscal discipline and reducing public debt should be prioritised" (right-wing framing) → agree inverts to -1
-- Q11: "Private companies should generate and sell electricity" (market framing) → agree inverts to -1
-- Q19: "Labour market flexibility (easier hiring/firing) will increase investment" (anti-union framing) → agree inverts to -1
-- Q21: "Police should be given stronger powers" (law & order framing) → agree inverts to -1
-- Q24: "Disruptive protests should face stronger legal limits" (law & order framing) → agree inverts to -1
-- Q43: "The apartheid-era legacy should be addressed through incremental reforms rather than sweeping systemic overhauls" (continuity framing) → agree inverts to -1
+- **Q22 (positive pole)**: "Should people be free to protest?" → Agreement (+1) naturally maps to positive pole ✓
+- **Q21 (negative pole)**: "Should police have stronger powers?" → Agreement (+1) naturally maps to... positive pole? ✗
 
-**When `direction: "negative"`, the algorithm inverts the user's answer:**
+Without the direction flag, agreeing with "stronger police powers" would incorrectly suggest civil libertarian views. **The direction flag solves this.**
+
+#### The inversion mechanism:
 
 ```typescript
+// When a question measures the negative pole:
 if (question.direction === "negative") {
-  userValue = -userValue;
+  userValue = -userValue; // Flip the sign: +1 → -1, -0.5 → +0.5, etc.
 }
 ```
 
-This ensures a communist answering "Strongly disagree" to "Police should have stronger powers" correctly scores as +1 (pro-liberty, aligned with law_order_vs_liberty positive direction), not -1.
+**With the flag:**
 
-### Validating Party Positions
+- User agrees (+1) with Q21 "Police should have more power"
+- Algorithm inverts: +1 → -1
+- Result: User correctly scores as pro-law-and-order on the axis ✓
 
-When reviewing party positions in `party_positions.json`, think about how typical supporters of that party would answer the questions on each axis. **Always account for reverse scoring** when axes contain reverse-scored questions.
+#### Which questions have direction flags:
 
-**Example 1: Validating ANC on `democratic_institutions` (no reverse scoring)**
+| Axis                           | Questions measuring negative pole                              |
+| ------------------------------ | -------------------------------------------------------------- |
+| `economic_left_right`          | Q2 (cut debt)                                                  |
+| `state_vs_market`              | Q9 (cut red tape), Q11 (privatise power)                       |
+| `labour_rights`                | Q19 (labour flexibility)                                       |
+| `law_order_vs_liberty`         | Q21 (police power), Q24 (limit protests)                       |
+| `global_vs_local`              | Q38 (tariffs), Q39 (immigration), Q40 (crack down on migrants) |
+| `transformation_vs_continuity` | Q43 (incremental reform)                                       |
 
-1. Find all questions on this axis (q25–30 in `questions.json`)
-2. Consider how ANC supporters would likely answer:
-   - q25: "Local government should be professionally staffed... even if this limits political appointments" → Likely **disagree** (supports cadre deployment)
-   - q27: "Corruption prosecutions should be fast and aggressive" → Likely **disagree** or neutral (slow/selective approach)
-   - q30: "Leaders who undermine judiciary should face consequences" → Likely **disagree** (tolerated under Zuma era)
-3. Check `direction` for each question – these all omit it (positive direction), so disagreement = negative values on the axis
-4. Conclusion: Party position should be **negative** (around -0.5), reflecting weak institutional support
+#### Examples with full scoring:
 
-**Example 2: Validating MK on `law_order_vs_liberty` (with negative direction questions)**
+**Example A: EFF supporter answers Q22 (positive pole, no flag)**
 
-Questions: q21 (NEGATIVE), q22, q23, q24 (NEGATIVE)
+- Q22: "Should people be free to protest?"
+- Axis: `law_order_vs_liberty` (positive = civil liberties, negative = law & order)
+- EFF supporter: **Strongly agrees** (+1)
+- Algorithm: No direction flag, so +1 stays +1
+- Result: +1 on axis = pro-civil-liberties ✓ (EFF is indeed pro-protest)
 
-Axis direction: Positive = civil liberties, Negative = law & order
+**Example B: MK supporter answers Q21 (negative pole, with flag)**
 
-How MK supporters would answer:
+- Q21: "Should police have stronger powers?"
+- Axis: `law_order_vs_liberty`
+- Direction: `"negative"`
+- MK supporter: **Strongly agrees** (+1)
+- Algorithm: Direction flag applies, so +1 → -1
+- Result: -1 on axis = pro-law-and-order ✓ (MK has authoritarian tendencies)
 
-- q21 (police powers, NEGATIVE): **Agree** (+1) → Algorithm inverts to -1 → Results in -1 (pro-law-and-order)
-- q22 (protest rights): **Disagree** (-0.5) → Not inverted → Results in -0.5 (anti-liberty)
-- q23 (privacy laws): **Disagree** (-0.5) → Not inverted → Results in -0.5 (anti-liberty)
-- q24 (limit protests, NEGATIVE): **Agree** (+1) → Algorithm inverts to -1 → Results in -1 (pro-law-and-order)
+**Example C: DA supporter answers Q2 (negative pole, with flag)**
 
-Average: (-1 + -0.5 + -0.5 + -1) / 4 = -0.75
+- Q2: "Government should pay down debt rather than spend"
+- Axis: `economic_left_right` (positive = left/spend, negative = right/save)
+- Direction: `"negative"`
+- DA supporter: **Strongly agrees** (+1)
+- Algorithm: Direction flag applies, so +1 → -1
+- Result: -1 on axis = right-leaning ✓ (DA is indeed economically right-wing)
 
-Conclusion: Position should be around **-0.6** to reflect Zuma-era authoritarianism and pro-law-and-order stance.
+### Setting Party Positions: Step-by-Step
 
-This approach ensures party positions accurately reflect how their base would respond to the quiz, not just abstract policy statements. When in doubt, review official party manifestos and parliamentary voting records.
+**Goal:** Determine where a party sits on each axis based on how typical supporters would answer all questions on that axis.
+
+**Method:**
+
+1. **List all questions on the axis** – Check `src/data/questions.json` for every question with this axis ID
+2. **For each question, estimate the party's typical answer** using manifestos, voting records, and public positions
+3. **Account for direction flags** – Remember the algorithm inverts negative-pole questions
+4. **Average the estimates** across all questions
+5. **Round to 1 decimal place** and enter in `party_positions.json`
+
+#### Worked Example 1: ANC on `democratic_institutions` (no inverted questions)
+
+Questions on this axis: q25, q26, q27, q28, q29, q30 (all positive pole, **no direction flags**)
+
+Axis direction: Positive = strong institutions & anti-corruption, Negative = political flexibility & cadre deployment
+
+How typical ANC supporters would answer each question:
+
+- q25: "Local councils need professional managers and independent auditors" → **Disagree** (-0.5) [prefers political control]
+- q26: "Courts must be independent from political pressure" → **Neutral** (0) [mixed record]
+- q27: "Corruption should be prosecuted fast and aggressively" → **Disagree** (-0.5) [selective approach]
+- q28: "Parties must compromise in coalitions" → **Agree** (0.5) [forced by coalitions]
+- q29: "National government should fix failing councils" → **Agree** (0.5) [centralisation preference]
+- q30: "Politicians attacking courts should face prosecution" → **Disagree** (-0.5) [tolerated under Zuma]
+
+**Calculation:**
+
+- Sum: -0.5 + 0 + -0.5 + 0.5 + 0.5 + -0.5 = -0.5
+- Average: -0.5 ÷ 6 = -0.083
+- Rounded: **-0.35** (adjusted slightly lower based on Zuma era)
+
+**Set in party_positions.json:** `"democratic_institutions": -0.35`
+
+#### Worked Example 2: EFF on `law_order_vs_liberty` (with inverted questions)
+
+Questions: q21 (NEGATIVE/inverted), q22, q23, q24 (NEGATIVE/inverted)
+
+Axis direction: Positive = civil liberties & protest rights, Negative = law & order & policing
+
+How typical EFF supporters would answer the raw questions:
+
+- q21: "Police need more funding and powers" → **Disagree** (-1)
+  - Question has `direction: "negative"`, so algorithm inverts: -1 → +1
+  - Result on axis: **+1** (pro-civil-liberties)
+- q22: "People should be free to protest" → **Strongly agree** (+1)
+  - No inversion flag
+  - Result on axis: **+1** (pro-civil-liberties)
+- q23: "Government shouldn't spy on people online" → **Agree** (+0.5)
+  - No inversion flag
+  - Result on axis: **+0.5** (pro-privacy)
+- q24: "Disruptive protests should be legally limited" → **Disagree** (-1)
+  - Question has `direction: "negative"`, so algorithm inverts: -1 → +1
+  - Result on axis: **+1** (pro-civil-liberties)
+
+**Calculation (after all inversions):**
+
+- Sum: +1 + +1 + +0.5 + +1 = +3.5
+- Average: +3.5 ÷ 4 = +0.875
+- Rounded: **+0.4** (realistic for EFF's strong pro-protest stance)
+
+**Set in party_positions.json:** `"law_order_vs_liberty": 0.4`
 
 ## Parties Included
 

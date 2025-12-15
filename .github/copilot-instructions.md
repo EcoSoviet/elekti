@@ -18,10 +18,34 @@
 ## Scoring Model (essential rules)
 
 - Answer values from `STANDARD_OPTIONS`: [-1, -0.5, 0, 0.5, 1].
-- For questions with `direction: "negative"`, invert user value before comparing.
+- Each question measures one of 12 axes and one pole (positive or negative).
+- For questions with `direction: "negative"`, invert user value before comparing:
+  ```typescript
+  if (question.direction === "negative") {
+    userValue = -userValue;
+  }
+  ```
+- **Questions with `direction: "negative"`:** q2, q9, q11, q19, q21, q24, q38, q39, q40, q43
 - Similarity per question: `1 - abs(userValue - partyPosition)`; aggregate with `weight`.
 - Axis normalisation clamps to [0,1]; final party score is weighted average across axes.
 - Confidence: high/medium/low based on top score and spread (see `computeScores`).
+
+## Understanding Axis Poles and Direction Flags
+
+Each axis has two poles (positive and negative). Questions measure one pole or the other:
+
+- **Positive pole**: Questions naturally align with +1 on the axis (agreement = positive contribution)
+- **Negative pole**: Questions naturally align with -1 on the axis (agreement needs inversion to map to -1)
+
+The `direction: "negative"` flag tells the algorithm to invert user answers for questions measuring the negative pole, ensuring agreement correctly maps to the negative side of the axis.
+
+**Example:** On `law_order_vs_liberty`:
+
+- Positive pole = civil liberties (q22: "People should be free to protest")
+- Negative pole = law & order (q21: "Police should have more powers")
+- When user agrees with q21 (+1), the inversion flips it to -1 (law & order side)
+
+When adding questions or setting party positions, identify which pole the question measures and use the direction flag accordingly.
 
 ## Critical Workflows
 
