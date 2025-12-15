@@ -45,6 +45,7 @@ export const useQuizStore = defineStore("quiz", () => {
     return questionsMetadata.questions.map((q: QuestionMetadata) => ({
       ...q,
       text: t(q.textKey),
+      textKey: q.textKey,
     }));
   }
 

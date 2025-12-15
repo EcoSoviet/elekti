@@ -1,3 +1,4 @@
+import { createPinia, setActivePinia } from "pinia";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 const localStorageMock = (() => {
@@ -30,6 +31,7 @@ describe("i18n", () => {
       configurable: true,
       value: "en-US",
     });
+    setActivePinia(createPinia());
   });
 
   afterEach(() => {
@@ -75,6 +77,21 @@ describe("i18n", () => {
       const { i18n } = await import("./i18n");
       expect(i18n.global.locale.value).toBe("en");
     });
+
+    it("should detect Zulu browser language", async () => {
+      Object.defineProperty(navigator, "language", {
+        configurable: true,
+        value: "zu-ZA",
+      });
+      const { i18n } = await import("./i18n");
+      expect(i18n.global.locale.value).toBe("zu");
+    });
+
+    it("should accept stored Zulu locale from localStorage", async () => {
+      localStorage.setItem("lang", "zu");
+      const { i18n } = await import("./i18n");
+      expect(i18n.global.locale.value).toBe("zu");
+    });
   });
 
   describe("availableLocales", () => {
@@ -96,17 +113,26 @@ describe("i18n", () => {
       });
     });
 
-    it("should have exactly 2 available locales", async () => {
+    it("should include Zulu locale", async () => {
       const { availableLocales } = await import("./i18n");
-      expect(availableLocales).toHaveLength(2);
+      expect(availableLocales).toContainEqual({
+        code: "zu",
+        name: "Zulu",
+      });
+    });
+
+    it("should have exactly 3 available locales", async () => {
+      const { availableLocales } = await import("./i18n");
+      expect(availableLocales).toHaveLength(3);
     });
   });
 
   describe("messages", () => {
-    it("should have English and Afrikaans messages", async () => {
+    it("should have English, Afrikaans, and Zulu messages", async () => {
       const { i18n } = await import("./i18n");
       expect(i18n.global.messages.value).toHaveProperty("en");
       expect(i18n.global.messages.value).toHaveProperty("af");
+      expect(i18n.global.messages.value).toHaveProperty("zu");
     });
 
     it("should have fallback locale set to English", async () => {
@@ -117,6 +143,105 @@ describe("i18n", () => {
     it("should have legacy mode disabled", async () => {
       const { i18n } = await import("./i18n");
       expect(i18n.mode).toBe("composition");
+    });
+
+    it("should have consistent structure across all locales", async () => {
+      const { i18n } = await import("./i18n");
+      const messages = i18n.global.messages.value as Record<
+        string,
+        Record<string, unknown>
+      >;
+      const enKeys = Object.keys(messages.en || {});
+      const afKeys = Object.keys(messages.af || {});
+      const zuKeys = Object.keys(messages.zu || {});
+
+      expect(afKeys.toSorted()).toEqual(enKeys.toSorted());
+      expect(zuKeys.toSorted()).toEqual(enKeys.toSorted());
+    });
+
+    it("should have required message sections in all locales", async () => {
+      const { i18n } = await import("./i18n");
+      const messages = i18n.global.messages.value as Record<
+        string,
+        Record<string, unknown>
+      >;
+      const requiredSections = [
+        "app",
+        "nav",
+        "landing",
+        "quiz",
+        "results",
+        "about",
+        "party",
+        "axes",
+        "options",
+        "questions",
+        "footer",
+        "disclaimer",
+      ];
+
+      for (const locale of ["en", "af", "zu"]) {
+        for (const section of requiredSections) {
+          expect(messages[locale]).toHaveProperty(section);
+        }
+      }
+    });
+
+    it("should have all 50 questions in each locale", async () => {
+      const { i18n } = await import("./i18n");
+      const messages = i18n.global.messages.value as Record<string, unknown>;
+
+      for (const locale of ["en", "af", "zu"]) {
+        const questions =
+          ((messages[locale] as Record<string, unknown>)?.questions as Record<
+            string,
+            unknown
+          >) || {};
+        const questionKeys = Object.keys(questions);
+
+        expect(questionKeys).toHaveLength(50);
+        expect(questionKeys).toContain("q1");
+        expect(questionKeys).toContain("q50");
+      }
+    });
+  });
+
+  describe("uiStore integration", () => {
+    beforeEach(() => {
+      setActivePinia(createPinia());
+    });
+    it("should update localStorage when setLang is called", async () => {
+      const { useUiStore } = await import("../stores/uiStore");
+      const store = useUiStore();
+
+      store.setLang("af");
+      expect(localStorage.getItem("lang")).toBe("af");
+
+      store.setLang("zu");
+      expect(localStorage.getItem("lang")).toBe("zu");
+    });
+
+    it("should update i18n locale when setLang is called", async () => {
+      const { i18n } = await import("./i18n");
+      const { useUiStore } = await import("../stores/uiStore");
+      const store = useUiStore();
+
+      store.setLang("zu");
+      expect(i18n.global.locale.value).toBe("zu");
+
+      store.setLang("af");
+      expect(i18n.global.locale.value).toBe("af");
+    });
+
+    it("should keep lang ref in sync with i18n locale", async () => {
+      const { useUiStore } = await import("../stores/uiStore");
+      const store = useUiStore();
+
+      store.setLang("en");
+      expect(store.lang).toBe("en");
+
+      store.setLang("zu");
+      expect(store.lang).toBe("zu");
     });
   });
 });

@@ -6,6 +6,7 @@
   interface Question {
     id: string;
     text: string;
+    textKey?: string;
     axis: string;
     weight: number;
   }
@@ -49,7 +50,9 @@
 
 <template>
   <div class="quiz-question">
-    <h2 class="quiz-question__text">{{ question.text }}</h2>
+    <h2 class="quiz-question__text">
+      {{ question.textKey ? t(question.textKey) : question.text }}
+    </h2>
 
     <div
       class="quiz-question__options"

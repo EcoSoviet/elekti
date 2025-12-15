@@ -18,6 +18,7 @@ export interface Party {
 export interface Question {
   id: string;
   text: string;
+  textKey?: string;
   axis: string;
   weight: number;
   options: Array<{ value: number; label: string }>;
