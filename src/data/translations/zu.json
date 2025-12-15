@@ -1,18 +1,18 @@
 {
   "app": {
     "title": "Elekti",
-    "tagline": "Thola ikomkhulu elihambisana nawe"
+    "tagline": "Thola iqembu elihambisana nawe"
   },
   "nav": {
     "home": "Ikhaya",
-    "quiz": "Uhlu lwemibuzo",
+    "quiz": "Imibuzo",
     "results": "Imiphumela",
-    "about": "Ngathi"
+    "about": "Mayelana nathi"
   },
   "landing": {
-    "title": "Thola ikomkhulu elihambisana nawe",
+    "title": "Thola iqembu elihambisana nawe",
     "subtitle": "Phendula imibuzo ngezombusazwe zakho, ubone ukuthi yikuphi iqembu laseNingizimu Afrika elihambisana nemibono yakho.",
-    "startButton": "Qala uhlu lwemibuzo",
+    "startButton": "Qala imibuzo",
     "aboutLink": "Funda indlela esisebenza ngayo",
     "privacy": "Izimpendulo zigcinwa kudivayisi yakho kuphela, azithunyelwa ndawo.",
     "howItHelps": {
@@ -46,8 +46,8 @@
   },
   "results": {
     "title": "Imiphumela yakho",
-    "primaryMatch": "Ukulingana okukhulu",
-    "alternativeMatch": "Okunye okuhambisana",
+    "primaryMatch": "Iqembu elihambisana kakhulu",
+    "alternativeMatch": "Amanye amaqembu ahambisana nawe",
     "confidence": {
       "high": "Ukuhambisana okuphezulu",
       "medium": "Ukuhambisana okumaphakathi",
@@ -59,16 +59,16 @@
     "hideAxes": "Fihla ama-eksisi",
     "copyResults": "Kopisha imiphumela",
     "resultsCopied": "Imiphumela ikopishelwe!",
-    "retakeQuiz": "Phinda uhlu lwemibuzo",
+    "retakeQuiz": "Phinda imibuzo",
     "learnMore": "Funda kabanzi ngo-{party}"
   },
   "about": {
     "title": "Mayelana ne-Elekti",
-    "methodology": "Indlela Yesistimu",
+    "methodology": "Indlela yesistimu",
     "methodologyText": "I-Elekti isebenzisa indlela esekelwe kuma-eksisi angu-12 ukuqhathanisa imibono yakho nezikhundla zamaqembu aseNingizimu Afrika. Uhlelo lwethu lufaneleke, lukhanyile, futhi aluthathi hlangothi.",
     "howItWorks": "Siyasebenza Kanjani",
     "howItWorksText": "Uphendula imibuzo engama-50 ngezindawo ezahlukene—ezomnotho, ezokuphatha, ezokulingana njll. Umbuzo ngamunye uhlotshaniswa ne-eksisi ethile futhi unesilinganiso sawo. Izimpendulo zakho ziguqulwa zibe izikhundla kuma-eksisi bese ziqhathaniswa nezikhundla zamaqembu.",
-    "scoring": "Inkqubo Yomsanegu",
+    "scoring": "Uhlelo lokubala amaphuzu",
     "scoringText": "I-algorithm yethu isebenza kanje: (1) Impendulo ngayinye iqhathaniswa nesikhundla seqembu kuleyo eksisi, sibala ukuhambisana (1 minus umehluko). (2) Ukuhambisana kuphindaphindwa ngesilinganiso sombuzo bese kuhlanganiswa nge-eksisi. (3) Amaphuzu e-eksisi anormaliswa ngephesenti lesisindo. (4) Iphuzu lokugcina liwukuhleleka okulinganiselwe kuma-eksisi onke. Amaphuzu aboniswa ngamaphesenti, futhi sinikeza izinga lokuzethemba ngokusekelwe kumaphuzu aphezulu nokuhlukana kuwo.",
     "transparency": "Ithembi Lethu Ethulusela",
     "transparencyText": "Izikhundla zamaqembu kanye izisindo zamibuzo zisekelwe ocwaningweni lwemibhalo esemthethweni yamaqembu. Indlela ivulekile futhi ingabuyekezwa. Asithathi hlangothi—sifuna ukukusiza wenze isinqumo esisekelwe kudatha.",
@@ -84,79 +84,79 @@
     "sharingText": "Uma wabelana imiphumela, izimpendulo zifakwa ngqo ku-URL. Akuthunyelwa kumaseva—ulawula ukuthi ubani oyibona.",
     "analytics": "Ukuthola Iminininingwane Okuphroletelwa Imfihlo",
     "analyticsText": "Sisebenzisa i-Cloudflare Web Analytics—ayisebenzisi ama-cookie futhi ayilandeleli abantu. Iyasiza kuphela ngezibalo ezijwayelekile ngaphandle kokulimaza imfihlo yakho.",
-    "parties": "Amakompani Aqukethwe",
+    "parties": "Amaqembu aqukethwe",
     "partiesText": "Sifaka amaqembu angu-16 anombono ohlukene ku-spectrum yezombusazwe. Ukukhetha kusekelwe ekubalulekeni nasekuhlukaneni kwezimvo.",
     "disclaimer": "Umchazelo Ombalulekile",
     "disclaimerText": "I-Elekti iyithuluzi lokufundisa, hhayi esikhundleni socwaningo. Amaqembu ayinkimbinkimbi futhi izikhundla ziyashintsha. Funda amanifeseto, hamba emihlanganweni, futhi uqinisekise ulwazi ngokwakho. Le miphumela ikhombisa ukuhambisana ngezikhundla ezishiwo—ukuphatha sangempela kungahluka.",
     "viewData": "Bheka Idatha Kaseleni",
     "viewDataText": "Ungahlola amafayela ethu e-JSON: izikhundla zamaqembu, izisindo, kanye nedatha yemibuzo esetshenziswa i-algorithm.",
     "scoringData": "Idatha Yomsanegu (iqukethwe imibuzo kanye newethe)",
-    "partiesData": "Imininingwane Yemakompani"
+    "partiesData": "Imininingwane yamaqembu"
   },
   "party": {
     "anc": {
-      "desc": "I-African National Congress iyikompani yokubusa yaseNingizimu Afrika, ekhuthaza inkolo yomuntu oshintsha nokunye, kanye nokulingana ngokuthwala umuntu wezambazi esesikali.",
+      "desc": "I-African National Congress (ANC) iyibandla elibusayo laseNingizimu Afrika. Ligcizelela ukulingana, ukuguqulwa koMnotho, nokwandiswa kwezinsiza zomphakathi.",
       "ideology": "Isezamlindi-okufuphi, umuntu ophakele isakhiwo"
     },
     "da": {
-      "desc": "I-Democratic Alliance ikhuthaza umuntu wezambazi onwesile, uxwalamazimali lwemakete, kanye izikhundla zesambazi okungaqonde enqobo nokugxeka kwamakompani.",
+      "desc": "I-Democratic Alliance (DA) igcizelela inkululeko yomuntu, umnotho oholwa yimakethe, nokubusa okuhle ngokulawulwa okucacile.",
       "ideology": "Isezamlindi-akufuthi, umsebe womakete"
     },
     "mk": {
-      "desc": "Umkela we-Sizwe wase-uMkhonto wefayela iqinisekise okushintsha kwambuluzi okuziyinyumba, ikhuthaza ukuphakele, nokubheka inhliziyo zokuwakhela kabusha.",
+      "desc": "uMkhonto weSizwe Party (MK) igcizelela ukuguqulwa okusheshayo kwezinhlelo zomnotho nezombusazwe, nokwakha kabusha izikhungo zikahulumeni.",
       "ideology": "Akusezamlindi-kwelezamba, umuntu ophakele ilinganiso"
     },
     "eff": {
-      "desc": "I-Economic Freedom Fighters iyikompani yokawula-okufuphi, ikhuthaza okufa kwambuluzi, isikali siyidatha, kanye nokweza kwelizwe ngaphandle kokubekelela.",
+      "desc": "I-Economic Freedom Fighters (EFF) igcizelela ukulingana kwezomnotho, ukubaluleka kwezinsiza zikahulumeni, nokwandisa indima kahulumeni emnothweni.",
       "ideology": "Isezamlindi-nomatambana, umuntu wombuluzi walezamba"
     },
     "ifp": {
-      "desc": "I-Inkatha Freedom Party ifanele inqobo yama-Zulu, ikhuthaza inzalakazelo yama-Zulu, amandla okudinga, kanye nomakete omkhulu ophakeme. Iguqula okuba nobukhulu, kodwa ifanele inqobo yama-Zulu kanye neminyangweni ye-KwaZulu-Natali.",
+      "desc": "I-Inkatha Freedom Party (IFP) igcizelela inhlonipho yesiko lamaZulu, ukubusa okuhle, nokunakekelwa komphakathi, ikakhulukazi KwaZulu-Natali.",
       "ideology": "Isesamlindi, ikhethwe yama-Zulu, imuntu oyawakuphetha"
     },
     "pa": {
-      "desc": "I-Patriotic Alliance igxile nokubhozu lezisebenzi, ikhuthaza inzalakazelo yaseNingizimu Afrika, kanye nokuthwala amagcina kabantu basesesalukweni.",
+      "desc": "I-Patriotic Alliance (PA) igcizelela ukuvikela umphakathi, ukugxila ezidingweni zabantu basemalokishini, nokukhuthaza isizwe sokuqala (South Africa first).",
       "ideology": "Isezamlindi-kwelakho, umuntu wezambazi wembuluzi"
     },
     "vfplus": {
       "name": "Freedom Front Plus",
-      "desc": "I-Freedom Front Plus ifanele inqobo yamakumbi ama-Afrikaans kanye namandla ayo, ikhuthaza imigodu, amagcina amancane, kanye nenalelo eyintlanti. Iguqula okuba nobukhulu, kodwa ifanele inqobo yesinquba sama-Afrikaans kanye nomuntu owamkele ngokwakho.",
+      "desc": "I-Freedom Front Plus (VF+) igcizelela amalungelo ama-Afrikaans, ukugxila emiphakathini emincane, kanye nenkululeko yemiphakathi yokuzilawula.",
       "ideology": "Isezamlindi-kwelakho, amandla ama-Afrikaans"
     },
     "actionsa": {
-      "desc": "I-ActionSA iyikompani yecentre, igxile ekubusiswa kahle, okubhozu lokucabanga, kanye nokwanda kwombuluzi ngokuthwala umuntu wesigaba.",
+      "desc": "I-ActionSA ibeka phambili ukubusa okuhle, ukulwa nenkohlakalo, nokwakha umnotho ohamba phambili ngezimboni namabhizinisi.",
       "ideology": "Isezamlindi-akufuthi, okubhozu lokwenza kabusha"
     },
     "acdp": {
-      "desc": "I-African Christian Democratic Party ikhuthaza inzalakazelo yomuntu wabaseKristu, izikhundla zekusindiso ezilingile, kanye inkolo eyintlanti ethulele.",
+      "desc": "I-African Christian Democratic Party (ACDP) igcizelela izimiso zobuKristu ezinqubweni zikahulumeni, ukubaluleka komndeni, nokuziphatha okuhle.",
       "ideology": "Isezamlindi-akufuthi, umuntu wabaseKristu ophakele"
     },
     "ufc": {
-      "desc": "I-Unite for Change igxile kukulanda kwesigaba kanye nokubheka izinkinga zomuntu wakusigaba ngokuthwala imvume ephakele.",
+      "desc": "I-Unite for Change (UFC) igxile ekubuseni okuhle, ekwakheni umnotho obanzi, nasekuhlanganiseni abantu abanemvelaphi ehlukene.",
       "ideology": "Isemapoyini, umuntu owalamulatela"
     },
     "udm": {
-      "desc": "I-United Democratic Movement iyikompani yokumuntu ekusindisa, ikhuthaza ubusisimu ebukhulu, okubhozu lokucabanga, kanye nexwalamazimali eliyisisela kunankosi okuba nommangale.",
+      "desc": "I-United Democratic Movement (UDM) igcizelela ukubusa okuhle, ukulawula okunengqondo, nokwakha izikhungo zikahulumeni ezizinzile.",
       "ideology": "Isezamlindi-okufuphi, umuntu ophakele amakhono"
     },
     "sacp": {
-      "desc": "I-South African Communist Party ikhuthaza imvume yokwenza ilizwe, amagcina womuntu owasemsebenzini, kanye inguquko yendlela esesikali.",
+      "desc": "I-South African Communist Party (SACP) igcizelela ubunikazi bomphakathi kwezinsiza ezinkulu, amalungelo abasebenzi, nokuguqulwa kwezinhlelo zomnotho ukuze kube nokulingana.",
       "ideology": "Akusezamlindi-nomatambana, umuntu womuntu ozenzela isikhundla"
     },
     "atm": {
-      "desc": "I-African Transformation Movement iyikompani yokudlala wabaseKristu, ikhuthaza enalelo eyintlanti, inkosi yokufa, kanye amagcina okufunda okuqinile.",
+      "desc": "I-African Transformation Movement (ATM) igcizelela izimiso zobuKristu, ukulunga komphakathi, nokubusa okuhle okuhlonipha izikhungo.",
       "ideology": "Isezamlindi-akufuthi, umuntu wabaseKristu ophakele amandla"
     },
     "aljama-ah": {
-      "desc": "I-Al Jama-ah iyikompani yobudlala bamusulumane, ikhuthaza amandla abantu base-Muslim, isikhosantshwa somuntu, kanye elingezikhundla ezingelile ngenkolo.",
+      "desc": "I-Al Jama-ah igcizelela izimiso zobuSulumane ezinqubweni zikahulumeni, ukulunga komphakathi, kanye nokuqinisa imiphakathi yamaSulumane.",
       "ideology": "Imvume yamusulumane, umuntu oyintlanti oyophakela"
     },
     "ncc": {
-      "desc": "I-National Coloured Congress ifanele inqobo yamuntu omhlophe, ikhuthaza okubhozu okuklinganiselela izinto ezithintwa inqobo yamuntu omhlophe.",
+      "desc": "I-National Coloured Congress (NCC) igxile ekumeleni nasekuvikelweni kwemiphakathi yabantu abamabalabala, kanye nokulingana kwamathuba.",
       "ideology": "Isemapoyini, umuntu womuntu omhlophe"
     },
     "pac": {
-      "desc": "I-Pan Africanist Congress of Azania iyikompani yomuntu omnyama wamasimoni, ikhuthaza isikhosantshwa salezamba, i-Pan-Africanism, kanye nokwenza kwelizwe esekelwe ekubekelelweni kwomuntu omnyama.",
+      "desc": "I-Pan Africanist Congress of Azania (PAC) igcizelela i-Pan-Africanism, ukwakha isizwe esimnyama esizimele, nokulwa nobandlululo.",
       "ideology": "Isezamlindi-kwelakho, umuntu omnene wamasimoni"
     }
   },
@@ -201,7 +201,7 @@
   "options": {
     "stronglyAgree": "Ngivuma kakhulu",
     "agree": "Ngivuma",
-    "neutral": "Ngaphakathi",
+    "neutral": "Okungathathi hlangothi",
     "disagree": "Angivumi",
     "stronglyDisagree": "Angivumi kakhulu"
   },
