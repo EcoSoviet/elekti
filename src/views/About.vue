@@ -79,9 +79,12 @@
         <p class="about__text">{{ $t("about.partiesText") }}</p>
 
         <div class="about__parties">
-          <div
+          <a
             v-for="party in parties"
             :key="party.id"
+            :href="party.website"
+            target="_blank"
+            rel="noopener noreferrer"
             class="about__party"
             :style="{ '--party-colour': party.colour }"
           >
@@ -89,7 +92,7 @@
               {{ party.short }}
             </span>
             <span class="about__party-name">{{ party.name }}</span>
-          </div>
+          </a>
         </div>
       </section>
 
@@ -236,6 +239,25 @@
     background-color: var(--color-background);
     border-radius: var(--radius-sm);
     border: 2px solid var(--color-border-light);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    cursor: pointer;
+  }
+
+  .about__party:hover {
+    background-color: var(--party-colour);
+    border-color: var(--party-colour);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .about__party:hover .about__party-badge {
+    background-color: white;
+    color: var(--party-colour);
+  }
+
+  .about__party:hover .about__party-name {
+    color: white;
   }
 
   .about__party-badge {
