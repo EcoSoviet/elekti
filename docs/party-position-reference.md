@@ -36,7 +36,7 @@ Purpose: explain the numeric scores in src/data/party_positions.json against the
 | land_and_ownership           | 0.5   | Leans positive toward rapid land reform/expropriation     |
 | labour_rights                | 0.4   | Leans positive toward stronger labour protections         |
 | law_order_vs_liberty         | -0.1  | Centred with slight lean toward order/strong policing     |
-| democratic_institutions      | -0.55 | Leans negative toward executive control/cadre deployment  |
+| democratic_institutions      | -0.45 | Leans negative toward executive control/cadre deployment  |
 | environment_energy           | -0.1  | Near-neutral with slight lean toward pragmatic energy mix |
 | social_progressivism         | 0.3   | Leans positive toward progressive social rights           |
 | global_vs_local              | -0.1  | Near-neutral with slight lean toward economic nationalism |
@@ -54,7 +54,7 @@ Purpose: explain the numeric scores in src/data/party_positions.json against the
 | labour_rights                | -0.6  | Strongly leans negative toward labour flexibility/minimal restrictions |
 | law_order_vs_liberty         | -0.2  | Leans negative toward order/strong policing                            |
 | democratic_institutions      | 0.8   | Strongly leans positive toward institutional autonomy/oversight        |
-| environment_energy           | 0.5   | Leans positive toward aggressive climate/renewables                    |
+| environment_energy           | 0.35  | Leans positive toward climate action/renewables (moderate)             |
 | social_progressivism         | 0.7   | Strongly leans positive toward progressive social rights               |
 | global_vs_local              | 0.6   | Strongly leans positive toward global cooperation/free trade           |
 | transformation_vs_continuity | -0.5  | Leans negative toward incremental reform/stability                     |
@@ -103,8 +103,8 @@ Purpose: explain the numeric scores in src/data/party_positions.json against the
 | state_vs_market              | 0.7   | Strongly leans positive toward state ownership/regulation          |
 | land_and_ownership           | 0.9   | Strongly leans positive toward expropriation/rapid reform          |
 | labour_rights                | 0.7   | Strongly leans positive toward strong unions/protection            |
-| law_order_vs_liberty         | -0.6  | Strongly leans negative toward order/strong policing               |
-| democratic_institutions      | -0.7  | Strongly leans negative toward executive control                   |
+| law_order_vs_liberty         | -0.5  | Leans negative toward order/strong policing                        |
+| democratic_institutions      | -0.5  | Leans negative toward executive control                            |
 | environment_energy           | -0.2  | Slightly leans negative toward pragmatic energy mix                |
 | social_progressivism         | -0.4  | Leans negative toward traditional/conservative values              |
 | global_vs_local              | -0.7  | Strongly leans negative toward economic nationalism/protectionism  |
@@ -150,8 +150,8 @@ Purpose: explain the numeric scores in src/data/party_positions.json against the
 
 | Axis                         | Score | Interpretation                                                  |
 | ---------------------------- | ----- | --------------------------------------------------------------- |
-| economic_left_right          | -0.4  | Leans negative toward low taxation/market-led growth            |
-| state_vs_market              | -0.4  | Leans negative toward privatisation/market leadership           |
+| economic_left_right          | -0.3  | Leans negative toward low taxation/market-led growth            |
+| state_vs_market              | -0.3  | Leans negative toward privatisation/market leadership           |
 | land_and_ownership           | -0.3  | Leans negative toward private property/market transactions      |
 | labour_rights                | -0.3  | Leans negative toward labour flexibility                        |
 | law_order_vs_liberty         | -0.2  | Leans negative toward order/strong policing                     |
@@ -206,7 +206,7 @@ Purpose: explain the numeric scores in src/data/party_positions.json against the
 | land_and_ownership           | 0.3   | Leans positive toward rapid land reform                         |
 | labour_rights                | 0.1   | Near-neutral with slight lean toward labour protection          |
 | law_order_vs_liberty         | 0.3   | Leans positive toward civil liberties priority                  |
-| democratic_institutions      | 0.8   | Strongly leans positive toward institutional autonomy/oversight |
+| democratic_institutions      | 0.6   | Strongly leans positive toward institutional autonomy/oversight |
 | environment_energy           | 0.3   | Leans positive toward aggressive climate/renewables             |
 | social_progressivism         | 0.3   | Leans positive toward progressive social rights                 |
 | global_vs_local              | 0.2   | Slightly leans positive toward global cooperation               |
@@ -277,7 +277,7 @@ Purpose: explain the numeric scores in src/data/party_positions.json against the
 | democratic_institutions      | 0.3   | Leans positive toward institutional autonomy                       |
 | environment_energy           | 0.1   | Near-neutral with slight lean toward aggressive climate/renewables |
 | social_progressivism         | 0.1   | Near-neutral with slight lean toward progressive values            |
-| global_vs_local              | 0.0   | Neutral between global openness and nationalism                    |
+| global_vs_local              | -0.1  | Near-neutral with slight lean toward economic nationalism         |
 | transformation_vs_continuity | 0.1   | Near-neutral with slight lean toward transformation                |
 | urban_development            | 0.1   | Near-neutral with slight lean toward public planning               |
 | equity_and_inclusion         | 0.3   | Leans positive toward affirmative action/BEE                       |
