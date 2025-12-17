@@ -36,6 +36,12 @@ export default defineConfig({
           if (id.includes('node_modules/vue-i18n')) {
             return 'vue-i18n'
           }
+          if (id.includes('node_modules/zod')) {
+            return 'zod'
+          }
+          if (id.includes('node_modules/lucide-vue-next')) {
+            return 'lucide-icons'
+          }
         }
       },
       onwarn(warning, warn) {
