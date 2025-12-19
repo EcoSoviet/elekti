@@ -220,8 +220,8 @@
       "axis": "economic_left_right"
     },
     "q4": {
-      "text": "Die staat moet openbare werksprogramme gebruik om werkloosheid te verminder.",
-      "axis": "economic_left_right"
+      "text": "Hou sommige steenkool- en gasaanlegte aan die gang vir netwerkbetroubaarheid, selfs al vertraag dit emissiesnydoelwitte.",
+      "axis": "environment_energy"
     },
     "q5": {
       "text": "Gesondheidsorg moet gratis wees by klinieke en hospitale vir almal.",
@@ -232,8 +232,8 @@
       "axis": "economic_left_right"
     },
     "q7": {
-      "text": "Die staat moet sterk subsidies vir kinderopvoeding verskaf om werkende ouers te ondersteun.",
-      "axis": "economic_left_right"
+      "text": "Skole moet omvattende seksualiteitsopvoeding met LGBTQ+ insluiting leer, selfs al beswaar sommige ouers.",
+      "axis": "social_progressivism"
     },
     "q8": {
       "text": "Regering moet aktief groeiende swart-eienaarskap en werker-eienaarskap-ondernemings ondersteun deur lenings, belastingvermindering en opdragte.",
@@ -324,8 +324,8 @@
       "axis": "democratic_institutions"
     },
     "q30": {
-      "text": "Politici wat die howe, stemmingstelsel of Grondwet aanval, moet vervolgd word.",
-      "axis": "democratic_institutions"
+      "text": "Verlaag maatskappy- en persoonlike belasting om belegging te lok, selfs al verminder dit korttermyn sosiale besteding.",
+      "axis": "economic_left_right"
     },
     "q31": {
       "text": "Suid-Afrika moet wetlike teikens stel om besoedeling te sny en steenkoolkragstasies te sluit.",

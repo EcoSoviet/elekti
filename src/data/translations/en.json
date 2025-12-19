@@ -220,8 +220,8 @@
       "axis": "economic_left_right"
     },
     "q4": {
-      "text": "The state should use public works programmes to reduce unemployment.",
-      "axis": "economic_left_right"
+      "text": "Keep some coal and gas plants running for grid reliability, even if it delays emissions cuts.",
+      "axis": "environment_energy"
     },
     "q5": {
       "text": "Healthcare should be free at clinics and hospitals for everyone.",
@@ -232,8 +232,8 @@
       "axis": "economic_left_right"
     },
     "q7": {
-      "text": "The state should provide strong subsidies for childcare to support working parents.",
-      "axis": "economic_left_right"
+      "text": "Schools should teach comprehensive sexuality education, including LGBTQ+ inclusion, even if some parents object.",
+      "axis": "social_progressivism"
     },
     "q8": {
       "text": "Government should actively support growing black-owned and worker-owned businesses through loans, tax breaks, and contracts.",
@@ -324,8 +324,8 @@
       "axis": "democratic_institutions"
     },
     "q30": {
-      "text": "Coalition governments must publish transparent agreements with dispute-resolution clauses and agreed budget priorities—even if it constrains party freedom.",
-      "axis": "democratic_institutions"
+      "text": "Cut corporate and personal tax rates to attract investment, even if it reduces short-term social spending.",
+      "axis": "economic_left_right"
     },
     "q31": {
       "text": "South Africa should set legal targets to cut pollution and close coal power stations.",
