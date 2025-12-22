@@ -7,6 +7,12 @@ import {
 } from "../validators/answers";
 
 vi.mock("vue-i18n", () => ({
+  createI18n: (_opts?: unknown) => ({
+    global: {
+      t: (key: string) => key,
+      locale: { value: "en" },
+    },
+  }),
   useI18n: () => ({
     t: (key: string) => {
       const parts = key.split(".");
@@ -41,22 +47,22 @@ vi.mock("../data/questions.json", () => {
   };
 });
 
+const makeEncodedAnswers = (
+  values: Array<number | undefined>,
+  total: number
+) => {
+  const padded = Array.from({ length: total }, (_, index) => {
+    const value = values[index];
+    return value === undefined ? UNANSWERED_VALUE : value;
+  });
+
+  return encodeAnswerValuesToBase64Url(padded);
+};
+
 describe("quizStore", () => {
   beforeEach(() => {
     setActivePinia(createPinia());
   });
-
-  const makeEncodedAnswers = (
-    values: Array<number | undefined>,
-    total: number
-  ) => {
-    const padded = Array.from({ length: total }, (_, index) => {
-      const value = values[index];
-      return value === undefined ? UNANSWERED_VALUE : value;
-    });
-
-    return encodeAnswerValuesToBase64Url(padded);
-  };
 
   describe("initialization", () => {
     it("should initialize with empty answers", () => {
