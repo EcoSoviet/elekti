@@ -37,7 +37,6 @@ export const useQuizStore = defineStore("quiz", () => {
     options: Array<{ value: number; label: string }>;
   }
 
-  // Global translator wrapper to satisfy strict typing without `any`
   const tGlobal = i18n.global.t as unknown as (key: string) => string;
   function translate(key: string): string {
     return tGlobal(key);

@@ -50,22 +50,22 @@
         <div class="landing__modes" role="radiogroup" aria-label="Quiz length">
           <label
             class="landing__mode"
-            :class="{ 'landing__mode--active': selectedMode === 'fast' }"
+            :class="{ 'landing__mode--active': selectedMode === 'quick' }"
             role="radio"
-            :aria-checked="selectedMode === 'fast'"
+            :aria-checked="selectedMode === 'quick'"
           >
             <input
               type="radio"
               name="mode"
-              value="fast"
-              :checked="selectedMode === 'fast'"
-              @change="selectedMode = 'fast'"
+              value="quick"
+              :checked="selectedMode === 'quick'"
+              @change="selectedMode = 'quick'"
             />
             <span class="landing__mode-title">{{
-              $t("landing.modes.fast.title")
+              $t("landing.modes.quick.title")
             }}</span>
             <span class="landing__mode-desc">{{
-              $t("landing.modes.fast.desc")
+              $t("landing.modes.quick.desc")
             }}</span>
           </label>
           <label
@@ -118,7 +118,7 @@
         <div v-if="isDev" class="landing__dev-row">
           <button
             class="landing__dev-button"
-            @click="devFillRandomForMode('fast')"
+            @click="devFillRandomForMode('quick')"
           >
             🔧 DEV: Quick → Results
           </button>

@@ -8,20 +8,20 @@ describe("quizStore surveys", () => {
     setActivePinia(createPinia());
   });
 
-  it("loads fast survey (12 questions)", () => {
+  it("loads quick survey (12 questions)", () => {
     const quiz = useQuizStore();
     const ui = useUiStore();
-    ui.setMode("fast");
-    quiz.loadSurvey("fast");
-    expect(quiz.mode).toBe("fast");
+    ui.setMode("quick");
+    quiz.loadSurvey("quick");
+    expect(quiz.mode).toBe("quick");
     expect(quiz.questions.length).toBe(12);
   });
 
-  it("loads balanced survey (20 questions)", () => {
+  it("loads balanced survey (24 questions)", () => {
     const quiz = useQuizStore();
     quiz.loadSurvey("balanced");
     expect(quiz.mode).toBe("balanced");
-    expect(quiz.questions.length).toBe(20);
+    expect(quiz.questions.length).toBe(24);
   });
 
   it("encodes/decodes with custom question order from URL", () => {

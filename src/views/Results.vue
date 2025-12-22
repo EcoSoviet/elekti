@@ -6,7 +6,7 @@
   import PartyCard from "../components/PartyCard.vue";
   import ResultBreakdown from "../components/ResultBreakdown.vue";
   import { useQuizStore } from "../stores/quizStore";
-  import type { SurveyMode } from "../stores/uiStore";
+  import { isSurveyMode, type SurveyMode } from "../stores/uiStore";
 
   interface Party {
     id: string;
@@ -63,9 +63,9 @@
     if (encodedAnswers) {
       if (modeParam) {
         const ids = qParam ? qParam.split(",").filter(Boolean) : undefined;
-        const isSurveyMode = (m: string): m is SurveyMode =>
-          m === "fast" || m === "balanced" || m === "full";
-        const m: SurveyMode = isSurveyMode(modeParam) ? modeParam : "full";
+        const m: SurveyMode = isSurveyMode(modeParam)
+          ? (modeParam as SurveyMode)
+          : "full";
         quizStore.loadSurvey(m, ids);
       }
       const idsForDecode = qParam
