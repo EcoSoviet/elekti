@@ -6,6 +6,7 @@
   import PartyCard from "../components/PartyCard.vue";
   import ResultBreakdown from "../components/ResultBreakdown.vue";
   import { useQuizStore } from "../stores/quizStore";
+  import type { SurveyMode } from "../stores/uiStore";
 
   interface Party {
     id: string;
@@ -40,6 +41,8 @@
   const result = ref<QuizResult | undefined>(undefined);
   const copied = ref(false);
 
+  const modeLabel = computed(() => t(`landing.modes.${quizStore.mode}.title`));
+
   const otherScores = computed<PartyScore[]>(() => {
     if (!result.value) {
       return [];
@@ -54,9 +57,21 @@
   onMounted(() => {
     const urlParameters = new URLSearchParams(globalThis.location.search);
     const encodedAnswers = urlParameters.get("r");
+    const modeParam = urlParameters.get("m");
+    const qParam = urlParameters.get("q");
 
     if (encodedAnswers) {
-      const loaded = quizStore.loadAnswersFromUrl(encodedAnswers);
+      if (modeParam) {
+        const ids = qParam ? qParam.split(",").filter(Boolean) : undefined;
+        const isSurveyMode = (m: string): m is SurveyMode =>
+          m === "fast" || m === "balanced" || m === "full";
+        const m: SurveyMode = isSurveyMode(modeParam) ? modeParam : "full";
+        quizStore.loadSurvey(m, ids);
+      }
+      const idsForDecode = qParam
+        ? qParam.split(",").filter(Boolean)
+        : undefined;
+      const loaded = quizStore.loadAnswersFromUrl(encodedAnswers, idsForDecode);
       if (loaded) {
         result.value = quizStore.computeScores();
         return;
@@ -76,7 +91,9 @@
     }
 
     const encoded = quizStore.encodeAnswersToUrl();
-    const shareUrl = `${globalThis.location.origin}/results?r=${encoded}`;
+    const ids = quizStore.questions.map((q) => q.id).join(",");
+    const m = quizStore.mode;
+    const shareUrl = `${globalThis.location.origin}/results?r=${encoded}&m=${m}&q=${encodeURIComponent(ids)}`;
 
     const confidenceLabel = t(`results.confidence.${result.value.confidence}`);
 
@@ -120,6 +137,10 @@
             <div class="results__badge">
               <Trophy :size="20" />
               <span>{{ $t("results.primaryMatch") }}</span>
+            </div>
+
+            <div class="results__mode">
+              {{ modeLabel }}
             </div>
 
             <div
@@ -283,6 +304,21 @@
 
   .results__confidence:hover {
     box-shadow: var(--shadow-lg);
+  }
+
+  .results__mode {
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: 0;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    box-shadow: var(--shadow-sm);
+    height: 40px;
+    background: var(--color-surface);
+    border: 2px solid var(--color-border);
+    color: var(--color-text-secondary);
   }
 
   .results__confidence--high {

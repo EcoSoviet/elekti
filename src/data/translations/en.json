@@ -11,10 +11,15 @@
   },
   "landing": {
     "title": "Match your vote to South Africa",
-    "subtitle": "Answer 55 quick questions grounded in local policy debates. See which parties line up with your priorities for your community, province, and the country.",
+    "subtitle": "Answer 12, 20, or 55 quick questions grounded in local policy debates. See which parties line up with your priorities for your community, province, and the country.",
     "startButton": "Start the quiz",
     "aboutLink": "How we work",
     "privacy": "Your answers stay on this device. No tracking, no accounts.",
+    "modes": {
+      "fast": { "title": "Quick (12)", "desc": "~1–2 min, 1 per issue" },
+      "balanced": { "title": "Balanced (20)", "desc": "~3 min, high coverage" },
+      "full": { "title": "Full (55)", "desc": "~8–10 min, full fidelity" }
+    },
     "howItHelps": {
       "title": "Why this matters now",
       "intro": "Coalitions, load-shedding, jobs, safety, housing. Compare parties on the issues that shape daily life in South Africa.",
@@ -68,7 +73,7 @@
     "methodology": "How this tool is built",
     "methodologyText": "Elekti is rooted in South African policy documents and public statements. We score across 12 issue areas that affect daily life and governance. The maths is deterministic and transparent.",
     "howItWorks": "What you answer",
-    "howItWorksText": "Fifty-five questions cover power, water, housing, jobs, safety, transport, coalitions, social policy, accountability, gender-based violence, informal settlements, and decolonisation of education. Each question links to an issue axis. You answer, we map your stance, and we compare it to each party's stated position.",
+    "howItWorksText": "A set of 12, 20, or 55 questions covers power, water, housing, jobs, safety, transport, coalitions, social policy, accountability, gender-based violence, informal settlements, and decolonisation of education. Each question links to an issue axis. You answer, we map your stance, and we compare it to each party's stated position.",
     "scoring": "How we score",
     "scoringText": "For every axis we calculate similarity between your answers and each party, weight by question importance, normalise by the questions you answered, then average across all axes. Scores are percentages; confidence reflects how clear the gap is between your top match and the rest.",
     "transparency": "Open data, no surprises",
