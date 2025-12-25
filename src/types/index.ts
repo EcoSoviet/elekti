@@ -41,10 +41,24 @@ export interface PartyScore {
   axisScores?: Record<string, number>;
 }
 
+export interface AxisContribution {
+  axisId: string;
+  score: number;
+  weight: number;
+}
+
+export interface AxisCoverage {
+  axisId: string;
+  questionsAnswered: number;
+  totalQuestions: number;
+}
+
 export interface QuizResult {
   primary: PartyScore;
   alternatives: PartyScore[];
   allScores: PartyScore[];
   confidence: "high" | "medium" | "low";
   timestamp: number;
+  topAxes?: AxisContribution[];
+  answeredAxes?: AxisCoverage[];
 }

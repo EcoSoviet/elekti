@@ -3,6 +3,8 @@ import partyPositionsData from "../data/party_positions.json";
 import questionsData from "../data/questions.json";
 import type {
   Axis,
+  AxisContribution,
+  AxisCoverage,
   Party,
   PartyScore,
   QuestionMetadata,
@@ -10,7 +12,15 @@ import type {
 } from "../types";
 import { SCORING, STANDARD_OPTIONS } from "./constants";
 
-export type { Axis, Party, PartyScore, Question, QuizResult } from "../types";
+export type {
+  Axis,
+  AxisContribution,
+  AxisCoverage,
+  Party,
+  PartyScore,
+  Question,
+  QuizResult,
+} from "../types";
 
 export function computeScores(
   answers: Record<string, number>,
@@ -131,11 +141,73 @@ export function computeScores(
     confidence = "medium";
   }
 
+  const answerRate = Object.keys(answers).length / questionsMetadata.length;
+  if (answerRate < 0.2 && confidence === "high") {
+    confidence = "medium";
+  }
+
+  const topAxes = getTopContributingAxes(primary, axes, axisWeightsPerParty);
+  const answeredAxes = getAxisCoverage(answers, questionsMetadata, axes);
+
   return {
     primary,
     alternatives,
     allScores: partyScores,
     confidence,
     timestamp: Date.now(),
+    topAxes,
+    answeredAxes,
   };
+}
+
+function getTopContributingAxes(
+  primaryScore: PartyScore,
+  axes: Axis[],
+  axisWeightsPerParty: Record<string, Record<string, number>>
+): AxisContribution[] {
+  const contributions: AxisContribution[] = [];
+
+  for (const axis of axes) {
+    const score = primaryScore.axisScores?.[axis.id];
+    const weight = axisWeightsPerParty[primaryScore.partyId]?.[axis.id];
+
+    if (score !== undefined && weight !== undefined && weight > 0) {
+      contributions.push({
+        axisId: axis.id,
+        score,
+        weight,
+      });
+    }
+  }
+
+  contributions.sort((a, b) => b.weight - a.weight);
+  return contributions.slice(0, 3);
+}
+
+function getAxisCoverage(
+  answers: Record<string, number>,
+  questionsMetadata: QuestionMetadata[],
+  axes: Axis[]
+): AxisCoverage[] {
+  const coverage: Record<string, { answered: number; total: number }> = {};
+
+  for (const axis of axes) {
+    coverage[axis.id] = { answered: 0, total: 0 };
+  }
+
+  for (const question of questionsMetadata) {
+    const axis = question.axis;
+    if (coverage[axis]) {
+      coverage[axis]!.total++;
+      if (answers[question.id] !== undefined) {
+        coverage[axis]!.answered++;
+      }
+    }
+  }
+
+  return axes.map((axis) => ({
+    axisId: axis.id,
+    questionsAnswered: coverage[axis.id]?.answered ?? 0,
+    totalQuestions: coverage[axis.id]?.total ?? 0,
+  }));
 }
