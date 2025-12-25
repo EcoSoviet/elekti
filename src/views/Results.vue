@@ -7,81 +7,91 @@
   import ResultBreakdown from "../components/ResultBreakdown.vue";
   import { useQuizStore } from "../stores/quizStore";
   import { isSurveyMode, type SurveyMode } from "../stores/uiStore";
-
-  interface Party {
-    id: string;
-    name: string;
-    nameKey?: string;
-    short: string;
-    descriptionKey: string;
-    ideologyKey: string;
-    colour: string;
-    logo?: string;
-    website: string;
-  }
-
-  interface PartyScore {
-    partyId: string;
-    alignmentScore: number;
-    party: Party;
-    axisScores?: Record<string, number>;
-  }
-
-  interface QuizResult {
-    primary: PartyScore;
-    alternatives: PartyScore[];
-    allScores: PartyScore[];
-    confidence: "high" | "medium" | "low";
-    timestamp: number;
-  }
+  import type { PartyScore, QuizResult } from "../types";
+  import { URL_PARAMS } from "../utils/constants";
 
   const router = useRouter();
   const quizStore = useQuizStore();
   const { t } = useI18n();
   const result = ref<QuizResult | undefined>(undefined);
   const copied = ref(false);
+  const error = ref<string | null>(null);
 
   const modeLabel = computed(() => t(`landing.modes.${quizStore.mode}.title`));
 
   const otherScores = computed<PartyScore[]>(() => {
-    if (!result.value) {
+    const currentResult = result.value;
+    if (!currentResult) {
       return [];
     }
-    const exclude = new Set<string>([
-      result.value.primary.partyId,
-      ...result.value.alternatives.map((a) => a.partyId),
+    // Create exclusion set once
+    const excludeIds = new Set<string>([
+      currentResult.primary.partyId,
+      ...currentResult.alternatives.map((a) => a.partyId),
     ]);
-    return result.value.allScores.filter((s) => !exclude.has(s.partyId));
+    return currentResult.allScores.filter((s) => !excludeIds.has(s.partyId));
   });
 
   onMounted(() => {
-    const urlParameters = new URLSearchParams(globalThis.location.search);
-    const encodedAnswers = urlParameters.get("r");
-    const modeParam = urlParameters.get("m");
-    const qParam = urlParameters.get("q");
+    try {
+      const urlParameters = new URLSearchParams(globalThis.location.search);
+      const encodedAnswers = urlParameters.get(URL_PARAMS.RESULTS);
+      const modeParam = urlParameters.get(URL_PARAMS.MODE);
+      const qParam = urlParameters.get(URL_PARAMS.QUESTIONS);
 
-    if (encodedAnswers) {
-      if (modeParam) {
-        const ids = qParam ? qParam.split(",").filter(Boolean) : undefined;
-        const m: SurveyMode = isSurveyMode(modeParam)
-          ? (modeParam as SurveyMode)
-          : "full";
-        quizStore.loadSurvey(m, ids);
+      if (encodedAnswers) {
+        if (modeParam) {
+          const ids = qParam ? qParam.split(",").filter(Boolean) : undefined;
+          const m: SurveyMode = isSurveyMode(modeParam)
+            ? (modeParam as SurveyMode)
+            : "full";
+          quizStore.loadSurvey(m, ids);
+        }
+        const idsForDecode = qParam
+          ? qParam.split(",").filter(Boolean)
+          : undefined;
+        const loaded = quizStore.loadAnswersFromUrl(
+          encodedAnswers,
+          idsForDecode
+        );
+        if (loaded) {
+          result.value = quizStore.computeScores();
+          return;
+        } else {
+          error.value =
+            "Invalid or corrupted results URL. Please retake the quiz.";
+          return;
+        }
       }
-      const idsForDecode = qParam
-        ? qParam.split(",").filter(Boolean)
-        : undefined;
-      const loaded = quizStore.loadAnswersFromUrl(encodedAnswers, idsForDecode);
-      if (loaded) {
+
+      if (quizStore.completed && Object.keys(quizStore.answers).length > 0) {
         result.value = quizStore.computeScores();
-        return;
-      }
-    }
+        const encoded = quizStore.encodeAnswersToUrl();
+        const ids = quizStore.questions.map((q) => q.id).join(",");
+        const m = quizStore.mode;
+        const queryParams = {
+          [URL_PARAMS.RESULTS]: encoded,
+          [URL_PARAMS.MODE]: m,
+          [URL_PARAMS.QUESTIONS]: ids,
+        };
 
-    if (quizStore.completed && Object.keys(quizStore.answers).length > 0) {
-      result.value = quizStore.computeScores();
-      const encoded = quizStore.encodeAnswersToUrl();
-      router.replace({ query: { r: encoded } });
+        // Build URL to check length
+        const testUrl = new URLSearchParams(queryParams).toString();
+        const fullUrl = `${globalThis.location.origin}/results?${testUrl}`;
+
+        if (fullUrl.length <= URL_PARAMS.MAX_URL_LENGTH) {
+          router.replace({ query: queryParams });
+        } else {
+          console.warn(
+            "Generated URL exceeds safe length, skipping URL update"
+          );
+        }
+      } else {
+        error.value = "No quiz data found. Please take the quiz first.";
+      }
+    } catch (err) {
+      console.error("Error loading results:", err);
+      error.value = "An error occurred loading your results. Please try again.";
     }
   });
 
@@ -90,14 +100,22 @@
       return;
     }
 
-    const encoded = quizStore.encodeAnswersToUrl();
-    const ids = quizStore.questions.map((q) => q.id).join(",");
-    const m = quizStore.mode;
-    const shareUrl = `${globalThis.location.origin}/results?r=${encoded}&m=${m}&q=${encodeURIComponent(ids)}`;
+    try {
+      const encoded = quizStore.encodeAnswersToUrl();
+      const ids = quizStore.questions.map((q) => q.id).join(",");
+      const m = quizStore.mode;
+      const shareUrl = `${globalThis.location.origin}/results?${URL_PARAMS.RESULTS}=${encoded}&${URL_PARAMS.MODE}=${m}&${URL_PARAMS.QUESTIONS}=${encodeURIComponent(ids)}`;
 
-    const confidenceLabel = t(`results.confidence.${result.value.confidence}`);
+      // Check URL length
+      if (shareUrl.length > URL_PARAMS.MAX_URL_LENGTH) {
+        console.warn("Share URL exceeds safe length");
+      }
 
-    const text = `My Elekti Results:
+      const confidenceLabel = t(
+        `results.confidence.${result.value.confidence}`
+      );
+
+      const text = `My Elekti Results:
   Primary Match: ${result.value.primary.party.name} (${(result.value.primary.alignmentScore * 100).toFixed(1)}%) — ${confidenceLabel}
   Alternatives: ${result.value.alternatives
     .map(
@@ -108,12 +126,20 @@
 
   View my results: ${shareUrl}`;
 
-    navigator.clipboard.writeText(text).then(() => {
-      copied.value = true;
-      setTimeout(() => {
-        copied.value = false;
-      }, 2000);
-    });
+      navigator.clipboard.writeText(text).then(
+        () => {
+          copied.value = true;
+          setTimeout(() => {
+            copied.value = false;
+          }, 2000);
+        },
+        (err) => {
+          console.error("Failed to copy results:", err);
+        }
+      );
+    } catch (err) {
+      console.error("Error creating share URL:", err);
+    }
   }
 
   function retakeQuiz() {
@@ -197,6 +223,17 @@
             {{ $t("results.retakeQuiz") }}
           </button>
         </div>
+      </div>
+
+      <div v-else-if="error" class="results__error">
+        <AlertCircle :size="48" />
+        <p>{{ error }}</p>
+        <button
+          @click="goToQuiz"
+          class="results__button results__button--primary"
+        >
+          Start Quiz
+        </button>
       </div>
 
       <div v-else class="results__empty">
@@ -435,6 +472,21 @@
     font-size: var(--font-size-lg);
     color: var(--color-text-secondary);
     margin: var(--space-xl) 0;
+  }
+
+  .results__error {
+    text-align: center;
+    padding: var(--space-3xl);
+    background-color: var(--color-surface);
+    border: 2px solid var(--color-error, #ef4444);
+    border-radius: 0;
+  }
+
+  .results__error p {
+    font-size: var(--font-size-lg);
+    color: var(--color-error, #ef4444);
+    margin: var(--space-xl) 0;
+    font-weight: var(--font-weight-medium);
   }
 
   @media (max-width: 640px) {

@@ -1,10 +1,11 @@
 <script setup lang="ts">
   import { ChevronLeft, ChevronRight } from "lucide-vue-next";
-  import { computed, ref } from "vue";
+  import { computed, onBeforeUnmount, onMounted, ref } from "vue";
   import { useRouter } from "vue-router";
   import ProgressBar from "../components/ProgressBar.vue";
   import QuizQuestion from "../components/QuizQuestion.vue";
   import { useQuizStore } from "../stores/quizStore";
+  import { TIMING } from "../utils/constants";
 
   const router = useRouter();
   const quizStore = useQuizStore();
@@ -34,9 +35,9 @@
           setTimeout(() => {
             isTransitioning.value = false;
             isAnswerDisabled.value = false;
-          }, 50);
+          }, TIMING.TRANSITION_RESET);
         }
-      }, 300);
+      }, TIMING.ANSWER_DELAY);
     }
   }
 
@@ -49,9 +50,63 @@
   }
 
   function handleFinish() {
-    quizStore.completed = true;
+    quizStore.setCompleted(true);
     router.push("/results");
   }
+
+  function handleKeyDown(event: KeyboardEvent) {
+    if (
+      event.target instanceof HTMLInputElement ||
+      event.target instanceof HTMLTextAreaElement
+    ) {
+      return;
+    }
+
+    if (isTransitioning.value || isAnswerDisabled.value) {
+      return;
+    }
+
+    switch (event.key) {
+      case "ArrowLeft":
+        if (quizStore.currentQuestionIndex > 0) {
+          event.preventDefault();
+          quizStore.previousQuestion();
+        }
+        break;
+      case "ArrowRight":
+        if (hasAnsweredCurrent.value) {
+          event.preventDefault();
+          handleNext();
+        }
+        break;
+      case "1":
+      case "2":
+      case "3":
+      case "4":
+      case "5": {
+        const optionIndex = Number.parseInt(event.key) - 1;
+        if (optionIndex >= 0 && optionIndex < 5) {
+          event.preventDefault();
+          handleAnswer(optionIndex);
+        }
+        break;
+      }
+      case "Enter":
+        if (hasAnsweredCurrent.value) {
+          event.preventDefault();
+          handleNext();
+        }
+        break;
+    }
+  }
+
+  onMounted(() => {
+    globalThis.addEventListener("keydown", handleKeyDown);
+  });
+
+  onBeforeUnmount(() => {
+    globalThis.removeEventListener("keydown", handleKeyDown);
+  });
 </script>
 
 <template>

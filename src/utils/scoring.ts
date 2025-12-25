@@ -1,58 +1,16 @@
 import axesData from "../data/axes.json";
 import partyPositionsData from "../data/party_positions.json";
 import questionsData from "../data/questions.json";
-import { STANDARD_OPTIONS } from "./constants";
+import type {
+  Axis,
+  Party,
+  PartyScore,
+  QuestionMetadata,
+  QuizResult,
+} from "../types";
+import { SCORING, STANDARD_OPTIONS } from "./constants";
 
-export interface Party {
-  id: string;
-  name: string;
-  nameKey?: string;
-  short: string;
-  descriptionKey: string;
-  ideologyKey: string;
-  colour: string;
-  logo?: string;
-  website: string;
-}
-
-export interface Question {
-  id: string;
-  text: string;
-  textKey?: string;
-  axis: string;
-  weight: number;
-  options: Array<{ value: number; label: string }>;
-}
-
-interface QuestionMetadata {
-  id: string;
-  textKey: string;
-  axis: string;
-  weight: number;
-  direction?: "positive" | "negative";
-}
-
-export interface Axis {
-  id: string;
-  name: string;
-  shortNameKey: string;
-  description: string;
-}
-
-export interface PartyScore {
-  partyId: string;
-  alignmentScore: number;
-  party: Party;
-  axisScores?: Record<string, number>;
-}
-
-export interface QuizResult {
-  primary: PartyScore;
-  alternatives: PartyScore[];
-  allScores: PartyScore[];
-  confidence: "high" | "medium" | "low";
-  timestamp: number;
-}
+export type { Axis, Party, PartyScore, Question, QuizResult } from "../types";
 
 export function computeScores(
   answers: Record<string, number>,
@@ -164,9 +122,12 @@ export function computeScores(
       ? topScore - alternatives[0].alignmentScore
       : topScore;
 
-  if (topScore < 0.2) {
+  if (topScore < SCORING.LOW_CONFIDENCE_THRESHOLD) {
     confidence = "low";
-  } else if (topScore < 0.5 || scoreSpread < 0.1) {
+  } else if (
+    topScore < SCORING.MEDIUM_CONFIDENCE_THRESHOLD ||
+    scoreSpread < SCORING.SPREAD_THRESHOLD
+  ) {
     confidence = "medium";
   }
 

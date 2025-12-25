@@ -1,24 +1,6 @@
 <script setup lang="ts">
+  import type { PartyScore } from "../types";
   import PartyCard from "./PartyCard.vue";
-
-  interface Party {
-    id: string;
-    name: string;
-    nameKey?: string;
-    short: string;
-    descriptionKey: string;
-    ideologyKey: string;
-    colour: string;
-    logo?: string;
-    website: string;
-  }
-
-  interface PartyScore {
-    partyId: string;
-    alignmentScore: number;
-    party: Party;
-    axisScores?: Record<string, number>;
-  }
 
   defineProps<{
     scores: PartyScore[];

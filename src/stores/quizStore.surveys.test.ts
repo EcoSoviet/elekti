@@ -1,7 +1,27 @@
 import { createPinia, setActivePinia } from "pinia";
-import { beforeEach, describe, expect, it } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import { useQuizStore } from "./quizStore";
 import { useUiStore } from "./uiStore";
+
+// Mock vue-i18n
+vi.mock("vue-i18n", () => ({
+  createI18n: (_opts?: unknown) => ({
+    global: {
+      t: (key: string) => key,
+      locale: { value: "en" },
+    },
+  }),
+  useI18n: () => ({
+    t: (key: string) => {
+      const parts = key.split(".");
+      if (parts[0] === "questions" && parts[1]) {
+        const qNumber = parts[1];
+        return `Question ${qNumber.slice(1)} text`;
+      }
+      return key;
+    },
+  }),
+}));
 
 describe("quizStore surveys", () => {
   beforeEach(() => {

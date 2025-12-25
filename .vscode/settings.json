@@ -4,7 +4,7 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
-    "package.json": "package-lock.json,yarn.lock,pnpm-lock.yaml,bun.lockb,.npmrc,.yarnrc*,.nvmrc,.editorconfig,.vscode/settings.json,*.config.js,*.config.cjs,*.config.mjs,*.config.ts,*.rc,tsconfig*.json,vitest.config.*,vite.config.*,eslint.config.*,prettier.config.*,postcss.config.*,tailwind.config.*,jest.config.*,babel.config.*",
+    "package.json": "package-lock.json,yarn.lock,pnpm-lock.yaml,bun.lockb,.npmrc,.yarnrc*,.nvmrc,.editorconfig,.vscode/settings.json,*.config.js,*.config.cjs,*.config.mjs,*.config.ts,*.rc,.prettierrc*,tsconfig*.json,vitest.config.*,vite.config.*,eslint.config.*,prettier.config.*,postcss.config.*,tailwind.config.*,jest.config.*,babel.config.*",
     "tsconfig.json": "tsconfig.*.json",
     "vite.config.ts": "vite.config.*",
     "eslint.config.ts": "eslint.config.*",

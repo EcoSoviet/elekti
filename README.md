@@ -49,6 +49,15 @@ npm run dev
 
 Visit `http://localhost:5173` (default Vite port).
 
+### Keyboard Shortcuts
+
+While taking the quiz, you can use keyboard shortcuts for faster navigation:
+
+- **1-5** – Select answer options (1 = Strongly Agree, 5 = Strongly Disagree)
+- **Arrow Left** – Go to previous question
+- **Arrow Right** – Go to next question (only if current question is answered)
+- **Enter** – Proceed to next question (only if current question is answered)
+
 ## Key Scripts
 
 | Command                            | Description                                                |

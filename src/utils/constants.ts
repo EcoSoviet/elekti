@@ -5,3 +5,22 @@ export const STANDARD_OPTIONS = [
   { value: -0.5, label: "Disagree" },
   { value: -1, label: "Strongly disagree" },
 ];
+
+export const TIMING = {
+  ANSWER_DELAY: 300,
+  TRANSITION_RESET: 50,
+  TRANSITION_DURATION: 300,
+} as const;
+
+export const URL_PARAMS = {
+  MAX_URL_LENGTH: 2000,
+  RESULTS: "r",
+  MODE: "m",
+  QUESTIONS: "q",
+} as const;
+
+export const SCORING = {
+  LOW_CONFIDENCE_THRESHOLD: 0.2,
+  MEDIUM_CONFIDENCE_THRESHOLD: 0.5,
+  SPREAD_THRESHOLD: 0.1,
+} as const;

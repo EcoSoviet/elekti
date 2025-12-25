@@ -1,15 +1,8 @@
 <script setup lang="ts">
   import { computed, ref, watch } from "vue";
   import { useI18n } from "vue-i18n";
+  import type { Question } from "../types";
   import QuizOption from "./QuizOption.vue";
-
-  interface Question {
-    id: string;
-    text: string;
-    textKey?: string;
-    axis: string;
-    weight: number;
-  }
 
   const properties = defineProps<{
     question: Question;

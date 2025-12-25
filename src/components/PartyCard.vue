@@ -3,25 +3,7 @@
   import { ChevronDown } from "lucide-vue-next";
   import { computed, ref } from "vue";
   import { useI18n } from "vue-i18n";
-
-  interface Axis {
-    id: string;
-    name: string;
-    shortNameKey: string;
-    description: string;
-  }
-
-  interface Party {
-    id: string;
-    name: string;
-    nameKey?: string;
-    short: string;
-    descriptionKey: string;
-    ideologyKey: string;
-    colour: string;
-    logo?: string;
-    website: string;
-  }
+  import type { Axis, Party } from "../types";
 
   const props = defineProps<{
     party: Party;

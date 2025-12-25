@@ -4,12 +4,9 @@ import { i18n } from "../i18n/i18n";
 
 import partiesData from "../data/parties.json";
 import surveysData from "../data/surveys.json";
-import {
-  computeScores as computeScoresUtility,
-  type Party,
-  type Question,
-  type QuizResult,
-} from "../utils/scoring";
+import type { Party, Question, QuestionMetadata, QuizResult } from "../types";
+import { STANDARD_OPTIONS } from "../utils/constants";
+import { computeScores as computeScoresUtility } from "../utils/scoring";
 import {
   decodeAndValidateAnswers,
   encodeAnswerValuesToBase64Url,
@@ -28,14 +25,6 @@ export const useQuizStore = defineStore("quiz", () => {
   const parties = (partiesData as Party[]).toSorted((a, b) =>
     a.name.localeCompare(b.name)
   );
-
-  interface QuestionMetadata {
-    id: string;
-    textKey: string;
-    axis: string;
-    weight: number;
-    options: Array<{ value: number; label: string }>;
-  }
 
   const tGlobal = i18n.global.t as unknown as (key: string) => string;
   function translate(key: string): string {
@@ -66,6 +55,7 @@ export const useQuizStore = defineStore("quiz", () => {
       ...q,
       text: translate(q.textKey),
       textKey: q.textKey,
+      options: STANDARD_OPTIONS,
     }));
   }
 
@@ -146,20 +136,25 @@ export const useQuizStore = defineStore("quiz", () => {
     encoded: string,
     questionIdsParam?: string[]
   ): boolean {
-    const questionIds =
-      questionIdsParam && questionIdsParam.length > 0
-        ? questionIdsParam
-        : questions.value.map((q) => q.id);
-    const result = decodeAndValidateAnswers(encoded, questionIds);
+    try {
+      const questionIds =
+        questionIdsParam && questionIdsParam.length > 0
+          ? questionIdsParam
+          : questions.value.map((q) => q.id);
+      const result = decodeAndValidateAnswers(encoded, questionIds);
 
-    if (result.success && result.answers) {
-      answers.value = result.answers;
-      completed.value =
-        Object.keys(result.answers).length === questionIds.length;
-      return true;
+      if (result.success && result.answers) {
+        answers.value = result.answers;
+        completed.value =
+          Object.keys(result.answers).length === questionIds.length;
+        return true;
+      }
+
+      return false;
+    } catch (error) {
+      console.error("Failed to load answers from URL:", error);
+      return false;
     }
-
-    return false;
   }
 
   return {
