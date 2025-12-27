@@ -203,9 +203,19 @@ export function validateDatasetConsistency(params: {
     }
   }
 
-  const locales = Object.keys(translationsByLocale);
+  const locales = Object.keys(translationsByLocale).filter(Boolean);
+
+  if (locales.length === 0) {
+    errors.push("No translations supplied");
+    return { success: false, errors };
+  }
 
   for (const [locale, translation] of Object.entries(translationsByLocale)) {
+    if (!translation) {
+      errors.push(`Locale ${locale} has no translation data after parsing`);
+      continue;
+    }
+
     for (const questionId of questionIds) {
       const questionTranslation = translation.questions?.[questionId];
       if (!questionTranslation || !questionTranslation.text) {
@@ -240,7 +250,16 @@ export function validateDatasetConsistency(params: {
 
   if (locales.length > 1) {
     const [firstLocale, ...rest] = locales;
+    if (!firstLocale) {
+      errors.push("Base locale is missing");
+      return { success: false, errors };
+    }
+
     const baseTranslation = translationsByLocale[firstLocale];
+    if (!baseTranslation) {
+      errors.push(`Base locale ${firstLocale} is missing translation data`);
+      return { success: false, errors };
+    }
     const baseQuestionKeys = new Set(
       Object.keys(baseTranslation.questions || {})
     );
@@ -249,6 +268,10 @@ export function validateDatasetConsistency(params: {
 
     for (const locale of rest) {
       const translation = translationsByLocale[locale];
+      if (!translation) {
+        errors.push(`Locale ${locale} missing translation data`);
+        continue;
+      }
       const questionKeys = new Set(Object.keys(translation.questions || {}));
       const axisKeys = new Set(Object.keys(translation.axes || {}));
       const partyKeys = new Set(Object.keys(translation.party || {}));
