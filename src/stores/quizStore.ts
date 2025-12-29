@@ -38,7 +38,16 @@ export const useQuizStore = defineStore("quiz", () => {
     return tGlobal(key);
   }
 
+  const translatedQuestionsCache = new Map<string, Question[]>();
+
   function loadQuestionsFromI18n(ids?: string[]): Question[] {
+    const locale = i18n.global.locale.value;
+    const cacheKey = `${locale}:${ids?.join(",") || "all"}`;
+
+    if (translatedQuestionsCache.has(cacheKey)) {
+      return translatedQuestionsCache.get(cacheKey)!;
+    }
+
     const questionsMetadata = import.meta.glob<{
       questions: QuestionMetadata[];
     }>("../data/questions.json", {
@@ -58,15 +67,19 @@ export const useQuizStore = defineStore("quiz", () => {
             .filter((q): q is QuestionMetadata => !!q)
         : base;
 
-    return filtered.map((q: QuestionMetadata) => ({
+    const translated = filtered.map((q: QuestionMetadata) => ({
       ...q,
       text: translate(q.textKey),
       textKey: q.textKey,
       options: STANDARD_OPTIONS,
     }));
+
+    translatedQuestionsCache.set(cacheKey, translated);
+    return translated;
   }
 
   function loadSurvey(newMode: SurveyMode, questionIdsOverride?: string[]) {
+    translatedQuestionsCache.clear();
     mode.value = newMode;
     ui.setMode(newMode);
     const surveyLists = (

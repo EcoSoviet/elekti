@@ -14,14 +14,14 @@
   useI18n();
   const expanded = ref(false);
 
-  const axes = computed(() => (axesData as { axes: Axis[] }).axes);
+  const axes = (axesData as { axes: Axis[] }).axes;
 
   const allAxisScores = computed(() => {
     if (!props.axisScores) {
       return [];
     }
 
-    return axes.value
+    return axes
       .map((axis) => {
         const rawScore = props.axisScores![axis.id] ?? 0;
         return {

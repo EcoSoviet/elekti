@@ -1,8 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-import About from "../views/About.vue";
-import Landing from "../views/Landing.vue";
-import Quiz from "../views/Quiz.vue";
-import Results from "../views/Results.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,22 +6,22 @@ const router = createRouter({
     {
       path: "/",
       name: "landing",
-      component: Landing,
+      component: () => import("../views/Landing.vue"),
     },
     {
       path: "/quiz",
       name: "quiz",
-      component: Quiz,
+      component: () => import("../views/Quiz.vue"),
     },
     {
       path: "/results",
       name: "results",
-      component: Results,
+      component: () => import("../views/Results.vue"),
     },
     {
       path: "/about",
       name: "about",
-      component: About,
+      component: () => import("../views/About.vue"),
     },
   ],
   scrollBehavior() {
