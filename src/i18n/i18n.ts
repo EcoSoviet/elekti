@@ -1,6 +1,18 @@
 import { createI18n } from "vue-i18n";
-import af from "../data/translations/af.json";
 import en from "../data/translations/en.json";
+
+type MessageSchema = typeof en;
+
+let afTranslations: MessageSchema | undefined;
+
+const loadAfrikaansTranslations = async (): Promise<MessageSchema> => {
+  if (afTranslations) {
+    return afTranslations;
+  }
+  const module = await import("../data/translations/af.json");
+  afTranslations = module.default as MessageSchema;
+  return afTranslations;
+};
 
 function getInitialLocale(): string {
   const stored =
@@ -20,15 +32,29 @@ function getInitialLocale(): string {
   return supported.includes(browserLang) ? browserLang : "en";
 }
 
+const initialLocale = getInitialLocale();
+const messages: Record<string, MessageSchema> = {
+  en,
+};
+
+if (initialLocale === "af") {
+  const af = await loadAfrikaansTranslations();
+  messages.af = af;
+}
+
 export const i18n = createI18n({
   legacy: false,
-  locale: getInitialLocale(),
+  locale: initialLocale,
   fallbackLocale: "en",
-  messages: {
-    en,
-    af,
-  },
+  messages,
 });
+
+export const loadAFTranslations = async () => {
+  if (!messages.af) {
+    messages.af = await loadAfrikaansTranslations();
+  }
+  return messages.af;
+};
 
 export const availableLocales = [
   { code: "en", name: "English" },

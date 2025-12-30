@@ -2,7 +2,7 @@
   import { ChevronDown, Globe } from "lucide-vue-next";
   import { computed, ref } from "vue";
   import { useI18n } from "vue-i18n";
-  import { availableLocales } from "../i18n/i18n";
+  import { availableLocales, loadAFTranslations } from "../i18n/i18n";
   import { useUiStore } from "../stores/uiStore";
 
   const { locale, t } = useI18n();
@@ -25,7 +25,10 @@
     isOpen.value = !isOpen.value;
   }
 
-  function selectLanguage(code: string) {
+  async function selectLanguage(code: string) {
+    if (code === "af") {
+      await loadAFTranslations();
+    }
     uiStore.setLang(code as "en" | "af");
     isOpen.value = false;
   }

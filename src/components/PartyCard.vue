@@ -1,9 +1,10 @@
 <script setup lang="ts">
-  import axesData from "@/data/axes.json";
   import { ChevronDown } from "lucide-vue-next";
   import { computed, ref } from "vue";
   import { useI18n } from "vue-i18n";
-  import type { Axis, Party } from "../types";
+  import type { Party } from "../types";
+  import { AXIS_COLOR_THRESHOLDS } from "../utils/constants";
+  import { getAxes } from "../utils/dataLoader";
 
   const props = defineProps<{
     party: Party;
@@ -14,7 +15,7 @@
   useI18n();
   const expanded = ref(false);
 
-  const axes = (axesData as { axes: Axis[] }).axes;
+  const axes = getAxes();
 
   const allAxisScores = computed(() => {
     if (!props.axisScores) {
@@ -34,16 +35,16 @@
   });
 
   const getAxisColor = (percentage: number): string => {
-    if (percentage >= 75) {
-      return "#1f7a51";
+    if (percentage >= AXIS_COLOR_THRESHOLDS.STRONG.percentage) {
+      return AXIS_COLOR_THRESHOLDS.STRONG.color;
     }
-    if (percentage >= 50) {
-      return "#b58a1a";
+    if (percentage >= AXIS_COLOR_THRESHOLDS.MODERATE.percentage) {
+      return AXIS_COLOR_THRESHOLDS.MODERATE.color;
     }
-    if (percentage >= 25) {
-      return "#8f2d1f";
+    if (percentage >= AXIS_COLOR_THRESHOLDS.WEAK.percentage) {
+      return AXIS_COLOR_THRESHOLDS.WEAK.color;
     }
-    return "#6a5b50";
+    return AXIS_COLOR_THRESHOLDS.NONE.color;
   };
 
   const formatPercentage = (score: number): string => {

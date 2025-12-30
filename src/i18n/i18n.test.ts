@@ -106,7 +106,8 @@ describe("i18n", () => {
 
   describe("messages", () => {
     it("should have English and Afrikaans messages", async () => {
-      const { i18n } = await import("./i18n");
+      const { i18n, loadAFTranslations } = await import("./i18n");
+      await loadAFTranslations();
       expect(i18n.global.messages.value).toHaveProperty("en");
       expect(i18n.global.messages.value).toHaveProperty("af");
     });
@@ -122,7 +123,8 @@ describe("i18n", () => {
     });
 
     it("should have consistent structure across all locales", async () => {
-      const { i18n } = await import("./i18n");
+      const { i18n, loadAFTranslations } = await import("./i18n");
+      await loadAFTranslations();
       const messages = i18n.global.messages.value as Record<
         string,
         Record<string, unknown>
@@ -134,7 +136,8 @@ describe("i18n", () => {
     });
 
     it("should have required message sections in all locales", async () => {
-      const { i18n } = await import("./i18n");
+      const { i18n, loadAFTranslations } = await import("./i18n");
+      await loadAFTranslations();
       const messages = i18n.global.messages.value as Record<
         string,
         Record<string, unknown>
@@ -161,7 +164,8 @@ describe("i18n", () => {
     });
 
     it("should have all 50 questions in each locale", async () => {
-      const { i18n } = await import("./i18n");
+      const { i18n, loadAFTranslations } = await import("./i18n");
+      await loadAFTranslations();
       const messages = i18n.global.messages.value as Record<string, unknown>;
 
       for (const locale of ["en", "af"]) {

@@ -24,3 +24,10 @@ export const SCORING = {
   MEDIUM_CONFIDENCE_THRESHOLD: 0.5,
   SPREAD_THRESHOLD: 0.1,
 } as const;
+
+export const AXIS_COLOR_THRESHOLDS = {
+  STRONG: { percentage: 75, color: "#1f7a51" },
+  MODERATE: { percentage: 50, color: "#b58a1a" },
+  WEAK: { percentage: 25, color: "#8f2d1f" },
+  NONE: { color: "#6a5b50" },
+} as const;
